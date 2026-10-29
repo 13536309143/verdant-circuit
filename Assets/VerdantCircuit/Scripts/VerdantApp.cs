@@ -14,9 +14,16 @@ namespace Verdant
         public int RunningSlot=-1;public int Speed=1;public bool PausedWorld;public int IncomeRate;
         float saveTimer,inputTimer,incomeTimer;int lastEarned;bool wasChallenge;Vector2Int? navigate;
         readonly Queue<Vector2> income=new Queue<Vector2>();
-        void Start()
+        System.Collections.IEnumerator Start()
         {
-            Application.targetFrameRate=60;Farm=new VerdantFarm();Runner=new VerdantRunner(Farm);
+            yield return L10n.Initialize();uiFont=L10n.UIFont;codeFont=L10n.CodeFont;
+            Application.targetFrameRate=60;
+#if UNITY_EDITOR
+            Farm=Environment.GetEnvironmentVariable("VERDANT_UI_QA")=="1"?new VerdantFarm(false,"verdant-ui-verification.json"):new VerdantFarm();
+#else
+            Farm=new VerdantFarm();
+#endif
+            Runner=new VerdantRunner(Farm);
             Audio=new GameObject("Sound Garden").AddComponent<VerdantAudio>();Audio.transform.SetParent(transform);Audio.Initialize(Farm.Data.volume);
             World=new GameObject("World").AddComponent<VerdantWorld>();World.transform.SetParent(transform);World.Initialize(this);
             UI=new GameObject("UI").AddComponent<VerdantUI>();UI.transform.SetParent(transform);UI.Initialize(this,uiFont,codeFont);
@@ -34,6 +41,8 @@ namespace Verdant
                 if(!UI.Typing&&!Runner.Running)ManualInput(dt);
                 incomeTimer+=dt*Speed;if(incomeTimer>=3){incomeTimer=0;int earned=Farm.Count("earned");income.Enqueue(new Vector2(Farm.Data.clock,earned));while(income.Count>1&&income.Peek().x<Farm.Data.clock-60)income.Dequeue();Vector2 first=income.Peek();IncomeRate=Mathf.Max(0,Mathf.RoundToInt((earned-first.y)/Mathf.Max(1,Farm.Data.clock-first.x)*60));lastEarned=earned;}
             }
+            if(Input.GetKeyDown(KeyCode.F7)){if(UI.ModalOpen)UI.Close();else UI.Open("fleet");}
+            if(Input.GetKeyDown(KeyCode.F8))L10n.Set(L10n.Code=="en"?"zh-Hans":"en");
             if(Input.GetKeyDown(KeyCode.Escape)){if(UI.ModalOpen)UI.Close();else UI.Open("settings");}
             if((Input.GetKey(KeyCode.LeftCommand)||Input.GetKey(KeyCode.RightCommand)||Input.GetKey(KeyCode.LeftControl)||Input.GetKey(KeyCode.RightControl))&&Input.GetKeyDown(KeyCode.Return))RunCode();
             if(UI.Typing&&Input.GetKeyDown(KeyCode.Tab))
@@ -53,12 +62,12 @@ namespace Verdant
             if(Input.GetKeyDown(KeyCode.Space))Manual("plant");if(Input.GetKeyDown(KeyCode.E))Manual("harvest");if(Input.GetKeyDown(KeyCode.Q))Manual("water");if(Input.GetKeyDown(KeyCode.T))Manual("till");if(Input.GetKeyDown(KeyCode.F))Manual("fertilize");
             bool overUI=EventSystem.current!=null&&EventSystem.current.IsPointerOverGameObject();
             if(!overUI&&Input.GetMouseButtonDown(0))
-            {RaycastHit hit;if(Physics.Raycast(World.Camera.ScreenPointToRay(Input.mousePosition),out hit,150)){var plot=hit.collider.GetComponent<VerdantPlotHit>();if(plot!=null)navigate=new Vector2Int(plot.x,plot.y);}}
+            {RaycastHit hit;if(Physics.Raycast(World.Camera.ScreenPointToRay(Input.mousePosition),out hit,150)){var plot=hit.collider.GetComponent<VerdantPlotHit>();if(plot!=null){var u=Farm.Fleet.Find(Farm.Data.activeDrone);if(Farm.Fleet.Fits(u,plot.x,plot.y)){Farm.Fleet.Enqueue(u.id,"move","",plot.x,plot.y);navigate=null;}else Farm.Say(L10n.T("完整机体占地必须空闲且不越界"));}}}
             if(!overUI&&Mathf.Abs(Input.mouseScrollDelta.y)>.01f)World.Camera.orthographicSize=Mathf.Clamp(World.Camera.orthographicSize-Input.mouseScrollDelta.y*.35f,3,10);
         }
         public void Manual(string action)
         {
-            if(Runner.Running){Farm.Say("请先停止程序再手动操作");return;}
+            if(Runner.Running){Farm.Say(L10n.T("请先停止程序再手动操作"));return;}
             try{bool result=Farm.Act(action,action=="plant"?VerdantContent.Crops[Farm.Data.selectedCrop].id:"");if(result&&action=="harvest")Audio.PlayCue(620);}catch(Exception e){Farm.Say(e.Message);}
         }
         public void RunCode(){navigate=null;if(UI.ModalOpen)UI.Close();if(Runner.Start(UI.Editor.text))RunningSlot=Farm.Data.slot;}
@@ -66,7 +75,7 @@ namespace Verdant
         public void NewCampaign()
         {
             Runner.Stop();if(Farm.InChallenge)Farm.FinishChallenge(false);Farm.Save();
-            try{if(File.Exists(Farm.SavePath))File.Copy(Farm.SavePath,Farm.SavePath+"."+DateTime.Now.ToString("yyyyMMdd-HHmmss")+".bak",true);}catch(Exception e){Farm.Say("备份失败，已取消新建："+e.Message);return;}
+            try{if(File.Exists(Farm.SavePath))File.Copy(Farm.SavePath,Farm.SavePath+"."+DateTime.Now.ToString("yyyyMMdd-HHmmss")+".bak",true);}catch(Exception e){Farm.Say(L10n.T("备份失败，已取消新建：")+e.Message);return;}
             var fresh=new VerdantFarm(false);Farm.Data=fresh.Data;UI.Editor.SetTextWithoutNotify(Farm.Data.scripts[0]);UI.ResetPrograms();Speed=1;income.Clear();income.Enqueue(Vector2.zero);World.Rebuild();Farm.Notify();Farm.Save();UI.Open("intro");
         }
         public void Quit(){Farm.Save();

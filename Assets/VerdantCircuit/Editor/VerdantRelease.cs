@@ -12,11 +12,7 @@ public static class VerdantRelease
     {
         if(EditorApplication.isPlayingOrWillChangePlaymode)
             throw new InvalidOperationException("请先停止 Play 模式。");
-        string folder=Path.GetFullPath("InternalTestReports/release");
-        Directory.CreateDirectory(folder);
-        File.WriteAllText(Path.Combine(folder,"verification.json"),VerdantChecks.RunAll());
-        File.WriteAllText(Path.Combine(folder,"campaign.json"),VerdantChecks.Playthrough());
-        Debug.Log("禾序发行回归通过："+folder);
+        VerdantFleetChecks.VerifyAll();
     }
 
     [MenuItem("Tools/禾序/发行/构建 macOS 通用版")]
@@ -42,6 +38,23 @@ public static class VerdantRelease
         BuildReport report=BuildPipeline.BuildPlayer(options);
         if(report.summary.result!=BuildResult.Succeeded)
             throw new InvalidOperationException("构建失败："+report.summary.result);
+        File.WriteAllText(output+".build-report.json","{\"result\":\"succeeded\",\"errors\":"+report.summary.totalErrors+",\"warnings\":"+report.summary.totalWarnings+",\"bytes\":"+report.summary.totalSize+"}");
         Debug.Log("禾序构建成功："+output+"；错误 "+report.summary.totalErrors+"，警告 "+report.summary.totalWarnings);
     }
+    [MenuItem("Tools/禾序/发行/构建 Windows x64 Mono版")]
+    public static void BuildWindows()
+    {
+        if(EditorApplication.isPlayingOrWillChangePlaymode)throw new InvalidOperationException("Stop Play mode first.");
+        string folder=Environment.GetEnvironmentVariable("VERDANT_WINDOWS_BUILD_DIR");
+        if(string.IsNullOrEmpty(folder))folder="Builds/HeXu-Windows-x64-"+Verdant.VerdantContent.Version;
+        folder=Path.GetFullPath(folder);Directory.CreateDirectory(folder);
+        if(!EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Standalone,BuildTarget.StandaloneWindows64))throw new InvalidOperationException("Windows build module is missing.");
+        PlayerSettings.SetScriptingBackend(NamedBuildTarget.Standalone,ScriptingImplementation.Mono2x);
+        PlayerSettings.bundleVersion=Verdant.VerdantContent.Version;
+        BuildReport report=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=new[]{"Assets/VerdantCircuit/Scenes/VerdantCircuit.unity"},locationPathName=Path.Combine(folder,"HeXu.exe"),target=BuildTarget.StandaloneWindows64,options=BuildOptions.CompressWithLz4});
+        if(report.summary.result!=BuildResult.Succeeded)throw new InvalidOperationException("Windows build failed: "+report.summary.result);
+        string summary="{\"result\":\"succeeded\",\"errors\":"+report.summary.totalErrors+",\"warnings\":"+report.summary.totalWarnings+",\"bytes\":"+report.summary.totalSize+"}";
+        File.WriteAllText(Path.Combine(folder,"build-report.json"),summary);Debug.Log("Windows build succeeded: "+folder);
+    }
+
 }

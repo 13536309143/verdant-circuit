@@ -1,0 +1,3646 @@
+{
+  "entries": [
+    {
+      "key": "t_2e042088f11e9883",
+      "source": "初抵禾湾",
+      "en": "Arrival at Verdant Bay",
+      "zh": "初抵禾湾"
+    },
+    {
+      "key": "t_e98d8023af667898",
+      "source": "循环的力量",
+      "en": "The Power of Loops",
+      "zh": "循环的力量"
+    },
+    {
+      "key": "t_a247727aa1503198",
+      "source": "知水知土",
+      "en": "Water and Soil",
+      "zh": "知水知土"
+    },
+    {
+      "key": "t_3d89a1c02f58457d",
+      "source": "共生花园",
+      "en": "Companion Gardens",
+      "zh": "共生花园"
+    },
+    {
+      "key": "t_c0f43f7088973f4e",
+      "source": "精密农艺",
+      "en": "Precision Farming",
+      "zh": "精密农艺"
+    },
+    {
+      "key": "t_0c192347912502bf",
+      "source": "星辉计划",
+      "en": "The Starbloom Project",
+      "zh": "星辉计划"
+    },
+    {
+      "key": "t_4b37e5a868269212",
+      "source": "稻穗",
+      "en": "Grain",
+      "zh": "稻穗"
+    },
+    {
+      "key": "t_88687fbab873d2b8",
+      "source": "免费播种；稳定的起步作物，湿润时生长更快。",
+      "en": "Free to plant. A reliable starter crop that grows faster in moist soil.",
+      "zh": "免费播种；稳定的起步作物，湿润时生长更快。"
+    },
+    {
+      "key": "t_6cc6e51a5a89ccfb",
+      "source": "红萝卜",
+      "en": "Radish",
+      "zh": "红萝卜"
+    },
+    {
+      "key": "t_80e01b95bab75394",
+      "source": "需要翻土；肥沃土壤让单次收获增加。",
+      "en": "Requires tilled soil. Fertile soil increases the harvest yield.",
+      "zh": "需要翻土；肥沃土壤让单次收获增加。"
+    },
+    {
+      "key": "t_c18cdd2714a3a6a4",
+      "source": "蓝亚麻",
+      "en": "Blue Flax",
+      "zh": "蓝亚麻"
+    },
+    {
+      "key": "t_e1c527fcb51d6da6",
+      "source": "相邻稻穗可提升产量；适合交错种植。",
+      "en": "Adjacent grain increases yield. Try alternating rows or a checkerboard.",
+      "zh": "相邻稻穗可提升产量；适合交错种植。"
+    },
+    {
+      "key": "t_2bde460afdd89e0e",
+      "source": "蓝莓",
+      "en": "Blueberry",
+      "zh": "蓝莓"
+    },
+    {
+      "key": "t_54808c14db8e24fc",
+      "source": "需湿润土壤；收获后留下植株再生两次。",
+      "en": "Needs moist soil. Regrows twice after the first harvest.",
+      "zh": "需湿润土壤；收获后留下植株再生两次。"
+    },
+    {
+      "key": "t_8575751134a5910c",
+      "source": "向日葵",
+      "en": "Sunflower",
+      "zh": "向日葵"
+    },
+    {
+      "key": "t_fb4ab2eb363d9bf2",
+      "source": "成熟收获可积累光能，为星辉花供应能源。",
+      "en": "Harvest mature sunflowers to store energy for starblooms.",
+      "zh": "成熟收获可积累光能，为星辉花供应能源。"
+    },
+    {
+      "key": "t_26d79628e02777fc",
+      "source": "蜜南瓜",
+      "en": "Honey Pumpkin",
+      "zh": "蜜南瓜"
+    },
+    {
+      "key": "t_b5d04cfb6e5b6d48",
+      "source": "需要翻土；相邻成熟南瓜越多，连片收获越丰厚。",
+      "en": "Requires tilled soil. Adjacent mature pumpkins increase harvest yield.",
+      "zh": "需要翻土；相邻成熟南瓜越多，连片收获越丰厚。"
+    },
+    {
+      "key": "t_1b151248e8182f4b",
+      "source": "云雾茶",
+      "en": "Cloud Tea",
+      "zh": "云雾茶"
+    },
+    {
+      "key": "t_6db46539249277de",
+      "source": "需要灌溉；同类过密会减产，与花卉相邻则增产。",
+      "en": "Needs irrigation. Crowded tea loses yield; nearby sunflowers increase it.",
+      "zh": "需要灌溉；同类过密会减产，与花卉相邻则增产。"
+    },
+    {
+      "key": "t_bbaf2710f1175e8a",
+      "source": "星辉花",
+      "en": "Starbloom",
+      "zh": "星辉花"
+    },
+    {
+      "key": "t_8017dffdc7e938e6",
+      "source": "需要翻土、灌溉及每次 3 光能；邻接茶树提高研究收益。",
+      "en": "Requires tilled, moist soil and 3 energy per planting. Nearby tea increases research.",
+      "zh": "需要翻土、灌溉及每次 3 光能；邻接茶树提高研究收益。"
+    },
+    {
+      "key": "t_d25a0ba9c0138b68",
+      "source": "轻量马达",
+      "en": "Lightweight Motor",
+      "zh": "轻量马达"
+    },
+    {
+      "key": "t_d725fb867424ccac",
+      "source": "动作间隔缩短 25%",
+      "en": "Shortens the action interval by 25%.",
+      "zh": "动作间隔缩短 25%"
+    },
+    {
+      "key": "t_7c327a192f46c3f9",
+      "source": "良种培育",
+      "en": "Selected Seeds",
+      "zh": "良种培育"
+    },
+    {
+      "key": "t_f36b5f84912bb81c",
+      "source": "全部作物基础产量 +1",
+      "en": "Adds 1 to the base yield of every crop.",
+      "zh": "全部作物基础产量 +1"
+    },
+    {
+      "key": "t_3322f5a3433f9111",
+      "source": "开垦东岸",
+      "en": "East Bank Expansion",
+      "zh": "开垦东岸"
+    },
+    {
+      "key": "t_09ca66890d2cbfa4",
+      "source": "农田由 4×4 扩展到 6×6",
+      "en": "Expands the field from 4x4 to 6x6.",
+      "zh": "农田由 4×4 扩展到 6×6"
+    },
+    {
+      "key": "t_2faacbf4b649330e",
+      "source": "纤维作物",
+      "en": "Fiber Crops",
+      "zh": "纤维作物"
+    },
+    {
+      "key": "t_8f89d12cc73fd9de",
+      "source": "解锁蓝亚麻与伴生增产",
+      "en": "Unlocks blue flax and companion-crop bonuses.",
+      "zh": "解锁蓝亚麻与伴生增产"
+    },
+    {
+      "key": "t_b0b63bb11ea68d69",
+      "source": "蓄水系统",
+      "en": "Water Storage",
+      "zh": "蓄水系统"
+    },
+    {
+      "key": "t_0c8b1230c969bbfc",
+      "source": "解锁灌溉、蓝莓与向日葵",
+      "en": "Unlocks irrigation, blueberries and sunflowers.",
+      "zh": "解锁灌溉、蓝莓与向日葵"
+    },
+    {
+      "key": "t_ea9b97f8553c54e9",
+      "source": "循环堆肥",
+      "en": "Compost Cycle",
+      "zh": "循环堆肥"
+    },
+    {
+      "key": "t_c8e00e96d70fd00d",
+      "source": "解锁施肥，肥力可增加产量",
+      "en": "Unlocks fertilizing. Fertile soil improves yield.",
+      "zh": "解锁施肥，肥力可增加产量"
+    },
+    {
+      "key": "t_1e2b5299f6444359",
+      "source": "伺服马达",
+      "en": "Servo Motor",
+      "zh": "伺服马达"
+    },
+    {
+      "key": "t_f2e8c7bb400a14f6",
+      "source": "动作进一步提速",
+      "en": "Further speeds up robot actions.",
+      "zh": "动作进一步提速"
+    },
+    {
+      "key": "t_684efee76e720d53",
+      "source": "保水土层",
+      "en": "Water-Retaining Soil",
+      "zh": "保水土层"
+    },
+    {
+      "key": "t_67805a4f0daf762c",
+      "source": "浇水保留时间翻倍",
+      "en": "Halves the rate of moisture loss.",
+      "zh": "浇水保留时间翻倍"
+    },
+    {
+      "key": "t_f883272db0e95f6a",
+      "source": "连片农艺",
+      "en": "Patch Farming",
+      "zh": "连片农艺"
+    },
+    {
+      "key": "t_022ae67e7ec6d188",
+      "source": "解锁蜜南瓜及邻接收获加成",
+      "en": "Unlocks pumpkins and mature-neighbor harvest bonuses.",
+      "zh": "解锁蜜南瓜及邻接收获加成"
+    },
+    {
+      "key": "t_765dfcafce8c6d21",
+      "source": "开垦西坡",
+      "en": "West Slope Expansion",
+      "zh": "开垦西坡"
+    },
+    {
+      "key": "t_4ef73858a6447ee7",
+      "source": "农田扩展到 8×8",
+      "en": "Expands the field to 8x8.",
+      "zh": "农田扩展到 8×8"
+    },
+    {
+      "key": "t_82ac5c0ecfd13137",
+      "source": "种质改良",
+      "en": "Seed Improvement",
+      "zh": "种质改良"
+    },
+    {
+      "key": "t_73931638221c4000",
+      "source": "全部作物基础产量再 +1",
+      "en": "Adds another 1 to every crop's base yield.",
+      "zh": "全部作物基础产量再 +1"
+    },
+    {
+      "key": "t_20c118529e007312",
+      "source": "聚光采集",
+      "en": "Solar Collection",
+      "zh": "聚光采集"
+    },
+    {
+      "key": "t_0c47046eee7170c0",
+      "source": "向日葵光能产出翻倍",
+      "en": "Doubles the energy obtained from sunflowers.",
+      "zh": "向日葵光能产出翻倍"
+    },
+    {
+      "key": "t_44b96ce10ce228ca",
+      "source": "云雾茶园",
+      "en": "Cloud Tea Garden",
+      "zh": "云雾茶园"
+    },
+    {
+      "key": "t_0fbdca3de1e9c6cc",
+      "source": "解锁云雾茶与花茶共生",
+      "en": "Unlocks cloud tea and flower-tea companion planting.",
+      "zh": "解锁云雾茶与花茶共生"
+    },
+    {
+      "key": "t_abd46de21c50831a",
+      "source": "活性土壤",
+      "en": "Living Soil",
+      "zh": "活性土壤"
+    },
+    {
+      "key": "t_71810ead0bf0aeab",
+      "source": "土壤肥力消耗减半",
+      "en": "Halves the fertility lost on harvest.",
+      "zh": "土壤肥力消耗减半"
+    },
+    {
+      "key": "t_8e1c96e8f1fffb30",
+      "source": "量子调度",
+      "en": "Quantum Scheduling",
+      "zh": "量子调度"
+    },
+    {
+      "key": "t_5c1489ccf50c1ab1",
+      "source": "最低动作间隔降至 0.08 秒",
+      "en": "Reduces the action interval to 0.08 seconds.",
+      "zh": "最低动作间隔降至 0.08 秒"
+    },
+    {
+      "key": "t_fcad93d4977e11c4",
+      "source": "星辉温室",
+      "en": "Starbloom Greenhouse",
+      "zh": "星辉温室"
+    },
+    {
+      "key": "t_ad10640e53165e58",
+      "source": "解锁星辉花；消耗光能播种",
+      "en": "Unlocks starblooms, which consume energy when planted.",
+      "zh": "解锁星辉花；消耗光能播种"
+    },
+    {
+      "key": "t_23469c45332727f9",
+      "source": "生态实验室",
+      "en": "Ecology Lab",
+      "zh": "生态实验室"
+    },
+    {
+      "key": "t_96b945752936f07f",
+      "source": "收获研究点增加 50%",
+      "en": "Increases harvest research by 50%.",
+      "zh": "收获研究点增加 50%"
+    },
+    {
+      "key": "t_ab4c0013a30436c7",
+      "source": "禾湾自治站",
+      "en": "Verdant Autonomy Station",
+      "zh": "禾湾自治站"
+    },
+    {
+      "key": "t_95c3618cb7b0859d",
+      "source": "最终工程：证明农场可以持续自运转",
+      "en": "The final project: establish a self-running farm.",
+      "zh": "最终工程：证明农场可以持续自运转"
+    },
+    {
+      "key": "t_7c1c3719154de45f",
+      "source": "第一步",
+      "en": "First Steps",
+      "zh": "第一步"
+    },
+    {
+      "key": "t_ecfc9938cce1ade4",
+      "source": "欢迎来到禾湾。先认识你的巡田机器人。",
+      "en": "Welcome to Verdant Bay. Get to know your field robot.",
+      "zh": "欢迎来到禾湾。先认识你的巡田机器人。"
+    },
+    {
+      "key": "t_da9539d51833aa82",
+      "source": "方向键或 WASD 移动；点击农田也可以导航。",
+      "en": "Use the arrow keys or WASD; click a plot to navigate.",
+      "zh": "方向键或 WASD 移动；点击农田也可以导航。"
+    },
+    {
+      "key": "t_f52f38b362d1f910",
+      "source": "播下希望",
+      "en": "Seeds of Hope",
+      "zh": "播下希望"
+    },
+    {
+      "key": "t_612eb0dad8b6346c",
+      "source": "免费的稻穗，是这片土地的第一份礼物。",
+      "en": "Free grain is this land's first gift to you.",
+      "zh": "免费的稻穗，是这片土地的第一份礼物。"
+    },
+    {
+      "key": "t_bba369f8b3694026",
+      "source": "按空格播种，或执行 plant(grain)。",
+      "en": "Press Space to plant, or call plant(grain).",
+      "zh": "按空格播种，或执行 plant(grain)。"
+    },
+    {
+      "key": "t_ec1f3eb99ea999c2",
+      "source": "第一份收成",
+      "en": "The First Harvest",
+      "zh": "第一份收成"
+    },
+    {
+      "key": "t_12486f5ad255ecfa",
+      "source": "金色穗头出现时，稻穗就成熟了。",
+      "en": "Golden heads mean the grain is ready to harvest.",
+      "zh": "金色穗头出现时，稻穗就成熟了。"
+    },
+    {
+      "key": "t_b1c1282e6c58da1b",
+      "source": "按 E 收获；脚本用 if ready(): 判断成熟。",
+      "en": "Press E to harvest; use if ready(): in code.",
+      "zh": "按 E 收获；脚本用 if ready(): 判断成熟。"
+    },
+    {
+      "key": "t_35f0726096084f2e",
+      "source": "从重复中解放",
+      "en": "Beyond Repetition",
+      "zh": "从重复中解放"
+    },
+    {
+      "key": "t_9d922d4b737459af",
+      "source": "让代码完成你已经学会的动作。",
+      "en": "Let code perform the actions you already know.",
+      "zh": "让代码完成你已经学会的动作。"
+    },
+    {
+      "key": "t_dcda062afd5981cf",
+      "source": "载入「稻穗巡田」模板，点击运行。",
+      "en": "Load the Grain Patrol template and click Run.",
+      "zh": "载入「稻穗巡田」模板，点击运行。"
+    },
+    {
+      "key": "t_568a020a9eb484f2",
+      "source": "马达的低语",
+      "en": "A Quieter Motor",
+      "zh": "马达的低语"
+    },
+    {
+      "key": "t_46de097e0d54fea6",
+      "source": "一台更敏捷的机器人，能照看更大的田。",
+      "en": "A more agile robot can tend a larger field.",
+      "zh": "一台更敏捷的机器人，能照看更大的田。"
+    },
+    {
+      "key": "t_af413e0e23ebc56f",
+      "source": "在「科技」页购买轻量马达。",
+      "en": "Buy Lightweight Motor on the Research screen.",
+      "zh": "在「科技」页购买轻量马达。"
+    },
+    {
+      "key": "t_1784ceaaba14a30c",
+      "source": "循环巡田",
+      "en": "Patrol Loop",
+      "zh": "循环巡田"
+    },
+    {
+      "key": "t_e03879efa076b854",
+      "source": "重复不是负担，而是一段可以复用的程序。",
+      "en": "Repetition is a reusable piece of code.",
+      "zh": "重复不是负担，而是一段可以复用的程序。"
+    },
+    {
+      "key": "t_f6340138a5a0af67",
+      "source": "while True: 会持续运行，随时可以停止。",
+      "en": "while True: keeps running until you stop it.",
+      "zh": "while True: 会持续运行，随时可以停止。"
+    },
+    {
+      "key": "t_f2ff8a7026c2daab",
+      "source": "根系向下",
+      "en": "Roots Below",
+      "zh": "根系向下"
+    },
+    {
+      "key": "t_f7f9a2bcdd78bee8",
+      "source": "萝卜喜欢松软的土。先翻土，再播种。",
+      "en": "Radishes prefer loose soil. Till first, then plant.",
+      "zh": "萝卜喜欢松软的土。先翻土，再播种。"
+    },
+    {
+      "key": "t_40153e61a914d636",
+      "source": "till() 翻土；plant(radish) 播种。",
+      "en": "Use till(), followed by plant(radish).",
+      "zh": "till() 翻土；plant(radish) 播种。"
+    },
+    {
+      "key": "t_d93cb9b9fc82bac2",
+      "source": "向东开垦",
+      "en": "Expand East",
+      "zh": "向东开垦"
+    },
+    {
+      "key": "t_01a808bb1a05e252",
+      "source": "让更多土地加入你的循环。",
+      "en": "Bring more land into your loop.",
+      "zh": "让更多土地加入你的循环。"
+    },
+    {
+      "key": "t_3877c213fa83e9dd",
+      "source": "研究「开垦东岸」，循环用 size() 自动适配。",
+      "en": "Research East Bank Expansion. Use size() so loops adapt.",
+      "zh": "研究「开垦东岸」，循环用 size() 自动适配。"
+    },
+    {
+      "key": "t_b2d0de89e7985e07",
+      "source": "蓝色纤维",
+      "en": "Blue Fiber",
+      "zh": "蓝色纤维"
+    },
+    {
+      "key": "t_887df006f72b7c79",
+      "source": "在稻穗旁栽培亚麻，观察共生的收益。",
+      "en": "Grow flax beside grain and observe the companion bonus.",
+      "zh": "在稻穗旁栽培亚麻，观察共生的收益。"
+    },
+    {
+      "key": "t_eade5964b23a8e09",
+      "source": "研究纤维作物；相邻稻穗可增加亚麻产量。",
+      "en": "Research Fiber Crops; nearby grain increases flax yield.",
+      "zh": "研究纤维作物；相邻稻穗可增加亚麻产量。"
+    },
+    {
+      "key": "t_3b815971a4e72327",
+      "source": "一千次小事",
+      "en": "A Thousand Small Things",
+      "zh": "一千次小事"
+    },
+    {
+      "key": "t_af0909a880db984c",
+      "source": "真正的自动化，是许多小动作的可靠组合。",
+      "en": "Reliable automation is built from many small actions.",
+      "zh": "真正的自动化，是许多小动作的可靠组合。"
+    },
+    {
+      "key": "t_83cc5b278f8fed85",
+      "source": "用 for y in range(size()): 扫描整片农田。",
+      "en": "Scan the field with for y in range(size()):.",
+      "zh": "用 for y in range(size()): 扫描整片农田。"
+    },
+    {
+      "key": "t_1ed1e053e68605c8",
+      "source": "水分会改变生长速度，也会随时间消散。",
+      "en": "Moisture changes growth speed and fades over time.",
+      "zh": "水分会改变生长速度，也会随时间消散。"
+    },
+    {
+      "key": "t_2c43bc9a7ccf7765",
+      "source": "购买蓄水系统后，water() 可补充当前格水分。",
+      "en": "After researching Water Storage, water() irrigates the current plot.",
+      "zh": "购买蓄水系统后，water() 可补充当前格水分。"
+    },
+    {
+      "key": "t_1272310dbd686775",
+      "source": "一片蓝莓",
+      "en": "A Patch of Blueberries",
+      "zh": "一片蓝莓"
+    },
+    {
+      "key": "t_7aa2008fc793de7c",
+      "source": "多年生作物，让收获不再意味着重新开始。",
+      "en": "For a perennial crop, harvesting need not mean starting again.",
+      "zh": "多年生作物，让收获不再意味着重新开始。"
+    },
+    {
+      "key": "t_7694f96061f7aceb",
+      "source": "蓝莓需湿润土壤；每株可连续收获三次。",
+      "en": "Blueberries need moist soil. Each plant can be harvested three times.",
+      "zh": "蓝莓需湿润土壤；每株可连续收获三次。"
+    },
+    {
+      "key": "t_580ce097a70cf44b",
+      "source": "把阳光留下",
+      "en": "Save the Sunshine",
+      "zh": "把阳光留下"
+    },
+    {
+      "key": "t_296555697d338ca7",
+      "source": "收下向日葵，也把光能留给未来的实验。",
+      "en": "Harvest sunflowers and store energy for future experiments.",
+      "zh": "收下向日葵，也把光能留给未来的实验。"
+    },
+    {
+      "key": "t_af11a66a9c758845",
+      "source": "每次收获向日葵可得到光能。",
+      "en": "Each sunflower harvest also produces energy.",
+      "zh": "每次收获向日葵可得到光能。"
+    },
+    {
+      "key": "t_e9c9398977b9971a",
+      "source": "土壤的循环",
+      "en": "The Soil Cycle",
+      "zh": "土壤的循环"
+    },
+    {
+      "key": "t_ec0829728ef944cc",
+      "source": "肥力提高的不只是生长速度，还有每次收获。",
+      "en": "Fertility improves the amount you harvest.",
+      "zh": "肥力提高的不只是生长速度，还有每次收获。"
+    },
+    {
+      "key": "t_ec4980972f368b14",
+      "source": "先研究循环堆肥；施肥每次花费 2 金币。",
+      "en": "Research Compost Cycle first. Each fertilizer application costs 2 coins.",
+      "zh": "先研究循环堆肥；施肥每次花费 2 金币。"
+    },
+    {
+      "key": "t_d0ec907799116c4b",
+      "source": "水的节奏",
+      "en": "The Rhythm of Water",
+      "zh": "水的节奏"
+    },
+    {
+      "key": "t_8839b8a548a9d950",
+      "source": "让灌溉成为程序的一部分。",
+      "en": "Make irrigation part of your program.",
+      "zh": "让灌溉成为程序的一部分。"
+    },
+    {
+      "key": "t_5f96f3ffcda25bee",
+      "source": "if moisture() < 0.6: water()；保水土层与降雨会让水分保持在 50% 以上。",
+      "en": "Use if moisture() < 0.6: water(). Retaining soil and rain can keep moisture above 50%.",
+      "zh": "if moisture() < 0.6: water()；保水土层与降雨会让水分保持在 50% 以上。"
+    },
+    {
+      "key": "t_d3a049156068bde1",
+      "source": "蜜色连片",
+      "en": "A Honey-Colored Patch",
+      "zh": "蜜色连片"
+    },
+    {
+      "key": "t_12334e76bb92abbd",
+      "source": "让南瓜相邻成熟，再收获它们。",
+      "en": "Let adjacent pumpkins mature before harvesting.",
+      "zh": "让南瓜相邻成熟，再收获它们。"
+    },
+    {
+      "key": "t_f787dcb18178aa62",
+      "source": "相邻成熟南瓜可提高当次收获，顺序也会影响收益。",
+      "en": "Mature neighboring pumpkins increase yield; harvest order matters.",
+      "zh": "相邻成熟南瓜可提高当次收获，顺序也会影响收益。"
+    },
+    {
+      "key": "t_026e7a8fba1c018b",
+      "source": "共生的证据",
+      "en": "Evidence of Companionship",
+      "zh": "共生的证据"
+    },
+    {
+      "key": "t_94ab67dd6f351f30",
+      "source": "不同植物之间，也存在可以编程的关系。",
+      "en": "Relationships between plants can be programmed too.",
+      "zh": "不同植物之间，也存在可以编程的关系。"
+    },
+    {
+      "key": "t_c42e057cbb3ea403",
+      "source": "稻穗与亚麻、花卉与茶树都能形成增益。",
+      "en": "Grain with flax, or flowers with tea, can trigger bonuses.",
+      "zh": "稻穗与亚麻、花卉与茶树都能形成增益。"
+    },
+    {
+      "key": "t_67b58cd982454f04",
+      "source": "西坡新田",
+      "en": "The West Slope",
+      "zh": "西坡新田"
+    },
+    {
+      "key": "t_887f2824d7d25a3c",
+      "source": "更大的农田，需要更好的循环策略。",
+      "en": "A larger field calls for a better patrol loop.",
+      "zh": "更大的农田，需要更好的循环策略。"
+    },
+    {
+      "key": "t_a388412a7f479804",
+      "source": "研究「开垦西坡」，自动扫描可以覆盖 64 个格子。",
+      "en": "Research West Slope Expansion to scan all 64 plots.",
+      "zh": "研究「开垦西坡」，自动扫描可以覆盖 64 个格子。"
+    },
+    {
+      "key": "t_44e926454d82873a",
+      "source": "可靠的调度",
+      "en": "Reliable Scheduling",
+      "zh": "可靠的调度"
+    },
+    {
+      "key": "t_12c7f7a0a276f936",
+      "source": "在更大的世界里，让程序保持可靠。",
+      "en": "Keep the program reliable as the world gets larger.",
+      "zh": "在更大的世界里，让程序保持可靠。"
+    },
+    {
+      "key": "t_b1f877925b049ec4",
+      "source": "点击暂停可查看当前执行行；单步便于排错。",
+      "en": "Pause to inspect the current line; Step helps with debugging.",
+      "zh": "点击暂停可查看当前执行行；单步便于排错。"
+    },
+    {
+      "key": "t_61c55330d0c10337",
+      "source": "丰收工程",
+      "en": "Harvest Engineering",
+      "zh": "丰收工程"
+    },
+    {
+      "key": "t_c6228cd1b7c26e7b",
+      "source": "把一份小小的收获，扩展成稳定的供给。",
+      "en": "Turn small harvests into a steady supply.",
+      "zh": "把一份小小的收获，扩展成稳定的供给。"
+    },
+    {
+      "key": "t_eab564060a58ec01",
+      "source": "尝试良种与保水研究，比较每分钟收入。",
+      "en": "Try seed and water-retention research, then compare income rates.",
+      "zh": "尝试良种与保水研究，比较每分钟收入。"
+    },
+    {
+      "key": "t_082fdd4181d4d993",
+      "source": "山雾里的茶",
+      "en": "Tea in the Mist",
+      "zh": "山雾里的茶"
+    },
+    {
+      "key": "t_efd71fe91dd1bb09",
+      "source": "茶树需要水，也需要为根系留出空间。",
+      "en": "Tea needs water and space for its roots.",
+      "zh": "茶树需要水，也需要为根系留出空间。"
+    },
+    {
+      "key": "t_51438e1278285378",
+      "source": "同类过密会减产；可在茶树间种向日葵。",
+      "en": "Crowded tea loses yield. Alternate it with sunflowers.",
+      "zh": "同类过密会减产；可在茶树间种向日葵。"
+    },
+    {
+      "key": "t_f077b6253e35688e",
+      "source": "把经验写成函数",
+      "en": "Put Experience into Functions",
+      "zh": "把经验写成函数"
+    },
+    {
+      "key": "t_f387e505a8dbec59",
+      "source": "用函数封装耕作动作，再在循环中调用它。",
+      "en": "Wrap repeated farm actions in a function, then call it from a loop.",
+      "zh": "用函数封装耕作动作，再在循环中调用它。"
+    },
+    {
+      "key": "t_ab9cd0fb7deaae79",
+      "source": "def tend(): 定义函数；tend() 调用。",
+      "en": "Define def tend(): and call tend().",
+      "zh": "def tend(): 定义函数；tend() 调用。"
+    },
+    {
+      "key": "t_95c953f7bfd5933b",
+      "source": "让每一滴水有用",
+      "en": "Make Every Drop Count",
+      "zh": "让每一滴水有用"
+    },
+    {
+      "key": "t_2e102e91ab894b1e",
+      "source": "高效率来自判断，而非机械重复。",
+      "en": "Efficiency comes from decisions, not blind repetition.",
+      "zh": "高效率来自判断，而非机械重复。"
+    },
+    {
+      "key": "t_45bfe8326e949403",
+      "source": "结合 moisture()、ready() 与 crop() 决定下一步。",
+      "en": "Combine moisture(), ready() and crop() to choose the next action.",
+      "zh": "结合 moisture()、ready() 与 crop() 决定下一步。"
+    },
+    {
+      "key": "t_e134a6f88388247f",
+      "source": "千穗入仓",
+      "en": "A Thousand in Storage",
+      "zh": "千穗入仓"
+    },
+    {
+      "key": "t_2798555c9e85a7c7",
+      "source": "禾湾已不再是一块无人照管的土地。",
+      "en": "Verdant Bay is no longer an untended field.",
+      "zh": "禾湾已不再是一块无人照管的土地。"
+    },
+    {
+      "key": "t_c788e0694d2e3390",
+      "source": "仓库可查看各作物库存、累计收获与规则。",
+      "en": "Open Storage to inspect crop stocks and growing rules.",
+      "zh": "仓库可查看各作物库存、累计收获与规则。"
+    },
+    {
+      "key": "t_e2a4920e0457cb72",
+      "source": "精密的心跳",
+      "en": "A Precise Heartbeat",
+      "zh": "精密的心跳"
+    },
+    {
+      "key": "t_b86a6b559f276a1d",
+      "source": "更短的动作周期，也要求更清晰的程序。",
+      "en": "A shorter action cycle calls for clearer code.",
+      "zh": "更短的动作周期，也要求更清晰的程序。"
+    },
+    {
+      "key": "t_eafa887667604081",
+      "source": "研究伺服马达后，解锁量子调度。",
+      "en": "Research Servo Motor, then Quantum Scheduling.",
+      "zh": "研究伺服马达后，解锁量子调度。"
+    },
+    {
+      "key": "t_43b2d1d539882827",
+      "source": "把阳光转化成新的作物，把作物转化成知识。",
+      "en": "Turn sunlight into crops and crops into knowledge.",
+      "zh": "把阳光转化成新的作物，把作物转化成知识。"
+    },
+    {
+      "key": "t_c6f20a57ac60da2e",
+      "source": "星辉花需要茶园研究；预留向日葵积累的光能。",
+      "en": "Starblooms require tea research. Keep sunflower energy in reserve.",
+      "zh": "星辉花需要茶园研究；预留向日葵积累的光能。"
+    },
+    {
+      "key": "t_b563773e78380107",
+      "source": "第一缕星光",
+      "en": "The First Starlight",
+      "zh": "第一缕星光"
+    },
+    {
+      "key": "t_1607a75b147158a5",
+      "source": "星辉花需要灌溉、松土和光能共同支持。",
+      "en": "Starblooms need moisture, tilled soil and energy together.",
+      "zh": "星辉花需要灌溉、松土和光能共同支持。"
+    },
+    {
+      "key": "t_236fed9df27171fb",
+      "source": "星辉花每次播种消耗 3 光能；茶树可提高研究收益。",
+      "en": "Each starbloom planting costs 3 energy. Adjacent tea boosts research.",
+      "zh": "星辉花每次播种消耗 3 光能；茶树可提高研究收益。"
+    },
+    {
+      "key": "t_f1a21c942eab6522",
+      "source": "一万次协作",
+      "en": "Ten Thousand Actions Together",
+      "zh": "一万次协作"
+    },
+    {
+      "key": "t_a0b2de5a312667be",
+      "source": "每个动作，都来自你写下的一条规则。",
+      "en": "Every action begins with a rule you wrote.",
+      "zh": "每个动作，都来自你写下的一条规则。"
+    },
+    {
+      "key": "t_8ac835c0e6a6a0dc",
+      "source": "检查脚本是否会补种、浇水并处理尚未成熟的植株。",
+      "en": "Check that the program replants, irrigates and handles immature crops.",
+      "zh": "检查脚本是否会补种、浇水并处理尚未成熟的植株。"
+    },
+    {
+      "key": "t_6e7f959749f3a0be",
+      "source": "自治站上线",
+      "en": "Autonomy Online",
+      "zh": "自治站上线"
+    },
+    {
+      "key": "t_b99e112747c90d79",
+      "source": "研究最终工程，为农场接通自治系统。",
+      "en": "Build the final project to connect the farm's autonomy system.",
+      "zh": "研究最终工程，为农场接通自治系统。"
+    },
+    {
+      "key": "t_5124b2ebdfd5b1bc",
+      "source": "完成星辉花与生态实验室等研究，可继续优化经济。",
+      "en": "Keep improving the economy through greenhouse and ecology research.",
+      "zh": "完成星辉花与生态实验室等研究，可继续优化经济。"
+    },
+    {
+      "key": "t_b5848c2a6ad76733",
+      "source": "禾湾长明",
+      "en": "Verdant Bay, Alight",
+      "zh": "禾湾长明"
+    },
+    {
+      "key": "t_bba3bf26352ff905",
+      "source": "你完成了主线。田地会继续生长，优化也没有终点。",
+      "en": "You finished the main campaign. The field and its possibilities keep growing.",
+      "zh": "你完成了主线。田地会继续生长，优化也没有终点。"
+    },
+    {
+      "key": "t_7b1d25685da739e2",
+      "source": "完成六项试炼、收集成就，或继续在自由农场中优化。",
+      "en": "Complete the six trials, collect achievements or keep optimizing your farm.",
+      "zh": "完成六项试炼、收集成就，或继续在自由农场中优化。"
+    },
+    {
+      "key": "t_9fd1d311b2eb3b42",
+      "source": "稻穗速递",
+      "en": "Grain Express",
+      "zh": "稻穗速递"
+    },
+    {
+      "key": "t_b66575ebaa9fafb4",
+      "source": "根系实验",
+      "en": "Root Experiment",
+      "zh": "根系实验"
+    },
+    {
+      "key": "t_84515f8ec2347a96",
+      "source": "节水栽培",
+      "en": "Water-Wise Growing",
+      "zh": "节水栽培"
+    },
+    {
+      "key": "t_cbb2d5699d277b95",
+      "source": "连片南瓜",
+      "en": "Pumpkin Patch",
+      "zh": "连片南瓜"
+    },
+    {
+      "key": "t_3e28586bff7053cb",
+      "source": "花茶共生",
+      "en": "Flowers and Tea",
+      "zh": "花茶共生"
+    },
+    {
+      "key": "t_c70d5392b2c15975",
+      "source": "星光回路",
+      "en": "Starlight Circuit",
+      "zh": "星光回路"
+    },
+    {
+      "key": "t_9fd1ad8776a6430f",
+      "source": "150 秒内收获 90 稻穗，体会扫描循环。",
+      "en": "Harvest 90 grain within 150 seconds using a scanning loop.",
+      "zh": "150 秒内收获 90 稻穗，体会扫描循环。"
+    },
+    {
+      "key": "t_ab9dfe3d5c83bc5f",
+      "source": "180 秒内收获 80 萝卜，处理翻土与补种。",
+      "en": "Harvest 80 radishes within 180 seconds. Handle tilling and replanting.",
+      "zh": "180 秒内收获 80 萝卜，处理翻土与补种。"
+    },
+    {
+      "key": "t_a85af0bfb92e20ce",
+      "source": "210 秒内收获 80 蓝莓，安排水分与再生。",
+      "en": "Harvest 80 blueberries within 210 seconds. Manage moisture and regrowth.",
+      "zh": "210 秒内收获 80 蓝莓，安排水分与再生。"
+    },
+    {
+      "key": "t_f81f314c06b2bc35",
+      "source": "240 秒内收获 90 南瓜，运用邻接加成。",
+      "en": "Harvest 90 pumpkins within 240 seconds. Use adjacency bonuses.",
+      "zh": "240 秒内收获 90 南瓜，运用邻接加成。"
+    },
+    {
+      "key": "t_047522167f35511c",
+      "source": "240 秒内收获 65 茶叶，避免同类拥挤。",
+      "en": "Harvest 65 tea within 240 seconds. Avoid overcrowding.",
+      "zh": "240 秒内收获 65 茶叶，避免同类拥挤。"
+    },
+    {
+      "key": "t_bd82fc44879f7046",
+      "source": "300 秒内收获 50 星辉花，维持光能供应。",
+      "en": "Harvest 50 starblooms within 300 seconds. Maintain energy supply.",
+      "zh": "300 秒内收获 50 星辉花，维持光能供应。"
+    },
+    {
+      "key": "t_3864529fce0ab788",
+      "source": "第一份收获",
+      "en": "A First Harvest",
+      "zh": "第一份收获"
+    },
+    {
+      "key": "t_11013e9699e5a880",
+      "source": "百穗入仓",
+      "en": "A Hundred in Storage",
+      "zh": "百穗入仓"
+    },
+    {
+      "key": "t_343994bfe6a725ff",
+      "source": "循环之友",
+      "en": "A Friend of Loops",
+      "zh": "循环之友"
+    },
+    {
+      "key": "t_a559a64f1eee10ed",
+      "source": "自动化工程师",
+      "en": "Automation Engineer",
+      "zh": "自动化工程师"
+    },
+    {
+      "key": "t_e98e85c2de11ee35",
+      "source": "灌溉师",
+      "en": "Irrigation Specialist",
+      "zh": "灌溉师"
+    },
+    {
+      "key": "t_d2342359da557bae",
+      "source": "共生研究员",
+      "en": "Companion Researcher",
+      "zh": "共生研究员"
+    },
+    {
+      "key": "t_264aeb93b5454caf",
+      "source": "万步巡田",
+      "en": "Ten Thousand Steps",
+      "zh": "万步巡田"
+    },
+    {
+      "key": "t_247736f1ff2d26e3",
+      "source": "八方沃土",
+      "en": "Room to Grow",
+      "zh": "八方沃土"
+    },
+    {
+      "key": "t_254f3e87363c33a9",
+      "source": "星辉育种者",
+      "en": "Starbloom Breeder",
+      "zh": "星辉育种者"
+    },
+    {
+      "key": "t_a59fe6f853e95a60",
+      "source": "研究先驱",
+      "en": "Research Pioneer",
+      "zh": "研究先驱"
+    },
+    {
+      "key": "t_c11f797bdb83a8f0",
+      "source": "试炼收藏家",
+      "en": "Trial Collector",
+      "zh": "试炼收藏家"
+    },
+    {
+      "key": "t_788043e6b68ab01b",
+      "source": "累计收获 1 单位作物",
+      "en": "Harvest 1 unit of crops in total.",
+      "zh": "累计收获 1 单位作物"
+    },
+    {
+      "key": "t_7fdda349327a66a1",
+      "source": "累计收获 100 单位作物",
+      "en": "Harvest 100 units of crops in total.",
+      "zh": "累计收获 100 单位作物"
+    },
+    {
+      "key": "t_b9ad93162f3c4e4c",
+      "source": "累计收获 1000 单位作物",
+      "en": "Harvest 1000 units of crops in total.",
+      "zh": "累计收获 1000 单位作物"
+    },
+    {
+      "key": "t_a8b4c8cae8e5001a",
+      "source": "脚本完成 100 个动作",
+      "en": "Perform 100 program actions.",
+      "zh": "脚本完成 100 个动作"
+    },
+    {
+      "key": "t_4fd4d73ac260ebfe",
+      "source": "脚本完成 5000 个动作",
+      "en": "Perform 5000 program actions.",
+      "zh": "脚本完成 5000 个动作"
+    },
+    {
+      "key": "t_a784b452b8e666fc",
+      "source": "灌溉 100 次",
+      "en": "Irrigate successfully 100 times.",
+      "zh": "灌溉 100 次"
+    },
+    {
+      "key": "t_a3502bc5110f55d0",
+      "source": "触发 100 次共生或邻接增产",
+      "en": "Trigger 100 companion or adjacency harvest bonuses.",
+      "zh": "触发 100 次共生或邻接增产"
+    },
+    {
+      "key": "t_1fa479bd64040c1e",
+      "source": "移动 10000 格",
+      "en": "Move across 10000 plots.",
+      "zh": "移动 10000 格"
+    },
+    {
+      "key": "t_943642d0ba092005",
+      "source": "开垦 8×8 农田",
+      "en": "Expand to an 8x8 field.",
+      "zh": "开垦 8×8 农田"
+    },
+    {
+      "key": "t_bbbc873781149bab",
+      "source": "收获 100 星辉花",
+      "en": "Harvest 100 starblooms.",
+      "zh": "收获 100 星辉花"
+    },
+    {
+      "key": "t_298de2f18a859c6f",
+      "source": "完成 18 项研究",
+      "en": "Complete all 18 research projects.",
+      "zh": "完成 18 项研究"
+    },
+    {
+      "key": "t_d7645836962a71ed",
+      "source": "通过全部 6 项试炼",
+      "en": "Pass all six trials.",
+      "zh": "通过全部 6 项试炼"
+    },
+    {
+      "key": "t_23157e8b0d954d83",
+      "source": "稻穗巡田",
+      "en": "Grain Patrol",
+      "zh": "稻穗巡田"
+    },
+    {
+      "key": "t_51250cb350b583ed",
+      "source": "萝卜农艺",
+      "en": "Radish Farming",
+      "zh": "萝卜农艺"
+    },
+    {
+      "key": "t_9de21c6d81e2fbdd",
+      "source": "蓝莓灌溉",
+      "en": "Blueberry Irrigation",
+      "zh": "蓝莓灌溉"
+    },
+    {
+      "key": "t_f672eb45d7de6375",
+      "source": "阳光采集",
+      "en": "Sunshine Collection",
+      "zh": "阳光采集"
+    },
+    {
+      "key": "t_72e84627eeafb65f",
+      "source": "南瓜连片",
+      "en": "Pumpkin Blocks",
+      "zh": "南瓜连片"
+    },
+    {
+      "key": "t_2acbc37f850bb32c",
+      "source": "花茶间作",
+      "en": "Tea and Flowers",
+      "zh": "花茶间作"
+    },
+    {
+      "key": "t_128a47bf16b19160",
+      "source": "函数化农场",
+      "en": "Farming with Functions",
+      "zh": "函数化农场"
+    },
+    {
+      "key": "t_e297669a5a8a2e54",
+      "source": "灌溉巡田",
+      "en": "Irrigation Patrol",
+      "zh": "灌溉巡田"
+    },
+    {
+      "key": "t_1f075eb30d667c1f",
+      "source": "# 从每一个格子开始\nwhile True:\n    for row in range(size()):\n        for col in range(size()):\n            if ready():\n                harvest()\n            if crop() == empty:\n                plant(grain)\n            move(East)\n        move(North)",
+      "en": "# Start at each plot\nwhile True:\n    for row in range(size()):\n        for col in range(size()):\n            if ready():\n                harvest()\n            if crop() == empty:\n                plant(grain)\n            move(East)\n        move(North)",
+      "zh": "# 从每一个格子开始\nwhile True:\n    for row in range(size()):\n        for col in range(size()):\n            if ready():\n                harvest()\n            if crop() == empty:\n                plant(grain)\n            move(East)\n        move(North)"
+    },
+    {
+      "key": "t_2237e25aadadc50e",
+      "source": "禾序使用一种受 Python 启发的农场语言。它只操作游戏，不会访问电脑文件或网络。\n\n【动作】\nmove(East) / move(West) / move(North) / move(South)\n跨越边界会环绕到另一侧，便于整田扫描。\nplant(grain)  播种；harvest()  收获\ntill()  把空地翻成耕地；water()  浇水\nfertilize()  施肥；wait(3)  等待 3 游戏秒\nprint(表达式)  输出到日志\n\n【传感器】\nready()  当前格是否成熟\ncrop()  当前作物，空地为 empty\nmoisture()  水分 0~1；fertility()  肥力 0~1\nx() / y()  机器人零起点坐标\nsize()  农田边长；energy()  光能\ncount(grain)  作物库存；money()  金币\nneighbors(pumpkin)  四邻格同类数量\n\n【语法】\n使用四个空格缩进。支持 # 注释、变量、+ - * / %、比较、and / or / not、if / elif / else、while、for ... in range(...)、repeat 4:、无参数 def 函数、break、continue、return。\nrange() 支持 1~3 个参数。函数在调用前定义；最多嵌套 24 层。\n\n例：\nif ready():\n    harvest()\nelse:\n    wait(1)\n\n【作物代码】\ngrain 稻穗 / radish 红萝卜 / flax 蓝亚麻\nberry 蓝莓 / sunflower 向日葵 / pumpkin 蜜南瓜\ntea 云雾茶 / starbloom 星辉花\n\n【调试】\n编辑支持100步撤销/重做：Cmd/Ctrl+Z，Cmd/Ctrl+Shift+Z。程序列表可以增删，最少一个；切换查看不停止当前执行，点击运行会替换正在执行的程序。\n运行前会检查语法。错误显示原始行号；当前行也会显示在编辑器下方。暂停后可单步执行，停止后仍保留所有收获。最多执行 500000 条指令后安全停止；无限循环每次都会让出画面更新。\n\n【进度】\n作物委托按本任务接取后的新增收获计算，每种作物有不同数量要求；不再设置时间条件。历史库存不会直接抵扣后续作物任务。\n委托按累计进度计算，完成后请点击领取。每五份委托开启下一章。作物需要相应研究；科技花费金币与研究点。主线完成后可继续自由经营。\n\n【保存】\n程序列表和农场会每 30 秒自动保存，退出时也会保存。手动保存会保留上一份备份。试炼使用独立临时农场，不会消耗主线物资。\n\n【机群】\n数量与规格分开研究。drone_count() 为已部署数量，drone_capacity() 为解锁上限，footprint_tier() 为机体等级。\ndeploy_drone(\"general\", 2, 0) 在空地部署通用机。机型还包括 irrigator 与 harvester，需分别研究。\ndrone_id(index) 返回编号；drone_x(id)、drone_y(id)、drone_width(id)、drone_height(id) 查询状态。\nselect_drone(id) 选择直接控制的机器；resize_drone(id, 2, 2) 调整已解锁规格，完整占地必须空闲。\nqueue_move(id, x, y)、queue_water(id, x, y)、queue_harvest(id, x, y)、queue_plant(id, grain, x, y) 提交依次执行的作业。\nqueue_length(id)、drone_busy(id)、can_fit(id, x, y) 查询队列与占地。cancel_queue(id) 取消，retire_drone(id) 收回。\n队列自动避让；直接移动碰撞扣20金币，每10游戏秒最多扣两次。大型机体不环绕。作业覆盖实际占地逐格结算。\n0号机免维护，其他机器在执行或等待时每30游戏秒收面积×机型系数的维护费（通用1，专用2）。空闲免费，余额不足暂停，不产生欠债。\n停止程序会清空队列。读档保留队列但暂停，请到机群页主动继续。F8或设置页切换中英文。",
+      "en": "Verdant Circuit uses a limited farm language inspired by Python. It only controls the game; it does not access your files or the network.\n\nACTIONS\nmove(East) / move(West) / move(North) / move(South)\nCrossing a field edge wraps to the opposite side.\nplant(grain) / harvest() / till() / water() / fertilize()\nwait(3) waits for 3 game seconds; print(value) writes to the log.\n\nSENSORS\nready(): whether the current crop is mature\ncrop(): current crop, or empty\nmoisture() / fertility(): values from 0 to 1\nx() / y(): zero-based robot coordinates\nsize(): field width; energy(): stored energy\ncount(grain): current grain stock; money(): coins\nneighbors(pumpkin): matching crops in four adjacent plots\n\nSYNTAX\nIndent with four spaces. Supports # comments, variables, + - * / %, comparisons, and/or/not, if/elif/else, while, for ... in range(...), repeat, no-argument functions, break, continue and return.\nrange() accepts 1 to 3 integer arguments. Functions nest up to 24 calls.\n\nif ready():\n    harvest()\nelse:\n    wait(1)\n\nCROP IDS\nGrain: grain / Radish: radish / Blue flax: flax\nBlueberry: berry / Sunflower: sunflower / Pumpkin: pumpkin\nCloud tea: tea / Starbloom: starbloom\n\nEDITOR AND DEBUGGING\nUndo/redo up to 100 edits per program in this session: Ctrl/Cmd+Z and Ctrl/Cmd+Shift+Z (or Ctrl+Y).\nAdd or delete programs in Programs; keep at least one. Viewing another program does not stop the current one. Run replaces the active program.\nSyntax and runtime errors show their original source line. Pause and Step help inspect execution. Stop keeps all farm progress. Programs stop safely after 500000 instructions; empty loops yield between frames.\n\nPROGRESS\nCrop contracts count harvests after accepting that contract. Each crop has a different quantity target; there is no timer requirement. Earlier stock does not skip later crop contracts.\nOther contracts use cumulative progress. Claim rewards to advance; every five contracts opens a chapter. Research costs coins and knowledge. Free farming remains available after the campaign.\n\nSAVE\nThe farm and program list save every 30 real seconds and on exit. Manual saving keeps the previous backup. Trials use a separate temporary farm and restore the campaign afterward.\n\nLANGUAGE\nThe first launch uses English. Switch English / Chinese in Settings; the choice is remembered. Existing player code is never translated.\n\nFLEET API\nCapacity and airframe size unlock separately. drone_count() counts deployed units; drone_capacity() is the unlocked limit; footprint_tier() is the size level.\ndeploy_drone(\"general\", 2, 0) deploys a general drone on a free plot. Specialized types are irrigator and harvester, unlocked by research.\ndrone_id(index) returns a stable ID. drone_x(id), drone_y(id), drone_width(id) and drone_height(id) inspect a unit.\nselect_drone(id) chooses the directly controlled unit. resize_drone(id, 2, 2) applies an unlocked airframe size if its entire footprint is free.\nqueue_move(id, x, y), queue_water(id, x, y), queue_harvest(id, x, y) and queue_plant(id, grain, x, y) enqueue work in order.\nqueue_length(id), drone_busy(id) and can_fit(id, x, y) inspect queues and space. cancel_queue(id) cancels jobs; retire_drone(id) retires a worker.\nQueued jobs avoid occupied cells. Direct movement collisions cost 20 coins, at most twice per 10 game seconds. Large airframes do not wrap. Area work charges and harvests each actual plot.\nBase drone 0 is free to maintain. Active or waiting workers pay area x role factor every 30 game seconds (general 1, specialist 2). Idle units are free. Unaffordable upkeep pauses work without accumulating debt.\nStop clears queues. Saves preserve queued jobs but reload them paused; resume them from Fleet. Switch languages in Settings or with F8.",
+      "zh": "禾序使用一种受 Python 启发的农场语言。它只操作游戏，不会访问电脑文件或网络。\n\n【动作】\nmove(East) / move(West) / move(North) / move(South)\n跨越边界会环绕到另一侧，便于整田扫描。\nplant(grain)  播种；harvest()  收获\ntill()  把空地翻成耕地；water()  浇水\nfertilize()  施肥；wait(3)  等待 3 游戏秒\nprint(表达式)  输出到日志\n\n【传感器】\nready()  当前格是否成熟\ncrop()  当前作物，空地为 empty\nmoisture()  水分 0~1；fertility()  肥力 0~1\nx() / y()  机器人零起点坐标\nsize()  农田边长；energy()  光能\ncount(grain)  作物库存；money()  金币\nneighbors(pumpkin)  四邻格同类数量\n\n【语法】\n使用四个空格缩进。支持 # 注释、变量、+ - * / %、比较、and / or / not、if / elif / else、while、for ... in range(...)、repeat 4:、无参数 def 函数、break、continue、return。\nrange() 支持 1~3 个参数。函数在调用前定义；最多嵌套 24 层。\n\n例：\nif ready():\n    harvest()\nelse:\n    wait(1)\n\n【作物代码】\ngrain 稻穗 / radish 红萝卜 / flax 蓝亚麻\nberry 蓝莓 / sunflower 向日葵 / pumpkin 蜜南瓜\ntea 云雾茶 / starbloom 星辉花\n\n【调试】\n编辑支持100步撤销/重做：Cmd/Ctrl+Z，Cmd/Ctrl+Shift+Z。程序列表可以增删，最少一个；切换查看不停止当前执行，点击运行会替换正在执行的程序。\n运行前会检查语法。错误显示原始行号；当前行也会显示在编辑器下方。暂停后可单步执行，停止后仍保留所有收获。最多执行 500000 条指令后安全停止；无限循环每次都会让出画面更新。\n\n【进度】\n作物委托按本任务接取后的新增收获计算，每种作物有不同数量要求；不再设置时间条件。历史库存不会直接抵扣后续作物任务。\n委托按累计进度计算，完成后请点击领取。每五份委托开启下一章。作物需要相应研究；科技花费金币与研究点。主线完成后可继续自由经营。\n\n【保存】\n程序列表和农场会每 30 秒自动保存，退出时也会保存。手动保存会保留上一份备份。试炼使用独立临时农场，不会消耗主线物资。\n\n【机群】\n数量与规格分开研究。drone_count() 为已部署数量，drone_capacity() 为解锁上限，footprint_tier() 为机体等级。\ndeploy_drone(\"general\", 2, 0) 在空地部署通用机。机型还包括 irrigator 与 harvester，需分别研究。\ndrone_id(index) 返回编号；drone_x(id)、drone_y(id)、drone_width(id)、drone_height(id) 查询状态。\nselect_drone(id) 选择直接控制的机器；resize_drone(id, 2, 2) 调整已解锁规格，完整占地必须空闲。\nqueue_move(id, x, y)、queue_water(id, x, y)、queue_harvest(id, x, y)、queue_plant(id, grain, x, y) 提交依次执行的作业。\nqueue_length(id)、drone_busy(id)、can_fit(id, x, y) 查询队列与占地。cancel_queue(id) 取消，retire_drone(id) 收回。\n队列自动避让；直接移动碰撞扣20金币，每10游戏秒最多扣两次。大型机体不环绕。作业覆盖实际占地逐格结算。\n0号机免维护，其他机器在执行或等待时每30游戏秒收面积×机型系数的维护费（通用1，专用2）。空闲免费，余额不足暂停，不产生欠债。\n停止程序会清空队列。读档保留队列但暂停，请到机群页主动继续。F8或设置页切换中英文。"
+    },
+    {
+      "key": "t_f495347d6acf5c10",
+      "source": "第 ",
+      "en": "Line ",
+      "zh": "第 "
+    },
+    {
+      "key": "t_7f9c94e04d472299",
+      "source": " 行：",
+      "en": ": ",
+      "zh": " 行："
+    },
+    {
+      "key": "t_cee6b65cb68ddf1f",
+      "source": "未定义变量 ",
+      "en": "Undefined variable: ",
+      "zh": "未定义变量 "
+    },
+    {
+      "key": "t_be3c04a1628fb194",
+      "source": "不能除以零",
+      "en": "Cannot divide by zero.",
+      "zh": "不能除以零"
+    },
+    {
+      "key": "t_a83fcb171c676db9",
+      "source": "未知运算符 ",
+      "en": "Unknown operator: ",
+      "zh": "未知运算符 "
+    },
+    {
+      "key": "t_46b81125d91a9749",
+      "source": "() 需要 ",
+      "en": "() expects ",
+      "zh": "() 需要 "
+    },
+    {
+      "key": "t_a0f170b4b4a58bba",
+      "source": " 个参数",
+      "en": " argument(s).",
+      "zh": " 个参数"
+    },
+    {
+      "key": "t_c3b8ad9f55f1025f",
+      "source": "range() 需要 1~3 个参数",
+      "en": "range() expects 1 to 3 arguments.",
+      "zh": "range() 需要 1~3 个参数"
+    },
+    {
+      "key": "t_059cb297ab08bdff",
+      "source": "range() 步长不能为零",
+      "en": "range() step cannot be zero.",
+      "zh": "range() 步长不能为零"
+    },
+    {
+      "key": "t_5d55fe1d6c4140b8",
+      "source": "range() 单次循环上限为 4096",
+      "en": "A range loop is limited to 4096 iterations.",
+      "zh": "range() 单次循环上限为 4096"
+    },
+    {
+      "key": "t_49848eb02bdb269d",
+      "source": "未知传感器 ",
+      "en": "Unknown sensor: ",
+      "zh": "未知传感器 "
+    },
+    {
+      "key": "t_4e887c0444d59034",
+      "source": "range() 参数必须是合理的整数",
+      "en": "range() arguments must be reasonable integers.",
+      "zh": "range() 参数必须是合理的整数"
+    },
+    {
+      "key": "t_ea4051f0e86f412c",
+      "source": "不支持的字符：",
+      "en": "Unsupported character: ",
+      "zh": "不支持的字符："
+    },
+    {
+      "key": "t_d2466c57b6588f90",
+      "source": "表达式不完整",
+      "en": "Incomplete expression.",
+      "zh": "表达式不完整"
+    },
+    {
+      "key": "t_9493ec599c154fe9",
+      "source": "缺少表达式",
+      "en": "Missing expression.",
+      "zh": "缺少表达式"
+    },
+    {
+      "key": "t_1d08c8ccc6de6855",
+      "source": "无法识别：",
+      "en": "Cannot parse: ",
+      "zh": "无法识别："
+    },
+    {
+      "key": "t_71042ff3769bd153",
+      "source": "缺少右括号",
+      "en": "Missing closing parenthesis.",
+      "zh": "缺少右括号"
+    },
+    {
+      "key": "t_841816f5ce1a734a",
+      "source": "无效名称：",
+      "en": "Invalid name: ",
+      "zh": "无效名称："
+    },
+    {
+      "key": "t_8268829a63bcb27f",
+      "source": "未知传感器：",
+      "en": "Unknown sensor: ",
+      "zh": "未知传感器："
+    },
+    {
+      "key": "t_fd6a17626884db1b",
+      "source": "程序最多 48000 字符",
+      "en": "Programs are limited to 48000 characters.",
+      "zh": "程序最多 48000 字符"
+    },
+    {
+      "key": "t_6581bee03da3e271",
+      "source": "请用四个空格代替 Tab 缩进",
+      "en": "Use four spaces instead of Tab characters.",
+      "zh": "请用四个空格代替 Tab 缩进"
+    },
+    {
+      "key": "t_3e9ff0393533f802",
+      "source": "缩进必须是四个空格的倍数",
+      "en": "Indentation must be a multiple of four spaces.",
+      "zh": "缩进必须是四个空格的倍数"
+    },
+    {
+      "key": "t_090b5ccb02d89c6d",
+      "source": "请先输入程序",
+      "en": "Enter a program first.",
+      "zh": "请先输入程序"
+    },
+    {
+      "key": "t_f9a7301d24210631",
+      "source": "缩进不匹配",
+      "en": "Indentation does not match.",
+      "zh": "缩进不匹配"
+    },
+    {
+      "key": "t_dce87e31f28e609e",
+      "source": "函数未定义：",
+      "en": "Undefined function: ",
+      "zh": "函数未定义："
+    },
+    {
+      "key": "t_6adc124b2db28bef",
+      "source": "禾序 · 界面",
+      "en": "Verdant Circuit UI",
+      "zh": "禾序 · 界面"
+    },
+    {
+      "key": "t_9ecbdf387732ddbc",
+      "source": "禾序",
+      "en": "Verdant",
+      "zh": "禾序"
+    },
+    {
+      "key": "t_81b3798bebc63c69",
+      "source": "订单",
+      "en": "Orders",
+      "zh": "订单"
+    },
+    {
+      "key": "t_ee4fe0e542cde979",
+      "source": "工坊",
+      "en": "Workshop",
+      "zh": "工坊"
+    },
+    {
+      "key": "t_c00da5c4ce4b59d3",
+      "source": "科技",
+      "en": "Research",
+      "zh": "科技"
+    },
+    {
+      "key": "t_55914e1c50df9c9e",
+      "source": "仓库",
+      "en": "Storage",
+      "zh": "仓库"
+    },
+    {
+      "key": "t_7fb713d3d01ff11d",
+      "source": "手册",
+      "en": "Guide",
+      "zh": "手册"
+    },
+    {
+      "key": "t_76608bf5af4bf4d2",
+      "source": "试炼",
+      "en": "Trials",
+      "zh": "试炼"
+    },
+    {
+      "key": "t_5dc7d7ba715b9992",
+      "source": "成就",
+      "en": "Achievements",
+      "zh": "成就"
+    },
+    {
+      "key": "t_7debf9cb0372cb43",
+      "source": "设置",
+      "en": "Settings",
+      "zh": "设置"
+    },
+    {
+      "key": "t_e167603eaa1b996c",
+      "source": "点击地块导航  ·  方向键 / WASD 移动  ·  鼠标滚轮缩放",
+      "en": "Click plots to navigate  /  Arrow keys or WASD to move  /  Scroll to zoom",
+      "zh": "点击地块导航  ·  方向键 / WASD 移动  ·  鼠标滚轮缩放"
+    },
+    {
+      "key": "t_18e9135753ff7161",
+      "source": "欢迎来到禾湾。先完成左侧委托，再让程序接手农田。",
+      "en": "Welcome to Verdant Bay. Follow the contract on the left, then let your program tend the field.",
+      "zh": "欢迎来到禾湾。先完成左侧委托，再让程序接手农田。"
+    },
+    {
+      "key": "t_08c8d21b7c1410ce",
+      "source": "领取委托奖励",
+      "en": "Claim Reward",
+      "zh": "领取委托奖励"
+    },
+    {
+      "key": "t_bdb1f228ed9b2267",
+      "source": "播种目录",
+      "en": "Planting Catalog",
+      "zh": "播种目录"
+    },
+    {
+      "key": "t_f1e8a3ee6a07f6f2",
+      "source": "播种",
+      "en": "Plant",
+      "zh": "播种"
+    },
+    {
+      "key": "t_08b8a9d6d1095594",
+      "source": "收获",
+      "en": "Harvest",
+      "zh": "收获"
+    },
+    {
+      "key": "t_af3171150b64d4e5",
+      "source": "浇水",
+      "en": "Water",
+      "zh": "浇水"
+    },
+    {
+      "key": "t_678b78f2f7f6f07b",
+      "source": "翻土",
+      "en": "Till",
+      "zh": "翻土"
+    },
+    {
+      "key": "t_ab723f22f6267f75",
+      "source": "空格 播种  /  E 收获  /  Q 浇水  /  T 翻土",
+      "en": "Space Plant  /  E Harvest  /  Q Water  /  T Till",
+      "zh": "空格 播种  /  E 收获  /  Q 浇水  /  T 翻土"
+    },
+    {
+      "key": "t_73a78a3e1db9497b",
+      "source": "自动化工作台",
+      "en": "Automation Studio",
+      "zh": "自动化工作台"
+    },
+    {
+      "key": "t_1c36b647bcf65963",
+      "source": "程序列表",
+      "en": "Programs",
+      "zh": "程序列表"
+    },
+    {
+      "key": "t_9fcefd8dc81ef205",
+      "source": "撤销",
+      "en": "Undo",
+      "zh": "撤销"
+    },
+    {
+      "key": "t_1238f0d363619389",
+      "source": "重做",
+      "en": "Redo",
+      "zh": "重做"
+    },
+    {
+      "key": "t_06d0f38dd26cccb7",
+      "source": "模板",
+      "en": "Templates",
+      "zh": "模板"
+    },
+    {
+      "key": "t_0c3acd446f19a325",
+      "source": "运行",
+      "en": "Run",
+      "zh": "运行"
+    },
+    {
+      "key": "t_130448bce6758f08",
+      "source": "暂停",
+      "en": "Pause",
+      "zh": "暂停"
+    },
+    {
+      "key": "t_175a1da4d66a46f2",
+      "source": "单步",
+      "en": "Step",
+      "zh": "单步"
+    },
+    {
+      "key": "t_a17f70a8d3d66e14",
+      "source": "停止",
+      "en": "Stop",
+      "zh": "停止"
+    },
+    {
+      "key": "t_b796f2d4ca85812a",
+      "source": "就绪",
+      "en": "Ready",
+      "zh": "就绪"
+    },
+    {
+      "key": "t_19fcb151d1ea913e",
+      "source": "请先退出试炼再切换主线程序槽",
+      "en": "Leave the trial before switching campaign programs.",
+      "zh": "请先退出试炼再切换主线程序槽"
+    },
+    {
+      "key": "t_7c124fc088b5cb3e",
+      "source": "请先停止正在运行的程序再删除",
+      "en": "Stop the running program before deleting it.",
+      "zh": "请先停止正在运行的程序再删除"
+    },
+    {
+      "key": "t_0ebd8f1d1b394e31",
+      "source": "至少保留一个程序",
+      "en": "Keep at least one program.",
+      "zh": "至少保留一个程序"
+    },
+    {
+      "key": "t_5ff93f94e64cb092",
+      "source": "已载入「",
+      "en": "Loaded \"",
+      "zh": "已载入「"
+    },
+    {
+      "key": "t_c1510fcb3fe96551",
+      "source": "」。编辑后点击运行。",
+      "en": "\". Edit it, then click Run.",
+      "zh": "」。编辑后点击运行。"
+    },
+    {
+      "key": "t_96d29dea140cf3ea",
+      "source": "金币  ",
+      "en": "Coins  ",
+      "zh": "金币  "
+    },
+    {
+      "key": "t_0223f927ac3ad872",
+      "source": "     研究  ",
+      "en": "     Research  ",
+      "zh": "     研究  "
+    },
+    {
+      "key": "t_b4ab730f95fbf54f",
+      "source": "     光能  ",
+      "en": "     Energy  ",
+      "zh": "     光能  "
+    },
+    {
+      "key": "t_a9b19cb4f02ba144",
+      "source": "     水  ",
+      "en": "     Water  ",
+      "zh": "     水  "
+    },
+    {
+      "key": "t_24deb00eb51a055a",
+      "source": " 日    ",
+      "en": " day    ",
+      "zh": " 日    "
+    },
+    {
+      "key": "t_a3f28a849168eca6",
+      "source": "细雨 · 自动润田",
+      "en": "Rain / Natural irrigation",
+      "zh": "细雨 · 自动润田"
+    },
+    {
+      "key": "t_2e75424bb1937b88",
+      "source": "晴朗 · 正常生长",
+      "en": "Clear / Normal growth",
+      "zh": "晴朗 · 正常生长"
+    },
+    {
+      "key": "t_7845f48126c4bee8",
+      "source": " 农田",
+      "en": " field",
+      "zh": " 农田"
+    },
+    {
+      "key": "t_d076ee40a91a2ff6",
+      "source": "限时试炼  /  ",
+      "en": "Timed Trial / ",
+      "zh": "限时试炼  /  "
+    },
+    {
+      "key": "t_c26911b977eee0b4",
+      "source": " 章  /  ",
+      "en": " / ",
+      "zh": " 章  /  "
+    },
+    {
+      "key": "t_3bad86d76fa3eacc",
+      "source": "     剩余 ",
+      "en": "     Remaining ",
+      "zh": "     剩余 "
+    },
+    {
+      "key": "t_d9ad5055c354fb7b",
+      "source": " 秒",
+      "en": " s",
+      "zh": " 秒"
+    },
+    {
+      "key": "t_eed2dbcbaa65cd77",
+      "source": "试炼为独立农场，研究全部解锁。停止脚本可以重新编辑；设置页可退出试炼。",
+      "en": "Trials use a separate farm with all research unlocked. Stop to edit the program; leave the trial from Settings.",
+      "zh": "试炼为独立农场，研究全部解锁。停止脚本可以重新编辑；设置页可退出试炼。"
+    },
+    {
+      "key": "t_6470544c58922fdd",
+      "source": "目标：",
+      "en": "Goal: ",
+      "zh": "目标："
+    },
+    {
+      "key": "t_22a59978909f64b8",
+      "source": "    奖励 ",
+      "en": "    Reward ",
+      "zh": "    奖励 "
+    },
+    {
+      "key": "t_18780ade69b47f8c",
+      "source": " 金币",
+      "en": " coins",
+      "zh": " 金币"
+    },
+    {
+      "key": "t_5f0ceb944662ca06",
+      "source": "操作：",
+      "en": "How: ",
+      "zh": "操作："
+    },
+    {
+      "key": "t_88c6f65c532d5495",
+      "source": "\n达标后点击领取委托奖励。",
+      "en": "\nClaim the reward once the target is reached.",
+      "zh": "\n达标后点击领取委托奖励。"
+    },
+    {
+      "key": "t_c84e470f59d33b1f",
+      "source": "本任务需新增收获 ",
+      "en": "Harvest ",
+      "zh": "本任务需新增收获 "
+    },
+    {
+      "key": "t_d2f9922e1ecbe255",
+      "source": " 单位",
+      "en": " units of ",
+      "zh": " 单位"
+    },
+    {
+      "key": "t_b5ad90a1a7bd7798",
+      "source": "。历史收获不计入本任务。\n操作：",
+      "en": " after accepting this contract. Earlier harvests do not count.\nHow: ",
+      "zh": "。历史收获不计入本任务。\n操作："
+    },
+    {
+      "key": "t_559f60b023cb9265",
+      "source": "主线已完成。试炼、成就和自由农场仍在等待你的下一次优化。",
+      "en": "Campaign complete. Trials, achievements and free farming are still available.",
+      "zh": "主线已完成。试炼、成就和自由农场仍在等待你的下一次优化。"
+    },
+    {
+      "key": "t_b419bc4277d55dde",
+      "source": "30 / 30 委托已完成",
+      "en": "30 / 30 contracts complete",
+      "zh": "30 / 30 委托已完成"
+    },
+    {
+      "key": "t_c2af2a6e9679103f",
+      "source": "感谢你让这片土地重新有了秩序。",
+      "en": "Thank you for bringing this land back to life.",
+      "zh": "感谢你让这片土地重新有了秩序。"
+    },
+    {
+      "key": "t_9df1a048b4950a3b",
+      "source": "PIP-01   /   地块 ",
+      "en": "PIP-01 / Plot ",
+      "zh": "PIP-01   /   地块 "
+    },
+    {
+      "key": "t_ac0538ed610b1cae",
+      "source": "等待播种的土地",
+      "en": "Empty plot, ready to plant",
+      "zh": "等待播种的土地"
+    },
+    {
+      "key": "t_8ffe0534e7dbece0",
+      "source": "可收获",
+      "en": "Ready to harvest",
+      "zh": "可收获"
+    },
+    {
+      "key": "t_ae25ef893465e89e",
+      "source": "耕地",
+      "en": "Tilled soil",
+      "zh": "耕地"
+    },
+    {
+      "key": "t_45aacb820dee5294",
+      "source": "原土",
+      "en": "Untilled soil",
+      "zh": "原土"
+    },
+    {
+      "key": "t_54da66bfdc3cd633",
+      "source": "     水分 ",
+      "en": "     Moisture ",
+      "zh": "     水分 "
+    },
+    {
+      "key": "t_19e360c6cc33322d",
+      "source": "%     肥力 ",
+      "en": "%     Fertility ",
+      "zh": "%     肥力 "
+    },
+    {
+      "key": "t_f07a96e1f6f6d72c",
+      "source": " · 播种 ",
+      "en": " / Planting cost ",
+      "zh": " · 播种 "
+    },
+    {
+      "key": "t_f76817a221ef122b",
+      "source": " 金币\n",
+      "en": " coins\n",
+      "zh": " 金币\n"
+    },
+    {
+      "key": "t_9a745a8a9bbcf69a",
+      "source": "试炼中 · 主线进度已保留",
+      "en": "In trial / Campaign progress preserved",
+      "zh": "试炼中 · 主线进度已保留"
+    },
+    {
+      "key": "t_6f28795daea3132a",
+      "source": "累计收获 ",
+      "en": "Total harvested ",
+      "zh": "累计收获 "
+    },
+    {
+      "key": "t_5a11eb215aaa39de",
+      "source": "     自动化动作 ",
+      "en": "     Program actions ",
+      "zh": "     自动化动作 "
+    },
+    {
+      "key": "t_689003918eba0d7a",
+      "source": "     近一分钟收入 ",
+      "en": "     Income per minute ",
+      "zh": "     近一分钟收入 "
+    },
+    {
+      "key": "t_f9c527c29dbee326",
+      "source": "查看 ",
+      "en": "Viewing ",
+      "zh": "查看 "
+    },
+    {
+      "key": "t_69ee78f8dab78e83",
+      "source": "   运行 ",
+      "en": "   Running ",
+      "zh": "   运行 "
+    },
+    {
+      "key": "t_72077749f794f21a",
+      "source": "无",
+      "en": "None",
+      "zh": "无"
+    },
+    {
+      "key": "t_1162a048838c8bfb",
+      "source": "    第 ",
+      "en": "    Line ",
+      "zh": "    第 "
+    },
+    {
+      "key": "t_9337b1e90f2d0729",
+      "source": " 行  ·  ",
+      "en": " / ",
+      "zh": " 行  ·  "
+    },
+    {
+      "key": "t_9ecf5e79e0b1cf5f",
+      "source": " 指令",
+      "en": " instructions",
+      "zh": " 指令"
+    },
+    {
+      "key": "t_e8b96ea2feb8100b",
+      "source": "    支持循环、条件与函数",
+      "en": "    Loops, conditions and functions supported",
+      "zh": "    支持循环、条件与函数"
+    },
+    {
+      "key": "t_c627afe1ef98f756",
+      "source": "Ctrl / Cmd + Enter 运行    ·    Esc 打开设置",
+      "en": "Ctrl/Cmd+Enter Run  /  Esc Settings",
+      "zh": "Ctrl / Cmd + Enter 运行    ·    Esc 打开设置"
+    },
+    {
+      "key": "t_def52527a1c54128",
+      "source": "重新运行",
+      "en": "Restart",
+      "zh": "重新运行"
+    },
+    {
+      "key": "t_1fc1afc5c55ed8c0",
+      "source": "继续",
+      "en": "Resume",
+      "zh": "继续"
+    },
+    {
+      "key": "t_dae828fe4fb7f7e7",
+      "source": "第",
+      "en": "Chapter ",
+      "zh": "第"
+    },
+    {
+      "key": "t_5e6bcfa30fde79f0",
+      "source": "章 · ",
+      "en": " / ",
+      "zh": "章 · "
+    },
+    {
+      "key": "t_c577659d821c8863",
+      "source": "金币 / ",
+      "en": " coins / ",
+      "zh": "金币 / "
+    },
+    {
+      "key": "t_13aa0e623111c38c",
+      "source": "研究\n前置：",
+      "en": " research\nRequires: ",
+      "zh": "研究\n前置："
+    },
+    {
+      "key": "t_e99b48a29bdfdc82",
+      "source": "已完成",
+      "en": "Completed",
+      "zh": "已完成"
+    },
+    {
+      "key": "t_b31c66f6eae12601",
+      "source": "研究",
+      "en": "Research",
+      "zh": "研究"
+    },
+    {
+      "key": "t_c51e2ff70e5ef370",
+      "source": "条件未满足",
+      "en": "Requirements not met",
+      "zh": "条件未满足"
+    },
+    {
+      "key": "t_5cfe570fbb3cc8a5",
+      "source": "本任务新增收获 ",
+      "en": "Harvest after accepting: ",
+      "zh": "本任务新增收获 "
+    },
+    {
+      "key": "t_dcf3d0d5b39d7b28",
+      "source": "研究「",
+      "en": "Research \"",
+      "zh": "研究「"
+    },
+    {
+      "key": "t_f71916f0c3080a48",
+      "source": "移动格数",
+      "en": "Plots moved",
+      "zh": "移动格数"
+    },
+    {
+      "key": "t_1b4086bccda7b982",
+      "source": "成功播种次数",
+      "en": "Successful plantings",
+      "zh": "成功播种次数"
+    },
+    {
+      "key": "t_c76ab7318d177e04",
+      "source": "主动浇水次数",
+      "en": "Successful irrigations",
+      "zh": "主动浇水次数"
+    },
+    {
+      "key": "t_d55095703dc62efd",
+      "source": "成功施肥次数",
+      "en": "Successful fertilizations",
+      "zh": "成功施肥次数"
+    },
+    {
+      "key": "t_9a97f2ddf2e236f0",
+      "source": "累计生产光能",
+      "en": "Total energy produced",
+      "zh": "累计生产光能"
+    },
+    {
+      "key": "t_1ae477a0b273867f",
+      "source": "触发增产的收获次数",
+      "en": "Bonus harvest events",
+      "zh": "触发增产的收获次数"
+    },
+    {
+      "key": "t_d7969e49d708015d",
+      "source": "函数调用次数",
+      "en": "Function calls",
+      "zh": "函数调用次数"
+    },
+    {
+      "key": "t_9c060cc4617b0e51",
+      "source": "累计收获单位",
+      "en": "Total units harvested",
+      "zh": "累计收获单位"
+    },
+    {
+      "key": "t_a3b6061133b008bb",
+      "source": "农田边长",
+      "en": "Field width",
+      "zh": "农田边长"
+    },
+    {
+      "key": "t_dd05a32c2f6bf4a3",
+      "source": "自动化动作次数",
+      "en": "Program actions",
+      "zh": "自动化动作次数"
+    },
+    {
+      "key": "t_b9e29000ec3636ef",
+      "source": "达到 ",
+      "en": " required: ",
+      "zh": "达到 "
+    },
+    {
+      "key": "t_6c14bd7f6f9e54e4",
+      "source": "关闭",
+      "en": "Close",
+      "zh": "关闭"
+    },
+    {
+      "key": "t_682bb2313589019d",
+      "source": "欢迎来到禾湾",
+      "en": "Welcome to Verdant Bay",
+      "zh": "欢迎来到禾湾"
+    },
+    {
+      "key": "t_111fc7b391d5b37d",
+      "source": "禾序  /  VERDANT CIRCUIT",
+      "en": "VERDANT CIRCUIT",
+      "zh": "禾序  /  VERDANT CIRCUIT"
+    },
+    {
+      "key": "t_cbfb8e7cb200db42",
+      "source": "一座无人照看的农场，一台巡田机器人，一份等待你写下的程序。\n\n从手动种下第一粒稻穗，到让循环与函数照看整片农田。你将在六章委托中学习规律、建设水利、研究共生，最终让星辉温室持续运转。",
+      "en": "An untended farm. A field robot. A program waiting to be written.\n\nStart with your first grain seed, then let loops and functions care for the whole field. Across six chapters, learn crop rules, build irrigation, discover companion planting and establish a sustainable starbloom greenhouse.",
+      "zh": "一座无人照看的农场，一台巡田机器人，一份等待你写下的程序。\n\n从手动种下第一粒稻穗，到让循环与函数照看整片农田。你将在六章委托中学习规律、建设水利、研究共生，最终让星辉温室持续运转。"
+    },
+    {
+      "key": "t_7e0dc2485f9d96fd",
+      "source": "先认识土地",
+      "en": "Get to Know the Land",
+      "zh": "先认识土地"
+    },
+    {
+      "key": "t_cc7c990eaf48ced9",
+      "source": "方向键移动；空格播种；E 收获。左侧委托会告诉你下一步。",
+      "en": "Arrow keys move; Space plants; E harvests. The contract on the left explains the next step.",
+      "zh": "方向键移动；空格播种；E 收获。左侧委托会告诉你下一步。"
+    },
+    {
+      "key": "t_ed753d1caf14239f",
+      "source": "开始农耕",
+      "en": "Start Farming",
+      "zh": "开始农耕"
+    },
+    {
+      "key": "t_01fbeb1a1860b895",
+      "source": "让程序接手",
+      "en": "Let Code Take Over",
+      "zh": "让程序接手"
+    },
+    {
+      "key": "t_a8e295c66474cc9f",
+      "source": "右侧已准备好稻穗巡田程序。随时可以停止、编辑和单步。",
+      "en": "A Grain Patrol program is ready on the right. Stop, edit and step through it whenever you need.",
+      "zh": "右侧已准备好稻穗巡田程序。随时可以停止、编辑和单步。"
+    },
+    {
+      "key": "t_bf003882bc25a710",
+      "source": "运行示例",
+      "en": "Run Example",
+      "zh": "运行示例"
+    },
+    {
+      "key": "t_0f86c86d837601b3",
+      "source": "内容：8 种作物 · 30 份委托 · 18 项研究 · 6 项试炼 · 5 种加工配方\n农场与程序列表会自动保存。",
+      "en": "8 crops / 30 contracts / 18 research projects / 6 trials / 5 crafting recipes\nThe farm and your program list are saved automatically.",
+      "zh": "内容：8 种作物 · 30 份委托 · 18 项研究 · 6 项试炼 · 5 种加工配方\n农场与程序列表会自动保存。"
+    },
+    {
+      "key": "t_a4c8fc53cbc33e91",
+      "source": "农场语言手册",
+      "en": "Farm Language Guide",
+      "zh": "农场语言手册"
+    },
+    {
+      "key": "t_be3d4b9a309d0ea2",
+      "source": "程序范例",
+      "en": "Program Templates",
+      "zh": "程序范例"
+    },
+    {
+      "key": "t_4571a6c6617dd4c9",
+      "source": "范例会替换当前编辑区。程序列表可以保存不同方案。代码可以自由修改。",
+      "en": "Loading a template replaces the current editor text. Keep different approaches in the program list and edit freely.",
+      "zh": "范例会替换当前编辑区。程序列表可以保存不同方案。代码可以自由修改。"
+    },
+    {
+      "key": "t_134629c18e68c9d5",
+      "source": "从基础动作到整田循环",
+      "en": "From basic actions to field-wide loops",
+      "zh": "从基础动作到整田循环"
+    },
+    {
+      "key": "t_507a399179aeb2bb",
+      "source": "结合传感器和作物规则设计自动化方案",
+      "en": "Combine sensors and crop rules to automate the farm",
+      "zh": "结合传感器和作物规则设计自动化方案"
+    },
+    {
+      "key": "t_da4738cea06462ca",
+      "source": "载入",
+      "en": "Load",
+      "zh": "载入"
+    },
+    {
+      "key": "t_6795e8e00884d3a9",
+      "source": "程序管理",
+      "en": "Program Manager",
+      "zh": "程序管理"
+    },
+    {
+      "key": "t_26dfb548ea9d3f86",
+      "source": "查看其他程序不会停止当前执行。点击运行将替换当前程序，始终仅执行一份。删除运行中的程序前请先停止。",
+      "en": "Viewing another program keeps the current one running. Run replaces the active program. Stop a running program before deleting it.",
+      "zh": "查看其他程序不会停止当前执行。点击运行将替换当前程序，始终仅执行一份。删除运行中的程序前请先停止。"
+    },
+    {
+      "key": "t_071bfc06bd858cda",
+      "source": "新建程序",
+      "en": "New Program",
+      "zh": "新建程序"
+    },
+    {
+      "key": "t_0c09ebf8c53cc23b",
+      "source": "默认一个，可增加和删除，至少保留一个。",
+      "en": "Start with one. Add or remove programs, keeping at least one.",
+      "zh": "默认一个，可增加和删除，至少保留一个。"
+    },
+    {
+      "key": "t_605806b6fcd55c39",
+      "source": "增加",
+      "en": "Add",
+      "zh": "增加"
+    },
+    {
+      "key": "t_cc49e4c73a023839",
+      "source": "程序 ",
+      "en": "Program ",
+      "zh": "程序 "
+    },
+    {
+      "key": "t_b8c34058b1c64ff6",
+      "source": " · 运行中",
+      "en": " / Running",
+      "zh": " · 运行中"
+    },
+    {
+      "key": "t_7d03d8f58723cfa4",
+      "source": " 字符",
+      "en": " characters",
+      "zh": " 字符"
+    },
+    {
+      "key": "t_f7acefd2d4cd1deb",
+      "source": "查看",
+      "en": "View",
+      "zh": "查看"
+    },
+    {
+      "key": "t_4b3ce5f92055265e",
+      "source": "删除程序 ",
+      "en": "Delete Program ",
+      "zh": "删除程序 "
+    },
+    {
+      "key": "t_df9a63a4b0f6d577",
+      "source": "删除后不可从本列表恢复，请先复制需要的代码。",
+      "en": "Deletion cannot be undone from this list. Copy any code you want to keep first.",
+      "zh": "删除后不可从本列表恢复，请先复制需要的代码。"
+    },
+    {
+      "key": "t_3755f56f2f831876",
+      "source": "删除",
+      "en": "Delete",
+      "zh": "删除"
+    },
+    {
+      "key": "t_8e9e5d7db8e48bb1",
+      "source": "科技路线",
+      "en": "Research Tree",
+      "zh": "科技路线"
+    },
+    {
+      "key": "t_7cf0019910621399",
+      "source": "研究需要金币与研究点。章节随主线委托解锁；完成前置研究后即可购买。",
+      "en": "Research costs coins and knowledge. Chapters unlock through contracts, and projects may require earlier research.",
+      "zh": "研究需要金币与研究点。章节随主线委托解锁；完成前置研究后即可购买。"
+    },
+    {
+      "key": "t_26ca65b7358837e9",
+      "source": "作物图鉴与仓库",
+      "en": "Crop Guide and Storage",
+      "zh": "作物图鉴与仓库"
+    },
+    {
+      "key": "t_0320304620246558",
+      "source": " · 未解锁",
+      "en": " / Locked",
+      "zh": " · 未解锁"
+    },
+    {
+      "key": "t_2e6c66aadca0466b",
+      "source": "\n生长 ",
+      "en": "\nGrowth ",
+      "zh": "\n生长 "
+    },
+    {
+      "key": "t_8779fee1b1dd4b62",
+      "source": " 秒 · 播种 ",
+      "en": " s / Planting ",
+      "zh": " 秒 · 播种 "
+    },
+    {
+      "key": "t_3ed40f2b6fab3f68",
+      "source": " 金币 · 单位价值 ",
+      "en": " coins / Unit value ",
+      "zh": " 金币 · 单位价值 "
+    },
+    {
+      "key": "t_8fbfd1c3b48628dd",
+      "source": " 金币\n库存 / 累计收获：",
+      "en": " coins\nIn storage: ",
+      "zh": " 金币\n库存 / 累计收获："
+    },
+    {
+      "key": "t_70b208202ce59f6b",
+      "source": "选择",
+      "en": "Select",
+      "zh": "选择"
+    },
+    {
+      "key": "t_06b52db2451eb3d2",
+      "source": "独立试炼",
+      "en": "Independent Trials",
+      "zh": "独立试炼"
+    },
+    {
+      "key": "t_0f17f5b318978285",
+      "source": "每项试炼都使用独立的 6×6 农场，临时解锁全部研究。完成后恢复主线农场；首次通过奖励 400 金币与 50 研究点。",
+      "en": "Each trial uses a separate 6x6 farm with all research unlocked. Your campaign farm is restored afterward. First clear: 400 coins and 50 research.",
+      "zh": "每项试炼都使用独立的 6×6 农场，临时解锁全部研究。完成后恢复主线农场；首次通过奖励 400 金币与 50 研究点。"
+    },
+    {
+      "key": "t_17aeba8de236ae15",
+      "source": "章节锁定",
+      "en": "Chapter locked",
+      "zh": "章节锁定"
+    },
+    {
+      "key": "t_79cc871ca99292a4",
+      "source": "开始",
+      "en": "Start",
+      "zh": "开始"
+    },
+    {
+      "key": "t_8245c93843d49900",
+      "source": "点击运行开始耕作。退出试炼请打开设置。",
+      "en": "Click Run to start farming. Open Settings to leave the trial.",
+      "zh": "点击运行开始耕作。退出试炼请打开设置。"
+    },
+    {
+      "key": "t_697997e44b56a389",
+      "source": "田野档案  /  ",
+      "en": "Field Records / ",
+      "zh": "田野档案  /  "
+    },
+    {
+      "key": "t_db7fa050ef5af908",
+      "source": " · 首次解锁奖励 10 研究",
+      "en": " / First unlock grants 10 research",
+      "zh": " · 首次解锁奖励 10 研究"
+    },
+    {
+      "key": "t_59c3eda1b1ec4fcc",
+      "source": "已解锁",
+      "en": "Unlocked",
+      "zh": "已解锁"
+    },
+    {
+      "key": "t_6f1972e48ec85566",
+      "source": "进行中",
+      "en": "In progress",
+      "zh": "进行中"
+    },
+    {
+      "key": "t_e416b4a3c7320506",
+      "source": "禾湾供给订单",
+      "en": "Verdant Supply Orders",
+      "zh": "禾湾供给订单"
+    },
+    {
+      "key": "t_4b461ed2f1474513",
+      "source": "第二章起开放。交付会消耗仓库库存，并获得供给补贴与研究点。每次完成后都会出现新订单；已完成 ",
+      "en": "Available from Chapter 2. Delivery consumes stored items and grants coins and research. Each completed order is replaced. Completed: ",
+      "zh": "第二章起开放。交付会消耗仓库库存，并获得供给补贴与研究点。每次完成后都会出现新订单；已完成 "
+    },
+    {
+      "key": "t_2aa0e2e658f113d9",
+      "source": " 单。",
+      "en": " orders.",
+      "zh": " 单。"
+    },
+    {
+      "key": "t_6164aefa75903b19",
+      "source": "\n补贴 ",
+      "en": "\nReward ",
+      "zh": "\n补贴 "
+    },
+    {
+      "key": "t_830ecf9f3ef9d521",
+      "source": " 金币 / ",
+      "en": " coins / ",
+      "zh": " 金币 / "
+    },
+    {
+      "key": "t_d6fd90fa3ed79aab",
+      "source": " 研究",
+      "en": " research",
+      "zh": " 研究"
+    },
+    {
+      "key": "t_dc9caf48a5368c0d",
+      "source": "第二章解锁",
+      "en": "Chapter 2 required",
+      "zh": "第二章解锁"
+    },
+    {
+      "key": "t_7dda5677e36557ae",
+      "source": "交付",
+      "en": "Deliver",
+      "zh": "交付"
+    },
+    {
+      "key": "t_1e9ae3a4ddcdf3b7",
+      "source": "加工品订单会在第三章及对应作物解锁后加入。合理保留库存，可以让工坊和农田相互支持。",
+      "en": "Crafted-item orders appear from Chapter 3 as the relevant crops unlock. Keep stock to support both the workshop and the farm.",
+      "zh": "加工品订单会在第三章及对应作物解锁后加入。合理保留库存，可以让工坊和农田相互支持。"
+    },
+    {
+      "key": "t_b6168d2b208410b4",
+      "source": "加工工坊",
+      "en": "Crafting Workshop",
+      "zh": "加工工坊"
+    },
+    {
+      "key": "t_e68f75ec9218a11f",
+      "source": "第三章开放。将库存作物加工为高价值补给品，再完成供给订单。配方会消耗材料，并额外提供研究点。",
+      "en": "Available from Chapter 3. Turn stored crops into supplies for orders. Recipes consume materials and grant extra research.",
+      "zh": "第三章开放。将库存作物加工为高价值补给品，再完成供给订单。配方会消耗材料，并额外提供研究点。"
+    },
+    {
+      "key": "t_5ed39d9a42561673",
+      "source": "   库存 ",
+      "en": "   Stock ",
+      "zh": "   库存 "
+    },
+    {
+      "key": "t_a19fbdf71eda922d",
+      "source": " + 光能 ",
+      "en": " + Energy ",
+      "zh": " + 光能 "
+    },
+    {
+      "key": "t_f3d6e44d9593351c",
+      "source": "   / 研究 +",
+      "en": "   / Research +",
+      "zh": "   / 研究 +"
+    },
+    {
+      "key": "t_c75ba6e45303287a",
+      "source": "加工",
+      "en": "Craft",
+      "zh": "加工"
+    },
+    {
+      "key": "t_196b839b15facebe",
+      "source": "尚未解锁",
+      "en": "Locked",
+      "zh": "尚未解锁"
+    },
+    {
+      "key": "t_07b90445dc9dc2fe",
+      "source": "设置与存档",
+      "en": "Settings and Save",
+      "zh": "设置与存档"
+    },
+    {
+      "key": "t_5bfc8a18a57d5920",
+      "source": "农场时速",
+      "en": "Simulation Speed",
+      "zh": "农场时速"
+    },
+    {
+      "key": "t_f3c2d8212a71e4cd",
+      "source": "当前 ",
+      "en": "Current: ",
+      "zh": "当前 "
+    },
+    {
+      "key": "t_484c3e742d3aa9a6",
+      "source": "×。只影响生长和程序动作，界面始终正常响应。",
+      "en": "x. Affects growth and program actions; the interface remains responsive.",
+      "zh": "×。只影响生长和程序动作，界面始终正常响应。"
+    },
+    {
+      "key": "t_fffb0b1a81e085e0",
+      "source": "切换速度",
+      "en": "Change Speed",
+      "zh": "切换速度"
+    },
+    {
+      "key": "t_ab9ff81dac9b1eb8",
+      "source": "声音",
+      "en": "Audio",
+      "zh": "声音"
+    },
+    {
+      "key": "t_cab045887aa0ca1b",
+      "source": "轻柔合成音乐与操作音效；当前 ",
+      "en": "Synthesized ambience and action sounds. Current volume: ",
+      "zh": "轻柔合成音乐与操作音效；当前 "
+    },
+    {
+      "key": "t_a543341019d5da8b",
+      "source": "切换音量",
+      "en": "Change Volume",
+      "zh": "切换音量"
+    },
+    {
+      "key": "t_b520e1f62e237fc0",
+      "source": "保存农场",
+      "en": "Save Farm",
+      "zh": "保存农场"
+    },
+    {
+      "key": "t_574852743092a8cc",
+      "source": "保存农田、资源、研究与程序列表。上一份存档会保留为备份。",
+      "en": "Saves plots, resources, research and programs. The previous save is kept as a backup.",
+      "zh": "保存农田、资源、研究与程序列表。上一份存档会保留为备份。"
+    },
+    {
+      "key": "t_5e4644a2c8939cff",
+      "source": "立即保存",
+      "en": "Save Now",
+      "zh": "立即保存"
+    },
+    {
+      "key": "t_b1f0f4b764496c56",
+      "source": "返回主线农场",
+      "en": "Return to Campaign",
+      "zh": "返回主线农场"
+    },
+    {
+      "key": "t_5eea5180cfccff46",
+      "source": "放弃当前临时试炼，恢复进入前的主线进度。",
+      "en": "Abandon this temporary trial and restore the campaign state from before entry.",
+      "zh": "放弃当前临时试炼，恢复进入前的主线进度。"
+    },
+    {
+      "key": "t_e411f1df0d269ba1",
+      "source": "退出试炼",
+      "en": "Leave Trial",
+      "zh": "退出试炼"
+    },
+    {
+      "key": "t_f17fc9b7f685759a",
+      "source": "重新开始",
+      "en": "Start Over",
+      "zh": "重新开始"
+    },
+    {
+      "key": "t_af7c03670116a4fb",
+      "source": "会先保存一份带时间戳的备份，再建立新的农场。",
+      "en": "Save a timestamped backup, then create a fresh farm.",
+      "zh": "会先保存一份带时间戳的备份，再建立新的农场。"
+    },
+    {
+      "key": "t_71ba47045945fe8a",
+      "source": "新建农场",
+      "en": "New Farm",
+      "zh": "新建农场"
+    },
+    {
+      "key": "t_ccc620ecad6d865b",
+      "source": "禾序 ",
+      "en": "Verdant Circuit ",
+      "zh": "禾序 "
+    },
+    {
+      "key": "t_9f19b7bf69005960",
+      "source": "\n程序、场景与农艺系统为本项目原创。字体使用 Noto Sans CJK（SIL OFL）。\n存档位置：\n",
+      "en": "\nGame systems, scenes and farm rules are original to this project. Noto Sans CJK font: SIL OFL.\nSave location:\n",
+      "zh": "\n程序、场景与农艺系统为本项目原创。字体使用 Noto Sans CJK（SIL OFL）。\n存档位置：\n"
+    },
+    {
+      "key": "t_2db86dc7250200dd",
+      "source": "退出游戏",
+      "en": "Quit Game",
+      "zh": "退出游戏"
+    },
+    {
+      "key": "t_c943f0e09dbf4a32",
+      "source": "退出前会自动保存。",
+      "en": "Saves progress before exiting.",
+      "zh": "退出前会自动保存。"
+    },
+    {
+      "key": "t_27207345c0e36fed",
+      "source": "保存并退出",
+      "en": "Save and Quit",
+      "zh": "保存并退出"
+    },
+    {
+      "key": "t_c70c2dcf06270fb0",
+      "source": "重新开始农场？",
+      "en": "Start a New Farm?",
+      "zh": "重新开始农场？"
+    },
+    {
+      "key": "t_3d3f01bcde28a2a2",
+      "source": "当前进度会先保存为带日期的备份。新的主线将从 4×4 农田开始。",
+      "en": "A timestamped backup will be saved first. The new campaign starts with a 4x4 field.",
+      "zh": "当前进度会先保存为带日期的备份。新的主线将从 4×4 农田开始。"
+    },
+    {
+      "key": "t_aa8c260d5ffb6289",
+      "source": "创建新农场",
+      "en": "Create New Farm",
+      "zh": "创建新农场"
+    },
+    {
+      "key": "t_ac6b4280ec707f27",
+      "source": "此操作会停止当前程序。",
+      "en": "This stops the current program.",
+      "zh": "此操作会停止当前程序。"
+    },
+    {
+      "key": "t_f817437a5a1a5763",
+      "source": "备份并开始",
+      "en": "Back Up and Start",
+      "zh": "备份并开始"
+    },
+    {
+      "key": "t_9a08fa5e097e2b33",
+      "source": "尚未保存",
+      "en": "Not saved yet",
+      "zh": "尚未保存"
+    },
+    {
+      "key": "t_2492690fa6e02b88",
+      "source": "春 · 萌芽",
+      "en": "Spring / Sprouting",
+      "zh": "春 · 萌芽"
+    },
+    {
+      "key": "t_16cdfb8812f9f144",
+      "source": "夏 · 丰茂",
+      "en": "Summer / Flourishing",
+      "zh": "夏 · 丰茂"
+    },
+    {
+      "key": "t_d3a44f88f1ba8d7e",
+      "source": "秋 · 金穗",
+      "en": "Autumn / Harvest",
+      "zh": "秋 · 金穗"
+    },
+    {
+      "key": "t_62700612d5244bdd",
+      "source": "冬 · 静养",
+      "en": "Winter / Rest",
+      "zh": "冬 · 静养"
+    },
+    {
+      "key": "t_7e0d6cf660cede29",
+      "source": "# 在这里编写你的农场程序\n",
+      "en": "# Write your farm program here\n",
+      "zh": "# 在这里编写你的农场程序\n"
+    },
+    {
+      "key": "t_e5409d4c75a3584c",
+      "source": "move() 的方向应为 East / West / North / South",
+      "en": "move() expects East, West, North or South.",
+      "zh": "move() 的方向应为 East / West / North / South"
+    },
+    {
+      "key": "t_a3c9b6a4a377b11f",
+      "source": "未知作物：",
+      "en": "Unknown crop: ",
+      "zh": "未知作物："
+    },
+    {
+      "key": "t_30d97a59ab54103e",
+      "source": "请先研究 ",
+      "en": "Research first: ",
+      "zh": "请先研究 "
+    },
+    {
+      "key": "t_02d518ca14a89b5d",
+      "source": "这个格子已有作物",
+      "en": "This plot already contains a crop.",
+      "zh": "这个格子已有作物"
+    },
+    {
+      "key": "t_c117df29d6090cf3",
+      "source": "这类作物需要先 till() 翻土",
+      "en": "This crop needs till() before planting.",
+      "zh": "这类作物需要先 till() 翻土"
+    },
+    {
+      "key": "t_e8b9b327da3b4252",
+      "source": "土壤太干，请先 water()",
+      "en": "Soil is too dry. Use water() first.",
+      "zh": "土壤太干，请先 water()"
+    },
+    {
+      "key": "t_64ca29d5370704bf",
+      "source": "金币不足；可免费播种稻穗恢复收入",
+      "en": "Not enough coins. Plant free grain to restore income.",
+      "zh": "金币不足；可免费播种稻穗恢复收入"
+    },
+    {
+      "key": "t_998a91f0c7ee2283",
+      "source": "光能不足；请先收获向日葵",
+      "en": "Not enough energy. Harvest sunflowers first.",
+      "zh": "光能不足；请先收获向日葵"
+    },
+    {
+      "key": "t_b56f8083b1034581",
+      "source": "播种 ",
+      "en": "Planted ",
+      "zh": "播种 "
+    },
+    {
+      "key": "t_95564ae2eae031bf",
+      "source": "这里还没有作物",
+      "en": "There is no crop here.",
+      "zh": "这里还没有作物"
+    },
+    {
+      "key": "t_723964d139448bc3",
+      "source": "作物尚未成熟",
+      "en": "The crop is not mature yet.",
+      "zh": "作物尚未成熟"
+    },
+    {
+      "key": "t_16336116a0232bdb",
+      "source": "  金币 +",
+      "en": "  Coins +",
+      "zh": "  金币 +"
+    },
+    {
+      "key": "t_98eb4e081d1d688d",
+      "source": "有作物时无法翻土",
+      "en": "Cannot till a plot that contains a crop.",
+      "zh": "有作物时无法翻土"
+    },
+    {
+      "key": "t_f6e5f4eabd8caff3",
+      "source": "请先研究蓄水系统",
+      "en": "Research Water Storage first.",
+      "zh": "请先研究蓄水系统"
+    },
+    {
+      "key": "t_19204b340893f144",
+      "source": "蓄水正在恢复",
+      "en": "Water storage is refilling.",
+      "zh": "蓄水正在恢复"
+    },
+    {
+      "key": "t_35531e3453b107dd",
+      "source": "请先研究循环堆肥",
+      "en": "Research Compost Cycle first.",
+      "zh": "请先研究循环堆肥"
+    },
+    {
+      "key": "t_63b4df1b5f96e310",
+      "source": "施肥需要 2 金币",
+      "en": "Fertilizing costs 2 coins.",
+      "zh": "施肥需要 2 金币"
+    },
+    {
+      "key": "t_0f0b321a6250a31a",
+      "source": "土壤已有充足肥力",
+      "en": "The soil already has enough fertility.",
+      "zh": "土壤已有充足肥力"
+    },
+    {
+      "key": "t_7add7e1f95a5fee7",
+      "source": "未知动作：",
+      "en": "Unknown action: ",
+      "zh": "未知动作："
+    },
+    {
+      "key": "t_5269317bf64f11b5",
+      "source": "试炼结束后再领取主线委托",
+      "en": "Claim campaign rewards after leaving the trial.",
+      "zh": "试炼结束后再领取主线委托"
+    },
+    {
+      "key": "t_8b0211ed46174635",
+      "source": "委托完成：",
+      "en": "Contract completed: ",
+      "zh": "委托完成："
+    },
+    {
+      "key": "t_bf7ee3f446908e03",
+      "source": " 金币 / +",
+      "en": " coins / +",
+      "zh": " 金币 / +"
+    },
+    {
+      "key": "t_60e510cb413479db",
+      "source": "尚未满足章节或前置研究",
+      "en": "Chapter or prerequisite requirements are not met.",
+      "zh": "尚未满足章节或前置研究"
+    },
+    {
+      "key": "t_bc577e269cbdf13b",
+      "source": "金币或研究点不足",
+      "en": "Not enough coins or research.",
+      "zh": "金币或研究点不足"
+    },
+    {
+      "key": "t_df222782d077dd6b",
+      "source": "研究完成：",
+      "en": "Research completed: ",
+      "zh": "研究完成："
+    },
+    {
+      "key": "t_f777f42368c17f23",
+      "source": "完成对应主线章节后解锁此试炼",
+      "en": "Complete the corresponding campaign chapter to unlock this trial.",
+      "zh": "完成对应主线章节后解锁此试炼"
+    },
+    {
+      "key": "t_163e7de8760bd683",
+      "source": "试炼开始：",
+      "en": "Trial started: ",
+      "zh": "试炼开始："
+    },
+    {
+      "key": "t_ec53281055d6896c",
+      "source": "试炼通过！获得 ",
+      "en": "Trial passed! Earned ",
+      "zh": "试炼通过！获得 "
+    },
+    {
+      "key": "t_15fc9ff0f2311df2",
+      "source": " 星，已返回主线农场。",
+      "en": " stars. Your campaign farm has been restored.",
+      "zh": " 星，已返回主线农场。"
+    },
+    {
+      "key": "t_3e66d7085f44b6ce",
+      "source": "试炼已结束，主线农场和物资已恢复。可调整程序后再次尝试。",
+      "en": "Trial ended. Your campaign farm and resources have been restored. Adjust the program and try again.",
+      "zh": "试炼已结束，主线农场和物资已恢复。可调整程序后再次尝试。"
+    },
+    {
+      "key": "t_6783884b2390229b",
+      "source": "成就解锁：",
+      "en": "Achievement unlocked: ",
+      "zh": "成就解锁："
+    },
+    {
+      "key": "t_3ac430ad68731dad",
+      "source": "已保存 ",
+      "en": "Saved ",
+      "zh": "已保存 "
+    },
+    {
+      "key": "t_40525a732872b210",
+      "source": "保存失败",
+      "en": "Save failed",
+      "zh": "保存失败"
+    },
+    {
+      "key": "t_b12163000cd3fbca",
+      "source": "保存失败：",
+      "en": "Save failed: ",
+      "zh": "保存失败："
+    },
+    {
+      "key": "t_98375ccda50ff0a4",
+      "source": "已恢复存档",
+      "en": "Save restored",
+      "zh": "已恢复存档"
+    },
+    {
+      "key": "t_5e1be489552f28d2",
+      "source": "已恢复备份存档",
+      "en": "Backup save restored",
+      "zh": "已恢复备份存档"
+    },
+    {
+      "key": "t_1b2a86b706c6628d",
+      "source": "存档不可读取，已进入新农场",
+      "en": "Could not read the save. Started a new farm.",
+      "zh": "存档不可读取，已进入新农场"
+    },
+    {
+      "key": "t_6e54bd8fc997a9c8",
+      "source": "存档格式不匹配",
+      "en": "Save format does not match.",
+      "zh": "存档格式不匹配"
+    },
+    {
+      "key": "t_16c64c74091b7274",
+      "source": "无效地块",
+      "en": "Invalid plot.",
+      "zh": "无效地块"
+    },
+    {
+      "key": "t_4ad55e8674ae040e",
+      "source": "禾湾 · 四季和弦",
+      "en": "Verdant Bay / Four Seasons",
+      "zh": "禾湾 · 四季和弦"
+    },
+    {
+      "key": "t_6f97ddfea3f7070e",
+      "source": "# 新程序\n",
+      "en": "# New program\n",
+      "zh": "# 新程序\n"
+    },
+    {
+      "key": "t_594249700590a268",
+      "source": "运行中",
+      "en": "Running",
+      "zh": "运行中"
+    },
+    {
+      "key": "t_678ed6483d05f4a1",
+      "source": "程序启动 · ",
+      "en": "Program started / ",
+      "zh": "程序启动 · "
+    },
+    {
+      "key": "t_5d1184415e09dc00",
+      "source": " 条指令",
+      "en": " instructions",
+      "zh": " 条指令"
+    },
+    {
+      "key": "t_83f5670fba2be4fb",
+      "source": "语法错误",
+      "en": "Syntax error",
+      "zh": "语法错误"
+    },
+    {
+      "key": "t_34866ef1523e26a4",
+      "source": "程序执行完成",
+      "en": "Program finished",
+      "zh": "程序执行完成"
+    },
+    {
+      "key": "t_23b14f15920b3116",
+      "source": "执行错误",
+      "en": "Runtime error",
+      "zh": "执行错误"
+    },
+    {
+      "key": "t_fcbae46bf890386e",
+      "source": "已暂停",
+      "en": "Paused",
+      "zh": "已暂停"
+    },
+    {
+      "key": "t_e753ee3ed2b83ba8",
+      "source": "单步 · 已暂停",
+      "en": "Step / Paused",
+      "zh": "单步 · 已暂停"
+    },
+    {
+      "key": "t_75dddf524e4c7f18",
+      "source": "已停止",
+      "en": "Stopped",
+      "zh": "已停止"
+    },
+    {
+      "key": "t_338c6cbd53b2012e",
+      "source": "请先停止程序再手动操作",
+      "en": "Stop the program before using manual actions.",
+      "zh": "请先停止程序再手动操作"
+    },
+    {
+      "key": "t_a06b80a710a0fcc2",
+      "source": "备份失败，已取消新建：",
+      "en": "Backup failed; new farm cancelled: ",
+      "zh": "备份失败，已取消新建："
+    },
+    {
+      "key": "t_b3c9cc38bb4a3d48",
+      "source": "丰收米箱",
+      "en": "Harvest Rice Box",
+      "zh": "丰收米箱"
+    },
+    {
+      "key": "t_a716863265e5ce69",
+      "source": "把基础作物加工成易于运输的补给。",
+      "en": "Package basic crops into supplies ready for transport.",
+      "zh": "把基础作物加工成易于运输的补给。"
+    },
+    {
+      "key": "t_20747dceeb43c045",
+      "source": "蓝纹织物",
+      "en": "Blue Linen",
+      "zh": "蓝纹织物"
+    },
+    {
+      "key": "t_7700d94a0b4a1e28",
+      "source": "纤维与茶园包装所需的耐用织物。",
+      "en": "Durable fiber cloth for packing farm supplies.",
+      "zh": "纤维与茶园包装所需的耐用织物。"
+    },
+    {
+      "key": "t_b0f09cbaf7262a45",
+      "source": "晨露果酱",
+      "en": "Morning Berry Jam",
+      "zh": "晨露果酱"
+    },
+    {
+      "key": "t_3e78c724799edfa6",
+      "source": "蓝莓与谷物糖浆，适合沿岸商队。",
+      "en": "Blueberries and grain syrup for the coastal merchants.",
+      "zh": "蓝莓与谷物糖浆，适合沿岸商队。"
+    },
+    {
+      "key": "t_064a6d09b2bc3ba7",
+      "source": "日光茶礼",
+      "en": "Sunshine Tea Gift",
+      "zh": "日光茶礼"
+    },
+    {
+      "key": "t_af4f710988a0a9d7",
+      "source": "茶叶与向日葵花瓣的共生配方。",
+      "en": "A blend of tea and sunflower petals.",
+      "zh": "茶叶与向日葵花瓣的共生配方。"
+    },
+    {
+      "key": "t_082a2f62fd9c7516",
+      "source": "星辉电池",
+      "en": "Starbloom Cell",
+      "zh": "星辉电池"
+    },
+    {
+      "key": "t_ee5b09472dae4bae",
+      "source": "把星辉花的研究价值转化为远航能源。",
+      "en": "Convert starbloom research materials into energy for distant journeys.",
+      "zh": "把星辉花的研究价值转化为远航能源。"
+    },
+    {
+      "key": "t_d04a477c4db3ec0e",
+      "source": "加工工坊只在主线农场开放",
+      "en": "Crafting is only available on the campaign farm.",
+      "zh": "加工工坊只在主线农场开放"
+    },
+    {
+      "key": "t_192a4cd15ff22a62",
+      "source": "第三章及对应作物研究完成后解锁",
+      "en": "Requires Chapter 3 and the relevant crop research.",
+      "zh": "第三章及对应作物研究完成后解锁"
+    },
+    {
+      "key": "t_de4d03da3b560742",
+      "source": "配方所需作物或光能不足",
+      "en": "Not enough recipe materials or energy.",
+      "zh": "配方所需作物或光能不足"
+    },
+    {
+      "key": "t_e661d09b03743b53",
+      "source": "加工完成：",
+      "en": "Crafted: ",
+      "zh": "加工完成："
+    },
+    {
+      "key": "t_936453b3bfd3c7bd",
+      "source": " +1 / 研究 +",
+      "en": " +1 / Research +",
+      "zh": " +1 / 研究 +"
+    },
+    {
+      "key": "t_9baf176373d57bbd",
+      "source": "灯塔补给站",
+      "en": "Lighthouse Depot",
+      "zh": "灯塔补给站"
+    },
+    {
+      "key": "t_b972a021a5d46489",
+      "source": "沿岸商队",
+      "en": "Coastal Caravan",
+      "zh": "沿岸商队"
+    },
+    {
+      "key": "t_737bf3a64e62250c",
+      "source": "山间研究所",
+      "en": "Mountain Research Station",
+      "zh": "山间研究所"
+    },
+    {
+      "key": "t_92bfc1251054c7ea",
+      "source": " · 第 ",
+      "en": " / Order ",
+      "zh": " · 第 "
+    },
+    {
+      "key": "t_d179aacb3acf3ef0",
+      "source": "供给订单在第二章开放",
+      "en": "Supply orders unlock in Chapter 2.",
+      "zh": "供给订单在第二章开放"
+    },
+    {
+      "key": "t_c9e20aeb968e9a21",
+      "source": "库存不足，先安排相应作物或加工配方",
+      "en": "Not enough stock. Grow or craft the required items first.",
+      "zh": "库存不足，先安排相应作物或加工配方"
+    },
+    {
+      "key": "t_1197d1b36fb9ad5b",
+      "source": "供给完成：",
+      "en": "Delivery completed: ",
+      "zh": "供给完成："
+    },
+    {
+      "key": "t_5913b67396042528",
+      "source": " / 金币 +",
+      "en": " / Coins +",
+      "zh": " / 金币 +"
+    },
+    {
+      "key": "t_19163aeb95c63e88",
+      "source": "字符串缺少结束引号",
+      "en": "Missing closing quote in string.",
+      "zh": "字符串缺少结束引号"
+    },
+    {
+      "key": "t_db5c7899c92b5c76",
+      "source": "代码块需要四个空格缩进的内容",
+      "en": "A code block needs contents indented by four spaces.",
+      "zh": "代码块需要四个空格缩进的内容"
+    },
+    {
+      "key": "t_3027f979ae6e73c6",
+      "source": "代码嵌套过深",
+      "en": "Code nesting is too deep.",
+      "zh": "代码嵌套过深"
+    },
+    {
+      "key": "t_0389910a2d107b27",
+      "source": "多余的缩进",
+      "en": "Unexpected indentation.",
+      "zh": "多余的缩进"
+    },
+    {
+      "key": "t_f2ff43658ae29f68",
+      "source": "if 末尾需要冒号",
+      "en": "if must end with a colon.",
+      "zh": "if 末尾需要冒号"
+    },
+    {
+      "key": "t_cb9edd1450061486",
+      "source": "elif 末尾需要冒号",
+      "en": "elif must end with a colon.",
+      "zh": "elif 末尾需要冒号"
+    },
+    {
+      "key": "t_c7d9ad88f67b4cc5",
+      "source": "while 末尾需要冒号",
+      "en": "while must end with a colon.",
+      "zh": "while 末尾需要冒号"
+    },
+    {
+      "key": "t_9e9678493e63dba8",
+      "source": "循环末尾需要冒号",
+      "en": "A loop must end with a colon.",
+      "zh": "循环末尾需要冒号"
+    },
+    {
+      "key": "t_85f473b338c4ab31",
+      "source": "格式为 for col in range(size()):",
+      "en": "Expected: for col in range(size()):",
+      "zh": "格式为 for col in range(size()):"
+    },
+    {
+      "key": "t_deb2c120dcea18ff",
+      "source": "函数必须在顶层定义，格式为 def tend():",
+      "en": "Functions must be defined at the top level as def tend():",
+      "zh": "函数必须在顶层定义，格式为 def tend():"
+    },
+    {
+      "key": "t_482206dd9299d280",
+      "source": "重复或保留的函数名",
+      "en": "Function name is duplicated or reserved.",
+      "zh": "重复或保留的函数名"
+    },
+    {
+      "key": "t_1c3be16a42bdb6a4",
+      "source": " 只能写在循环中",
+      "en": " can only be used inside a loop.",
+      "zh": " 只能写在循环中"
+    },
+    {
+      "key": "t_4c10674621b7b67b",
+      "source": "return 只能写在函数中",
+      "en": "return can only be used inside a function.",
+      "zh": "return 只能写在函数中"
+    },
+    {
+      "key": "t_88cd191420bea5e0",
+      "source": "() 参数数量不正确",
+      "en": "() has the wrong number of arguments.",
+      "zh": "() 参数数量不正确"
+    },
+    {
+      "key": "t_1c87f78e18b3f28e",
+      "source": "自定义函数暂不接受参数",
+      "en": "Custom functions do not accept arguments yet.",
+      "zh": "自定义函数暂不接受参数"
+    },
+    {
+      "key": "t_5754bb26625dfc30",
+      "source": "无法识别这条语句，请查看手册",
+      "en": "Cannot parse this statement. See the guide.",
+      "zh": "无法识别这条语句，请查看手册"
+    },
+    {
+      "key": "t_42587a1e24daf2cc",
+      "source": "此处需要有限数值",
+      "en": "A finite numeric value is required here.",
+      "zh": "此处需要有限数值"
+    },
+    {
+      "key": "t_2ca6a5f1caec399b",
+      "source": "已达到 500000 条指令的安全上限，请停止后重新运行",
+      "en": "Reached the 500000-instruction safety limit. Stop and restart the program.",
+      "zh": "已达到 500000 条指令的安全上限，请停止后重新运行"
+    },
+    {
+      "key": "t_9ef8e4e98ebbf385",
+      "source": "for 循环需要 range()",
+      "en": "A for loop requires range().",
+      "zh": "for 循环需要 range()"
+    },
+    {
+      "key": "t_1c19ebc7c4fc6998",
+      "source": "函数递归超过 24 层",
+      "en": "Function recursion exceeds 24 levels.",
+      "zh": "函数递归超过 24 层"
+    },
+    {
+      "key": "t_6b3cc64923b8c0ca",
+      "source": "双机调度",
+      "en": "Dual-Drone Scheduling",
+      "zh": "双机调度"
+    },
+    {
+      "key": "t_ef453dc211ebe755",
+      "source": "无人机数量上限提高到2",
+      "en": "Raises drone capacity to 2.",
+      "zh": "无人机数量上限提高到2"
+    },
+    {
+      "key": "t_f5b00becd56e3cc9",
+      "source": "机群控制",
+      "en": "Fleet Control",
+      "zh": "机群控制"
+    },
+    {
+      "key": "t_8dede1299539d6f0",
+      "source": "无人机数量上限提高到4",
+      "en": "Raises drone capacity to 4.",
+      "zh": "无人机数量上限提高到4"
+    },
+    {
+      "key": "t_f2b113ee7f65e8fc",
+      "source": "机群网络",
+      "en": "Fleet Network",
+      "zh": "机群网络"
+    },
+    {
+      "key": "t_ede55ac7c0564837",
+      "source": "无人机数量上限提高到8",
+      "en": "Raises drone capacity to 8.",
+      "zh": "无人机数量上限提高到8"
+    },
+    {
+      "key": "t_fd466208254c87d6",
+      "source": "方形机体",
+      "en": "Square Airframe",
+      "zh": "方形机体"
+    },
+    {
+      "key": "t_34e2ee238d961f27",
+      "source": "解锁2×2机体规格",
+      "en": "Unlocks 2x2 airframes.",
+      "zh": "解锁2×2机体规格"
+    },
+    {
+      "key": "t_10fa2b7831732adb",
+      "source": "矩形机体",
+      "en": "Rectangular Airframe",
+      "zh": "矩形机体"
+    },
+    {
+      "key": "t_19b33adc8181ee30",
+      "source": "解锁3×2及2×3机体规格",
+      "en": "Unlocks 3x2 and 2x3 airframes.",
+      "zh": "解锁3×2及2×3机体规格"
+    },
+    {
+      "key": "t_5df47a2b5c1a1264",
+      "source": "重型机体",
+      "en": "Heavy Airframe",
+      "zh": "重型机体"
+    },
+    {
+      "key": "t_0df09a8b720eea2b",
+      "source": "解锁3×3机体规格",
+      "en": "Unlocks 3x3 airframes.",
+      "zh": "解锁3×3机体规格"
+    },
+    {
+      "key": "t_5634f2ec2674921a",
+      "source": "灌溉无人机",
+      "en": "Irrigation Drone",
+      "zh": "灌溉无人机"
+    },
+    {
+      "key": "t_e71a391afac44b14",
+      "source": "解锁专用浇水机型",
+      "en": "Unlocks the specialized watering drone.",
+      "zh": "解锁专用浇水机型"
+    },
+    {
+      "key": "t_4da576b28ad0e586",
+      "source": "收获无人机",
+      "en": "Harvest Drone",
+      "zh": "收获无人机"
+    },
+    {
+      "key": "t_849ef45fb0be0c72",
+      "source": "解锁专用收割机型",
+      "en": "Unlocks the specialized harvesting drone.",
+      "zh": "解锁专用收割机型"
+    },
+    {
+      "key": "t_a97a6add8a0cb64a",
+      "source": "完成 26 项研究",
+      "en": "Complete all 26 research projects.",
+      "zh": "完成 26 项研究"
+    },
+    {
+      "key": "t_0a455f25f189747d",
+      "source": "机群",
+      "en": "Fleet",
+      "zh": "机群"
+    },
+    {
+      "key": "t_5b7465a41bcf0722",
+      "source": "没有可用部署位置",
+      "en": "No free deployment position is available.",
+      "zh": "没有可用部署位置"
+    },
+    {
+      "key": "t_8ca5b5b2571a8e8d",
+      "source": "内容：8 种作物 · 30 份委托 · 26 项研究 · 6 项试炼 · 5 种加工配方\n农场与程序列表会自动保存。",
+      "en": "8 crops / 30 contracts / 26 research projects / 6 trials / 5 recipes\nThe farm and program list save automatically.",
+      "zh": "内容：8 种作物 · 30 份委托 · 26 项研究 · 6 项试炼 · 5 种加工配方\n农场与程序列表会自动保存。"
+    },
+    {
+      "key": "t_c15e23dcc49ed49a",
+      "source": "无人机机群",
+      "en": "Drone Fleet",
+      "zh": "无人机机群"
+    },
+    {
+      "key": "t_6b4389e84ac3bfe2",
+      "source": "数量与机体规格独立解锁。队列自动寻路避让，直接移动发生碰撞会扣维修费。大型机体不能越界环绕。停止程序会清空队列。",
+      "en": "Capacity and airframe size unlock separately. Queues find safe routes; direct movement collisions cost repairs. Large bodies do not wrap at field edges. Stop clears queued tasks.",
+      "zh": "数量与机体规格独立解锁。队列自动寻路避让，直接移动发生碰撞会扣维修费。大型机体不能越界环绕。停止程序会清空队列。"
+    },
+    {
+      "key": "t_b7ec4a20a048944d",
+      "source": "部署数量 ",
+      "en": "Deployed ",
+      "zh": "部署数量 "
+    },
+    {
+      "key": "t_934d8698fb9b17f5",
+      "source": "    机体等级 ",
+      "en": "    Airframe tier ",
+      "zh": "    机体等级 "
+    },
+    {
+      "key": "t_d6427e0e5a3516c5",
+      "source": "    碰撞次数 ",
+      "en": "    Collisions ",
+      "zh": "    碰撞次数 "
+    },
+    {
+      "key": "t_0ae2167a577c5af2",
+      "source": "队列运行状态",
+      "en": "Queue State",
+      "zh": "队列运行状态"
+    },
+    {
+      "key": "t_444f7fd82c9049a2",
+      "source": "队列已暂停",
+      "en": "Queues paused",
+      "zh": "队列已暂停"
+    },
+    {
+      "key": "t_cd328aa07fc76e5e",
+      "source": "队列正在运行",
+      "en": "Queues running",
+      "zh": "队列正在运行"
+    },
+    {
+      "key": "t_5bcfba6ad127dde2",
+      "source": "继续机群",
+      "en": "Resume Fleet",
+      "zh": "继续机群"
+    },
+    {
+      "key": "t_efab014d999f230c",
+      "source": "暂停机群",
+      "en": "Pause Fleet",
+      "zh": "暂停机群"
+    },
+    {
+      "key": "t_020f51f80720e177",
+      "source": "部署通用无人机",
+      "en": "Deploy General Drone",
+      "zh": "部署通用无人机"
+    },
+    {
+      "key": "t_4daa5372e142bc1e",
+      "source": "购置费用随已部署数量增加，部署前检查空闲位置。",
+      "en": "Purchase cost increases with deployed count. A free location is checked first.",
+      "zh": "购置费用随已部署数量增加，部署前检查空闲位置。"
+    },
+    {
+      "key": "t_3220a19f43898c9e",
+      "source": "部署",
+      "en": "Deploy",
+      "zh": "部署"
+    },
+    {
+      "key": "t_e4446e70500f0ce1",
+      "source": "部署浇水无人机",
+      "en": "Deploy Irrigation Drone",
+      "zh": "部署浇水无人机"
+    },
+    {
+      "key": "t_fe4e2f0385b59038",
+      "source": "只能浇水，需先研究灌溉无人机。",
+      "en": "Watering only. Requires Irrigation Drone research.",
+      "zh": "只能浇水，需先研究灌溉无人机。"
+    },
+    {
+      "key": "t_7d5b1babf93bffea",
+      "source": "部署收获无人机",
+      "en": "Deploy Harvest Drone",
+      "zh": "部署收获无人机"
+    },
+    {
+      "key": "t_9d3cc8043756ee49",
+      "source": "只能收获，需先研究收获无人机。",
+      "en": "Harvesting only. Requires Harvest Drone research.",
+      "zh": "只能收获，需先研究收获无人机。"
+    },
+    {
+      "key": "t_c98616bfecdbe527",
+      "source": "无人机 ",
+      "en": "Drone ",
+      "zh": "无人机 "
+    },
+    {
+      "key": "t_0e902f574deb79a3",
+      "source": "坐标 ",
+      "en": "Position ",
+      "zh": "坐标 "
+    },
+    {
+      "key": "t_6f71a63848509683",
+      "source": "   队列 ",
+      "en": "   Queue ",
+      "zh": "   队列 "
+    },
+    {
+      "key": "t_b54db049610609e1",
+      "source": "   状态 ",
+      "en": "   State ",
+      "zh": "   状态 "
+    },
+    {
+      "key": "t_73ae9bf7412f6991",
+      "source": "机体规格",
+      "en": "Airframe Size",
+      "zh": "机体规格"
+    },
+    {
+      "key": "t_1b0518e3d2e0d97b",
+      "source": "选择已解锁规格。增加占地需要支付改造费用；缩小不退款。",
+      "en": "Choose an unlocked size. Increasing area costs coins; shrinking does not refund them.",
+      "zh": "选择已解锁规格。增加占地需要支付改造费用；缩小不退款。"
+    },
+    {
+      "key": "t_0a4d26e42b5a86c7",
+      "source": "调整",
+      "en": "Resize",
+      "zh": "调整"
+    },
+    {
+      "key": "t_31703b720e6915ff",
+      "source": "取消队列",
+      "en": "Cancel Queue",
+      "zh": "取消队列"
+    },
+    {
+      "key": "t_dcfd0c35d41e45fa",
+      "source": "取消该机的待处理作业。",
+      "en": "Cancel this drone's pending jobs.",
+      "zh": "取消该机的待处理作业。"
+    },
+    {
+      "key": "t_4d0b4688c787cf6c",
+      "source": "取消",
+      "en": "Cancel",
+      "zh": "取消"
+    },
+    {
+      "key": "t_ec268a6cffe927c5",
+      "source": "收回无人机",
+      "en": "Retire Drone",
+      "zh": "收回无人机"
+    },
+    {
+      "key": "t_c13a210c1acafef2",
+      "source": "须先清空队列，不退购置费用。",
+      "en": "Clear its queue first. Purchase cost is not refunded.",
+      "zh": "须先清空队列，不退购置费用。"
+    },
+    {
+      "key": "t_54a4e76b4629b1d8",
+      "source": "收回",
+      "en": "Retire",
+      "zh": "收回"
+    },
+    {
+      "key": "t_e7979dcfdb2e04cc",
+      "source": "0号基础机免维护。其他机体只有执行或等待队列时每30游戏秒收维护费：面积×机型系数，通用为1，专用为2；空闲免费。余额不足时暂停作业，基础机仍可免费种稻穗恢复资金。",
+      "en": "Base drone 0 has no upkeep. Other drones pay every 30 game seconds only while working or waiting: area x role factor (general 1, specialist 2). Idle drones are free. Insufficient funds pause work; base drone 0 can still grow free grain to restore income.",
+      "zh": "0号基础机免维护。其他机体只有执行或等待队列时每30游戏秒收维护费：面积×机型系数，通用为1，专用为2；空闲免费。余额不足时暂停作业，基础机仍可免费种稻穗恢复资金。"
+    },
+    {
+      "key": "t_dbfce8ada35f8ff7",
+      "source": "完整占地必须空闲、不越界；增加面积会扣费。",
+      "en": "The entire footprint must be free and in bounds. Expanding costs coins.",
+      "zh": "完整占地必须空闲、不越界；增加面积会扣费。"
+    },
+    {
+      "key": "t_4562024ddec75c55",
+      "source": "应用",
+      "en": "Apply",
+      "zh": "应用"
+    },
+    {
+      "key": "t_a74d4c76b8b8a5a9",
+      "source": "无人机存档无效",
+      "en": "Invalid drone save data.",
+      "zh": "无人机存档无效"
+    },
+    {
+      "key": "t_837e7a109abfdd30",
+      "source": "空闲",
+      "en": "Idle",
+      "zh": "空闲"
+    },
+    {
+      "key": "t_9cef5f957680c6ab",
+      "source": "未知无人机编号：",
+      "en": "Unknown drone ID: ",
+      "zh": "未知无人机编号："
+    },
+    {
+      "key": "t_3d5259e22ef29ead",
+      "source": "此无人机有待处理队列，请先取消队列",
+      "en": "This drone has queued jobs. Cancel its queue first.",
+      "zh": "此无人机有待处理队列，请先取消队列"
+    },
+    {
+      "key": "t_0d5c04745a08a611",
+      "source": "方向应为 East / West / North / South",
+      "en": "Direction must be East, West, North or South.",
+      "zh": "方向应为 East / West / North / South"
+    },
+    {
+      "key": "t_787f0494d2ac2e9f",
+      "source": "机体越界：大型机体不能越界环绕",
+      "en": "Airframe out of bounds: large bodies do not wrap.",
+      "zh": "机体越界：大型机体不能越界环绕"
+    },
+    {
+      "key": "t_9a715648af66d2e9",
+      "source": "无人机碰撞：维修扣费 ",
+      "en": "Drone collision: repair cost ",
+      "zh": "无人机碰撞：维修扣费 "
+    },
+    {
+      "key": "t_34ef8002189711ea",
+      "source": "碰撞受阻",
+      "en": "Collision blocked",
+      "zh": "碰撞受阻"
+    },
+    {
+      "key": "t_813a62326d723fa6",
+      "source": "浇水无人机只能执行浇水作业",
+      "en": "Irrigation drones can only water crops.",
+      "zh": "浇水无人机只能执行浇水作业"
+    },
+    {
+      "key": "t_aa391c6f38a35830",
+      "source": "收获无人机只能执行收获作业",
+      "en": "Harvest drones can only harvest crops.",
+      "zh": "收获无人机只能执行收获作业"
+    },
+    {
+      "key": "t_eaeb41974e41c3fc",
+      "source": "无人机数量已达解锁上限",
+      "en": "Drone capacity has been reached.",
+      "zh": "无人机数量已达解锁上限"
+    },
+    {
+      "key": "t_c253f9908d46eafe",
+      "source": "机型应为 general / irrigator / harvester",
+      "en": "Type must be general, irrigator or harvester.",
+      "zh": "机型应为 general / irrigator / harvester"
+    },
+    {
+      "key": "t_d95c67ac0f56af93",
+      "source": "请先解锁对应无人机机型",
+      "en": "Unlock the drone type first.",
+      "zh": "请先解锁对应无人机机型"
+    },
+    {
+      "key": "t_66c1897c4e7d6e6b",
+      "source": "部署位置无效或被占用",
+      "en": "The deployment position is invalid or occupied.",
+      "zh": "部署位置无效或被占用"
+    },
+    {
+      "key": "t_8c6aa3fec791b3e5",
+      "source": "部署资金不足",
+      "en": "Not enough coins to deploy.",
+      "zh": "部署资金不足"
+    },
+    {
+      "key": "t_321fe1ee060daeb9",
+      "source": "无人机已部署，编号 ",
+      "en": "Drone deployed. ID ",
+      "zh": "无人机已部署，编号 "
+    },
+    {
+      "key": "t_2d5a68b348f1c4b6",
+      "source": "该机体规格尚未解锁",
+      "en": "This airframe size is still locked.",
+      "zh": "该机体规格尚未解锁"
+    },
+    {
+      "key": "t_46b621370846f2d6",
+      "source": "调整机体前请先取消队列",
+      "en": "Cancel the queue before resizing.",
+      "zh": "调整机体前请先取消队列"
+    },
+    {
+      "key": "t_fb3072a34f20fb29",
+      "source": "完整机体占地必须空闲且不越界",
+      "en": "The entire airframe footprint must be free and in bounds.",
+      "zh": "完整机体占地必须空闲且不越界"
+    },
+    {
+      "key": "t_61801a9271130615",
+      "source": "机体改造资金不足",
+      "en": "Not enough coins to resize.",
+      "zh": "机体改造资金不足"
+    },
+    {
+      "key": "t_d63f45d9e84b8ded",
+      "source": "机体规格已更新",
+      "en": "Airframe size updated.",
+      "zh": "机体规格已更新"
+    },
+    {
+      "key": "t_72ccc3dd41fb74d3",
+      "source": "基础无人机不能拆除",
+      "en": "The base drone cannot be retired.",
+      "zh": "基础无人机不能拆除"
+    },
+    {
+      "key": "t_f4256a071eaa9e95",
+      "source": "请先取消队列",
+      "en": "Cancel the queue first.",
+      "zh": "请先取消队列"
+    },
+    {
+      "key": "t_3c90d45d1101c92a",
+      "source": "无人机已收回，不返还购置费用",
+      "en": "Drone retired. Purchase cost is not refunded.",
+      "zh": "无人机已收回，不返还购置费用"
+    },
+    {
+      "key": "t_ae71d7e7b25d7070",
+      "source": "每台无人机最多排队64项任务",
+      "en": "Each drone queue is limited to 64 jobs.",
+      "zh": "每台无人机最多排队64项任务"
+    },
+    {
+      "key": "t_5a14bb1ac82af7f8",
+      "source": "目标超出完整机体可达范围",
+      "en": "Target is outside the full airframe's valid range.",
+      "zh": "目标超出完整机体可达范围"
+    },
+    {
+      "key": "t_4dcbbcfa61546696",
+      "source": "排队中",
+      "en": "Queued",
+      "zh": "排队中"
+    },
+    {
+      "key": "t_a88b0b1b8fb6a03d",
+      "source": "维护费不足，暂停",
+      "en": "Upkeep unaffordable / Paused",
+      "zh": "维护费不足，暂停"
+    },
+    {
+      "key": "t_31400f3d1c06663c",
+      "source": "等待避让",
+      "en": "Waiting for clearance",
+      "zh": "等待避让"
+    },
+    {
+      "key": "t_bd1ea1cce79365bb",
+      "source": "队列任务等待超时，已取消；请调整路线",
+      "en": "Queued job timed out and was cancelled. Adjust the route.",
+      "zh": "队列任务等待超时，已取消；请调整路线"
+    },
+    {
+      "key": "t_bbae5839b9bc1556",
+      "source": "移动中",
+      "en": "Moving",
+      "zh": "移动中"
+    },
+    {
+      "key": "t_c1220d147d57e041",
+      "source": "无人机参数需要整数",
+      "en": "Drone parameters must be integers.",
+      "zh": "无人机参数需要整数"
+    },
+    {
+      "key": "t_b201dfa1ce99894f",
+      "source": "无人机索引越界",
+      "en": "Drone index is out of range.",
+      "zh": "无人机索引越界"
+    },
+    {
+      "key": "t_8d6bc0a28fa133be",
+      "source": "语言 / Language",
+      "en": "Language",
+      "zh": "语言 / Language"
+    },
+    {
+      "key": "t_0b224ea2a137b106",
+      "source": "首次启动默认英文，可在英文和简体中文之间切换。",
+      "en": "English is the default. Switch between English and Simplified Chinese.",
+      "zh": "首次启动默认英文，可在英文和简体中文之间切换。"
+    },
+    {
+      "key": "t_87c2be267cffafbc",
+      "source": "切换语言",
+      "en": "Switch Language",
+      "zh": "切换语言"
+    },
+    {
+      "key": "t_4c02bd0591a54da8",
+      "source": "」",
+      "en": "\"",
+      "zh": "」"
+    },
+    {
+      "key": "t_562870dcaae7c733",
+      "source": "第 {0} 日    {1}    {2}    {3}×{3} 农田",
+      "en": "Day {0} / {1} / {2} / {3}x{3} field",
+      "zh": "第 {0} 日    {1}    {2}    {3}×{3} 农田"
+    },
+    {
+      "key": "t_edd34843b5e4fe97",
+      "source": "第 {0} 章 / {1}",
+      "en": "Chapter {0} / {1}",
+      "zh": "第 {0} 章 / {1}"
+    },
+    {
+      "key": "t_2609da667bad60c6",
+      "source": "无人机 {0} / 地块 {1}:{2}",
+      "en": "Drone {0} / Plot {1}:{2}",
+      "zh": "无人机 {0} / 地块 {1}:{2}"
+    },
+    {
+      "key": "t_dd1c193e1331f1e2",
+      "source": "{0} · 第 {1} 单",
+      "en": "{0} / Order {1}",
+      "zh": "{0} · 第 {1} 单"
+    },
+    {
+      "key": "t_a4cc4a8e8cdeb3de",
+      "source": "坐标 {0},{1} / 队列 {2} / 状态 {3}",
+      "zh": "坐标 {0},{1} / 队列 {2} / 状态 {3}",
+      "en": "Position {0},{1} / Queue {2} / State {3}"
+    },
+    {
+      "key": "t_c634772b7f7e0ed8",
+      "source": "购置费用 {0} 金币。部署前检查空闲位置。",
+      "en": "Purchase cost: {0} coins. A free location is checked before deployment.",
+      "zh": "购置费用 {0} 金币。部署前检查空闲位置。"
+    },
+    {
+      "key": "t_278c79342fb8eeac",
+      "source": "改造费用 {0} 金币。完整占地必须空闲，规格需已解锁。",
+      "en": "Upgrade cost: {0} coins. The size must be unlocked and its entire footprint free.",
+      "zh": "改造费用 {0} 金币。完整占地必须空闲，规格需已解锁。"
+    },
+    {
+      "key": "t_15c85383c8434089",
+      "source": "双机分区",
+      "zh": "双机分区",
+      "en": "Two-drone lanes"
+    },
+    {
+      "key": "t_55c7e153c2dd550f",
+      "source": "专用灌溉队列",
+      "zh": "专用灌溉队列",
+      "en": "Irrigation queue"
+    }
+  ]
+}

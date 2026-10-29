@@ -8,4 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/VerdantCircuit/Scenes/VerdantCircuit.unity
     guid: 63235bb116d33442a91960867dc1aa2e
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 20a187903a60f4de2837ad5d6af19d13, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 6ecd24e2da6f6472ca385f06d0b47b06, type: 2}

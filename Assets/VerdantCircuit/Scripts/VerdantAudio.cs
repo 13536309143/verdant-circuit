@@ -16,7 +16,7 @@ namespace Verdant
                 for(int k=0;k<3;k++){float hz=notes[chord*3+k];value+=Mathf.Sin(2*Mathf.PI*hz*t)*.025f+Mathf.Sin(2*Mathf.PI*(hz*2+.18f)*t)*.009f;}
                 samples[n]=value*envelope;
             }
-            var clip=AudioClip.Create("禾湾 · 四季和弦",samples.Length,1,rate,false);clip.SetData(samples,0);ambience.clip=clip;ambience.loop=true;SetVolume(level);ambience.Play();
+            var clip=AudioClip.Create(L10n.T("禾湾 · 四季和弦"),samples.Length,1,rate,false);clip.SetData(samples,0);ambience.clip=clip;ambience.loop=true;SetVolume(level);ambience.Play();
         }
         public void SetVolume(float value){volume=Mathf.Clamp01(value);if(ambience!=null)ambience.volume=volume;if(effects!=null)effects.volume=volume*.28f;}
         public void PlayCue(float pitch)

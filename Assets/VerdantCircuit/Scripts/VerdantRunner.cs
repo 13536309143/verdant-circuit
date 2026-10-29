@@ -5,15 +5,15 @@ namespace Verdant
 {
     public sealed class VerdantRunner
     {
-        public FarmVM VM;public VerdantFarm Farm;public bool Running,Paused;public string Status="就绪",Error="";public int ErrorLine;
+        public FarmVM VM;public VerdantFarm Farm;public bool Running,Paused;public string Status=L10n.T("就绪"),Error="";public int ErrorLine;
         public event Action Changed;float delay;int challengeAtStart;
         public VerdantRunner(VerdantFarm farm){Farm=farm;}
         public bool Start(string source)
         {
             try
             {
-                var program=new FarmCompiler().Compile(source);VM=new FarmVM(Farm,program);Running=true;Paused=false;delay=0;Error="";ErrorLine=0;Status="运行中";challengeAtStart=Farm.challenge;Farm.Say("程序启动 · "+program.code.Count+" 条指令");Notify();return true;
-            }catch(FarmCodeException e){Stop();Error=e.Message;ErrorLine=e.Line;Status="语法错误";Farm.Say(Error);Notify();return false;}
+                var program=new FarmCompiler().Compile(source);Farm.Fleet.CancelAll();VM=new FarmVM(Farm,program);Running=true;Paused=false;delay=0;Error="";ErrorLine=0;Status=L10n.T("运行中");challengeAtStart=Farm.challenge;Farm.Say(L10n.T("程序启动 · ")+program.code.Count+L10n.T(" 条指令"));Notify();return true;
+            }catch(FarmCodeException e){Stop();Error=e.Message;ErrorLine=e.Line;Status=L10n.T("语法错误");Farm.Say(Error);Notify();return false;}
         }
         public void Tick(float dt)
         {
@@ -31,17 +31,17 @@ namespace Verdant
                     bool action=VM.Step();if(action){delay=Mathf.Max(0.01f,VM.Wait);break;}
                     if(single&&budget==0)break;
                 }
-                if(VM.Finished){Running=false;Paused=false;Status="已完成";Farm.Say("程序执行完成");Notify();}
-            }catch(FarmCodeException e){Running=false;Paused=false;Error=e.Message;ErrorLine=e.Line;Status="执行错误";Farm.Say(Error);Notify();}
+                if(VM.Finished){Running=false;Paused=false;Status=L10n.T("已完成");Farm.Say(L10n.T("程序执行完成"));Notify();}
+            }catch(FarmCodeException e){Farm.Fleet.CancelAll();Running=false;Paused=false;Error=e.Message;ErrorLine=e.Line;Status=L10n.T("执行错误");Farm.Say(Error);Notify();}
         }
-        public void TogglePause(){if(!Running)return;Paused=!Paused;Status=Paused?"已暂停":"运行中";Notify();}
+        public void TogglePause(){if(!Running)return;Paused=!Paused;Farm.Data.fleetPaused=Paused;Status=Paused?L10n.T("已暂停"):L10n.T("运行中");Notify();}
         public void Step(string source)
         {
-            if(!Running){if(!Start(source))return;Paused=true;}
-            if(!Paused){Paused=true;Status="已暂停";}
-            Execute(true);if(Running)Status="单步 · 已暂停";Notify();
+            if(!Running){if(!Start(source))return;Paused=true;}Farm.Data.fleetPaused=true;
+            if(!Paused){Paused=true;Status=L10n.T("已暂停");}
+            Execute(true);if(Running)Status=L10n.T("单步 · 已暂停");Notify();
         }
-        public void Stop(){Running=false;Paused=false;delay=0;Status="已停止";Notify();}
+        public void Stop(){Farm.Fleet.CancelAll();Running=false;Paused=false;delay=0;Status=L10n.T("已停止");Notify();}
         void Notify(){if(Changed!=null)Changed();}
     }
 }

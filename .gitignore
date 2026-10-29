@@ -33,3 +33,14 @@
 
 # Generated independent model report
 /tools/机群与浮空岛-规则验证.json
+
+/InternalTestReports-localization.json
+
+# Generated Addressables build state and partial setup orphan
+/Assets/AddressableAssetsData/*/addressables_content_state*
+/Assets/AddressableAssetsData/link*.xml*
+/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Locale-zh-Hans 2.asset*
+/Assets/AddressableAssetsData/OSX/
+/Assets/AddressableAssetsData/OSX.meta
+/Assets/AddressableAssetsData/Windows/
+/Assets/AddressableAssetsData/Windows.meta

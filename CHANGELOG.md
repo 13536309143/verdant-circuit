@@ -1,4 +1,16 @@
-# 更新日志
+# Changelog / 更新日志
+
+## [0.10.2] — 2026-10-30
+
+- Playable multi-drone fleet: capacity 1/2/4/8, independently researched airframe tiers, 1×1, 2×2, 3×2, 2×3 and 3×3 bodies.
+- General, irrigator and harvester roles; per-drone queues, full-footprint pathfinding, bounded collision fees, active upkeep and zero-money recovery.
+- Eight new research projects (26 total), two fleet templates (11 total), fleet management and resizing panels, stable saved IDs and paused queue restoration.
+- Crop coin/research returns and supplementary order payouts rebalanced; all 30 contracts remain reachable. See [Fleet & economy](docs/FLEET.md) for exact prices and APIs.
+- English default, persistent Simplified Chinese selection, F8 shortcut, Unity Localization String/Asset Tables and bundled CJK fonts. English-first README with Chinese edition.
+- macOS Universal and Windows x64 Mono release packages; Windows is cross-built on Mac, native Windows verification pending.
+- Actual-engine fleet/core/campaign/localization checks and real-frame bilingual/fleet UI smoke test. Floating islands remain roadmap work.
+
+本版落实多无人机、独立数量／规格解锁与经济调整，并提供中英文和双平台构建。保留 0.10.1 发行与旧存档；新机群科技需正常解锁。
 
 ## [0.10.1] — 2026-10-29
 

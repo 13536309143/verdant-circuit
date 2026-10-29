@@ -1,0 +1,2609 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Verdant_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 74745defe16994a8491157ca084dda41, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 662225018880
+    m_Localized: Arrival at Verdant Bay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213184
+    m_Localized: The Power of Loops
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213185
+    m_Localized: Water and Soil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213186
+    m_Localized: Companion Gardens
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213187
+    m_Localized: Precision Farming
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213188
+    m_Localized: The Starbloom Project
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213189
+    m_Localized: Grain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213190
+    m_Localized: Free to plant. A reliable starter crop that grows faster in moist
+      soil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213191
+    m_Localized: Radish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213192
+    m_Localized: Requires tilled soil. Fertile soil increases the harvest yield.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213193
+    m_Localized: Blue Flax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213194
+    m_Localized: Adjacent grain increases yield. Try alternating rows or a checkerboard.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213195
+    m_Localized: Blueberry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213196
+    m_Localized: Needs moist soil. Regrows twice after the first harvest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213197
+    m_Localized: Sunflower
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213198
+    m_Localized: Harvest mature sunflowers to store energy for starblooms.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213199
+    m_Localized: Honey Pumpkin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213200
+    m_Localized: Requires tilled soil. Adjacent mature pumpkins increase harvest
+      yield.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213201
+    m_Localized: Cloud Tea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213202
+    m_Localized: Needs irrigation. Crowded tea loses yield; nearby sunflowers increase
+      it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213203
+    m_Localized: Starbloom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213204
+    m_Localized: Requires tilled, moist soil and 3 energy per planting. Nearby tea
+      increases research.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213205
+    m_Localized: Lightweight Motor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213206
+    m_Localized: Shortens the action interval by 25%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213207
+    m_Localized: Selected Seeds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213208
+    m_Localized: Adds 1 to the base yield of every crop.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213209
+    m_Localized: East Bank Expansion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213210
+    m_Localized: Expands the field from 4x4 to 6x6.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213211
+    m_Localized: Fiber Crops
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213212
+    m_Localized: Unlocks blue flax and companion-crop bonuses.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213213
+    m_Localized: Water Storage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213214
+    m_Localized: Unlocks irrigation, blueberries and sunflowers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213215
+    m_Localized: Compost Cycle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213216
+    m_Localized: Unlocks fertilizing. Fertile soil improves yield.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213217
+    m_Localized: Servo Motor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213218
+    m_Localized: Further speeds up robot actions.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213219
+    m_Localized: Water-Retaining Soil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213220
+    m_Localized: Halves the rate of moisture loss.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213221
+    m_Localized: Patch Farming
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213222
+    m_Localized: Unlocks pumpkins and mature-neighbor harvest bonuses.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213223
+    m_Localized: West Slope Expansion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213224
+    m_Localized: Expands the field to 8x8.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213225
+    m_Localized: Seed Improvement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213226
+    m_Localized: Adds another 1 to every crop's base yield.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213227
+    m_Localized: Solar Collection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213228
+    m_Localized: Doubles the energy obtained from sunflowers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213229
+    m_Localized: Cloud Tea Garden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213230
+    m_Localized: Unlocks cloud tea and flower-tea companion planting.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213231
+    m_Localized: Living Soil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213232
+    m_Localized: Halves the fertility lost on harvest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213233
+    m_Localized: Quantum Scheduling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213234
+    m_Localized: Reduces the action interval to 0.08 seconds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213235
+    m_Localized: Starbloom Greenhouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213236
+    m_Localized: Unlocks starblooms, which consume energy when planted.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213237
+    m_Localized: Ecology Lab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213238
+    m_Localized: Increases harvest research by 50%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213239
+    m_Localized: Verdant Autonomy Station
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213240
+    m_Localized: 'The final project: establish a self-running farm.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213241
+    m_Localized: First Steps
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213242
+    m_Localized: Welcome to Verdant Bay. Get to know your field robot.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213243
+    m_Localized: Use the arrow keys or WASD; click a plot to navigate.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213244
+    m_Localized: Seeds of Hope
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213245
+    m_Localized: Free grain is this land's first gift to you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213246
+    m_Localized: Press Space to plant, or call plant(grain).
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213247
+    m_Localized: The First Harvest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213248
+    m_Localized: Golden heads mean the grain is ready to harvest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213249
+    m_Localized: 'Press E to harvest; use if ready(): in code.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213250
+    m_Localized: Beyond Repetition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213251
+    m_Localized: Let code perform the actions you already know.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213252
+    m_Localized: Load the Grain Patrol template and click Run.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213253
+    m_Localized: A Quieter Motor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213254
+    m_Localized: A more agile robot can tend a larger field.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213255
+    m_Localized: Buy Lightweight Motor on the Research screen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213256
+    m_Localized: Patrol Loop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213257
+    m_Localized: Repetition is a reusable piece of code.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213258
+    m_Localized: 'while True: keeps running until you stop it.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213259
+    m_Localized: Roots Below
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213260
+    m_Localized: Radishes prefer loose soil. Till first, then plant.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213261
+    m_Localized: Use till(), followed by plant(radish).
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213262
+    m_Localized: Expand East
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213263
+    m_Localized: Bring more land into your loop.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213264
+    m_Localized: Research East Bank Expansion. Use size() so loops adapt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213265
+    m_Localized: Blue Fiber
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213266
+    m_Localized: Grow flax beside grain and observe the companion bonus.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213267
+    m_Localized: Research Fiber Crops; nearby grain increases flax yield.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213268
+    m_Localized: A Thousand Small Things
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213269
+    m_Localized: Reliable automation is built from many small actions.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213270
+    m_Localized: Scan the field with for y in range(size()):.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213271
+    m_Localized: Moisture changes growth speed and fades over time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213272
+    m_Localized: After researching Water Storage, water() irrigates the current plot.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213273
+    m_Localized: A Patch of Blueberries
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213274
+    m_Localized: For a perennial crop, harvesting need not mean starting again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213275
+    m_Localized: Blueberries need moist soil. Each plant can be harvested three times.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213276
+    m_Localized: Save the Sunshine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213277
+    m_Localized: Harvest sunflowers and store energy for future experiments.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213278
+    m_Localized: Each sunflower harvest also produces energy.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213279
+    m_Localized: The Soil Cycle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213280
+    m_Localized: Fertility improves the amount you harvest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213281
+    m_Localized: Research Compost Cycle first. Each fertilizer application costs
+      2 coins.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213282
+    m_Localized: The Rhythm of Water
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213283
+    m_Localized: Make irrigation part of your program.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213284
+    m_Localized: 'Use if moisture() < 0.6: water(). Retaining soil and rain can keep
+      moisture above 50%.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213285
+    m_Localized: A Honey-Colored Patch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213286
+    m_Localized: Let adjacent pumpkins mature before harvesting.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213287
+    m_Localized: Mature neighboring pumpkins increase yield; harvest order matters.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213288
+    m_Localized: Evidence of Companionship
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213289
+    m_Localized: Relationships between plants can be programmed too.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213290
+    m_Localized: Grain with flax, or flowers with tea, can trigger bonuses.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213291
+    m_Localized: The West Slope
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213292
+    m_Localized: A larger field calls for a better patrol loop.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213293
+    m_Localized: Research West Slope Expansion to scan all 64 plots.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213294
+    m_Localized: Reliable Scheduling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213295
+    m_Localized: Keep the program reliable as the world gets larger.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213296
+    m_Localized: Pause to inspect the current line; Step helps with debugging.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213297
+    m_Localized: Harvest Engineering
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213298
+    m_Localized: Turn small harvests into a steady supply.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213299
+    m_Localized: Try seed and water-retention research, then compare income rates.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213300
+    m_Localized: Tea in the Mist
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213301
+    m_Localized: Tea needs water and space for its roots.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213302
+    m_Localized: Crowded tea loses yield. Alternate it with sunflowers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213303
+    m_Localized: Put Experience into Functions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213304
+    m_Localized: Wrap repeated farm actions in a function, then call it from a loop.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213305
+    m_Localized: 'Define def tend(): and call tend().'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213306
+    m_Localized: Make Every Drop Count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213307
+    m_Localized: Efficiency comes from decisions, not blind repetition.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213308
+    m_Localized: Combine moisture(), ready() and crop() to choose the next action.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213309
+    m_Localized: A Thousand in Storage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213310
+    m_Localized: Verdant Bay is no longer an untended field.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213311
+    m_Localized: Open Storage to inspect crop stocks and growing rules.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213312
+    m_Localized: A Precise Heartbeat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213313
+    m_Localized: A shorter action cycle calls for clearer code.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213314
+    m_Localized: Research Servo Motor, then Quantum Scheduling.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213315
+    m_Localized: Turn sunlight into crops and crops into knowledge.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213316
+    m_Localized: Starblooms require tea research. Keep sunflower energy in reserve.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213317
+    m_Localized: The First Starlight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213318
+    m_Localized: Starblooms need moisture, tilled soil and energy together.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213319
+    m_Localized: Each starbloom planting costs 3 energy. Adjacent tea boosts research.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213320
+    m_Localized: Ten Thousand Actions Together
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213321
+    m_Localized: Every action begins with a rule you wrote.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213322
+    m_Localized: Check that the program replants, irrigates and handles immature
+      crops.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213323
+    m_Localized: Autonomy Online
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213324
+    m_Localized: Build the final project to connect the farm's autonomy system.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213325
+    m_Localized: Keep improving the economy through greenhouse and ecology research.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213326
+    m_Localized: Verdant Bay, Alight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213327
+    m_Localized: You finished the main campaign. The field and its possibilities
+      keep growing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213328
+    m_Localized: Complete the six trials, collect achievements or keep optimizing
+      your farm.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213329
+    m_Localized: Grain Express
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213330
+    m_Localized: Root Experiment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213331
+    m_Localized: Water-Wise Growing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213332
+    m_Localized: Pumpkin Patch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213333
+    m_Localized: Flowers and Tea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213334
+    m_Localized: Starlight Circuit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213335
+    m_Localized: Harvest 90 grain within 150 seconds using a scanning loop.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213336
+    m_Localized: Harvest 80 radishes within 180 seconds. Handle tilling and replanting.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213337
+    m_Localized: Harvest 80 blueberries within 210 seconds. Manage moisture and regrowth.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213338
+    m_Localized: Harvest 90 pumpkins within 240 seconds. Use adjacency bonuses.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213339
+    m_Localized: Harvest 65 tea within 240 seconds. Avoid overcrowding.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213340
+    m_Localized: Harvest 50 starblooms within 300 seconds. Maintain energy supply.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213341
+    m_Localized: A First Harvest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213342
+    m_Localized: A Hundred in Storage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213343
+    m_Localized: A Friend of Loops
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213344
+    m_Localized: Automation Engineer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213345
+    m_Localized: Irrigation Specialist
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213346
+    m_Localized: Companion Researcher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213347
+    m_Localized: Ten Thousand Steps
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213348
+    m_Localized: Room to Grow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213349
+    m_Localized: Starbloom Breeder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213350
+    m_Localized: Research Pioneer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213351
+    m_Localized: Trial Collector
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213352
+    m_Localized: Harvest 1 unit of crops in total.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213353
+    m_Localized: Harvest 100 units of crops in total.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213354
+    m_Localized: Harvest 1000 units of crops in total.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213355
+    m_Localized: Perform 100 program actions.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213356
+    m_Localized: Perform 5000 program actions.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213357
+    m_Localized: Irrigate successfully 100 times.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213358
+    m_Localized: Trigger 100 companion or adjacency harvest bonuses.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213359
+    m_Localized: Move across 10000 plots.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213360
+    m_Localized: Expand to an 8x8 field.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213361
+    m_Localized: Harvest 100 starblooms.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213362
+    m_Localized: Complete all 18 research projects.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213363
+    m_Localized: Pass all six trials.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213364
+    m_Localized: Grain Patrol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213365
+    m_Localized: Radish Farming
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213366
+    m_Localized: Blueberry Irrigation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213367
+    m_Localized: Sunshine Collection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213368
+    m_Localized: Pumpkin Blocks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213369
+    m_Localized: Tea and Flowers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213370
+    m_Localized: Farming with Functions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213371
+    m_Localized: Irrigation Patrol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213372
+    m_Localized: "# Start at each plot\nwhile True:\n    for row in range(size()):\n       
+      for col in range(size()):\n            if ready():\n                harvest()\n           
+      if crop() == empty:\n                plant(grain)\n            move(East)\n       
+      move(North)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213373
+    m_Localized: "Verdant Circuit uses a limited farm language inspired by Python.
+      It only controls the game; it does not access your files or the network.\n\nACTIONS\nmove(East)
+      / move(West) / move(North) / move(South)\nCrossing a field edge wraps to the
+      opposite side.\nplant(grain) / harvest() / till() / water() / fertilize()\nwait(3)
+      waits for 3 game seconds; print(value) writes to the log.\n\nSENSORS\nready():
+      whether the current crop is mature\ncrop(): current crop, or empty\nmoisture()
+      / fertility(): values from 0 to 1\nx() / y(): zero-based robot coordinates\nsize():
+      field width; energy(): stored energy\ncount(grain): current grain stock; money():
+      coins\nneighbors(pumpkin): matching crops in four adjacent plots\n\nSYNTAX\nIndent
+      with four spaces. Supports # comments, variables, + - * / %, comparisons, and/or/not,
+      if/elif/else, while, for ... in range(...), repeat, no-argument functions,
+      break, continue and return.\nrange() accepts 1 to 3 integer arguments. Functions
+      nest up to 24 calls.\n\nif ready():\n    harvest()\nelse:\n    wait(1)\n\nCROP
+      IDS\nGrain: grain / Radish: radish / Blue flax: flax\nBlueberry: berry / Sunflower:
+      sunflower / Pumpkin: pumpkin\nCloud tea: tea / Starbloom: starbloom\n\nEDITOR
+      AND DEBUGGING\nUndo/redo up to 100 edits per program in this session: Ctrl/Cmd+Z
+      and Ctrl/Cmd+Shift+Z (or Ctrl+Y).\nAdd or delete programs in Programs; keep
+      at least one. Viewing another program does not stop the current one. Run replaces
+      the active program.\nSyntax and runtime errors show their original source line.
+      Pause and Step help inspect execution. Stop keeps all farm progress. Programs
+      stop safely after 500000 instructions; empty loops yield between frames.\n\nPROGRESS\nCrop
+      contracts count harvests after accepting that contract. Each crop has a different
+      quantity target; there is no timer requirement. Earlier stock does not skip
+      later crop contracts.\nOther contracts use cumulative progress. Claim rewards
+      to advance; every five contracts opens a chapter. Research costs coins and
+      knowledge. Free farming remains available after the campaign.\n\nSAVE\nThe
+      farm and program list save every 30 real seconds and on exit. Manual saving
+      keeps the previous backup. Trials use a separate temporary farm and restore
+      the campaign afterward.\n\nLANGUAGE\nThe first launch uses English. Switch
+      English / Chinese in Settings; the choice is remembered. Existing player code
+      is never translated."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213374
+    m_Localized: 'Line '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213375
+    m_Localized: ': '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213376
+    m_Localized: 'Undefined variable: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213377
+    m_Localized: Cannot divide by zero.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213378
+    m_Localized: 'Unknown operator: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213379
+    m_Localized: '() expects '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213380
+    m_Localized: ' argument(s).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213381
+    m_Localized: range() expects 1 to 3 arguments.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213382
+    m_Localized: range() step cannot be zero.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213383
+    m_Localized: A range loop is limited to 4096 iterations.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213384
+    m_Localized: 'Unknown sensor: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213385
+    m_Localized: range() arguments must be reasonable integers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213386
+    m_Localized: 'Unsupported character: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213387
+    m_Localized: Incomplete expression.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213388
+    m_Localized: Missing expression.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213389
+    m_Localized: 'Cannot parse: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213390
+    m_Localized: Missing closing parenthesis.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213391
+    m_Localized: 'Invalid name: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213392
+    m_Localized: 'Unknown sensor: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213393
+    m_Localized: Programs are limited to 48000 characters.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213394
+    m_Localized: Use four spaces instead of Tab characters.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213395
+    m_Localized: Indentation must be a multiple of four spaces.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213396
+    m_Localized: Enter a program first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213397
+    m_Localized: Indentation does not match.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213398
+    m_Localized: 'Undefined function: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213399
+    m_Localized: Verdant Circuit UI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213400
+    m_Localized: Verdant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213401
+    m_Localized: Orders
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213402
+    m_Localized: Workshop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213403
+    m_Localized: Research
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213404
+    m_Localized: Storage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213405
+    m_Localized: Guide
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213406
+    m_Localized: Trials
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213407
+    m_Localized: Achievements
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213408
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213409
+    m_Localized: Click plots to navigate  /  Arrow keys or WASD to move  /  Scroll
+      to zoom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213410
+    m_Localized: Welcome to Verdant Bay. Follow the contract on the left, then let
+      your program tend the field.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213411
+    m_Localized: Claim Reward
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213412
+    m_Localized: Planting Catalog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213413
+    m_Localized: Plant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213414
+    m_Localized: Harvest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213415
+    m_Localized: Water
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213416
+    m_Localized: Till
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213417
+    m_Localized: Space Plant  /  E Harvest  /  Q Water  /  T Till
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213418
+    m_Localized: Automation Studio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213419
+    m_Localized: Programs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213420
+    m_Localized: Undo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213421
+    m_Localized: Redo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213422
+    m_Localized: Templates
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213423
+    m_Localized: Run
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213424
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213425
+    m_Localized: Step
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213426
+    m_Localized: Stop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213427
+    m_Localized: Ready
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213428
+    m_Localized: Leave the trial before switching campaign programs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213429
+    m_Localized: Stop the running program before deleting it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213430
+    m_Localized: Keep at least one program.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213431
+    m_Localized: Loaded "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213432
+    m_Localized: '". Edit it, then click Run.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213433
+    m_Localized: 'Coins  '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213434
+    m_Localized: '     Research  '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213435
+    m_Localized: '     Energy  '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213436
+    m_Localized: '     Water  '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213437
+    m_Localized: ' day    '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213438
+    m_Localized: Rain / Natural irrigation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213439
+    m_Localized: Clear / Normal growth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213440
+    m_Localized: ' field'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213441
+    m_Localized: 'Timed Trial / '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213442
+    m_Localized: ' / '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213443
+    m_Localized: '     Remaining '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213444
+    m_Localized: ' s'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213445
+    m_Localized: Trials use a separate farm with all research unlocked. Stop to edit
+      the program; leave the trial from Settings.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213446
+    m_Localized: 'Goal: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213447
+    m_Localized: '    Reward '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213448
+    m_Localized: ' coins'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213449
+    m_Localized: 'How: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213450
+    m_Localized: '
+
+      Claim the reward once the target is reached.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213451
+    m_Localized: 'Harvest '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213452
+    m_Localized: ' units of '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213453
+    m_Localized: ' after accepting this contract. Earlier harvests do not count.
+
+      How: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213454
+    m_Localized: Campaign complete. Trials, achievements and free farming are still
+      available.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213455
+    m_Localized: 30 / 30 contracts complete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213456
+    m_Localized: Thank you for bringing this land back to life.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213457
+    m_Localized: 'PIP-01 / Plot '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213458
+    m_Localized: Empty plot, ready to plant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213459
+    m_Localized: Ready to harvest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213460
+    m_Localized: Tilled soil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213461
+    m_Localized: Untilled soil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213462
+    m_Localized: '     Moisture '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213463
+    m_Localized: '%     Fertility '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213464
+    m_Localized: ' / Planting cost '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213465
+    m_Localized: ' coins
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213466
+    m_Localized: In trial / Campaign progress preserved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213467
+    m_Localized: 'Total harvested '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213468
+    m_Localized: '     Program actions '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213469
+    m_Localized: '     Income per minute '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213470
+    m_Localized: 'Viewing '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213471
+    m_Localized: '   Running '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213472
+    m_Localized: None
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213473
+    m_Localized: '    Line '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213474
+    m_Localized: ' / '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213475
+    m_Localized: ' instructions'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213476
+    m_Localized: '    Loops, conditions and functions supported'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213477
+    m_Localized: Ctrl/Cmd+Enter Run  /  Esc Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213478
+    m_Localized: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213479
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213480
+    m_Localized: 'Chapter '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213481
+    m_Localized: ' / '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213482
+    m_Localized: ' coins / '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213483
+    m_Localized: ' research
+
+      Requires: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213484
+    m_Localized: Completed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213485
+    m_Localized: Research
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213486
+    m_Localized: Requirements not met
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213487
+    m_Localized: 'Harvest after accepting: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213488
+    m_Localized: Research "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213489
+    m_Localized: Plots moved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213490
+    m_Localized: Successful plantings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213491
+    m_Localized: Successful irrigations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213492
+    m_Localized: Successful fertilizations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213493
+    m_Localized: Total energy produced
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213494
+    m_Localized: Bonus harvest events
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213495
+    m_Localized: Function calls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213496
+    m_Localized: Total units harvested
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213497
+    m_Localized: Field width
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213498
+    m_Localized: Program actions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213499
+    m_Localized: ' required: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213500
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213501
+    m_Localized: Welcome to Verdant Bay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213502
+    m_Localized: VERDANT CIRCUIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213503
+    m_Localized: 'An untended farm. A field robot. A program waiting to be written.
+
+
+      Start
+      with your first grain seed, then let loops and functions care for the whole
+      field. Across six chapters, learn crop rules, build irrigation, discover companion
+      planting and establish a sustainable starbloom greenhouse.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213504
+    m_Localized: Get to Know the Land
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213505
+    m_Localized: Arrow keys move; Space plants; E harvests. The contract on the left
+      explains the next step.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213506
+    m_Localized: Start Farming
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213507
+    m_Localized: Let Code Take Over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213508
+    m_Localized: A Grain Patrol program is ready on the right. Stop, edit and step
+      through it whenever you need.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213509
+    m_Localized: Run Example
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213510
+    m_Localized: '8 crops / 30 contracts / 18 research projects / 6 trials / 5 crafting
+      recipes
+
+      The farm and your program list are saved automatically.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213511
+    m_Localized: Farm Language Guide
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213512
+    m_Localized: Program Templates
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213513
+    m_Localized: Loading a template replaces the current editor text. Keep different
+      approaches in the program list and edit freely.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213514
+    m_Localized: From basic actions to field-wide loops
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213515
+    m_Localized: Combine sensors and crop rules to automate the farm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213516
+    m_Localized: Load
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213517
+    m_Localized: Program Manager
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213518
+    m_Localized: Viewing another program keeps the current one running. Run replaces
+      the active program. Stop a running program before deleting it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213519
+    m_Localized: New Program
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213520
+    m_Localized: Start with one. Add or remove programs, keeping at least one.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213521
+    m_Localized: Add
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213522
+    m_Localized: 'Program '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213523
+    m_Localized: ' / Running'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213524
+    m_Localized: ' characters'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213525
+    m_Localized: View
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213526
+    m_Localized: 'Delete Program '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213527
+    m_Localized: Deletion cannot be undone from this list. Copy any code you want
+      to keep first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213528
+    m_Localized: Delete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213529
+    m_Localized: Research Tree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213530
+    m_Localized: Research costs coins and knowledge. Chapters unlock through contracts,
+      and projects may require earlier research.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213531
+    m_Localized: Crop Guide and Storage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213532
+    m_Localized: ' / Locked'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213533
+    m_Localized: '
+
+      Growth '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213534
+    m_Localized: ' s / Planting '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213535
+    m_Localized: ' coins / Unit value '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213536
+    m_Localized: ' coins
+
+      In storage: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213537
+    m_Localized: Select
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213538
+    m_Localized: Independent Trials
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213539
+    m_Localized: 'Each trial uses a separate 6x6 farm with all research unlocked.
+      Your campaign farm is restored afterward. First clear: 400 coins and 50 research.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213540
+    m_Localized: Chapter locked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213541
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213542
+    m_Localized: Click Run to start farming. Open Settings to leave the trial.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213543
+    m_Localized: 'Field Records / '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213544
+    m_Localized: ' / First unlock grants 10 research'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213545
+    m_Localized: Unlocked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213546
+    m_Localized: In progress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213547
+    m_Localized: Verdant Supply Orders
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213548
+    m_Localized: 'Available from Chapter 2. Delivery consumes stored items and grants
+      coins and research. Each completed order is replaced. Completed: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213549
+    m_Localized: ' orders.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213550
+    m_Localized: '
+
+      Reward '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213551
+    m_Localized: ' coins / '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213552
+    m_Localized: ' research'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213553
+    m_Localized: Chapter 2 required
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213554
+    m_Localized: Deliver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213555
+    m_Localized: Crafted-item orders appear from Chapter 3 as the relevant crops
+      unlock. Keep stock to support both the workshop and the farm.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213556
+    m_Localized: Crafting Workshop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213557
+    m_Localized: Available from Chapter 3. Turn stored crops into supplies for orders.
+      Recipes consume materials and grant extra research.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213558
+    m_Localized: '   Stock '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213559
+    m_Localized: ' + Energy '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213560
+    m_Localized: '   / Research +'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213561
+    m_Localized: Craft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213562
+    m_Localized: Locked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213563
+    m_Localized: Settings and Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213564
+    m_Localized: Simulation Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213565
+    m_Localized: 'Current: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213566
+    m_Localized: x. Affects growth and program actions; the interface remains responsive.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213567
+    m_Localized: Change Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213568
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213569
+    m_Localized: 'Synthesized ambience and action sounds. Current volume: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213570
+    m_Localized: Change Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213571
+    m_Localized: Save Farm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213572
+    m_Localized: Saves plots, resources, research and programs. The previous save
+      is kept as a backup.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213573
+    m_Localized: Save Now
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213574
+    m_Localized: Return to Campaign
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213575
+    m_Localized: Abandon this temporary trial and restore the campaign state from
+      before entry.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213576
+    m_Localized: Leave Trial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213577
+    m_Localized: Start Over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213578
+    m_Localized: Save a timestamped backup, then create a fresh farm.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213579
+    m_Localized: New Farm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213580
+    m_Localized: 'Verdant Circuit '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213581
+    m_Localized: '
+
+      Game systems, scenes and farm rules are original to this
+      project. Noto Sans CJK font: SIL OFL.
+
+      Save location:
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213582
+    m_Localized: Quit Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213583
+    m_Localized: Saves progress before exiting.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213584
+    m_Localized: Save and Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213585
+    m_Localized: Start a New Farm?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213586
+    m_Localized: A timestamped backup will be saved first. The new campaign starts
+      with a 4x4 field.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213587
+    m_Localized: Create New Farm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213588
+    m_Localized: This stops the current program.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213589
+    m_Localized: Back Up and Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213590
+    m_Localized: Not saved yet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213591
+    m_Localized: Spring / Sprouting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213592
+    m_Localized: Summer / Flourishing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213593
+    m_Localized: Autumn / Harvest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213594
+    m_Localized: Winter / Rest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213595
+    m_Localized: '# Write your farm program here
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213596
+    m_Localized: move() expects East, West, North or South.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213597
+    m_Localized: 'Unknown crop: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213598
+    m_Localized: 'Research first: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213599
+    m_Localized: This plot already contains a crop.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213600
+    m_Localized: This crop needs till() before planting.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213601
+    m_Localized: Soil is too dry. Use water() first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213602
+    m_Localized: Not enough coins. Plant free grain to restore income.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213603
+    m_Localized: Not enough energy. Harvest sunflowers first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213604
+    m_Localized: 'Planted '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213605
+    m_Localized: There is no crop here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213606
+    m_Localized: The crop is not mature yet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213607
+    m_Localized: '  Coins +'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213608
+    m_Localized: Cannot till a plot that contains a crop.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213609
+    m_Localized: Research Water Storage first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213610
+    m_Localized: Water storage is refilling.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213611
+    m_Localized: Research Compost Cycle first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213612
+    m_Localized: Fertilizing costs 2 coins.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213613
+    m_Localized: The soil already has enough fertility.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213614
+    m_Localized: 'Unknown action: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213615
+    m_Localized: Claim campaign rewards after leaving the trial.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213616
+    m_Localized: 'Contract completed: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213617
+    m_Localized: ' coins / +'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213618
+    m_Localized: Chapter or prerequisite requirements are not met.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213619
+    m_Localized: Not enough coins or research.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213620
+    m_Localized: 'Research completed: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213621
+    m_Localized: Complete the corresponding campaign chapter to unlock this trial.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213622
+    m_Localized: 'Trial started: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213623
+    m_Localized: 'Trial passed! Earned '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213624
+    m_Localized: ' stars. Your campaign farm has been restored.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213625
+    m_Localized: Trial ended. Your campaign farm and resources have been restored.
+      Adjust the program and try again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213626
+    m_Localized: 'Achievement unlocked: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213627
+    m_Localized: 'Saved '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213628
+    m_Localized: Save failed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213629
+    m_Localized: 'Save failed: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213630
+    m_Localized: Save restored
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213631
+    m_Localized: Backup save restored
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213632
+    m_Localized: Could not read the save. Started a new farm.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213633
+    m_Localized: Save format does not match.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213634
+    m_Localized: Invalid plot.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213635
+    m_Localized: Verdant Bay / Four Seasons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213636
+    m_Localized: '# New program
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213637
+    m_Localized: Running
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213638
+    m_Localized: 'Program started / '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213639
+    m_Localized: ' instructions'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213640
+    m_Localized: Syntax error
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213641
+    m_Localized: Program finished
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213642
+    m_Localized: Runtime error
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213643
+    m_Localized: Paused
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213644
+    m_Localized: Step / Paused
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213645
+    m_Localized: Stopped
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213646
+    m_Localized: Stop the program before using manual actions.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213647
+    m_Localized: 'Backup failed; new farm cancelled: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213648
+    m_Localized: Harvest Rice Box
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213649
+    m_Localized: Package basic crops into supplies ready for transport.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213650
+    m_Localized: Blue Linen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213651
+    m_Localized: Durable fiber cloth for packing farm supplies.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213652
+    m_Localized: Morning Berry Jam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213653
+    m_Localized: Blueberries and grain syrup for the coastal merchants.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213654
+    m_Localized: Sunshine Tea Gift
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213655
+    m_Localized: A blend of tea and sunflower petals.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213656
+    m_Localized: Starbloom Cell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213657
+    m_Localized: Convert starbloom research materials into energy for distant journeys.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213658
+    m_Localized: Crafting is only available on the campaign farm.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213659
+    m_Localized: Requires Chapter 3 and the relevant crop research.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213660
+    m_Localized: Not enough recipe materials or energy.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213661
+    m_Localized: 'Crafted: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213662
+    m_Localized: ' +1 / Research +'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213663
+    m_Localized: Lighthouse Depot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213664
+    m_Localized: Coastal Caravan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213665
+    m_Localized: Mountain Research Station
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213666
+    m_Localized: ' / Order '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213667
+    m_Localized: Supply orders unlock in Chapter 2.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213668
+    m_Localized: Not enough stock. Grow or craft the required items first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213669
+    m_Localized: 'Delivery completed: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213670
+    m_Localized: ' / Coins +'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213671
+    m_Localized: Missing closing quote in string.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213672
+    m_Localized: A code block needs contents indented by four spaces.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213673
+    m_Localized: Code nesting is too deep.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213674
+    m_Localized: Unexpected indentation.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213675
+    m_Localized: if must end with a colon.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213676
+    m_Localized: elif must end with a colon.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213677
+    m_Localized: while must end with a colon.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213678
+    m_Localized: A loop must end with a colon.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213679
+    m_Localized: 'Expected: for col in range(size()):'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213680
+    m_Localized: 'Functions must be defined at the top level as def tend():'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213681
+    m_Localized: Function name is duplicated or reserved.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213682
+    m_Localized: ' can only be used inside a loop.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213683
+    m_Localized: return can only be used inside a function.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213684
+    m_Localized: () has the wrong number of arguments.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213685
+    m_Localized: Custom functions do not accept arguments yet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213686
+    m_Localized: Cannot parse this statement. See the guide.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213687
+    m_Localized: A finite numeric value is required here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213688
+    m_Localized: Reached the 500000-instruction safety limit. Stop and restart the
+      program.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213689
+    m_Localized: A for loop requires range().
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213690
+    m_Localized: Function recursion exceeds 24 levels.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213691
+    m_Localized: Dual-Drone Scheduling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213692
+    m_Localized: Raises drone capacity to 2.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213693
+    m_Localized: Fleet Control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213694
+    m_Localized: Raises drone capacity to 4.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213695
+    m_Localized: Fleet Network
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213696
+    m_Localized: Raises drone capacity to 8.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213697
+    m_Localized: Square Airframe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213698
+    m_Localized: Unlocks 2x2 airframes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213699
+    m_Localized: Rectangular Airframe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213700
+    m_Localized: Unlocks 3x2 and 2x3 airframes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213701
+    m_Localized: Heavy Airframe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213702
+    m_Localized: Unlocks 3x3 airframes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213703
+    m_Localized: Irrigation Drone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213704
+    m_Localized: Unlocks the specialized watering drone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213705
+    m_Localized: Harvest Drone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213706
+    m_Localized: Unlocks the specialized harvesting drone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213707
+    m_Localized: Complete all 26 research projects.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213708
+    m_Localized: Fleet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213709
+    m_Localized: No free deployment position is available.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213710
+    m_Localized: '8 crops / 30 contracts / 26 research projects / 6 trials / 5 recipes
+
+      The
+      farm and program list save automatically.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213711
+    m_Localized: Drone Fleet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213712
+    m_Localized: Capacity and airframe size unlock separately. Queues find safe routes;
+      direct movement collisions cost repairs. Large bodies do not wrap at field
+      edges. Stop clears queued tasks.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213713
+    m_Localized: 'Deployed '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213714
+    m_Localized: '    Airframe tier '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213715
+    m_Localized: '    Collisions '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213716
+    m_Localized: Queue State
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213717
+    m_Localized: Queues paused
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213718
+    m_Localized: Queues running
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213719
+    m_Localized: Resume Fleet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213720
+    m_Localized: Pause Fleet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213721
+    m_Localized: Deploy General Drone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213722
+    m_Localized: Purchase cost increases with deployed count. A free location is
+      checked first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213723
+    m_Localized: Deploy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213724
+    m_Localized: Deploy Irrigation Drone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213725
+    m_Localized: Watering only. Requires Irrigation Drone research.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213726
+    m_Localized: Deploy Harvest Drone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213727
+    m_Localized: Harvesting only. Requires Harvest Drone research.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213728
+    m_Localized: 'Drone '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213729
+    m_Localized: 'Position '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213730
+    m_Localized: '   Queue '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213731
+    m_Localized: '   State '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213732
+    m_Localized: Airframe Size
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213733
+    m_Localized: Choose an unlocked size. Increasing area costs coins; shrinking
+      does not refund them.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213734
+    m_Localized: Resize
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213735
+    m_Localized: Cancel Queue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213736
+    m_Localized: Cancel this drone's pending jobs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213737
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213738
+    m_Localized: Retire Drone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213739
+    m_Localized: Clear its queue first. Purchase cost is not refunded.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213740
+    m_Localized: Retire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213741
+    m_Localized: 'Base drone 0 has no upkeep. Other drones pay every 30 game seconds
+      only while working or waiting: area x role factor (general 1, specialist 2).
+      Idle drones are free. Insufficient funds pause work; base drone 0 can still
+      grow free grain to restore income.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213742
+    m_Localized: The entire footprint must be free and in bounds. Expanding costs
+      coins.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213743
+    m_Localized: Apply
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213744
+    m_Localized: Invalid drone save data.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213745
+    m_Localized: Idle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213746
+    m_Localized: 'Unknown drone ID: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213747
+    m_Localized: This drone has queued jobs. Cancel its queue first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213748
+    m_Localized: Direction must be East, West, North or South.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213749
+    m_Localized: 'Airframe out of bounds: large bodies do not wrap.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213750
+    m_Localized: 'Drone collision: repair cost '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213751
+    m_Localized: Collision blocked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213752
+    m_Localized: Irrigation drones can only water crops.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213753
+    m_Localized: Harvest drones can only harvest crops.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213754
+    m_Localized: Drone capacity has been reached.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213755
+    m_Localized: Type must be general, irrigator or harvester.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213756
+    m_Localized: Unlock the drone type first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213757
+    m_Localized: The deployment position is invalid or occupied.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662229213758
+    m_Localized: Not enough coins to deploy.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407488
+    m_Localized: 'Drone deployed. ID '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407489
+    m_Localized: This airframe size is still locked.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407490
+    m_Localized: Cancel the queue before resizing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407491
+    m_Localized: The entire airframe footprint must be free and in bounds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407492
+    m_Localized: Not enough coins to resize.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407493
+    m_Localized: Airframe size updated.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407494
+    m_Localized: The base drone cannot be retired.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407495
+    m_Localized: Cancel the queue first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407496
+    m_Localized: Drone retired. Purchase cost is not refunded.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407497
+    m_Localized: Each drone queue is limited to 64 jobs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407498
+    m_Localized: Target is outside the full airframe's valid range.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407499
+    m_Localized: Queued
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407500
+    m_Localized: Upkeep unaffordable / Paused
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407501
+    m_Localized: Waiting for clearance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407502
+    m_Localized: Queued job timed out and was cancelled. Adjust the route.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407503
+    m_Localized: Moving
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407504
+    m_Localized: Drone parameters must be integers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407505
+    m_Localized: Drone index is out of range.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407506
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407507
+    m_Localized: English is the default. Switch between English and Simplified Chinese.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407508
+    m_Localized: Switch Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407509
+    m_Localized: '"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407510
+    m_Localized: Day {0} / {1} / {2} / {3}x{3} field
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407511
+    m_Localized: Chapter {0} / {1}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407512
+    m_Localized: Drone {0} / Plot {1}:{2}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662233407513
+    m_Localized: '{0} / Order {1}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3560367448064
+    m_Localized: "Verdant Circuit uses a limited farm language inspired by Python.
+      It only controls the game; it does not access your files or the network.\n\nACTIONS\nmove(East)
+      / move(West) / move(North) / move(South)\nCrossing a field edge wraps to the
+      opposite side.\nplant(grain) / harvest() / till() / water() / fertilize()\nwait(3)
+      waits for 3 game seconds; print(value) writes to the log.\n\nSENSORS\nready():
+      whether the current crop is mature\ncrop(): current crop, or empty\nmoisture()
+      / fertility(): values from 0 to 1\nx() / y(): zero-based robot coordinates\nsize():
+      field width; energy(): stored energy\ncount(grain): current grain stock; money():
+      coins\nneighbors(pumpkin): matching crops in four adjacent plots\n\nSYNTAX\nIndent
+      with four spaces. Supports # comments, variables, + - * / %, comparisons, and/or/not,
+      if/elif/else, while, for ... in range(...), repeat, no-argument functions,
+      break, continue and return.\nrange() accepts 1 to 3 integer arguments. Functions
+      nest up to 24 calls.\n\nif ready():\n    harvest()\nelse:\n    wait(1)\n\nCROP
+      IDS\nGrain: grain / Radish: radish / Blue flax: flax\nBlueberry: berry / Sunflower:
+      sunflower / Pumpkin: pumpkin\nCloud tea: tea / Starbloom: starbloom\n\nEDITOR
+      AND DEBUGGING\nUndo/redo up to 100 edits per program in this session: Ctrl/Cmd+Z
+      and Ctrl/Cmd+Shift+Z (or Ctrl+Y).\nAdd or delete programs in Programs; keep
+      at least one. Viewing another program does not stop the current one. Run replaces
+      the active program.\nSyntax and runtime errors show their original source line.
+      Pause and Step help inspect execution. Stop keeps all farm progress. Programs
+      stop safely after 500000 instructions; empty loops yield between frames.\n\nPROGRESS\nCrop
+      contracts count harvests after accepting that contract. Each crop has a different
+      quantity target; there is no timer requirement. Earlier stock does not skip
+      later crop contracts.\nOther contracts use cumulative progress. Claim rewards
+      to advance; every five contracts opens a chapter. Research costs coins and
+      knowledge. Free farming remains available after the campaign.\n\nSAVE\nThe
+      farm and program list save every 30 real seconds and on exit. Manual saving
+      keeps the previous backup. Trials use a separate temporary farm and restore
+      the campaign afterward.\n\nLANGUAGE\nThe first launch uses English. Switch
+      English / Chinese in Settings; the choice is remembered. Existing player code
+      is never translated.\n\nFLEET API\nCapacity and airframe size unlock separately.
+      drone_count() counts deployed units; drone_capacity() is the unlocked limit;
+      footprint_tier() is the size level.\ndeploy_drone(\"general\", 2, 0) deploys
+      a general drone on a free plot. Specialized types are irrigator and harvester,
+      unlocked by research.\ndrone_id(index) returns a stable ID. drone_x(id), drone_y(id),
+      drone_width(id) and drone_height(id) inspect a unit.\nselect_drone(id) chooses
+      the directly controlled unit. resize_drone(id, 2, 2) applies an unlocked airframe
+      size if its entire footprint is free.\nqueue_move(id, x, y), queue_water(id,
+      x, y), queue_harvest(id, x, y) and queue_plant(id, grain, x, y) enqueue work
+      in order.\nqueue_length(id), drone_busy(id) and can_fit(id, x, y) inspect queues
+      and space. cancel_queue(id) cancels jobs; retire_drone(id) retires a worker.\nQueued
+      jobs avoid occupied cells. Direct movement collisions cost 20 coins, at most
+      twice per 10 game seconds. Large airframes do not wrap. Area work charges and
+      harvests each actual plot.\nBase drone 0 is free to maintain. Active or waiting
+      workers pay area x role factor every 30 game seconds (general 1, specialist
+      2). Idle units are free. Unaffordable upkeep pauses work without accumulating
+      debt.\nStop clears queues. Saves preserve queued jobs but reload them paused;
+      resume them from Fleet. Switch languages in Settings or with F8."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3560367448065
+    m_Localized: Position {0},{1} / Queue {2} / State {3}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4173088153600
+    m_Localized: 'Purchase cost: {0} coins. A free location is checked before deployment.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4173088153601
+    m_Localized: 'Upgrade cost: {0} coins. The size must be unlocked and its entire
+      footprint free.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5349854666752
+    m_Localized: Two-drone lanes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5349854666753
+    m_Localized: Irrigation queue
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

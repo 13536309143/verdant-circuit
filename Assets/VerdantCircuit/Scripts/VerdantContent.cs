@@ -6,36 +6,37 @@ namespace Verdant
 {
     [Serializable] public class CropDef
     {
-        public string id, name, note; public int cost, value, yield, research;
+        public string id;string rawName,rawNote;public string name{get{return L10n.T(rawName);}}public string note{get{return L10n.T(rawNote);}} public int cost, value, yield, research;
         public float seconds; public string color; public int chapter;
         public CropDef(string id, string name, int cost, int value, int yield, float seconds, int research, int chapter, string color, string note)
-        { this.id=id; this.name=name; this.cost=cost; this.value=value; this.yield=yield; this.seconds=seconds; this.research=research; this.chapter=chapter; this.color=color; this.note=note; }
+        { this.id=id; this.rawName=name; this.cost=cost; this.value=value; this.yield=yield; this.seconds=seconds; this.research=research; this.chapter=chapter; this.color=color; this.rawNote=note; }
     }
     [Serializable] public class TechDef
     {
-        public string id, name, note, prerequisite; public int price, knowledge, chapter;
+        public string id, prerequisite;string rawName,rawNote;public string name{get{return L10n.T(rawName);}}public string note{get{return L10n.T(rawNote);}} public int price, knowledge, chapter;
         public TechDef(string id,string name,string note,int price,int knowledge,int chapter,string prerequisite="")
-        {this.id=id;this.name=name;this.note=note;this.price=price*3;this.knowledge=knowledge*2;this.chapter=chapter;this.prerequisite=prerequisite;}
+        {this.id=id;this.rawName=name;this.rawNote=note;this.price=price*3;this.knowledge=knowledge*2;this.chapter=chapter;this.prerequisite=prerequisite;}
     }
     [Serializable] public class ContractDef
     {
-        public string title, story, metric, hint; public int amount, reward, knowledge;
+        public string metric;string rawTitle,rawStory,rawHint;public string title{get{return L10n.T(rawTitle);}}public string story{get{return L10n.T(rawStory);}}public string hint{get{return L10n.T(rawHint);}} public int amount, reward, knowledge;
         public ContractDef(string title,string story,string metric,int amount,int reward,int knowledge,string hint)
-        {this.title=title;this.story=story;this.metric=metric;this.amount=amount;this.reward=reward;this.knowledge=knowledge;this.hint=hint;}
+        {this.rawTitle=title;this.rawStory=story;this.metric=metric;this.amount=amount;this.reward=reward;this.knowledge=knowledge;this.rawHint=hint;}
     }
     public static class VerdantContent
     {
-        public const string Version="0.10.1";
-        public static readonly string[] Chapters={"初抵禾湾","循环的力量","知水知土","共生花园","精密农艺","星辉计划"};
+        public const string Version="0.10.2";
+        public static string[] Chapters{get{return L10n.List(RawChapters);}}
+        static readonly string[] RawChapters={"初抵禾湾","循环的力量","知水知土","共生花园","精密农艺","星辉计划"};
         public static readonly CropDef[] Crops={
-            new CropDef("grain","稻穗",0,3,3,10,1,0,"D8BA60","免费播种；稳定的起步作物，湿润时生长更快。"),
-            new CropDef("radish","红萝卜",2,7,2,17,2,0,"E68F6E","需要翻土；肥沃土壤让单次收获增加。"),
-            new CropDef("flax","蓝亚麻",4,10,2,23,3,1,"8BA6DC","相邻稻穗可提升产量；适合交错种植。"),
-            new CropDef("berry","蓝莓",6,9,3,28,3,2,"7889D1","需湿润土壤；收获后留下植株再生两次。"),
-            new CropDef("sunflower","向日葵",8,14,2,32,4,2,"F0BF56","成熟收获可积累光能，为星辉花供应能源。"),
-            new CropDef("pumpkin","蜜南瓜",12,18,2,40,5,3,"DE914C","需要翻土；相邻成熟南瓜越多，连片收获越丰厚。"),
-            new CropDef("tea","云雾茶",16,24,2,48,6,4,"6AA688","需要灌溉；同类过密会减产，与花卉相邻则增产。"),
-            new CropDef("starbloom","星辉花",24,40,2,58,9,5,"C1A2DE","需要翻土、灌溉及每次 3 光能；邻接茶树提高研究收益。")
+            new CropDef("grain","稻穗",0,1,3,10,1,0,"D8BA60","免费播种；稳定的起步作物，湿润时生长更快。"),
+            new CropDef("radish","红萝卜",2,3,2,17,1,0,"E68F6E","需要翻土；肥沃土壤让单次收获增加。"),
+            new CropDef("flax","蓝亚麻",4,4,2,23,2,1,"8BA6DC","相邻稻穗可提升产量；适合交错种植。"),
+            new CropDef("berry","蓝莓",6,3,3,28,2,2,"7889D1","需湿润土壤；收获后留下植株再生两次。"),
+            new CropDef("sunflower","向日葵",8,6,2,32,3,2,"F0BF56","成熟收获可积累光能，为星辉花供应能源。"),
+            new CropDef("pumpkin","蜜南瓜",12,7,2,40,3,3,"DE914C","需要翻土；相邻成熟南瓜越多，连片收获越丰厚。"),
+            new CropDef("tea","云雾茶",16,10,2,48,4,4,"6AA688","需要灌溉；同类过密会减产，与花卉相邻则增产。"),
+            new CropDef("starbloom","星辉花",24,18,2,58,6,5,"C1A2DE","需要翻土、灌溉及每次 3 光能；邻接茶树提高研究收益。")
         };
         public static readonly TechDef[] Techs={
             new TechDef("motor1","轻量马达","动作间隔缩短 25%",90,8,0),
@@ -55,7 +56,15 @@ namespace Verdant
             new TechDef("motor3","量子调度","最低动作间隔降至 0.08 秒",1500,125,4,"motor2"),
             new TechDef("starbloom","星辉温室","解锁星辉花；消耗光能播种",1800,160,5,"tea"),
             new TechDef("knowledge","生态实验室","收获研究点增加 50%",1500,130,5,"fertile"),
-            new TechDef("mastery","禾湾自治站","最终工程：证明农场可以持续自运转",3000,260,5,"starbloom")
+            new TechDef("mastery","禾湾自治站","最终工程：证明农场可以持续自运转",3000,260,5,"starbloom"),
+            new TechDef("fleet2","双机调度","无人机数量上限提高到2",400,90,1,"motor1"),
+            new TechDef("fleet4","机群控制","无人机数量上限提高到4",2000,450,3,"fleet2"),
+            new TechDef("fleet8","机群网络","无人机数量上限提高到8",6000,1500,5,"fleet4"),
+            new TechDef("body2","方形机体","解锁2×2机体规格",800,160,2,"water"),
+            new TechDef("body32","矩形机体","解锁3×2及2×3机体规格",1800,400,3,"body2"),
+            new TechDef("body3","重型机体","解锁3×3机体规格",4000,800,5,"body32"),
+            new TechDef("drone_water","灌溉无人机","解锁专用浇水机型",500,100,2,"water"),
+            new TechDef("drone_harvest","收获无人机","解锁专用收割机型",1000,225,3,"body2")
         };
         public static readonly ContractDef[] Contracts={
             C("第一步","欢迎来到禾湾。先认识你的巡田机器人。","moves",8,35,5,"方向键或 WASD 移动；点击农田也可以导航。"),
@@ -92,16 +101,21 @@ namespace Verdant
         static ContractDef C(string a,string b,string c,int d,int e,int f,string g){return new ContractDef(a,b,c,d,e,f,g);}
         public static CropDef Crop(string id){return Array.Find(Crops,c=>c.id==id);}
         public static TechDef Tech(string id){return Array.Find(Techs,t=>t.id==id);}
-        public static readonly string[] ChallengeNames={"稻穗速递","根系实验","节水栽培","连片南瓜","花茶共生","星光回路"};
+        public static string[] ChallengeNames{get{return L10n.List(RawChallengeNames);}}
+        static readonly string[] RawChallengeNames={"稻穗速递","根系实验","节水栽培","连片南瓜","花茶共生","星光回路"};
         public static readonly string[] ChallengeCrops={"grain","radish","berry","pumpkin","tea","starbloom"};
         public static readonly int[] ChallengeTargets={90,80,80,90,65,50};
         public static readonly float[] ChallengeTimes={150,180,210,240,240,300};
-        public static readonly string[] ChallengeNotes={"150 秒内收获 90 稻穗，体会扫描循环。","180 秒内收获 80 萝卜，处理翻土与补种。","210 秒内收获 80 蓝莓，安排水分与再生。","240 秒内收获 90 南瓜，运用邻接加成。","240 秒内收获 65 茶叶，避免同类拥挤。","300 秒内收获 50 星辉花，维持光能供应。"};
-        public static readonly string[] AchievementNames={"第一份收获","百穗入仓","千穗入仓","循环之友","自动化工程师","灌溉师","共生研究员","万步巡田","八方沃土","星辉育种者","研究先驱","试炼收藏家"};
-        public static readonly string[] AchievementNotes={"累计收获 1 单位作物","累计收获 100 单位作物","累计收获 1000 单位作物","脚本完成 100 个动作","脚本完成 5000 个动作","灌溉 100 次","触发 100 次共生或邻接增产","移动 10000 格","开垦 8×8 农田","收获 100 星辉花","完成 18 项研究","通过全部 6 项试炼"};
-        public static readonly string[] TemplateNames={"稻穗巡田","萝卜农艺","蓝莓灌溉","阳光采集","南瓜连片","花茶间作","星辉温室","函数化农场","灌溉巡田"};
+        public static string[] ChallengeNotes{get{return L10n.List(RawChallengeNotes);}}
+        static readonly string[] RawChallengeNotes={"150 秒内收获 90 稻穗，体会扫描循环。","180 秒内收获 80 萝卜，处理翻土与补种。","210 秒内收获 80 蓝莓，安排水分与再生。","240 秒内收获 90 南瓜，运用邻接加成。","240 秒内收获 65 茶叶，避免同类拥挤。","300 秒内收获 50 星辉花，维持光能供应。"};
+        public static string[] AchievementNames{get{return L10n.List(RawAchievementNames);}}
+        static readonly string[] RawAchievementNames={"第一份收获","百穗入仓","千穗入仓","循环之友","自动化工程师","灌溉师","共生研究员","万步巡田","八方沃土","星辉育种者","研究先驱","试炼收藏家"};
+        public static string[] AchievementNotes{get{return L10n.List(RawAchievementNotes);}}
+        static readonly string[] RawAchievementNotes={"累计收获 1 单位作物","累计收获 100 单位作物","累计收获 1000 单位作物","脚本完成 100 个动作","脚本完成 5000 个动作","灌溉 100 次","触发 100 次共生或邻接增产","移动 10000 格","开垦 8×8 农田","收获 100 星辉花","完成 26 项研究","通过全部 6 项试炼"};
+        public static string[] TemplateNames{get{return L10n.List(RawTemplateNames);}}
+        static readonly string[] RawTemplateNames={"稻穗巡田","萝卜农艺","蓝莓灌溉","阳光采集","南瓜连片","花茶间作","星辉温室","函数化农场","灌溉巡田","双机分区","专用灌溉队列"};
         public static readonly string[] Templates={
-            "# 从每一个格子开始\nwhile True:\n    for row in range(size()):\n        for col in range(size()):\n            if ready():\n                harvest()\n            if crop() == empty:\n                plant(grain)\n            move(East)\n        move(North)",
+            "# Start at each plot\nwhile True:\n    for row in range(size()):\n        for col in range(size()):\n            if ready():\n                harvest()\n            if crop() == empty:\n                plant(grain)\n            move(East)\n        move(North)",
             "while True:\n    for row in range(size()):\n        for col in range(size()):\n            if ready():\n                harvest()\n            if crop() == empty:\n                till()\n                plant(radish)\n            move(East)\n        move(North)",
             "while True:\n    for row in range(size()):\n        for col in range(size()):\n            if moisture() < 0.3:\n                water()\n            if ready():\n                harvest()\n            if crop() == empty:\n                plant(berry)\n            move(East)\n        move(North)",
             "while True:\n    for row in range(size()):\n        for col in range(size()):\n            if ready():\n                harvest()\n            if crop() == empty:\n                plant(sunflower)\n            if moisture() < 0.3:\n                water()\n            move(East)\n        move(North)",
@@ -109,8 +123,11 @@ namespace Verdant
             "while True:\n    for row in range(size()):\n        for col in range(size()):\n            if moisture() < 0.3:\n                water()\n            if ready():\n                harvest()\n            if crop() == empty:\n                if (x() + y()) % 2 == 0:\n                    plant(tea)\n                else:\n                    plant(sunflower)\n            move(East)\n        move(North)",
             "while True:\n    for row in range(size()):\n        for col in range(size()):\n            if moisture() < 0.3:\n                water()\n            if ready():\n                harvest()\n            if crop() == empty:\n                till()\n                if (x() + y()) % 2 == 0:\n                    plant(sunflower)\n                else:\n                    plant(starbloom)\n            move(East)\n        move(North)",
             "def tend():\n    if ready():\n        harvest()\n    if crop() == empty:\n        plant(grain)\n    move(East)\n\nwhile True:\n    for row in range(size()):\n        for col in range(size()):\n            tend()\n        move(North)",
-            "while True:\n    for row in range(size()):\n        for col in range(size()):\n            if moisture() < 0.6:\n                water()\n            if ready():\n                harvest()\n            if crop() == empty:\n                plant(grain)\n            move(East)\n        move(North)"
+            "while True:\n    for row in range(size()):\n        for col in range(size()):\n            if moisture() < 0.6:\n                water()\n            if ready():\n                harvest()\n            if crop() == empty:\n                plant(grain)\n            move(East)\n        move(North)",
+            "# Requires two GENERAL drones. Park other drones outside the two edge lanes.\nwhile True:\n    if drone_count() >= 2:\n        for index in range(2):\n            unit = drone_id(index)\n            if not drone_busy(unit):\n                lane = 0\n                if index == 1:\n                    lane = size() - drone_width(unit)\n                row = drone_y(unit) + drone_height(unit)\n                if row + drone_height(unit) > size():\n                    row = 0\n                queue_harvest(unit, lane, row)\n                queue_plant(unit, grain, lane, row)\n    wait(0.2)",
+            "# The last deployed drone must be an IRRIGATOR. Keep its vertical lane clear.\nunit = drone_id(drone_count() - 1)\nwhile True:\n    if not drone_busy(unit):\n        row = drone_y(unit) + drone_height(unit)\n        if row + drone_height(unit) > size():\n            row = 0\n        queue_water(unit, drone_x(unit), row)\n    wait(1)"
         };
-        public const string Manual="禾序使用一种受 Python 启发的农场语言。它只操作游戏，不会访问电脑文件或网络。\n\n【动作】\nmove(East) / move(West) / move(North) / move(South)\n跨越边界会环绕到另一侧，便于整田扫描。\nplant(grain)  播种；harvest()  收获\ntill()  把空地翻成耕地；water()  浇水\nfertilize()  施肥；wait(3)  等待 3 游戏秒\nprint(表达式)  输出到日志\n\n【传感器】\nready()  当前格是否成熟\ncrop()  当前作物，空地为 empty\nmoisture()  水分 0~1；fertility()  肥力 0~1\nx() / y()  机器人零起点坐标\nsize()  农田边长；energy()  光能\ncount(grain)  作物库存；money()  金币\nneighbors(pumpkin)  四邻格同类数量\n\n【语法】\n使用四个空格缩进。支持 # 注释、变量、+ - * / %、比较、and / or / not、if / elif / else、while、for ... in range(...)、repeat 4:、无参数 def 函数、break、continue、return。\nrange() 支持 1~3 个参数。函数在调用前定义；最多嵌套 24 层。\n\n例：\nif ready():\n    harvest()\nelse:\n    wait(1)\n\n【作物代码】\ngrain 稻穗 / radish 红萝卜 / flax 蓝亚麻\nberry 蓝莓 / sunflower 向日葵 / pumpkin 蜜南瓜\ntea 云雾茶 / starbloom 星辉花\n\n【调试】\n编辑支持100步撤销/重做：Cmd/Ctrl+Z，Cmd/Ctrl+Shift+Z。程序列表可以增删，最少一个；切换查看不停止当前执行，点击运行会替换正在执行的程序。\n运行前会检查语法。错误显示原始行号；当前行也会显示在编辑器下方。暂停后可单步执行，停止后仍保留所有收获。最多执行 500000 条指令后安全停止；无限循环每次都会让出画面更新。\n\n【进度】\n作物委托按本任务接取后的新增收获计算，每种作物有不同数量要求；不再设置时间条件。历史库存不会直接抵扣后续作物任务。\n委托按累计进度计算，完成后请点击领取。每五份委托开启下一章。作物需要相应研究；科技花费金币与研究点。主线完成后可继续自由经营。\n\n【保存】\n程序列表和农场会每 30 秒自动保存，退出时也会保存。手动保存会保留上一份备份。试炼使用独立临时农场，不会消耗主线物资。";
+        public static string Manual{get{return L10n.T(RawManual);}}
+        const string RawManual="禾序使用一种受 Python 启发的农场语言。它只操作游戏，不会访问电脑文件或网络。\n\n【动作】\nmove(East) / move(West) / move(North) / move(South)\n跨越边界会环绕到另一侧，便于整田扫描。\nplant(grain)  播种；harvest()  收获\ntill()  把空地翻成耕地；water()  浇水\nfertilize()  施肥；wait(3)  等待 3 游戏秒\nprint(表达式)  输出到日志\n\n【传感器】\nready()  当前格是否成熟\ncrop()  当前作物，空地为 empty\nmoisture()  水分 0~1；fertility()  肥力 0~1\nx() / y()  机器人零起点坐标\nsize()  农田边长；energy()  光能\ncount(grain)  作物库存；money()  金币\nneighbors(pumpkin)  四邻格同类数量\n\n【语法】\n使用四个空格缩进。支持 # 注释、变量、+ - * / %、比较、and / or / not、if / elif / else、while、for ... in range(...)、repeat 4:、无参数 def 函数、break、continue、return。\nrange() 支持 1~3 个参数。函数在调用前定义；最多嵌套 24 层。\n\n例：\nif ready():\n    harvest()\nelse:\n    wait(1)\n\n【作物代码】\ngrain 稻穗 / radish 红萝卜 / flax 蓝亚麻\nberry 蓝莓 / sunflower 向日葵 / pumpkin 蜜南瓜\ntea 云雾茶 / starbloom 星辉花\n\n【调试】\n编辑支持100步撤销/重做：Cmd/Ctrl+Z，Cmd/Ctrl+Shift+Z。程序列表可以增删，最少一个；切换查看不停止当前执行，点击运行会替换正在执行的程序。\n运行前会检查语法。错误显示原始行号；当前行也会显示在编辑器下方。暂停后可单步执行，停止后仍保留所有收获。最多执行 500000 条指令后安全停止；无限循环每次都会让出画面更新。\n\n【进度】\n作物委托按本任务接取后的新增收获计算，每种作物有不同数量要求；不再设置时间条件。历史库存不会直接抵扣后续作物任务。\n委托按累计进度计算，完成后请点击领取。每五份委托开启下一章。作物需要相应研究；科技花费金币与研究点。主线完成后可继续自由经营。\n\n【保存】\n程序列表和农场会每 30 秒自动保存，退出时也会保存。手动保存会保留上一份备份。试炼使用独立临时农场，不会消耗主线物资。\n\n【机群】\n数量与规格分开研究。drone_count() 为已部署数量，drone_capacity() 为解锁上限，footprint_tier() 为机体等级。\ndeploy_drone(\"general\", 2, 0) 在空地部署通用机。机型还包括 irrigator 与 harvester，需分别研究。\ndrone_id(index) 返回编号；drone_x(id)、drone_y(id)、drone_width(id)、drone_height(id) 查询状态。\nselect_drone(id) 选择直接控制的机器；resize_drone(id, 2, 2) 调整已解锁规格，完整占地必须空闲。\nqueue_move(id, x, y)、queue_water(id, x, y)、queue_harvest(id, x, y)、queue_plant(id, grain, x, y) 提交依次执行的作业。\nqueue_length(id)、drone_busy(id)、can_fit(id, x, y) 查询队列与占地。cancel_queue(id) 取消，retire_drone(id) 收回。\n队列自动避让；直接移动碰撞扣20金币，每10游戏秒最多扣两次。大型机体不环绕。作业覆盖实际占地逐格结算。\n0号机免维护，其他机器在执行或等待时每30游戏秒收面积×机型系数的维护费（通用1，专用2）。空闲免费，余额不足暂停，不产生欠债。\n停止程序会清空队列。读档保留队列但暂停，请到机群页主动继续。F8或设置页切换中英文。";
     }
 }

@@ -14,8 +14,8 @@ public static class VerdantChecks
     public static string RunAll()
     {
         passed=0;results.Clear();
-        Check(VerdantContent.Crops.Length==8&&VerdantContent.Contracts.Length==30&&VerdantContent.Techs.Length==18&&VerdantContent.Templates.Length==9&&VerdantContent.TemplateNames.Length==9,"内容目录完整");
-        foreach(string code in VerdantContent.Templates)new FarmCompiler().Compile(code);Check(true,"9 个范例均通过语法检查");
+        Check(VerdantContent.Crops.Length==8&&VerdantContent.Contracts.Length==30&&VerdantContent.Techs.Length==26&&VerdantContent.Templates.Length==11&&VerdantContent.TemplateNames.Length==11,"内容目录完整");
+        foreach(string code in VerdantContent.Templates)new FarmCompiler().Compile(code);Check(true,"11 个范例均通过语法检查");
         var f=Farm();f.Data.x=3;f.Act("move","East");Check(f.Data.x==0,"边界环绕");
         Run(f,"n = 0\nfor i in range(4):\n    n = n + 1\n    move(East)");Check(f.Data.x==0&&f.Count("programActions")==4,"for 循环与变量");
         var vm=Run(f,"n = 0\nfor i in range(10, 0, -2):\n    if i == 6:\n        continue\n    n = n + 1\n    if n == 3:\n        break");Check(FarmVM.Number(vm.Variables["n"])==3,"range 步长、break 与 continue");
@@ -38,7 +38,7 @@ public static class VerdantChecks
         f=Farm();f.Data.contract=10;f.Add("stock:grain",30);f.Add("stock:radish",8);Check(VerdantEconomy.Craft(f,VerdantEconomy.Recipes[0])&&f.Count("stock:grain")==0&&f.Count("stock:ricebox")==1,"加工消耗材料并产生补给品");
         var order=VerdantEconomy.Order(f,0);f.Add("stock:"+order.a,order.amountA);f.Add("stock:"+order.b,order.amountB);Check(VerdantEconomy.Deliver(f,0)&&f.Count("orders")==1&&VerdantEconomy.Order(f,0).title!=order.title,"订单交付消耗库存并持续更新");
         // A representative automated farm must produce a sustainable harvest through the actual VM.
-        f=Farm();vm=new FarmVM(f,new FarmCompiler().Compile(VerdantContent.Templates[0]));float time=0;while(time<120){for(int j=0;j<160;j++){if(vm.Step())break;}f.Tick(.32f);time+=.32f;}Check(f.Count("grain")>100&&f.Data.coins>300,"真实范例连续种收并形成正收入");
+        f=Farm();vm=new FarmVM(f,new FarmCompiler().Compile(VerdantContent.Templates[0]));float time=0;while(time<120){for(int j=0;j<160;j++){if(vm.Step())break;}f.Tick(.32f);time+=.32f;}Check(f.Count("grain")>100&&f.Data.coins>120,"真实范例连续种收并形成正收入");
         // Match real Update ordering and frame-time steps, including retention after a full rain.
         foreach(bool retained in new[]{false,true})
         foreach(float phase in new[]{0f,175f,210f})

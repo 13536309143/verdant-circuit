@@ -14,38 +14,40 @@ namespace Verdant
         UnityEngine.UI.Image taskBar;UnityEngine.UI.Button claim;RectTransform canvas,modal;TMP_Text modalTitle;
         RectTransform modalBody;ScrollRect modalScroll;string modalKind;float refresh;List<string> log=new List<string>();
         List<UnityEngine.UI.Button> seedButtons=new List<UnityEngine.UI.Button>();TMP_FontAsset font,codeFont;
+        readonly Dictionary<int,TMP_Text> droneRows=new Dictionary<int,TMP_Text>();
         readonly Dictionary<int,CodeHistory> histories=new Dictionary<int,CodeHistory>();
         public bool ModalOpen {get{return modal!=null;}}
         public bool Typing {get{return Editor!=null&&Editor.isFocused;}}
         static readonly Color Ink=VerdantWorld.Hex("233D36"),Muted=VerdantWorld.Hex("718275"),Paper=VerdantWorld.Hex("F8F7EF"),Accent=VerdantWorld.Hex("3C7C64"),Gold=VerdantWorld.Hex("E7C57D"),Dark=VerdantWorld.Hex("20372F");
         public void Initialize(VerdantApp app,TMP_FontAsset uiFont,TMP_FontAsset monoFont)
         {
-            App=app;font=uiFont;codeFont=monoFont;
-            var c=New("禾序 · 界面",transform,typeof(Canvas),typeof(CanvasScaler),typeof(GraphicRaycaster));canvas=(RectTransform)c.transform;
+            App=app;font=uiFont;codeFont=monoFont;L10n.Changed+=RefreshLanguage;
+            var c=New(L10n.T("禾序 · 界面"),transform,typeof(Canvas),typeof(CanvasScaler),typeof(GraphicRaycaster));canvas=(RectTransform)c.transform;
             c.GetComponent<Canvas>().renderMode=RenderMode.ScreenSpaceOverlay;
             var scaler=c.GetComponent<CanvasScaler>();scaler.uiScaleMode=CanvasScaler.ScaleMode.ScaleWithScreenSize;scaler.referenceResolution=new Vector2(1600,1000);scaler.screenMatchMode=CanvasScaler.ScreenMatchMode.Expand;
             if(EventSystem.current==null)new GameObject("EventSystem",typeof(EventSystem),typeof(StandaloneInputModule));
             // Space is reserved around the world camera; only panels cover it.
             var header=Panel("Header",canvas,new Vector2(0,1),new Vector2(1,1),new Vector2(0,-112),new Vector2(0,0),Paper);
-            Text("Logo","禾序",header,new Vector2(0,1),new Vector2(28,-17),new Vector2(145,60),44,Ink,FontStyles.Bold);
+            Text("Logo",L10n.T("禾序"),header,new Vector2(0,1),new Vector2(28,-17),new Vector2(145,60),44,Ink,FontStyles.Bold);
             Text("English Name","VERDANT CIRCUIT",header,new Vector2(0,1),new Vector2(31,-77),new Vector2(260,23),12,Muted);
             resources=Text("Resources","",header,new Vector2(.5f,1),new Vector2(-140,-26),new Vector2(680,38),22,Ink,FontStyles.Bold);
             season=Text("Season","",header,new Vector2(.5f,1),new Vector2(-140,-72),new Vector2(700,25),15,Muted);
-            Button("订单",header,new Vector2(1,1),new Vector2(-292,-25),new Vector2(72,34),()=>Open("orders"),Accent);
-            Button("工坊",header,new Vector2(1,1),new Vector2(-292,-67),new Vector2(72,28),()=>Open("workshop"),Muted);
-            Button("科技",header,new Vector2(1,1),new Vector2(-212,-25),new Vector2(72,34),()=>Open("research"),Accent);
-            Button("仓库",header,new Vector2(1,1),new Vector2(-132,-25),new Vector2(72,34),()=>Open("crops"),Accent);
-            Button("手册",header,new Vector2(1,1),new Vector2(-52,-25),new Vector2(72,34),()=>Open("manual"),Accent);
-            Button("试炼",header,new Vector2(1,1),new Vector2(-212,-67),new Vector2(72,28),()=>Open("challenges"),Muted);
-            Button("成就",header,new Vector2(1,1),new Vector2(-132,-67),new Vector2(72,28),()=>Open("achievements"),Muted);
-            Button("设置",header,new Vector2(1,1),new Vector2(-52,-67),new Vector2(72,28),()=>Open("settings"),Muted);
+            Button(L10n.T("机群"),header,new Vector2(1,1),new Vector2(-372,-25),new Vector2(72,34),()=>Open("fleet"),Accent);
+            Button(L10n.T("订单"),header,new Vector2(1,1),new Vector2(-292,-25),new Vector2(72,34),()=>Open("orders"),Accent);
+            Button(L10n.T("工坊"),header,new Vector2(1,1),new Vector2(-292,-67),new Vector2(72,28),()=>Open("workshop"),Muted);
+            Button(L10n.T("科技"),header,new Vector2(1,1),new Vector2(-212,-25),new Vector2(72,34),()=>Open("research"),Accent);
+            Button(L10n.T("仓库"),header,new Vector2(1,1),new Vector2(-132,-25),new Vector2(72,34),()=>Open("crops"),Accent);
+            Button(L10n.T("手册"),header,new Vector2(1,1),new Vector2(-52,-25),new Vector2(72,34),()=>Open("manual"),Accent);
+            Button(L10n.T("试炼"),header,new Vector2(1,1),new Vector2(-212,-67),new Vector2(72,28),()=>Open("challenges"),Muted);
+            Button(L10n.T("成就"),header,new Vector2(1,1),new Vector2(-132,-67),new Vector2(72,28),()=>Open("achievements"),Muted);
+            Button(L10n.T("设置"),header,new Vector2(1,1),new Vector2(-52,-67),new Vector2(72,28),()=>Open("settings"),Muted);
             BuildLeft();BuildEditor();
             var footer=Panel("Footer",canvas,new Vector2(0,0),new Vector2(.66f,0),new Vector2(0,0),new Vector2(-12,86),Paper);
             saveLabel=Text("Saved","",footer,new Vector2(0,0),new Vector2(26,18),new Vector2(290,25),13,Muted);
             rate=Text("Income","",footer,new Vector2(1,0),new Vector2(-24,18),new Vector2(560,25),14,Muted,FontStyles.Normal,TextAlignmentOptions.Right);
-            Text("WorldHint","点击地块导航  ·  方向键 / WASD 移动  ·  鼠标滚轮缩放",footer,new Vector2(.5f,1),new Vector2(0,-12),new Vector2(900,27),14,Muted,FontStyles.Normal,TextAlignmentOptions.Center);
+            Text("WorldHint",L10n.T("点击地块导航  ·  方向键 / WASD 移动  ·  鼠标滚轮缩放"),footer,new Vector2(.5f,1),new Vector2(0,-12),new Vector2(900,27),14,Muted,FontStyles.Normal,TextAlignmentOptions.Center);
             App.Farm.Message+=AddLog;App.Farm.Changed+=Refresh;App.Runner.Changed+=Refresh;
-            Refresh();AddLog("欢迎来到禾湾。先完成左侧委托，再让程序接手农田。");
+            Refresh();AddLog(L10n.T("欢迎来到禾湾。先完成左侧委托，再让程序接手农田。"));
         }
         void BuildLeft()
         {
@@ -56,9 +58,9 @@ namespace Verdant
             var bar=PanelFixed("Progress Track",left,new Vector2(0,1),new Vector2(20,-205),new Vector2(290,6),VerdantWorld.Hex("E0E6D8"));
             var fill=Panel("Progress",bar,Vector2.zero,Vector2.one,Vector2.zero,Vector2.zero,Accent);taskBar=fill.GetComponent<UnityEngine.UI.Image>();
             taskProgress=Text("Progress Text","",left,new Vector2(0,1),new Vector2(20,-225),new Vector2(292,50),13,Ink);
-            claim=Button("领取委托奖励",left,new Vector2(0,1),new Vector2(20,-281),new Vector2(290,40),()=>{if(App.Farm.Claim()){App.Audio.PlayCue(720);Refresh();}},Accent);
+            claim=Button(L10n.T("领取委托奖励"),left,new Vector2(0,1),new Vector2(20,-281),new Vector2(290,40),()=>{if(App.Farm.Claim()){App.Audio.PlayCue(720);Refresh();}},Accent);
             taskHint=Text("Mission Hint","",left,new Vector2(0,1),new Vector2(20,-333),new Vector2(292,94),14,Muted);taskHint.enableWordWrapping=true;
-            Text("Seed Label","播种目录",left,new Vector2(0,1),new Vector2(20,-427),new Vector2(290,28),16,Ink,FontStyles.Bold);
+            Text("Seed Label",L10n.T("播种目录"),left,new Vector2(0,1),new Vector2(20,-427),new Vector2(290,28),16,Ink,FontStyles.Bold);
             for(int i=0;i<8;i++)
             {
                 int index=i;var def=VerdantContent.Crops[i];
@@ -66,11 +68,11 @@ namespace Verdant
                 seedButtons.Add(b);
             }
             cropInfo=Text("Seed Rules","",left,new Vector2(0,1),new Vector2(20,-552),new Vector2(292,78),13,Muted);cropInfo.enableWordWrapping=true;
-            Button("播种",left,new Vector2(0,0),new Vector2(20,72),new Vector2(68,37),()=>App.Manual("plant"),Accent);
-            Button("收获",left,new Vector2(0,0),new Vector2(94,72),new Vector2(68,37),()=>App.Manual("harvest"),Accent);
-            Button("浇水",left,new Vector2(0,0),new Vector2(168,72),new Vector2(68,37),()=>App.Manual("water"),Accent);
-            Button("翻土",left,new Vector2(0,0),new Vector2(242,72),new Vector2(68,37),()=>App.Manual("till"),Accent);
-            Text("Manual Hint","空格 播种  /  E 收获  /  Q 浇水  /  T 翻土",left,new Vector2(0,0),new Vector2(20,28),new Vector2(300,24),12,Muted);
+            Button(L10n.T("播种"),left,new Vector2(0,0),new Vector2(20,72),new Vector2(68,37),()=>App.Manual("plant"),Accent);
+            Button(L10n.T("收获"),left,new Vector2(0,0),new Vector2(94,72),new Vector2(68,37),()=>App.Manual("harvest"),Accent);
+            Button(L10n.T("浇水"),left,new Vector2(0,0),new Vector2(168,72),new Vector2(68,37),()=>App.Manual("water"),Accent);
+            Button(L10n.T("翻土"),left,new Vector2(0,0),new Vector2(242,72),new Vector2(68,37),()=>App.Manual("till"),Accent);
+            Text("Manual Hint",L10n.T("空格 播种  /  E 收获  /  Q 浇水  /  T 翻土"),left,new Vector2(0,0),new Vector2(20,28),new Vector2(300,24),12,Muted);
             var inspect=Panel("Plot Inspector",canvas,new Vector2(.232f,.105f),new Vector2(.65f,.23f),Vector2.zero,Vector2.zero,Paper);
             cell=Text("Position","",inspect,new Vector2(0,1),new Vector2(20,-13),new Vector2(260,23),14,Muted);
             cropTitle=Text("Current Crop","",inspect,new Vector2(0,1),new Vector2(20,-40),new Vector2(290,31),24,Ink,FontStyles.Bold);
@@ -79,12 +81,12 @@ namespace Verdant
         void BuildEditor()
         {
             var right=Panel("Program Studio",canvas,new Vector2(.67f,0),new Vector2(1,.875f),new Vector2(0,12),new Vector2(-18,0),Dark);
-            Text("Program Title","自动化工作台",right,new Vector2(0,1),new Vector2(20,-20),new Vector2(330,32),23,Paper,FontStyles.Bold);
+            Text("Program Title",L10n.T("自动化工作台"),right,new Vector2(0,1),new Vector2(20,-20),new Vector2(330,32),23,Paper,FontStyles.Bold);
             slotLabel=Text("Slot Label","",right,new Vector2(0,1),new Vector2(20,-61),new Vector2(315,24),12,VerdantWorld.Hex("A0C3AF"));
-            Button("程序列表",right,new Vector2(1,1),new Vector2(-110,-56),new Vector2(90,29),()=>Open("programs"),Accent);
-            Button("撤销",right,new Vector2(0,1),new Vector2(20,-91),new Vector2(66,25),()=>Restore(false),Accent);
-            Button("重做",right,new Vector2(0,1),new Vector2(95,-91),new Vector2(66,25),()=>Restore(true),Accent);
-            Button("模板",right,new Vector2(1,1),new Vector2(-20,-56),new Vector2(76,29),()=>Open("templates"),Accent);
+            Button(L10n.T("程序列表"),right,new Vector2(1,1),new Vector2(-110,-56),new Vector2(90,29),()=>Open("programs"),Accent);
+            Button(L10n.T("撤销"),right,new Vector2(0,1),new Vector2(20,-91),new Vector2(66,25),()=>Restore(false),Accent);
+            Button(L10n.T("重做"),right,new Vector2(0,1),new Vector2(95,-91),new Vector2(66,25),()=>Restore(true),Accent);
+            Button(L10n.T("模板"),right,new Vector2(1,1),new Vector2(-20,-56),new Vector2(76,29),()=>Open("templates"),Accent);
             var field=New("Code Editor",right,typeof(UnityEngine.UI.Image),typeof(VerdantCodeInput));var rect=(RectTransform)field.transform;
             Stretch(rect,new Vector2(0,.30f),new Vector2(1,1),new Vector2(16,0),new Vector2(-16,-126));
             field.GetComponent<UnityEngine.UI.Image>().color=VerdantWorld.Hex("172B24");
@@ -102,21 +104,31 @@ namespace Verdant
             // OnEnable ran before textComponent was assigned on this runtime-created field.
             // Re-enable after wiring references so TMP creates the caret/selection renderer.
             Editor.enabled=false;Editor.enabled=true;
-            var run=Button("运行",right,new Vector2(0,.30f),new Vector2(16,-14),new Vector2(100,37),()=>App.RunCode(),Accent);runLabel=run.GetComponentInChildren<TMP_Text>();
-            var pause=Button("暂停",right,new Vector2(0,.30f),new Vector2(124,-14),new Vector2(77,37),()=>App.Runner.TogglePause(),VerdantWorld.Hex("53694F"));pauseLabel=pause.GetComponentInChildren<TMP_Text>();
-            Button("单步",right,new Vector2(0,.30f),new Vector2(209,-14),new Vector2(77,37),()=>App.Runner.Step(Editor.text),VerdantWorld.Hex("53694F"));
-            Button("停止",right,new Vector2(0,.30f),new Vector2(294,-14),new Vector2(77,37),()=>App.Runner.Stop(),VerdantWorld.Hex("806852"));
+            var run=Button(L10n.T("运行"),right,new Vector2(0,.30f),new Vector2(16,-14),new Vector2(100,37),()=>App.RunCode(),Accent);runLabel=run.GetComponentInChildren<TMP_Text>();
+            var pause=Button(L10n.T("暂停"),right,new Vector2(0,.30f),new Vector2(124,-14),new Vector2(77,37),()=>App.Runner.TogglePause(),VerdantWorld.Hex("53694F"));pauseLabel=pause.GetComponentInChildren<TMP_Text>();
+            Button(L10n.T("单步"),right,new Vector2(0,.30f),new Vector2(209,-14),new Vector2(77,37),()=>App.Runner.Step(Editor.text),VerdantWorld.Hex("53694F"));
+            Button(L10n.T("停止"),right,new Vector2(0,.30f),new Vector2(294,-14),new Vector2(77,37),()=>App.Runner.Stop(),VerdantWorld.Hex("806852"));
             var speed=Button("1×",right,new Vector2(1,.30f),new Vector2(-16,-14),new Vector2(68,37),()=>App.CycleSpeed(),VerdantWorld.Hex("53694F"));speedLabel=speed.GetComponentInChildren<TMP_Text>();
-            programState=Text("Program State","就绪",right,new Vector2(0,.30f),new Vector2(18,-67),new Vector2(470,24),14,Gold);
+            programState=Text("Program State",L10n.T("就绪"),right,new Vector2(0,.30f),new Vector2(18,-67),new Vector2(470,24),14,Gold);
             watch=Text("Variables","",right,new Vector2(0,.30f),new Vector2(18,-94),new Vector2(470,21),12,VerdantWorld.Hex("A0C3AF"));
             ConsoleText=Text("Console","",right,new Vector2(0,0),new Vector2(18,17),new Vector2(465,124),12,VerdantWorld.Hex("C2D0BD"));ConsoleText.enableWordWrapping=true;ConsoleText.alignment=TextAlignmentOptions.BottomLeft;
         }
+        void OnDestroy(){L10n.Changed-=RefreshLanguage;}
+        void RefreshLanguage()
+        {
+            if(App==null||App.Farm==null||canvas==null)return;
+            font=L10n.UIFont;codeFont=L10n.CodeFont;
+            foreach(var label in canvas.GetComponentsInChildren<TMP_Text>(true))label.font=Editor!=null&&label==Editor.textComponent?codeFont:font;
+            string kind=modalKind;if(kind!=null)Open(kind);Refresh();
+        }
         public void SelectSlot(int slot)
         {
-            if(App.Farm.InChallenge){AddLog("请先退出试炼再切换主线程序槽");return;}
+            if(App.Farm.InChallenge){AddLog(L10n.T("请先退出试炼再切换主线程序槽"));return;}
             if(slot<0||slot>=App.Farm.Data.scripts.Length)return;App.Farm.Data.scripts[App.Farm.Data.slot]=Editor.text;App.Farm.Data.slot=slot;Editor.SetTextWithoutNotify(App.Farm.Data.scripts[slot]??"");History().Record(Editor.text,0,0);Refresh();
         }
         public void ResetPrograms(){histories.Clear();App.RunningSlot=-1;History().Record(Editor.text,0,0);}
+        int resizeDrone;
+        void DeployFleet(string kind){var f=App.Farm;for(int y=0;y<f.Data.size;y++)for(int x=0;x<f.Data.size;x++){var test=new FarmDrone{id=-1};if(f.Fleet.Fits(test,x,y)){f.Fleet.Deploy(kind,x,y);Open("fleet");return;}}AddLog(L10n.T("没有可用部署位置"));}
         CodeHistory History(){int slot=App.Farm.Data.slot;CodeHistory h;if(!histories.TryGetValue(slot,out h)){h=new CodeHistory();histories[slot]=h;}return h;}
         public void Restore(bool redo)
         {
@@ -127,54 +139,55 @@ namespace Verdant
         public void AddProgram(){if(App.Farm.InChallenge)return;App.Farm.Data.scripts[App.Farm.Data.slot]=Editor.text;VerdantPrograms.Add(App.Farm.Data);Editor.SetTextWithoutNotify(App.Farm.Data.scripts[App.Farm.Data.slot]);History().Record(Editor.text,0,0);App.Farm.Save();Open("programs");}
         public void DeleteProgram(int slot)
         {
-            if(App.Farm.InChallenge||slot==App.RunningSlot&&App.Runner.Running){AddLog("请先停止正在运行的程序再删除");return;}
-            if(!VerdantPrograms.Remove(App.Farm.Data,slot)){AddLog("至少保留一个程序");return;}
+            if(App.Farm.InChallenge||slot==App.RunningSlot&&App.Runner.Running){AddLog(L10n.T("请先停止正在运行的程序再删除"));return;}
+            if(!VerdantPrograms.Remove(App.Farm.Data,slot)){AddLog(L10n.T("至少保留一个程序"));return;}
             var moved=new Dictionary<int,CodeHistory>();foreach(var pair in histories)if(pair.Key!=slot)moved[pair.Key>slot?pair.Key-1:pair.Key]=pair.Value;histories.Clear();foreach(var pair in moved)histories[pair.Key]=pair.Value;
             if(App.RunningSlot>slot)App.RunningSlot--;else if(App.RunningSlot==slot)App.RunningSlot=-1;
             Editor.SetTextWithoutNotify(App.Farm.Data.scripts[App.Farm.Data.slot]);History().Record(Editor.text,0,0);App.Farm.Save();Open("programs");
         }
         public void LoadTemplate(int i)
-        {Editor.text=VerdantContent.Templates[i];if(!App.Farm.InChallenge)App.Farm.Data.scripts[App.Farm.Data.slot]=Editor.text;Close();AddLog("已载入「"+VerdantContent.TemplateNames[i]+"」。编辑后点击运行。");}
+        {Editor.text=VerdantContent.Templates[i];if(!App.Farm.InChallenge)App.Farm.Data.scripts[App.Farm.Data.slot]=Editor.text;Close();AddLog(L10n.T("已载入「")+VerdantContent.TemplateNames[i]+L10n.T("」。编辑后点击运行。"));}
         void Update(){refresh-=Time.unscaledDeltaTime;if(refresh>0)return;refresh=.25f;Refresh();}
         public void Refresh()
         {
             if(App==null||App.Farm==null||resources==null)return;var f=App.Farm;var d=f.Data;
-            resources.text="金币  "+d.coins.ToString("N0")+"     研究  "+d.knowledge.ToString("N0")+"     光能  "+d.energy+"     水  "+Mathf.FloorToInt(d.water);
-            season.text="第 "+((int)(d.clock/180)+1)+" 日    "+f.SeasonName+"    "+(f.Rain?"细雨 · 自动润田":"晴朗 · 正常生长")+"    "+d.size+"×"+d.size+" 农田";
-            chapter.text=f.InChallenge?"限时试炼  /  "+VerdantContent.ChallengeNames[f.challenge]:"第 "+(f.Chapter+1)+" 章  /  "+VerdantContent.Chapters[f.Chapter];
+            resources.text=L10n.T("金币  ")+d.coins.ToString("N0")+L10n.T("     研究  ")+d.knowledge.ToString("N0")+L10n.T("     光能  ")+d.energy+L10n.T("     水  ")+Mathf.FloorToInt(d.water);
+            season.text=L10n.F("第 {0} 日    {1}    {2}    {3}×{3} 农田",((int)(d.clock/180)+1),f.SeasonName,f.Rain?L10n.T("细雨 · 自动润田"):L10n.T("晴朗 · 正常生长"),d.size);
+            chapter.text=f.InChallenge?L10n.T("限时试炼  /  ")+VerdantContent.ChallengeNames[f.challenge]:L10n.F("第 {0} 章 / {1}",f.Chapter+1,VerdantContent.Chapters[f.Chapter]);
             var mission=f.CurrentContract;
             if(f.InChallenge)
             {
                 int i=f.challenge;int value=f.Count(VerdantContent.ChallengeCrops[i])-f.challengeStart;float remaining=Mathf.Max(0,VerdantContent.ChallengeTimes[i]-f.challengeTime);
-                taskTitle.text=VerdantContent.ChallengeNames[i];taskStory.text=VerdantContent.ChallengeNotes[i];taskProgress.text=value+" / "+VerdantContent.ChallengeTargets[i]+"     剩余 "+Mathf.CeilToInt(remaining)+" 秒";
-                taskHint.text="试炼为独立农场，研究全部解锁。停止脚本可以重新编辑；设置页可退出试炼。";SetProgress((float)value/VerdantContent.ChallengeTargets[i]);claim.interactable=false;
+                taskTitle.text=VerdantContent.ChallengeNames[i];taskStory.text=VerdantContent.ChallengeNotes[i];taskProgress.text=value+" / "+VerdantContent.ChallengeTargets[i]+L10n.T("     剩余 ")+Mathf.CeilToInt(remaining)+L10n.T(" 秒");
+                taskHint.text=L10n.T("试炼为独立农场，研究全部解锁。停止脚本可以重新编辑；设置页可退出试炼。");SetProgress((float)value/VerdantContent.ChallengeTargets[i]);claim.interactable=false;
             }
             else if(mission!=null)
             {
-                int value=f.ContractProgress;taskTitle.text=mission.title;taskStory.text="目标："+MissionGoal(mission)+"\n"+mission.story;taskProgress.text=Mathf.Min(value,mission.amount)+" / "+mission.amount+"    奖励 "+mission.reward+" 金币";
-                taskHint.text="操作："+mission.hint+"\n达标后点击领取委托奖励。";
-                if(f.ContractCropIndex>=0)taskHint.text="本任务需新增收获 "+mission.amount+" 单位"+VerdantContent.Crop(mission.metric).name+"。历史收获不计入本任务。\n操作："+mission.hint;
+                int value=f.ContractProgress;taskTitle.text=mission.title;taskStory.text=L10n.T("目标：")+MissionGoal(mission)+"\n"+mission.story;taskProgress.text=Mathf.Min(value,mission.amount)+" / "+mission.amount+L10n.T("    奖励 ")+mission.reward+L10n.T(" 金币");
+                taskHint.text=L10n.T("操作：")+mission.hint+L10n.T("\n达标后点击领取委托奖励。");
+                if(f.ContractCropIndex>=0)taskHint.text=L10n.T("本任务需新增收获 ")+mission.amount+L10n.T(" 单位")+VerdantContent.Crop(mission.metric).name+L10n.T("。历史收获不计入本任务。\n操作：")+mission.hint;
                 SetProgress((float)value/mission.amount);claim.interactable=f.ContractReady;
             }
-            else{taskTitle.text="禾湾长明";taskStory.text="主线已完成。试炼、成就和自由农场仍在等待你的下一次优化。";taskProgress.text="30 / 30 委托已完成";taskHint.text="感谢你让这片土地重新有了秩序。";SetProgress(1);claim.interactable=false;}
-            cell.text="PIP-01   /   地块 "+(d.x+1).ToString("00")+" : "+(d.y+1).ToString("00");var p=f.Here;var current=VerdantContent.Crop(p.crop);
-            cropTitle.text=current==null?"等待播种的土地":current.name+"  "+(f.Ready(p)?"可收获":Mathf.FloorToInt(p.growth/current.seconds*100)+"%");
-            soil.text=(p.tilled?"耕地":"原土")+"     水分 "+Mathf.RoundToInt(p.moisture*100)+"%     肥力 "+Mathf.RoundToInt(p.fertility*100)+"%";
-            var selected=VerdantContent.Crops[d.selectedCrop];cropInfo.text=selected.name+" · 播种 "+selected.cost+" 金币\n"+selected.note;
+            else{taskTitle.text=L10n.T("禾湾长明");taskStory.text=L10n.T("主线已完成。试炼、成就和自由农场仍在等待你的下一次优化。");taskProgress.text=L10n.T("30 / 30 委托已完成");taskHint.text=L10n.T("感谢你让这片土地重新有了秩序。");SetProgress(1);claim.interactable=false;}
+            cell.text=L10n.F("无人机 {0} / 地块 {1}:{2}",d.activeDrone,(d.x+1).ToString("00"),(d.y+1).ToString("00"));var p=f.Here;var current=VerdantContent.Crop(p.crop);
+            cropTitle.text=current==null?L10n.T("等待播种的土地"):current.name+"  "+(f.Ready(p)?L10n.T("可收获"):Mathf.FloorToInt(p.growth/current.seconds*100)+"%");
+            soil.text=(p.tilled?L10n.T("耕地"):L10n.T("原土"))+L10n.T("     水分 ")+Mathf.RoundToInt(p.moisture*100)+L10n.T("%     肥力 ")+Mathf.RoundToInt(p.fertility*100)+"%";
+            var selected=VerdantContent.Crops[d.selectedCrop];cropInfo.text=selected.name+L10n.T(" · 播种 ")+selected.cost+L10n.T(" 金币\n")+selected.note;
             for(int i=0;i<seedButtons.Count;i++){var image=seedButtons[i].GetComponent<UnityEngine.UI.Image>();image.color=i==d.selectedCrop?Accent:f.Unlocked(VerdantContent.Crops[i].id)?VerdantWorld.Hex("94AE95"):VerdantWorld.Hex("B8BCAF");}
-            saveLabel.text=f.InChallenge?"试炼中 · 主线进度已保留":f.LastSaveMessage;
-            rate.text="累计收获 "+f.Count("harvested").ToString("N0")+"     自动化动作 "+f.Count("programActions").ToString("N0")+"     近一分钟收入 "+App.IncomeRate+" 金币";
-            slotLabel.text="查看 "+(d.slot+1)+" / "+d.scripts.Length+"   运行 "+(App.Runner.Running?(App.RunningSlot+1).ToString():"无");speedLabel.text=App.Speed+"×";
-            var runner=App.Runner;programState.text=runner.Error!=""?runner.Error:runner.Status+(runner.VM!=null?"    第 "+runner.VM.CurrentLine+" 行  ·  "+runner.VM.Executed+" 指令":"    支持循环、条件与函数");
+            saveLabel.text=f.InChallenge?L10n.T("试炼中 · 主线进度已保留"):f.LastSaveMessage;
+            rate.text=L10n.T("累计收获 ")+f.Count("harvested").ToString("N0")+L10n.T("     自动化动作 ")+f.Count("programActions").ToString("N0")+L10n.T("     近一分钟收入 ")+App.IncomeRate+L10n.T(" 金币");
+            slotLabel.text=L10n.T("查看 ")+(d.slot+1)+" / "+d.scripts.Length+L10n.T("   运行 ")+(App.Runner.Running?(App.RunningSlot+1).ToString():L10n.T("无"));speedLabel.text=App.Speed+"×";
+            foreach(var row in droneRows)if(row.Value!=null){var u=d.drones.Find(x=>x.id==row.Key);if(u!=null)row.Value.text=L10n.F("坐标 {0},{1} / 队列 {2} / 状态 {3}",u.x,u.y,u.jobs.Count,L10n.T(u.status));}
+            var runner=App.Runner;programState.text=runner.Error!=""?runner.Error:L10n.T(runner.Status)+(runner.VM!=null?L10n.T("    第 ")+runner.VM.CurrentLine+L10n.T(" 行  ·  ")+runner.VM.Executed+L10n.T(" 指令"):L10n.T("    支持循环、条件与函数"));
             programState.color=runner.Error!=""?VerdantWorld.Hex("F1A792"):Gold;
-            watch.text=runner.VM!=null?runner.VM.Watch():"Ctrl / Cmd + Enter 运行    ·    Esc 打开设置";
-            runLabel.text=runner.Running?"重新运行":"运行";pauseLabel.text=runner.Paused?"继续":"暂停";
+            watch.text=runner.VM!=null?runner.VM.Watch():L10n.T("Ctrl / Cmd + Enter 运行    ·    Esc 打开设置");
+            runLabel.text=runner.Running?L10n.T("重新运行"):L10n.T("运行");pauseLabel.text=runner.Paused?L10n.T("继续"):L10n.T("暂停");
         }
         void BuildTechTree()
         {
             var root=PanelFixed("Tech Tree",modalBody,new Vector2(0,1),Vector2.zero,new Vector2(970,1160),Paper);root.gameObject.AddComponent<LayoutElement>().preferredHeight=1160;
-            var positions=new Dictionary<string,Vector2>();int[] columns=new int[6];
-            foreach(var t in VerdantContent.Techs)positions[t.id]=new Vector2(8+columns[t.chapter]++*238,-25-t.chapter*185);
+            var positions=new Dictionary<string,Vector2>();int[] columns=new int[6];float[] offsets=new float[6];float height=30;for(int ch=0;ch<6;ch++){offsets[ch]=height;int count=Array.FindAll(VerdantContent.Techs,t=>t.chapter==ch).Length;height+=Mathf.Ceil(count/4f)*185+35;}root.sizeDelta=new Vector2(970,height);root.GetComponent<LayoutElement>().preferredHeight=height;
+            foreach(var t in VerdantContent.Techs)positions[t.id]=new Vector2(8+(columns[t.chapter]%4)*238,-offsets[t.chapter]-(columns[t.chapter]++/4)*185);
             foreach(var t in VerdantContent.Techs)if(t.prerequisite!="")
             {Vector2 start=positions[t.prerequisite]+new Vector2(110,-138),end=positions[t.id]+new Vector2(110,0),delta=end-start;
              var line=PanelFixed("Dependency",root,new Vector2(0,1),start,new Vector2(delta.magnitude,3),App.Farm.Has(t.prerequisite)?Accent:Muted);line.pivot=new Vector2(0,.5f);line.localRotation=Quaternion.Euler(0,0,Mathf.Atan2(delta.y,delta.x)*Mathf.Rad2Deg);}
@@ -182,15 +195,15 @@ namespace Verdant
             {var tech=t;bool done=App.Farm.Has(t.id);bool available=App.Farm.Chapter>=t.chapter&&(t.prerequisite==""||App.Farm.Has(t.prerequisite));
              var node=PanelFixed(t.id,root,new Vector2(0,1),positions[t.id],new Vector2(224,140),done?VerdantWorld.Hex("D6E6D2"):VerdantWorld.Hex("ECEFE4"));
              Text("Name",t.name,node,new Vector2(0,1),new Vector2(10,-8),new Vector2(204,26),17,Ink,FontStyles.Bold);
-             var details=Text("Requirements","第"+(t.chapter+1)+"章 · "+t.price+"金币 / "+t.knowledge+"研究\n前置："+(t.prerequisite==""?"无":VerdantContent.Tech(t.prerequisite).name),node,new Vector2(0,1),new Vector2(10,-39),new Vector2(204,65),12,Muted);details.enableWordWrapping=true;
-             Button(done?"已完成":available?"研究":"条件未满足",node,new Vector2(0,1),new Vector2(10,-107),new Vector2(200,26),()=>{if(App.Farm.Research(tech.id)){float scroll=modalScroll.verticalNormalizedPosition;Open("research");Canvas.ForceUpdateCanvases();modalScroll.verticalNormalizedPosition=scroll;}},done?Muted:Accent).interactable=!done&&available;
+             var details=Text("Requirements",L10n.T("第")+(t.chapter+1)+L10n.T("章 · ")+t.price+L10n.T("金币 / ")+t.knowledge+L10n.T("研究\n前置：")+(t.prerequisite==""?L10n.T("无"):VerdantContent.Tech(t.prerequisite).name),node,new Vector2(0,1),new Vector2(10,-39),new Vector2(204,65),12,Muted);details.enableWordWrapping=true;
+             Button(done?L10n.T("已完成"):available?L10n.T("研究"):L10n.T("条件未满足"),node,new Vector2(0,1),new Vector2(10,-107),new Vector2(200,26),()=>{if(App.Farm.Research(tech.id)){float scroll=modalScroll.verticalNormalizedPosition;Open("research");Canvas.ForceUpdateCanvases();modalScroll.verticalNormalizedPosition=scroll;}},done?Muted:Accent).interactable=!done&&available;
             }
         }
         string MissionGoal(ContractDef c)
-        {var crop=VerdantContent.Crop(c.metric);if(crop!=null)return "本任务新增收获 "+c.amount+" 单位"+crop.name;
-         if(c.metric.StartsWith("tech:"))return "研究「"+VerdantContent.Tech(c.metric.Substring(5)).name+"」";
-         string name=c.metric=="moves"?"移动格数":c.metric=="planted"?"成功播种次数":c.metric=="watered"?"主动浇水次数":c.metric=="fertilized"?"成功施肥次数":c.metric=="energyEarned"?"累计生产光能":c.metric=="bonusHarvests"?"触发增产的收获次数":c.metric=="functionCalls"?"函数调用次数":c.metric=="harvested"?"累计收获单位":c.metric=="size"?"农田边长":"自动化动作次数";
-         return name+"达到 "+c.amount;}
+        {var crop=VerdantContent.Crop(c.metric);if(crop!=null)return L10n.T("本任务新增收获 ")+c.amount+L10n.T(" 单位")+crop.name;
+         if(c.metric.StartsWith("tech:"))return L10n.T("研究「")+VerdantContent.Tech(c.metric.Substring(5)).name+L10n.T("」");
+         string name=c.metric=="moves"?L10n.T("移动格数"):c.metric=="planted"?L10n.T("成功播种次数"):c.metric=="watered"?L10n.T("主动浇水次数"):c.metric=="fertilized"?L10n.T("成功施肥次数"):c.metric=="energyEarned"?L10n.T("累计生产光能"):c.metric=="bonusHarvests"?L10n.T("触发增产的收获次数"):c.metric=="functionCalls"?L10n.T("函数调用次数"):c.metric=="harvested"?L10n.T("累计收获单位"):c.metric=="size"?L10n.T("农田边长"):L10n.T("自动化动作次数");
+         return name+L10n.T("达到 ")+c.amount;}
         void SetProgress(float amount){var rect=taskBar.rectTransform;rect.anchorMax=new Vector2(Mathf.Clamp01(amount),1);}
         public void AddLog(string text)
         {
@@ -199,11 +212,11 @@ namespace Verdant
         public void Close(){if(modal!=null)Destroy(modal.gameObject);modal=null;modalKind=null;App.PausedWorld=false;}
         public void Open(string kind)
         {
-            if(modal!=null)Close();modalKind=kind;App.PausedWorld=kind!="programs";
+            if(modal!=null)Close();modalKind=kind;App.PausedWorld=kind!="programs"&&kind!="fleet"&&kind!="body";
             modal=Panel("Modal",canvas,Vector2.zero,Vector2.one,Vector2.zero,Vector2.zero,new Color(.08f,.16f,.12f,.72f));modal.GetComponent<UnityEngine.UI.Image>().raycastTarget=true;
             var card=PanelFixed("Card",modal,new Vector2(.5f,.5f),Vector2.zero,new Vector2(1060,780),Paper);
             modalTitle=Text("Title","",card,new Vector2(0,1),new Vector2(32,-24),new Vector2(850,45),30,Ink,FontStyles.Bold);
-            Button("关闭",card,new Vector2(1,1),new Vector2(-28,-24),new Vector2(90,36),Close,Accent);
+            Button(L10n.T("关闭"),card,new Vector2(1,1),new Vector2(-28,-24),new Vector2(90,36),Close,Accent);
             modalScroll=New("Scroll",card,typeof(ScrollRect)).GetComponent<ScrollRect>();var scrollRect=(RectTransform)modalScroll.transform;
             Stretch(scrollRect,Vector2.zero,Vector2.one,new Vector2(28,26),new Vector2(-28,-90));
             var viewport=New("Viewport",scrollRect,typeof(UnityEngine.UI.Image),typeof(UnityEngine.UI.Mask));Stretch((RectTransform)viewport.transform,Vector2.zero,Vector2.one,Vector2.zero,Vector2.zero);viewport.GetComponent<UnityEngine.UI.Image>().color=Paper;viewport.GetComponent<UnityEngine.UI.Mask>().showMaskGraphic=false;
@@ -219,78 +232,97 @@ namespace Verdant
             var f=App.Farm;
             if(kind=="intro")
             {
-                modalTitle.text="欢迎来到禾湾";
-                Paragraph("禾序  /  VERDANT CIRCUIT",26,Accent);
-                Paragraph("一座无人照看的农场，一台巡田机器人，一份等待你写下的程序。\n\n从手动种下第一粒稻穗，到让循环与函数照看整片农田。你将在六章委托中学习规律、建设水利、研究共生，最终让星辉温室持续运转。",20,Ink,200);
-                Row("先认识土地","方向键移动；空格播种；E 收获。左侧委托会告诉你下一步。","开始农耕",()=>{f.Add("intro");Close();},110);
-                Row("让程序接手","右侧已准备好稻穗巡田程序。随时可以停止、编辑和单步。","运行示例",()=>{f.Add("intro");Close();App.RunCode();},110);
-                Paragraph("内容：8 种作物 · 30 份委托 · 18 项研究 · 6 项试炼 · 5 种加工配方\n农场与程序列表会自动保存。",16,Muted,75);
+                modalTitle.text=L10n.T("欢迎来到禾湾");
+                Paragraph(L10n.T("禾序  /  VERDANT CIRCUIT"),26,Accent);
+                Paragraph(L10n.T("一座无人照看的农场，一台巡田机器人，一份等待你写下的程序。\n\n从手动种下第一粒稻穗，到让循环与函数照看整片农田。你将在六章委托中学习规律、建设水利、研究共生，最终让星辉温室持续运转。"),20,Ink,200);
+                Row(L10n.T("先认识土地"),L10n.T("方向键移动；空格播种；E 收获。左侧委托会告诉你下一步。"),L10n.T("开始农耕"),()=>{f.Add("intro");Close();},110);
+                Row(L10n.T("让程序接手"),L10n.T("右侧已准备好稻穗巡田程序。随时可以停止、编辑和单步。"),L10n.T("运行示例"),()=>{f.Add("intro");Close();App.RunCode();},110);
+                Paragraph(L10n.T("内容：8 种作物 · 30 份委托 · 26 项研究 · 6 项试炼 · 5 种加工配方\n农场与程序列表会自动保存。"),16,Muted,75);
             }
             else if(kind=="manual")
-            {modalTitle.text="农场语言手册";Paragraph(VerdantContent.Manual,18,Ink,2100);}
+            {modalTitle.text=L10n.T("农场语言手册");Paragraph(VerdantContent.Manual,18,Ink,2100);}
             else if(kind=="templates")
             {
-                modalTitle.text="程序范例";Paragraph("范例会替换当前编辑区。程序列表可以保存不同方案。代码可以自由修改。",17,Muted,55);
-                for(int i=0;i<VerdantContent.TemplateNames.Length;i++){int n=i;Row((i+1).ToString("00")+"  "+VerdantContent.TemplateNames[i],i<2?"从基础动作到整田循环":"结合传感器和作物规则设计自动化方案","载入",()=>LoadTemplate(n),82);}
+                modalTitle.text=L10n.T("程序范例");Paragraph(L10n.T("范例会替换当前编辑区。程序列表可以保存不同方案。代码可以自由修改。"),17,Muted,55);
+                for(int i=0;i<VerdantContent.TemplateNames.Length;i++){int n=i;Row((i+1).ToString("00")+"  "+VerdantContent.TemplateNames[i],i<2?L10n.T("从基础动作到整田循环"):L10n.T("结合传感器和作物规则设计自动化方案"),L10n.T("载入"),()=>LoadTemplate(n),82);}
             }
+            else if(kind=="fleet")
+            {
+                modalTitle.text=L10n.T("无人机机群");droneRows.Clear();
+                Paragraph(L10n.T("数量与机体规格独立解锁。队列自动寻路避让，直接移动发生碰撞会扣维修费。大型机体不能越界环绕。停止程序会清空队列。"),17,Muted,90);
+                Paragraph(L10n.T("部署数量 ")+f.Data.drones.Count+" / "+f.Data.droneCapacity+L10n.T("    机体等级 ")+f.Data.footprintTier+L10n.T("    碰撞次数 ")+f.Count("collisions"),18,Ink,50);
+                Row(L10n.T("队列运行状态"),f.Data.fleetPaused?L10n.T("队列已暂停"):L10n.T("队列正在运行"),f.Data.fleetPaused?L10n.T("继续机群"):L10n.T("暂停机群"),()=>{f.Data.fleetPaused=!f.Data.fleetPaused;Open("fleet");},85);
+                Row(L10n.T("部署通用无人机"),L10n.F("购置费用 {0} 金币。部署前检查空闲位置。",f.Fleet.DeploymentPrice("general")),L10n.T("部署"),()=>DeployFleet("general"),85,!f.InChallenge);
+                Row(L10n.T("部署浇水无人机"),L10n.T("只能浇水，需先研究灌溉无人机。")+"\n"+L10n.F("购置费用 {0} 金币。部署前检查空闲位置。",f.Fleet.DeploymentPrice("irrigator")),L10n.T("部署"),()=>DeployFleet("irrigator"),85,f.Has("drone_water")&&!f.InChallenge);
+                Row(L10n.T("部署收获无人机"),L10n.T("只能收获，需先研究收获无人机。")+"\n"+L10n.F("购置费用 {0} 金币。部署前检查空闲位置。",f.Fleet.DeploymentPrice("harvester")),L10n.T("部署"),()=>DeployFleet("harvester"),85,f.Has("drone_harvest")&&!f.InChallenge);
+                foreach(var unit in f.Data.drones)
+                {var u=unit;droneRows[u.id]=Row(L10n.T("无人机 ")+u.id+" / "+u.kind+" / "+u.width+"×"+u.height,L10n.T("坐标 ")+u.x+","+u.y+L10n.T("   队列 ")+u.jobs.Count+L10n.T("   状态 ")+L10n.T(u.status),L10n.T("选择"),()=>{f.Fleet.Select(u.id);Close();},100);
+                 Row(L10n.T("机体规格"),L10n.T("选择已解锁规格。增加占地需要支付改造费用；缩小不退款。"),L10n.T("调整"),()=>{resizeDrone=u.id;Open("body");},85);
+                 Row(L10n.T("取消队列"),L10n.T("取消该机的待处理作业。"),L10n.T("取消"),()=>{u.jobs.Clear();Open("fleet");},75);
+                 if(u.id!=0)Row(L10n.T("收回无人机"),L10n.T("须先清空队列，不退购置费用。"),L10n.T("收回"),()=>{f.Fleet.Retire(u.id);Open("fleet");},75);}
+                Paragraph(L10n.T("0号基础机免维护。其他机体只有执行或等待队列时每30游戏秒收维护费：面积×机型系数，通用为1，专用为2；空闲免费。余额不足时暂停作业，基础机仍可免费种稻穗恢复资金。"),16,Muted,110);
+            }
+            else if(kind=="body")
+            {modalTitle.text=L10n.T("机体规格");foreach(var shape in new[]{new Vector2Int(1,1),new Vector2Int(2,2),new Vector2Int(3,2),new Vector2Int(2,3),new Vector2Int(3,3)}){var size=shape;Row(size.x+"×"+size.y,L10n.F("改造费用 {0} 金币。完整占地必须空闲，规格需已解锁。",f.Fleet.ResizePrice(resizeDrone,size.x,size.y)),L10n.T("应用"),()=>{f.Fleet.Resize(resizeDrone,size.x,size.y);Open("fleet");},85,f.Fleet.ShapeUnlocked(size.x,size.y)&&f.Fleet.Find(resizeDrone).jobs.Count==0);} }
             else if(kind=="programs")
-            {modalTitle.text="程序管理";Paragraph("查看其他程序不会停止当前执行。点击运行将替换当前程序，始终仅执行一份。删除运行中的程序前请先停止。",17,Muted,65);
-             Row("新建程序","默认一个，可增加和删除，至少保留一个。","增加",AddProgram,80,!f.InChallenge);
-             for(int i=0;i<f.Data.scripts.Length;i++){int n=i;Row("程序 "+(i+1)+(App.Runner.Running&&App.RunningSlot==i?" · 运行中":""),f.Data.scripts[i].Length+" 字符","查看",()=>{SelectSlot(n);Close();},80);Row("删除程序 "+(i+1),"删除后不可从本列表恢复，请先复制需要的代码。","删除",()=>DeleteProgram(n),75,f.Data.scripts.Length>1&&!(App.Runner.Running&&App.RunningSlot==i));}}
+            {modalTitle.text=L10n.T("程序管理");Paragraph(L10n.T("查看其他程序不会停止当前执行。点击运行将替换当前程序，始终仅执行一份。删除运行中的程序前请先停止。"),17,Muted,65);
+             Row(L10n.T("新建程序"),L10n.T("默认一个，可增加和删除，至少保留一个。"),L10n.T("增加"),AddProgram,80,!f.InChallenge);
+             for(int i=0;i<f.Data.scripts.Length;i++){int n=i;Row(L10n.T("程序 ")+(i+1)+(App.Runner.Running&&App.RunningSlot==i?L10n.T(" · 运行中"):""),f.Data.scripts[i].Length+L10n.T(" 字符"),L10n.T("查看"),()=>{SelectSlot(n);Close();},80);Row(L10n.T("删除程序 ")+(i+1),L10n.T("删除后不可从本列表恢复，请先复制需要的代码。"),L10n.T("删除"),()=>DeleteProgram(n),75,f.Data.scripts.Length>1&&!(App.Runner.Running&&App.RunningSlot==i));}}
             else if(kind=="research")
             {
-                modalTitle.text="科技路线";Paragraph("研究需要金币与研究点。章节随主线委托解锁；完成前置研究后即可购买。",17,Muted,55);
+                modalTitle.text=L10n.T("科技路线");Paragraph(L10n.T("研究需要金币与研究点。章节随主线委托解锁；完成前置研究后即可购买。"),17,Muted,55);
                 BuildTechTree();
             }
             else if(kind=="crops")
             {
-                modalTitle.text="作物图鉴与仓库";
-                foreach(var c in VerdantContent.Crops){var crop=c;Row(c.name+(f.Unlocked(c.id)?"":" · 未解锁"),c.note+"\n生长 "+c.seconds+" 秒 · 播种 "+c.cost+" 金币 · 单位价值 "+c.value+" 金币\n库存 / 累计收获："+f.Count("stock:"+c.id),"选择",()=>{f.Data.selectedCrop=Array.IndexOf(VerdantContent.Crops,crop);Close();Refresh();},122);}
+                modalTitle.text=L10n.T("作物图鉴与仓库");
+                foreach(var c in VerdantContent.Crops){var crop=c;Row(c.name+(f.Unlocked(c.id)?"":L10n.T(" · 未解锁")),c.note+L10n.T("\n生长 ")+c.seconds+L10n.T(" 秒 · 播种 ")+c.cost+L10n.T(" 金币 · 单位价值 ")+c.value+L10n.T(" 金币\n库存 / 累计收获：")+f.Count("stock:"+c.id),L10n.T("选择"),()=>{f.Data.selectedCrop=Array.IndexOf(VerdantContent.Crops,crop);Close();Refresh();},122);}
             }
             else if(kind=="challenges")
             {
-                modalTitle.text="独立试炼";Paragraph("每项试炼都使用独立的 6×6 农场，临时解锁全部研究。完成后恢复主线农场；首次通过奖励 400 金币与 50 研究点。",17,Muted,80);
-                for(int i=0;i<6;i++){int n=i;string stars=new string('★',f.Data.stars[i])+new string('☆',3-f.Data.stars[i]);Row((i+1)+". "+VerdantContent.ChallengeNames[i]+"   "+stars,VerdantContent.ChallengeNotes[i],i>f.Chapter?"章节锁定":"开始",()=>{App.Runner.Stop();f.StartChallenge(n);if(f.InChallenge){Close();int template=n==0?0:n==1?1:n==2?2:n==3?4:n==4?5:6;Editor.SetTextWithoutNotify(VerdantContent.Templates[template]);AddLog("点击运行开始耕作。退出试炼请打开设置。");}},110,i<=f.Chapter&&!f.InChallenge);}
+                modalTitle.text=L10n.T("独立试炼");Paragraph(L10n.T("每项试炼都使用独立的 6×6 农场，临时解锁全部研究。完成后恢复主线农场；首次通过奖励 400 金币与 50 研究点。"),17,Muted,80);
+                for(int i=0;i<6;i++){int n=i;string stars=new string('★',f.Data.stars[i])+new string('☆',3-f.Data.stars[i]);Row((i+1)+". "+VerdantContent.ChallengeNames[i]+"   "+stars,VerdantContent.ChallengeNotes[i],i>f.Chapter?L10n.T("章节锁定"):L10n.T("开始"),()=>{App.Runner.Stop();f.StartChallenge(n);if(f.InChallenge){Close();int template=n==0?0:n==1?1:n==2?2:n==3?4:n==4?5:6;Editor.SetTextWithoutNotify(VerdantContent.Templates[template]);AddLog(L10n.T("点击运行开始耕作。退出试炼请打开设置。"));}},110,i<=f.Chapter&&!f.InChallenge);}
             }
             else if(kind=="achievements")
             {
-                modalTitle.text="田野档案  /  "+f.Data.achievements.Count+" / 12";
-                for(int i=0;i<12;i++){bool done=f.Data.achievements.Contains(i.ToString());Row(VerdantContent.AchievementNames[i],VerdantContent.AchievementNotes[i]+" · 首次解锁奖励 10 研究",done?"已解锁":"进行中",null,86,false);}
+                modalTitle.text=L10n.T("田野档案  /  ")+f.Data.achievements.Count+" / 12";
+                for(int i=0;i<12;i++){bool done=f.Data.achievements.Contains(i.ToString());Row(VerdantContent.AchievementNames[i],VerdantContent.AchievementNotes[i]+L10n.T(" · 首次解锁奖励 10 研究"),done?L10n.T("已解锁"):L10n.T("进行中"),null,86,false);}
             }
             else if(kind=="orders")
             {
-                modalTitle.text="禾湾供给订单";
-                Paragraph("第二章起开放。交付会消耗仓库库存，并获得供给补贴与研究点。每次完成后都会出现新订单；已完成 "+f.Count("orders")+" 单。",17,Muted,70);
-                for(int i=0;i<3;i++){int slot=i;var o=VerdantEconomy.Order(f,i);Row(o.title,VerdantEconomy.Name(o.a)+" "+f.Count("stock:"+o.a)+" / "+o.amountA+"   +   "+VerdantEconomy.Name(o.b)+" "+f.Count("stock:"+o.b)+" / "+o.amountB+"\n补贴 "+o.coins+" 金币 / "+o.knowledge+" 研究",f.Chapter<1?"第二章解锁":"交付",()=>{if(VerdantEconomy.Deliver(f,slot)){App.Audio.PlayCue(740);Open("orders");}},115,f.Chapter>=1&&!f.InChallenge);}
-                Paragraph("加工品订单会在第三章及对应作物解锁后加入。合理保留库存，可以让工坊和农田相互支持。",17,Muted,70);
+                modalTitle.text=L10n.T("禾湾供给订单");
+                Paragraph(L10n.T("第二章起开放。交付会消耗仓库库存，并获得供给补贴与研究点。每次完成后都会出现新订单；已完成 ")+f.Count("orders")+L10n.T(" 单。"),17,Muted,70);
+                for(int i=0;i<3;i++){int slot=i;var o=VerdantEconomy.Order(f,i);Row(o.title,VerdantEconomy.Name(o.a)+" "+f.Count("stock:"+o.a)+" / "+o.amountA+"   +   "+VerdantEconomy.Name(o.b)+" "+f.Count("stock:"+o.b)+" / "+o.amountB+L10n.T("\n补贴 ")+o.coins+L10n.T(" 金币 / ")+o.knowledge+L10n.T(" 研究"),f.Chapter<1?L10n.T("第二章解锁"):L10n.T("交付"),()=>{if(VerdantEconomy.Deliver(f,slot)){App.Audio.PlayCue(740);Open("orders");}},115,f.Chapter>=1&&!f.InChallenge);}
+                Paragraph(L10n.T("加工品订单会在第三章及对应作物解锁后加入。合理保留库存，可以让工坊和农田相互支持。"),17,Muted,70);
             }
             else if(kind=="workshop")
             {
-                modalTitle.text="加工工坊";Paragraph("第三章开放。将库存作物加工为高价值补给品，再完成供给订单。配方会消耗材料，并额外提供研究点。",17,Muted,70);
-                foreach(var r in VerdantEconomy.Recipes){var recipe=r;Row(r.name+"   库存 "+f.Count("stock:"+r.id),r.note+"\n"+VerdantEconomy.Name(r.a)+" "+r.amountA+" + "+VerdantEconomy.Name(r.b)+" "+r.amountB+(r.energy>0?" + 光能 "+r.energy:"")+"   / 研究 +"+r.knowledge,VerdantEconomy.Available(f,r)?"加工":"尚未解锁",()=>{if(VerdantEconomy.Craft(f,recipe)){App.Audio.PlayCue(650);float position=modalScroll.verticalNormalizedPosition;Open("workshop");Canvas.ForceUpdateCanvases();modalScroll.verticalNormalizedPosition=position;}},110,VerdantEconomy.Available(f,r)&&!f.InChallenge);}
+                modalTitle.text=L10n.T("加工工坊");Paragraph(L10n.T("第三章开放。将库存作物加工为高价值补给品，再完成供给订单。配方会消耗材料，并额外提供研究点。"),17,Muted,70);
+                foreach(var r in VerdantEconomy.Recipes){var recipe=r;Row(r.name+L10n.T("   库存 ")+f.Count("stock:"+r.id),r.note+"\n"+VerdantEconomy.Name(r.a)+" "+r.amountA+" + "+VerdantEconomy.Name(r.b)+" "+r.amountB+(r.energy>0?L10n.T(" + 光能 ")+r.energy:"")+L10n.T("   / 研究 +")+r.knowledge,VerdantEconomy.Available(f,r)?L10n.T("加工"):L10n.T("尚未解锁"),()=>{if(VerdantEconomy.Craft(f,recipe)){App.Audio.PlayCue(650);float position=modalScroll.verticalNormalizedPosition;Open("workshop");Canvas.ForceUpdateCanvases();modalScroll.verticalNormalizedPosition=position;}},110,VerdantEconomy.Available(f,r)&&!f.InChallenge);}
             }
             else if(kind=="settings")
             {
-                modalTitle.text="设置与存档";
-                Row("农场时速","当前 "+App.Speed+"×。只影响生长和程序动作，界面始终正常响应。","切换速度",()=>{App.CycleSpeed();Open("settings");},90);
-                Row("声音","轻柔合成音乐与操作音效；当前 "+Mathf.RoundToInt(f.Data.volume*100)+"%。","切换音量",()=>{f.Data.volume=f.Data.volume>=.5f?0:f.Data.volume+.25f;App.Audio.SetVolume(f.Data.volume);Open("settings");},90);
-                Row("保存农场","保存农田、资源、研究与程序列表。上一份存档会保留为备份。","立即保存",()=>{f.Save();AddLog(f.LastSaveMessage);},90);
-                if(f.InChallenge)Row("返回主线农场","放弃当前临时试炼，恢复进入前的主线进度。","退出试炼",()=>{App.Runner.Stop();f.FinishChallenge(false);Editor.SetTextWithoutNotify(f.Data.scripts[f.Data.slot]);Close();},90);
-                Row("重新开始","会先保存一份带时间戳的备份，再建立新的农场。","新建农场",()=>Open("confirm"),90);
-                Paragraph("禾序 "+VerdantContent.Version+"\n程序、场景与农艺系统为本项目原创。字体使用 Noto Sans CJK（SIL OFL）。\n存档位置：\n"+f.SavePath,14,Muted,110);
-                Row("退出游戏","退出前会自动保存。","保存并退出",()=>App.Quit(),80);
+                modalTitle.text=L10n.T("设置与存档");
+                Row(L10n.T("语言 / Language"),L10n.T("首次启动默认英文，可在英文和简体中文之间切换。"),L10n.T("切换语言"),()=>{L10n.Set(L10n.Code=="en"?"zh-Hans":"en");Open("settings");},90);
+                Row(L10n.T("农场时速"),L10n.T("当前 ")+App.Speed+L10n.T("×。只影响生长和程序动作，界面始终正常响应。"),L10n.T("切换速度"),()=>{App.CycleSpeed();Open("settings");},90);
+                Row(L10n.T("声音"),L10n.T("轻柔合成音乐与操作音效；当前 ")+Mathf.RoundToInt(f.Data.volume*100)+"%。",L10n.T("切换音量"),()=>{f.Data.volume=f.Data.volume>=.5f?0:f.Data.volume+.25f;App.Audio.SetVolume(f.Data.volume);Open("settings");},90);
+                Row(L10n.T("保存农场"),L10n.T("保存农田、资源、研究与程序列表。上一份存档会保留为备份。"),L10n.T("立即保存"),()=>{f.Save();AddLog(f.LastSaveMessage);},90);
+                if(f.InChallenge)Row(L10n.T("返回主线农场"),L10n.T("放弃当前临时试炼，恢复进入前的主线进度。"),L10n.T("退出试炼"),()=>{App.Runner.Stop();f.FinishChallenge(false);Editor.SetTextWithoutNotify(f.Data.scripts[f.Data.slot]);Close();},90);
+                Row(L10n.T("重新开始"),L10n.T("会先保存一份带时间戳的备份，再建立新的农场。"),L10n.T("新建农场"),()=>Open("confirm"),90);
+                Paragraph(L10n.T("禾序 ")+VerdantContent.Version+L10n.T("\n程序、场景与农艺系统为本项目原创。字体使用 Noto Sans CJK（SIL OFL）。\n存档位置：\n")+f.SavePath,14,Muted,110);
+                Row(L10n.T("退出游戏"),L10n.T("退出前会自动保存。"),L10n.T("保存并退出"),()=>App.Quit(),80);
             }
             else if(kind=="confirm")
-            {modalTitle.text="重新开始农场？";Paragraph("当前进度会先保存为带日期的备份。新的主线将从 4×4 农田开始。",21,Ink,120);Row("创建新农场","此操作会停止当前程序。","备份并开始",()=>{Close();App.NewCampaign();},100);}
+            {modalTitle.text=L10n.T("重新开始农场？");Paragraph(L10n.T("当前进度会先保存为带日期的备份。新的主线将从 4×4 农田开始。"),21,Ink,120);Row(L10n.T("创建新农场"),L10n.T("此操作会停止当前程序。"),L10n.T("备份并开始"),()=>{Close();App.NewCampaign();},100);}
         }
         void Paragraph(string value,int size,Color color,int height=60)
         {var t=Text("Paragraph",value,modalBody,new Vector2(0,1),Vector2.zero,new Vector2(960,height),size,color);t.enableWordWrapping=true;var e=t.gameObject.AddComponent<LayoutElement>();e.preferredHeight=height;e.flexibleWidth=1;}
-        void Row(string title,string detail,string button,Action action,int height,bool enabled=true)
+        TMP_Text Row(string title,string detail,string button,Action action,int height,bool enabled=true)
         {
             var row=PanelFixed("Entry",modalBody,new Vector2(0,1),Vector2.zero,new Vector2(970,height),VerdantWorld.Hex("ECEFE4"));row.gameObject.AddComponent<LayoutElement>().preferredHeight=height;
             Text("Title",title,row,new Vector2(0,1),new Vector2(18,-12),new Vector2(770,30),20,Ink,FontStyles.Bold);
             var description=Text("Detail",detail,row,new Vector2(0,1),new Vector2(18,-47),new Vector2(770,height-50),15,Muted);description.enableWordWrapping=true;
-            var b=Button(button,row,new Vector2(1,.5f),new Vector2(-16,0),new Vector2(142,38),action,Accent);b.interactable=enabled;
+            var b=Button(button,row,new Vector2(1,.5f),new Vector2(-16,0),new Vector2(142,38),action,Accent);b.interactable=enabled;return description;
         }
         GameObject New(string name,Transform parent,params Type[] components)
         {var go=new GameObject(name,typeof(RectTransform));go.transform.SetParent(parent,false);foreach(var type in components)go.AddComponent(type);return go;}
@@ -302,7 +334,7 @@ namespace Verdant
         TMP_Text Text(string name,string value,Transform parent,Vector2 anchor,Vector2 position,Vector2 size,int fontSize,Color color,FontStyles style=FontStyles.Normal,TextAlignmentOptions align=TextAlignmentOptions.TopLeft)
         {
             var go=New(name,parent,typeof(TextMeshProUGUI));var rect=(RectTransform)go.transform;rect.anchorMin=rect.anchorMax=anchor;rect.pivot=anchor;rect.anchoredPosition=position;rect.sizeDelta=size;
-            var t=go.GetComponent<TextMeshProUGUI>();t.font=font;t.text=value;t.fontSize=fontSize;t.fontStyle=style;t.color=color;t.alignment=align;t.raycastTarget=false;t.enableAutoSizing=false;t.enableWordWrapping=false;return t;
+            var t=go.GetComponent<TextMeshProUGUI>();t.font=font;t.text=value;t.fontSize=fontSize;t.fontStyle=style;t.color=color;t.alignment=align;t.raycastTarget=false;t.enableAutoSizing=true;t.fontSizeMin=Mathf.Max(10,fontSize*.72f);t.fontSizeMax=fontSize;t.enableWordWrapping=false;L10n.Bind(t,value);return t;
         }
         UnityEngine.UI.Button Button(string value,Transform parent,Vector2 anchor,Vector2 position,Vector2 size,Action action,Color color)
         {

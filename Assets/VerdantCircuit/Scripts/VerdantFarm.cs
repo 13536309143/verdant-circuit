@@ -17,15 +17,16 @@ namespace Verdant
         public float volume=0.35f; public bool music=true;
         public List<Plot> plots=new List<Plot>(); public List<string> tech=new List<string>();
         public List<string> achievements=new List<string>(); public List<Counter> metrics=new List<Counter>();
+        public int droneCapacity=1,footprintTier,activeDrone,nextDroneId=1;public bool fleetPaused;public List<FarmDrone> drones=new List<FarmDrone>();
         public int cropTaskStart;public int[] stars=new int[6]; public string[] scripts=new string[1];
     }
     public sealed class VerdantFarm
     {
-        public FarmSave Data; public event Action<string> Message; public event Action Changed;
+        public VerdantFleet Fleet;public FarmSave Data; public event Action<string> Message; public event Action Changed;
         public bool InChallenge { get {return challenge>=0;} }
         public int challenge=-1; public float challengeTime; public int challengeStart;
         private FarmSave mainSnapshot;
-        public string LastSaveMessage="尚未保存";
+        string saveState="尚未保存",savedAt="";public string LastSaveMessage{get{return L10n.T(saveState)+savedAt;}}
         readonly string saveName;
         public string SavePath {get{return Path.Combine(Application.persistentDataPath,saveName);}}
         public int Chapter {get{return Mathf.Min(5,Data.contract/5);}}
@@ -34,16 +35,16 @@ namespace Verdant
         public float Capacity {get{return Has("retention")?100:60;}}
         public int Season {get{return (int)(Data.clock/360)%4;}}
         public bool Rain {get{return Data.clock%210>175;}}
-        public string SeasonName {get{return new[]{"春 · 萌芽","夏 · 丰茂","秋 · 金穗","冬 · 静养"}[Season];}}
+        public string SeasonName {get{return new[]{L10n.T("春 · 萌芽"),L10n.T("夏 · 丰茂"),L10n.T("秋 · 金穗"),L10n.T("冬 · 静养")}[Season];}}
         public VerdantFarm(bool load=true,string saveName="verdant-farm.json")
         {
-            this.saveName=saveName;Data=Fresh(); if(load) Load();
+            this.saveName=saveName;Data=Fresh(); if(load) Load();Fleet=new VerdantFleet(this);
         }
         static FarmSave Fresh()
         {
             var data=new FarmSave();
             for(int i=0;i<16;i++) data.plots.Add(new Plot());
-            for(int i=0;i<data.scripts.Length;i++) data.scripts[i]=i==0?VerdantContent.Templates[0]:"# 在这里编写你的农场程序\n";
+            for(int i=0;i<data.scripts.Length;i++) data.scripts[i]=i==0?VerdantContent.Templates[0]:L10n.T("# 在这里编写你的农场程序\n");
             // A small living field makes the first action legible; no harvested resources are pre-awarded.
             for(int i=0;i<4;i++){data.plots[i].crop="grain";data.plots[i].growth=4+i*2;}
             return data;
@@ -71,6 +72,7 @@ namespace Verdant
                 if((p.crop=="tea"||p.crop=="starbloom"||p.crop=="berry")&&p.moisture<=0.08f)hydration=0.18f;
                 p.growth+=dt*hydration*season*(1+p.fertility*0.15f);
             }
+            Fleet.Tick(dt);
             if(InChallenge)
             {
                 challengeTime+=dt;
@@ -90,26 +92,28 @@ namespace Verdant
         }
         public bool Act(string action,string arg="",bool programmed=false)
         {
+            if(Fleet!=null&&!Fleet.Applying&&Array.IndexOf(new[]{"plant","harvest","water","till","fertilize"},action)>=0)
+            {var selected=Fleet.Find(Data.activeDrone);if(selected.width*selected.height>1||selected.kind!="general")return Fleet.Work(selected.id,action,arg,programmed);}
             bool success=false; string info="";
             switch(action)
             {
                 case "move":
                     int dx=0,dy=0;
-                    switch(arg.ToLowerInvariant()){case "east":dx=1;break;case "west":dx=-1;break;case "north":dy=1;break;case "south":dy=-1;break;default:throw new Exception("move() 的方向应为 East / West / North / South");}
-                    Data.x=(Data.x+dx+Data.size)%Data.size;Data.y=(Data.y+dy+Data.size)%Data.size;Add("moves");success=true;break;
+                    switch(arg.ToLowerInvariant()){case "east":dx=1;break;case "west":dx=-1;break;case "north":dy=1;break;case "south":dy=-1;break;default:throw new Exception(L10n.T("move() 的方向应为 East / West / North / South"));}
+                    if(Data.drones.Count==1&&Fleet.Find(Data.activeDrone).width==1&&Fleet.Find(Data.activeDrone).height==1){Fleet.Find(Data.activeDrone).x=Data.x;Fleet.Find(Data.activeDrone).y=Data.y;}success=Fleet.Move(arg);break;
                 case "plant":
                     var def=VerdantContent.Crop(arg);
-                    if(def==null)throw new Exception("未知作物："+arg);
-                    if(!Unlocked(arg)){info="请先研究 "+def.name;break;}
-                    if(Here.crop!=""){info="这个格子已有作物";break;}
-                    if((arg=="radish"||arg=="pumpkin"||arg=="starbloom")&&!Here.tilled){info="这类作物需要先 till() 翻土";break;}
-                    if((arg=="berry"||arg=="tea"||arg=="starbloom")&&Here.moisture<0.2f){info="土壤太干，请先 water()";break;}
-                    if(Data.coins<def.cost){info="金币不足；可免费播种稻穗恢复收入";break;}
-                    if(arg=="starbloom"&&Data.energy<3){info="光能不足；请先收获向日葵";break;}
+                    if(def==null)throw new Exception(L10n.T("未知作物：")+arg);
+                    if(!Unlocked(arg)){info=L10n.T("请先研究 ")+def.name;break;}
+                    if(Here.crop!=""){info=L10n.T("这个格子已有作物");break;}
+                    if((arg=="radish"||arg=="pumpkin"||arg=="starbloom")&&!Here.tilled){info=L10n.T("这类作物需要先 till() 翻土");break;}
+                    if((arg=="berry"||arg=="tea"||arg=="starbloom")&&Here.moisture<0.2f){info=L10n.T("土壤太干，请先 water()");break;}
+                    if(Data.coins<def.cost){info=L10n.T("金币不足；可免费播种稻穗恢复收入");break;}
+                    if(arg=="starbloom"&&Data.energy<3){info=L10n.T("光能不足；请先收获向日葵");break;}
                     Data.coins-=def.cost;if(arg=="starbloom")Data.energy-=3;
-                    Here.crop=arg;Here.growth=0;Here.regrowth=0;Add("planted");success=true;info="播种 "+def.name;break;
+                    Here.crop=arg;Here.growth=0;Here.regrowth=0;Add("planted");success=true;info=L10n.T("播种 ")+def.name;break;
                 case "harvest":
-                    if(!Ready(Here)){info=Here.crop==""?"这里还没有作物":"作物尚未成熟";break;}
+                    if(!Ready(Here)){info=Here.crop==""?L10n.T("这里还没有作物"):L10n.T("作物尚未成熟");break;}
                     var crop=VerdantContent.Crop(Here.crop);
                     int bonus=0;
                     if(crop.id=="flax"&&Neighbors("grain")>0)bonus+=2;
@@ -124,19 +128,19 @@ namespace Verdant
                     if(crop.id=="sunflower"){int power=Has("solar")?8:4;Data.energy+=power;Add("energyEarned",power);}
                     Here.fertility=Mathf.Max(0,Here.fertility-(Has("fertile")?0.015f:0.03f));
                     if(crop.id=="berry"&&Here.regrowth<2){Here.regrowth++;Here.growth=0;}else{Here.crop="";Here.growth=0;}
-                    info=crop.name+" +"+amount+"  金币 +"+(amount*crop.value);success=true;break;
-                case "till":if(Here.crop==""){Here.tilled=true;success=true;}else info="有作物时无法翻土";break;
+                    info=crop.name+" +"+amount+L10n.T("  金币 +")+(amount*crop.value);success=true;break;
+                case "till":if(Here.crop==""){Here.tilled=true;success=true;}else info=L10n.T("有作物时无法翻土");break;
                 case "water":
-                    if(!Has("water")){info="请先研究蓄水系统";break;}
-                    if(Data.water<1){info="蓄水正在恢复";break;}
+                    if(!Has("water")){info=L10n.T("请先研究蓄水系统");break;}
+                    if(Data.water<1){info=L10n.T("蓄水正在恢复");break;}
                     Data.water-=1;Here.moisture=1;Add("watered");success=true;break;
                 case "fertilize":
-                    if(!Has("compost")){info="请先研究循环堆肥";break;}
-                    if(Data.coins<2){info="施肥需要 2 金币";break;}
-                    if(Here.fertility>=0.95f){info="土壤已有充足肥力";break;}
+                    if(!Has("compost")){info=L10n.T("请先研究循环堆肥");break;}
+                    if(Data.coins<2){info=L10n.T("施肥需要 2 金币");break;}
+                    if(Here.fertility>=0.95f){info=L10n.T("土壤已有充足肥力");break;}
                     Data.coins-=2;Here.fertility=Mathf.Min(1,Here.fertility+0.4f);Add("fertilized");success=true;break;
                 case "wait":success=true;break;
-                default:throw new Exception("未知动作："+action);
+                default:throw new Exception(L10n.T("未知动作：")+action);
             }
             Data.totalActions++;if(programmed)Add("programActions");
             if(info!=""&&(!programmed||!success||action=="harvest"))Say(info);
@@ -154,19 +158,21 @@ namespace Verdant
         public bool ContractReady {get{var c=CurrentContract;return c!=null&&ContractProgress>=c.amount;}}
         public bool Claim()
         {
-            if(InChallenge){Say("试炼结束后再领取主线委托");return false;}
+            if(InChallenge){Say(L10n.T("试炼结束后再领取主线委托"));return false;}
             var c=CurrentContract;if(c==null||!ContractReady)return false;
             Data.coins+=c.reward;Data.knowledge+=c.knowledge;Data.contract++;Data.cropTaskStart=ContractCropIndex>=0?Metric(CurrentContract.metric):0;
-            Say("委托完成："+c.title+"  +"+c.reward+" 金币 / +"+c.knowledge+" 研究");Notify();Save();return true;
+            Say(L10n.T("委托完成：")+c.title+"  +"+c.reward+L10n.T(" 金币 / +")+c.knowledge+L10n.T(" 研究"));Notify();Save();return true;
         }
         public bool Research(string id)
         {
             var t=VerdantContent.Tech(id);if(t==null||Has(id))return false;
-            if(Chapter<t.chapter||t.prerequisite!=""&&!Has(t.prerequisite)){Say("尚未满足章节或前置研究");return false;}
-            if(Data.coins<t.price||Data.knowledge<t.knowledge){Say("金币或研究点不足");return false;}
+            if(Chapter<t.chapter||t.prerequisite!=""&&!Has(t.prerequisite)){Say(L10n.T("尚未满足章节或前置研究"));return false;}
+            if(Data.coins<t.price||Data.knowledge<t.knowledge){Say(L10n.T("金币或研究点不足"));return false;}
             Data.coins-=t.price;Data.knowledge-=t.knowledge;Data.tech.Add(id);
             if(id=="field6")Resize(6);if(id=="field8")Resize(8);
-            Say("研究完成："+t.name);Notify();Save();return true;
+            if(id=="fleet2")Data.droneCapacity=2;if(id=="fleet4")Data.droneCapacity=4;if(id=="fleet8")Data.droneCapacity=8;
+            if(id=="body2")Data.footprintTier=Math.Max(Data.footprintTier,1);if(id=="body32")Data.footprintTier=Math.Max(Data.footprintTier,2);if(id=="body3")Data.footprintTier=3;
+            Say(L10n.T("研究完成：")+t.name);Notify();Save();return true;
         }
         public void Resize(int size)
         {
@@ -176,27 +182,27 @@ namespace Verdant
         public void StartChallenge(int index)
         {
             if(InChallenge||index<0||index>=6)return;
-            if(index>Chapter){Say("完成对应主线章节后解锁此试炼");return;}
+            if(index>Chapter){Say(L10n.T("完成对应主线章节后解锁此试炼"));return;}
             mainSnapshot=Clone(Data);challenge=index;challengeTime=0;
             Data=Fresh();Resize(6);Data.coins=2000;Data.knowledge=0;Data.energy=100;Data.water=100;
-            Data.tech.Clear();foreach(var t in VerdantContent.Techs)Data.tech.Add(t.id);
+            Data.tech.Clear();foreach(var t in VerdantContent.Techs)Data.tech.Add(t.id);Data.droneCapacity=8;Data.footprintTier=3;VerdantFleet.Ensure(Data);
             foreach(var p in Data.plots){p.crop="";p.growth=0;p.tilled=false;}
             challengeStart=Count(VerdantContent.ChallengeCrops[index]);
-            Say("试炼开始："+VerdantContent.ChallengeNotes[index]);Notify();
+            Say(L10n.T("试炼开始：")+VerdantContent.ChallengeNotes[index]);Notify();
         }
         public void FinishChallenge(bool won)
         {
             if(!InChallenge)return;int index=challenge;
             int stars=won?(challengeTime<VerdantContent.ChallengeTimes[index]*0.65f?3:challengeTime<VerdantContent.ChallengeTimes[index]*0.85f?2:1):0;
             Data=mainSnapshot;mainSnapshot=null;challenge=-1;
-            if(won){bool first=Data.stars[index]==0;Data.stars[index]=Mathf.Max(Data.stars[index],stars);if(first){Data.coins+=400;Data.knowledge+=50;}Say("试炼通过！获得 "+stars+" 星，已返回主线农场。");}
-            else Say("试炼已结束，主线农场和物资已恢复。可调整程序后再次尝试。");
+            if(won){bool first=Data.stars[index]==0;Data.stars[index]=Mathf.Max(Data.stars[index],stars);if(first){Data.coins+=400;Data.knowledge+=50;}Say(L10n.T("试炼通过！获得 ")+stars+L10n.T(" 星，已返回主线农场。"));}
+            else Say(L10n.T("试炼已结束，主线农场和物资已恢复。可调整程序后再次尝试。"));
             Notify();Save();
         }
         void CheckAchievements()
         {
-            bool[] done={Count("harvested")>=1,Count("harvested")>=100,Count("harvested")>=1000,Count("programActions")>=100,Count("programActions")>=5000,Count("watered")>=100,Count("bonusHarvests")>=100,Count("moves")>=10000,Data.size>=8,Count("starbloom")>=100,Data.tech.Count>=18,Array.TrueForAll(Data.stars,x=>x>0)};
-            for(int i=0;i<done.Length;i++)if(done[i]&&!Data.achievements.Contains(i.ToString())){Data.achievements.Add(i.ToString());Data.knowledge+=10;Say("成就解锁："+VerdantContent.AchievementNames[i]);}
+            bool[] done={Count("harvested")>=1,Count("harvested")>=100,Count("harvested")>=1000,Count("programActions")>=100,Count("programActions")>=5000,Count("watered")>=100,Count("bonusHarvests")>=100,Count("moves")>=10000,Data.size>=8,Count("starbloom")>=100,Data.tech.Count>=VerdantContent.Techs.Length,Array.TrueForAll(Data.stars,x=>x>0)};
+            for(int i=0;i<done.Length;i++)if(done[i]&&!Data.achievements.Contains(i.ToString())){Data.achievements.Add(i.ToString());Data.knowledge+=10;Say(L10n.T("成就解锁：")+VerdantContent.AchievementNames[i]);}
         }
         public void Say(string s){if(Message!=null)Message(s);}
         public void Notify(){if(Changed!=null)Changed();}
@@ -209,22 +215,25 @@ namespace Verdant
                 string temp=SavePath+".tmp";File.WriteAllText(temp,json);
                 if(File.Exists(SavePath))File.Copy(SavePath,SavePath+".bak",true);
                 File.Copy(temp,SavePath,true);File.Delete(temp);
-                LastSaveMessage="已保存 "+DateTime.Now.ToString("HH:mm");
-            }catch(Exception e){LastSaveMessage="保存失败";Say("保存失败："+e.Message);}
+                saveState="已保存 ";savedAt=DateTime.Now.ToString("HH:mm");
+            }catch(Exception e){saveState=L10n.T("保存失败");Say(L10n.T("保存失败：")+e.Message);}
         }
         void Load()
         {
             if(!File.Exists(SavePath))return;
-            try{Data=ReadValidated(SavePath);LastSaveMessage="已恢复存档";}
-            catch(Exception){try{Data=ReadValidated(SavePath+".bak");LastSaveMessage="已恢复备份存档";}catch(Exception){Data=Fresh();LastSaveMessage="存档不可读取，已进入新农场";}}
+            try{Data=ReadValidated(SavePath);saveState=L10n.T("已恢复存档");}
+            catch(Exception){try{Data=ReadValidated(SavePath+".bak");saveState=L10n.T("已恢复备份存档");}catch(Exception){Data=Fresh();saveState=L10n.T("存档不可读取，已进入新农场");}}
         }
         static FarmSave ReadValidated(string path)
         {
             var s=JsonUtility.FromJson<FarmSave>(File.ReadAllText(path));
-            if(s==null||s.schema!=1||(s.size!=4&&s.size!=6&&s.size!=8)||s.plots==null||s.plots.Count!=s.size*s.size||s.tech==null||s.metrics==null||s.achievements==null||s.scripts==null||s.scripts.Length<1||s.stars==null||s.stars.Length!=6||s.contract<0||s.contract>30||s.slot<0||s.slot>=s.scripts.Length||s.selectedCrop<0||s.selectedCrop>=8)throw new Exception("存档格式不匹配");
+            if(s==null||s.schema!=1||(s.size!=4&&s.size!=6&&s.size!=8)||s.plots==null||s.plots.Count!=s.size*s.size||s.tech==null||s.metrics==null||s.achievements==null||s.scripts==null||s.scripts.Length<1||s.stars==null||s.stars.Length!=6||s.contract<0||s.contract>30||s.slot<0||s.slot>=s.scripts.Length||s.selectedCrop<0||s.selectedCrop>=8)throw new Exception(L10n.T("存档格式不匹配"));
             s.x=Mathf.Clamp(s.x,0,s.size-1);s.y=Mathf.Clamp(s.y,0,s.size-1);
-            foreach(var p in s.plots)if(p==null||p.crop!=""&&VerdantContent.Crop(p.crop)==null)throw new Exception("无效地块");
-            return s;
+            foreach(var p in s.plots)if(p==null||p.crop!=""&&VerdantContent.Crop(p.crop)==null)throw new Exception(L10n.T("无效地块"));
+            VerdantFleet.Ensure(s);
+            var ids=new HashSet<int>();foreach(var u in s.drones)
+            {if(!ids.Add(u.id)||u.width<1||u.height<1||u.width>3||u.height>3||u.x<0||u.y<0||u.x+u.width>s.size||u.y+u.height>s.size||u.jobs.Count>64)throw new Exception(L10n.T("无人机存档无效"));}
+            s.fleetPaused=s.drones.Exists(u=>u.jobs.Count>0);return s;
         }
         static FarmSave Clone(FarmSave save){return JsonUtility.FromJson<FarmSave>(JsonUtility.ToJson(save));}
     }

@@ -9,6 +9,7 @@ namespace Verdant
     {
         public VerdantApp App;public Camera Camera;public Transform Robot;
         Transform fieldRoot,robotVisual,marker,clouds;int size;float refresh;
+        readonly Dictionary<int,Transform> fleetVisuals=new Dictionary<int,Transform>();
         Transform[] cropRoots;string[] keys;Renderer[] grounds;
         Dictionary<string,Material> mats=new Dictionary<string,Material>();
         MaterialPropertyBlock block;Vector3 lastRobot;Quaternion facing=Quaternion.identity;
@@ -82,6 +83,7 @@ namespace Verdant
                 Shape("Top Badge",PrimitiveType.Cube,new Vector3(0,.562f,0),new Vector3(.16f,.016f,.14f),"71B7A1",robotVisual);
                 Shape("Antenna",PrimitiveType.Cylinder,new Vector3(.12f,.62f,0),new Vector3(.025f,.07f,.025f),"293E3A",robotVisual);
                 Shape("Beacon",PrimitiveType.Sphere,new Vector3(.12f,.71f,0),Vector3.one*.09f,"ECC46A",robotVisual);
+                for(int prop=0;prop<4;prop++)Shape("Controller Rotor",PrimitiveType.Cylinder,new Vector3(prop%2==0?-.34f:.34f,.48f,prop<2?-.34f:.34f),new Vector3(.24f,.02f,.24f),"314C47",robotVisual);
                 marker=new GameObject("Active Plot").transform;marker.SetParent(transform);
                 for(int i=0;i<4;i++){bool horizontal=i<2;Shape("Selection",PrimitiveType.Cube,horizontal?new Vector3(0,0,i==0?-.46f:.46f):new Vector3(i==2?-.46f:.46f,0,0),horizontal?new Vector3(.94f,.022f,.025f):new Vector3(.025f,.022f,.94f),"F2D98D",marker);}
             }
@@ -99,14 +101,24 @@ namespace Verdant
         {
             if(App==null||App.Farm==null)return;
             if(size!=App.Farm.Data.size){Rebuild();return;}
-            Vector3 target=Position(App.Farm.Data.x,App.Farm.Data.y);
+            var selected=App.Farm.Fleet.Find(App.Farm.Data.activeDrone);
+            Vector3 target=Position(selected.x,selected.y)+new Vector3((selected.width-1)*.5f,0,(selected.height-1)*.5f);
+            robotVisual.localScale=new Vector3(selected.width,1,selected.height);marker.localScale=new Vector3(selected.width,1,selected.height);
+            foreach(var pair in fleetVisuals)pair.Value.gameObject.SetActive(App.Farm.Data.drones.Exists(d=>d.id==pair.Key)&&pair.Key!=selected.id);
+            foreach(var unit in App.Farm.Data.drones)if(unit.id!=selected.id)
+            {Transform view;if(!fleetVisuals.TryGetValue(unit.id,out view)){view=new GameObject("Drone "+unit.id).transform;view.SetParent(transform);fleetVisuals[unit.id]=view;
+              Shape("Worker Body",PrimitiveType.Cube,new Vector3(0,.36f,0),new Vector3(.76f,.35f,.76f),unit.kind=="irrigator"?"5B9DC2":unit.kind=="harvester"?"D9AE64":"D6E3CA",view);
+              Shape("Worker Core",PrimitiveType.Sphere,new Vector3(0,.61f,0),new Vector3(.22f,.14f,.22f),"E9F6CC",view);
+              for(int prop=0;prop<4;prop++)Shape("Rotor",PrimitiveType.Cylinder,new Vector3(prop%2==0?-.4f:.4f,.57f,prop<2?-.4f:.4f),new Vector3(.28f,.025f,.28f),"314C47",view);}
+             view.gameObject.SetActive(true);view.localScale=new Vector3(unit.width,1,unit.height);view.position=Position(unit.x,unit.y)+new Vector3((unit.width-1)*.5f,0,(unit.height-1)*.5f);}
+
             if(target!=lastRobot)
             {
                 Vector3 direction=target-lastRobot;if(direction.magnitude>1.1f)Robot.position=target;else if(direction.sqrMagnitude>.01f)facing=Quaternion.LookRotation(direction);
                 lastRobot=target;
             }
             Robot.position=Vector3.Lerp(Robot.position,target,1-Mathf.Exp(-Time.unscaledDeltaTime*18));
-            robotVisual.rotation=Quaternion.Slerp(robotVisual.rotation,facing,Time.unscaledDeltaTime*14);
+            robotVisual.rotation=selected.width*selected.height>1?Quaternion.identity:Quaternion.Slerp(robotVisual.rotation,facing,Time.unscaledDeltaTime*14);
             robotVisual.localPosition=Vector3.up*(Mathf.Sin(Time.unscaledTime*3)*.015f);
             marker.position=target+Vector3.up*.025f;
             refresh-=Time.unscaledDeltaTime;if(refresh>0)return;refresh=.2f;
