@@ -1,0 +1,35 @@
+# Unity generated data
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Bb]uild/
+/[Bb]uilds/
+/[Cc]aptures/
+/InternalTestReports/
+/MemoryCaptures/
+/Recordings/
+*.csproj
+*.sln
+*.suo
+*.user
+*.pidb
+*.booproj
+*.unityproj
+*.opendb
+*.VC.db
+.vs/
+.idea/
+.vscode/
+.DS_Store
+._*
+*.app/
+*.zip
+*.dmg
+.env
+.env.*
+!.env.example
+
+# Generated independent model report
+/tools/机群与浮空岛-规则验证.json

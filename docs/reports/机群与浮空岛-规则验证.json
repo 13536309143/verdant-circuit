@@ -1,0 +1,35 @@
+{
+  "checksPassed": 24,
+  "checks": [
+    "1x1 footprint route avoids holes",
+    "2x2 footprint route avoids holes",
+    "3x2 footprint route avoids holes",
+    "3x3 footprint route avoids holes",
+    "1x1 traverses narrow corridor",
+    "2x2 rejects narrow corridor",
+    "distinct initial occupancy",
+    "safe edge swap waits without penalty",
+    "spawn rejects full footprint overlap",
+    "unsafe command charged once per ticket",
+    "off-island movement is rejected, no wrap or fee",
+    "FIFO same-target reservation has single winner",
+    "blocked landing consumes no ticket",
+    "portal FIFO arrival order",
+    "2000 seeded multi-size ticks preserve occupancy and safe-mode money",
+    "grain quantity boundary without timer",
+    "radish quantity boundary without timer",
+    "flax quantity boundary without timer",
+    "berry quantity boundary without timer",
+    "sunflower quantity boundary without timer",
+    "pumpkin quantity boundary without timer",
+    "tea quantity boundary without timer",
+    "starbloom quantity boundary without timer",
+    "all crop quantity goals differ"
+  ],
+  "limits": [
+    "not integrated into Unity VM or rendering",
+    "general multi-agent deadlock freedom not proven",
+    "turning swept footprint, energy and weather transport remain design items",
+    "novelty is a design assessment, not an originality guarantee"
+  ]
+}

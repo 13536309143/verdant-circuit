@@ -1,0 +1,13 @@
+{
+    "passed": 8,
+    "checks": [
+        "grain=2001, seconds=692.4417, coins=106003, energy=300, error=",
+        "radish=1000, seconds=694.3412, coins=105930, energy=300, error=",
+        "flax=1400, seconds=724.4172, coins=115673, energy=300, error=",
+        "berry=2400, seconds=693.7081, coins=119872, energy=300, error=",
+        "sunflower=1300, seconds=714.9196, coins=112720, energy=2900, error=",
+        "pumpkin=1204, seconds=753.5768, coins=118648, energy=300, error=",
+        "tea=1252, seconds=700.0399, coins=131004, energy=1576, error=",
+        "starbloom=500, seconds=744.3624, coins=118568, energy=523, error="
+    ]
+}

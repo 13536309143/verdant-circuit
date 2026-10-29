@@ -1,0 +1,41 @@
+{
+  "version": "0.10.1",
+  "date": "2026-10-29",
+  "build": {
+    "result": "succeeded",
+    "errors": 0,
+    "warnings": 0
+  },
+  "rulesPassed": 50,
+  "campaignContracts": 30,
+  "campaignGameSeconds": 3657.899658203125,
+  "trialsPassed": 6,
+  "quantityCalibration": {
+    "passed": 8,
+    "checks": [
+      "grain=2001, seconds=692.4417, coins=106003, energy=300, error=",
+      "radish=1000, seconds=694.3412, coins=105930, energy=300, error=",
+      "flax=1400, seconds=724.4172, coins=115673, energy=300, error=",
+      "berry=2400, seconds=693.7081, coins=119872, energy=300, error=",
+      "sunflower=1300, seconds=714.9196, coins=112720, energy=2900, error=",
+      "pumpkin=1204, seconds=753.5768, coins=118648, energy=300, error=",
+      "tea=1252, seconds=700.0399, coins=131004, energy=1576, error=",
+      "starbloom=500, seconds=744.3624, coins=118568, energy=523, error="
+    ]
+  },
+  "extensionModelChecks": 24,
+  "extensionIntegration": "fleet and islands are design/prototype only",
+  "artifacts": [
+    {
+      "file": "HeXu-macOS-0.10.1.zip",
+      "bytes": 40103582,
+      "sha256": "a2ca64650117ebb8e47701ae464843f27b627d190b7b72694e61a746e53b870c"
+    },
+    {
+      "file": "HeXu-UnityProject-0.10.1.zip",
+      "bytes": 18147556,
+      "sha256": "7f87c24915dff9ea67de5425d84a8b917f34644f321259187a0ab8d8280ff3d6"
+    }
+  ],
+  "artifactStage": "发布前本地验证；发行附件以 GitHub Release 的 SHA256SUMS.txt 为准。源码在发布整理时增加了 README、构建入口并固定编辑器依赖提交。"
+}
