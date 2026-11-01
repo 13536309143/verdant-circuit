@@ -1,0 +1,42 @@
+[
+  {
+    "attempt": "run-731",
+    "classification": "测试工具在 Edit 模式中未完成本地化初始化；改用 Play 模式启动入口，非游戏经营缺陷。",
+    "status": "failed",
+    "completedSteps": 1,
+    "lastStep": "起步：手动收获五份干草",
+    "error": "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.InvalidOperationException: Missing localized string: t_6783884b2390229b / en / "
+  },
+  {
+    "attempt": "probe-play-731",
+    "classification": "通关计划只生产 449 能量，未满足 1000 累计能量成就；补全了测试目标。",
+    "status": "failed",
+    "completedSteps": 231,
+    "lastStep": "本地干草竞速",
+    "error": "System.Exception: Not every local achievement was earned."
+  },
+  {
+    "attempt": "full-731",
+    "classification": "逐株全田寻找最大花瓣、反复走田等待，能量消耗及种子预算导致等待空地成熟。",
+    "status": "failed",
+    "completedSteps": 84,
+    "lastStep": "生产 power 至 1000",
+    "error": "System.Exception: Program exceeded 7200 simulated seconds: 生产 power 至 1000"
+  },
+  {
+    "attempt": "final-731",
+    "classification": "九档扫描已替换，但等待仍在反复移动；改为逐格只轮询成熟状态，修正资源与等待策略。",
+    "status": "failed",
+    "completedSteps": 84,
+    "lastStep": "生产 power 至 1000",
+    "error": "System.Exception: Program exceeded 7200 simulated seconds: 生产 power 至 1000"
+  },
+  {
+    "attempt": "pass-731",
+    "classification": "已声明的 Pumpkins 竞速枚举缺少别名映射；已修复游戏代码并加两项回归。",
+    "status": "failed",
+    "completedSteps": 239,
+    "lastStep": "本地竞速 Pumpkins",
+    "error": "System.Exception: Interpreter failure in 本地竞速 Pumpkins: Line 1: Unknown local challenge: Pumpkins"
+  }
+]

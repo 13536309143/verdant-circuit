@@ -2373,7 +2373,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662229213745
-    m_Localized: Idle
+    m_Localized: IDLE
     m_Metadata:
       m_Items: []
   - m_Id: 662229213746
@@ -3632,6 +3632,995 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 399993482502150
     m_Localized: Manage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 960591828082688
+    m_Localized: Task completed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 960591832276992
+    m_Localized: View records
+    m_Metadata:
+      m_Items: []
+  - m_Id: 960591832276993
+    m_Localized: Got it
+    m_Metadata:
+      m_Items: []
+  - m_Id: 960591832276994
+    m_Localized: 'Achievement: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 960591832276995
+    m_Localized: 'Challenge: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 960591832276996
+    m_Localized: 'More completed goals: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 960591832276997
+    m_Localized: Saved automatically. View Records for details.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 961219493093376
+    m_Localized: ' (single drone)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419962056704
+    m_Localized: THE DISCOVERY TREE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251008
+    m_Localized: Grow the field. Grow the language. Connect the possibilities.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251009
+    m_Localized: Overview
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251010
+    m_Localized: Cultivation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251011
+    m_Localized: Programming
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251012
+    m_Localized: Automation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251013
+    m_Localized: "Search a name, then Enter\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251014
+    m_Localized: No matching discovery.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251015
+    m_Localized: 01 / CULTIVATION & YIELD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251016
+    m_Localized: 02 / THE LANGUAGE OF AUTOMATION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251017
+    m_Localized: 03 / SENSE, MEASURE, REFINE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251018
+    m_Localized: SELECTED DISCOVERY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251019
+    m_Localized: 'Discovery unlocked: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251020
+    m_Localized: Fit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251021
+    m_Localized: "Drag the canvas \xB7 Scroll to zoom \xB7 Select any node for its
+      requirements."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251022
+    m_Localized: READY TO RESEARCH
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251023
+    m_Localized: PREREQUISITE LOCKED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251024
+    m_Localized: GATHER RESOURCES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251025
+    m_Localized: 'level '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251026
+    m_Localized: Starting discovery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251027
+    m_Localized: Route unlocked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251028
+    m_Localized: Unlock the connected parent first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251029
+    m_Localized: Fully researched
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251030
+    m_Localized: More resources needed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251031
+    m_Localized: Prerequisite required
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251032
+    m_Localized: Plant free bushes and begin shaping the field.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251033
+    m_Localized: "Double the field edge per level, up to 32\xD732."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251034
+    m_Localized: Double instruction and action speed per level.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251035
+    m_Localized: Increase the hay yield from each grass harvest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251036
+    m_Localized: Unlock trees and improve wood production. Leave space between trees.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251037
+    m_Localized: Grow carrots on tilled soil using hay and wood.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251038
+    m_Localized: Generate water supplies and accelerate watered crops.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251039
+    m_Localized: Repair dead plants and grow complete squares for giant harvests.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251040
+    m_Localized: Measure petals and prioritize the largest flowers to produce power.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251041
+    m_Localized: Produce fertilizer, accelerate growth and explore infection.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251042
+    m_Localized: Improve the yield bonus for satisfying companion requests.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251043
+    m_Localized: Measure sizes, swap neighbors and sort a field for chain harvests.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251044
+    m_Localized: Turn bushes into hedge mazes and search for treasure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251045
+    m_Localized: Explore apple targets with a growing tail to produce bone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251046
+    m_Localized: Double independent drone capacity per level, up to 32 workers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251047
+    m_Localized: Evaluate programs on separate farms with repeatable seeds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251048
+    m_Localized: Measure strategies in local fixed-start competitions.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251049
+    m_Localized: Unlock repeated execution with while, for and repeat.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251050
+    m_Localized: Unlock arithmetic, comparisons and conditional decisions.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251051
+    m_Localized: Name values, assign results and keep state in your programs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251052
+    m_Localized: Define reusable functions with parameters and returned values.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251053
+    m_Localized: Organize sequences with lists, tuples, indices and unpacking.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251054
+    m_Localized: Map keys to values and track unique coordinates with sets.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251055
+    m_Localized: Import other programs as modules to organize larger systems.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251056
+    m_Localized: Read position, crop state, water and companion requests.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251057
+    m_Localized: Query the exact costs of seeds and future research levels.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251058
+    m_Localized: Let code purchase research when its requirements are met.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251059
+    m_Localized: Measure elapsed game time and instruction counts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251060
+    m_Localized: Print values to the field journal while testing code.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251061
+    m_Localized: Temporarily change field size and limit execution speed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251062
+    m_Localized: Use random values and numeric conversion utilities.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251063
+    m_Localized: Choose a new appearance for your drone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251064
+    m_Localized: Build an autonomy beacon as a late-game research milestone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251065
+    m_Localized: Unlock the master hat after completing the autonomy beacon.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251066
+    m_Localized: An experimental garden, written by you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251067
+    m_Localized: 01 / THE LIVING GRID
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251068
+    m_Localized: "N \u2191   /   Click to inspect \xB7 scroll to explore"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251069
+    m_Localized: Open research tree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251070
+    m_Localized: FIELD JOURNAL / OUTPUT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251071
+    m_Localized: 02 / AUTOMATION STUDIO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251072
+    m_Localized: AUTOMATION LIVE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251073
+    m_Localized: YOUR LOCAL GARDEN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251074
+    m_Localized: NEXT DISCOVERY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251075
+    m_Localized: An open horizon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 967419966251076
+    m_Localized: Refine your algorithms in local competition.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 968281555984384
+    m_Localized: "Drag to pan \xB7 Scroll to zoom \xB7 1\u20134: switch areas \xB7
+      Click nodes for details."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 973393909243904
+    m_Localized: Drag to adjust music and effects.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 973393913438208
+    m_Localized: "0% \xB7 Mute"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024717011017728
+    m_Localized: "harvest() / can_harvest()\nplant(Entities.Grass) / plant(Entities.Bush)
+      / plant(Entities.Tree)\nplant(Entities.Carrot) / plant(Entities.Pumpkin)\nplant(Entities.Sunflower)
+      / plant(Entities.Cactus)\nmove(North / East / South / West) -> True / False\ncan_move(direction)
+      -> True / False\ntill() / use_item(Items.Water) / use_item(Items.Fertilizer)\nget_pos_x()
+      / get_pos_y() / get_world_size()\nget_entity_type() / get_ground_type() / get_water()\nnum_items(Items.Hay)
+      / num_unlocked(Unlocks.Speed)\nget_cost(Unlocks.Speed) / unlock(Unlocks.Speed)\nget_companion()
+      -> (entity, (x, y)) or None\nmeasure() / measure(direction) / swap(direction)\nspawn_drone(function,
+      args...) -> handle or None\nwait_for(handle) -> return value / has_finished(handle)\nnum_drones()
+      / max_drones()\nget_time() / get_tick_count() / random()\nsimulate(file, unlocks,
+      items, globals, seed, speedup)\nchange_hat(Hats.Straw_Hat) / change_hat(Hats.Dinosaur_Hat)\nset_world_size(size)
+      / set_execution_speed(speed)\nclear() / do_a_flip()\nprint(values...) / quick_print(values...)\n\nNamespaces:
+      Entities, Items, Grounds, Unlocks, Hats, Leaderboards.\nPrograms: import helpers
+      / from helpers import tend.\nCollections: [1,2], (1,2), {1,2}, {'seed': 4}.\nData:
+      values[0], costs['hay'], values.append(3), visited.add((x,y)).\nFunctions:
+      def work(x, count=1): ... return result.\n\nA task has independent memory.
+      Return values are collected by wait_for().\nA blocked maze move returns False.
+      Normal field edges wrap; tail mode does not.\nSimulation creates a new isolated
+      farm. It cannot modify the live inventory.\n\nCompetition uses an isolated
+      8\xD78 mid-tier farm. Targets vary by resource; consult the challenge list
+      and terminate every worker after reaching the target.\nCompanion requests require
+      companion research. Merged harvests produce Weird Substance in proportion to
+      the infected plants."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024717015212032
+    m_Localized: 'Execution speed multiplier per level: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024717015212033
+    m_Localized: Unlock companion requests and their harvest bonus. Further levels
+      improve the multiplier.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024717015212034
+    m_Localized: "Sort cacti for chain harvests; the per-plant chain bonus reaches
+      16\xD7."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024717015212035
+    m_Localized: Grow a tail to produce bone. The length bonus caps at 64; each research
+      level adds 25%.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024717015212036
+    m_Localized: 'Historical rules / '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024717015212037
+    m_Localized: "The selected program uses a separate 8\xD78 farm with standard
+      mid-tier research, seed 41 and supplied inputs. Each resource has its own target.
+      All workers must terminate. Fastest reset starts from zero. Stop cancels the
+      challenge."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024717015212038
+    m_Localized: 'New production target: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024717015212039
+    m_Localized: . Terminate all workers after reaching it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939200
+    m_Localized: 'Produce '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939201
+    m_Localized: "Expand through crop discoveries: planting 2\xD72, trees 4\xD74,
+      pumpkins 8\xD78, cacti 16\xD716, tail exploration 32\xD732."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939202
+    m_Localized: FIELD MANUAL / Learn, implement, measure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939203
+    m_Localized: Search chapters
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939204
+    m_Localized: Search a crop, API, or symptom. Press Enter; clear to show all chapters.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939205
+    m_Localized: Clear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939206
+    m_Localized: No chapter matched. Try harvest, water, drone, or unlock.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939207
+    m_Localized: Base discovery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939208
+    m_Localized: Use Research for live requirements, Templates for runnable examples,
+      and Records to acknowledge completed achievements.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939209
+    m_Localized: Challenge exceeded its game-time limit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939210
+    m_Localized: "GREEN = running \xB7 AMBER BORDER = editing \xB7 GRAY = idle. Browsing
+      preserves existing work."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939211
+    m_Localized: ' programs  /  '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939212
+    m_Localized: ' active  /  '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939213
+    m_Localized: ' drone slots'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939214
+    m_Localized: Unique letters, digits and underscores. At least one program is
+      kept.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939215
+    m_Localized: Empty program
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939216
+    m_Localized: Edit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939217
+    m_Localized: "  \xB7  EDITING"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939218
+    m_Localized: " characters  \xB7  "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939219
+    m_Localized: ' workers'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939220
+    m_Localized: "  \xB7  window open"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939221
+    m_Localized: 01 / First harvest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939222
+    m_Localized: "Start on one grass plot with no inventory. Grass matures naturally.
+      Run harvest() until you own five hay, then research Loops. Load First harvest
+      from Templates.\n\nNext research Operators, Variables, Sensors and Planting.
+      Research does not happen just because you own enough resources: select a node
+      and pay, or later use unlock(). Free grass and bushes provide recovery if you
+      run out of crop seeds.\n\nThis campaign aims at about three hours of game time
+      to full research with a working automated strategy. Your planning and editing
+      time is additional. Research speed bonuses are part of normal 1\xD7 play; the
+      Settings speed multiplier accelerates the entire world."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939223
+    m_Localized: 02 / Programs & states
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939224
+    m_Localized: 'Programs are reusable modules. The library shows a card for every
+      file, a total count, active-file count and drone-slot usage. Green means the
+      file has running workers; an amber border means it is open in the main editor.
+      A file may be both running and selected. Paused tasks remain active; idle files
+      have no live workers.
+
+
+      Edit switches the main editor without stopping
+      existing work. Main Run replaces the current controller and its workers. Window
+      opens a draggable editor; Run separately launches that file if a drone slot
+      is free. Stop all terminates every worker. Closing an editor window leaves
+      its code and running tasks intact. Running files cannot be deleted; at least
+      one file is retained.
+
+
+      Use Cmd/Ctrl+Z to undo and Cmd/Ctrl+Shift+Z to
+      redo. F9 toggles a breakpoint at the caret line. Pause, Step and the variable
+      watch help diagnose a program.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939225
+    m_Localized: 03 / Language essentials
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939226
+    m_Localized: 'The interpreter uses Python-inspired syntax, not a full Python
+      installation. Indent blocks with four spaces or one tab; do not mix them. Names
+      and enum members are case-sensitive. Research the corresponding language nodes
+      before using variables, branches, functions or collections. Unrestricted syntax
+      in Settings removes language gates only; it does not grant crops or research.
+
+
+      Supported
+      forms include if/elif/else, while, for, break/continue, parameterized functions,
+      default arguments, return, global, imports, lists, immutable tuples, sets,
+      dictionaries, indexing, unpacking and closures. Python standard-library modules
+      and operating-system access are unavailable. Compare with ==, assign with =;
+      negative indices count from the end.
+
+
+      Use print() during debugging,
+      but frequent printing adds execution cost. A while loop without an exit continues
+      until Stop; prefer inventory-based goals for finite jobs.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939227
+    m_Localized: 04 / Staged research
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939228
+    m_Localized: "Research has three independent requirements: prior discoveries,
+      cumulative production and a payable resource cost. Production totals count
+      successful harvests even after you spend the resources; they are not a second
+      payment. The tree shows current / required totals. Completing a crop unlocks
+      further field, speed and yield tiers.\n\nField sizes: Planting \u2192 2\xD72;
+      Trees \u2192 4\xD74; Pumpkins \u2192 8\xD78; Cacti \u2192 16\xD716; Tail exploration
+      \u2192 32\xD732. You still pay for each expansion. Existing purchased research
+      is retained when updating; start a new farm to experience the complete staged
+      campaign.\n\nget_cost() reports the price, get_unlock_requirements() reports
+      gates, and can_unlock() checks both gates and funds. unlock() returns False
+      without spending when any requirement is missing. There is no elapsed-time
+      certification gate. The tier lists below identify the discovery needed for
+      each upgrade."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939229
+    m_Localized: 05 / Crop supply chains
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939230
+    m_Localized: 'Grass yields hay. Bushes and trees yield wood. Carrots require
+      tilled soil, hay and wood; pumpkins and sunflowers use carrots; cacti use pumpkins.
+      Research increases seed costs as well as yields. Inspect get_cost(Entities.Carrot)
+      before filling a field, and reserve enough inputs for multiple repair cycles.
+
+
+      Planting
+      needs an empty compatible plot; dead pumpkins can be replaced directly. till()
+      switches ground type. Clearing or expanding resets the field and loses standing
+      plants. Protect your inventory before switching the whole field to another
+      crop.
+
+
+      Trees grow more slowly for every adjacent tree, so alternate
+      trees and bushes in a checkerboard. Normal field edges wrap: East from the
+      last column returns to column zero. Maze and tail mode do not wrap. Base growth
+      times are grass 3s, bush 4s, tree 6s, carrot 7s, pumpkin 11s, sunflower 8.5s
+      and cactus 1.5s; water speeds growth.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939231
+    m_Localized: 06 / Water & infection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939232
+    m_Localized: "Irrigation research generates water every ten game seconds. One
+      unit adds 0.25 moisture, up to 1.0; moisture decays gradually. Water only when
+      get_water() is below your chosen threshold and supplies exist. A field near
+      50% moisture does not need watering under a 0.3 threshold; that is expected.\n\nFertilizer
+      research generates supplies on the same ten-second cycle. Fertilizer adds growth
+      and infects that plant. When merged pumpkins or cacti are harvested, Weird
+      Substance is proportional to the infected fraction; one infected plant cannot
+      convert half the entire field. Fertilizer also performs the normal pumpkin
+      death check when it reaches maturity.\n\nWeird Substance toggles infection
+      on the current plot and its distinct neighbors. On a bush, enough of it creates
+      a maze instead: side \xD7 2^(maze level\u22121). On treasure, the same quantity
+      reuses the maze and awards gold, up to 300 reuses."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939233
+    m_Localized: 07 / Giant pumpkins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939234
+    m_Localized: "A pumpkin has a 20% chance to die on reaching maturity. Scan the
+      square repeatedly and replace Dead_Pumpkin cells; do not harvest healthy individual
+      plants during repair. Only harvest after every cell in the desired square is
+      a mature pumpkin. The game merges the largest complete square containing the
+      harvest point.\n\nA side n square produces n\xB2 \xD7 min(n,6) \xD7 its per-plant
+      research yield. Check the entire square, not just one ready cell. Budget seeds
+      for replacement. For infection production, apply fertilizer to the number of
+      mature plants you need before harvesting; read num_produced() for milestone
+      progress and num_items() for spendable inventory."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444677939235
+    m_Localized: 08 / Sunflower priority
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133504
+    m_Localized: "measure() on a sunflower returns 7\u201315 petals. If at least
+      ten sunflowers remain, harvesting the current maximum earns an 8\xD7 bonus.
+      Picking a smaller flower breaks the bonus sequence until the sunflower field
+      is cleared. Growing more flowers without measuring can waste most of the potential
+      power.\n\nPlant the field, wait for maturity without repeatedly walking, then
+      scan petal values from 15 down to 7. Research and energy accelerate instructions;
+      movement and instruction execution consume power. Avoid endless full-field
+      searches for each individual flower and moving loops that spend all the power
+      while waiting.\n\nPower is a supply, not a permanent speed unlock. Keep a reserve
+      and budget carrot inputs for the next generation of flowers."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133505
+    m_Localized: 09 / Companion planting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133506
+    m_Localized: 'After companion research, get_companion() returns a requested crop
+      and target coordinate, or None for an ineligible plot. Grass, bushes, trees
+      and carrots can request companions. The target must contain the requested type
+      when the original plant is harvested; the companion itself does not have to
+      be mature.
+
+
+      Read and save the request, place the companion, return to
+      the original plant, then harvest when mature. Do not assume a request survives
+      harvesting and replanting. Level 1 multiplies eligible harvests by 2; each
+      additional level adds 0.5, reaching 4.5 at level 6. Before research there is
+      no companion bonus.
+
+
+      For automation, maintain a coordinate-to-request
+      map and resolve conflicting requests; blindly overwriting the whole field often
+      destroys useful crops.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133507
+    m_Localized: 10 / Cactus sorting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133508
+    m_Localized: "Each mature cactus has a measured size from 0 to 9. swap(East)
+      or swap(North) exchanges adjacent cacti. A connected mature region chains only
+      when sizes are nondecreasing to the east and north. One out-of-order pair prevents
+      the region-wide chain.\n\nSort every row, then every column. The shipped bubble-sort
+      template is simple and reliable; optimize comparisons and movement when you
+      understand its invariant. Sorting columns after rows preserves the row order.
+      Chain output for m plants is per-plant yield \xD7 m \xD7 min(m,16), preserving
+      a reward for larger sorted fields with bounded scaling.\n\nFund pumpkin seeds
+      before clearing the previous crop. Sorting a large field before cacti mature
+      does not satisfy the harvest condition."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133509
+    m_Localized: 11 / Maze search
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133510
+    m_Localized: 'Plant a bush, then use Weird Substance in the required quantity
+      to generate a connected maze. can_move() tests walls, move() reports success,
+      and measure() returns the treasure coordinate. Harvest at treasure for gold.
+      Harvesting a hedge clears the maze without a treasure reward.
+
+
+      Use depth-first
+      search with a visited set and a direction stack. Explore unvisited neighbors;
+      when stuck, reverse the last move. For reusable mazes, a visited set is essential
+      because walls can be removed and loops appear. Treasure targets are chosen
+      far enough along the actual passages, not at the current tile.
+
+
+      At treasure,
+      use Weird Substance instead of harvesting to receive gold and relocate the
+      target while preserving the layout. Re-search using a fresh visited set. Reuse
+      consumes supplies and is limited to 300 relocations; afterwards harvest and
+      generate a new maze.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133511
+    m_Localized: 12 / Long-tail routes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133512
+    m_Localized: "The Dinosaur Hat enables the apple-and-tail mode. Apples consume
+      cactus inventory. The tail occupies cells, prevents crossing itself, and disables
+      field wrapping. can_move() and move() obey tail occupancy; measure() at the
+      apple provides the next target. Only one drone can control the tail.\n\nAn
+      even-sided empty field supports a Hamiltonian cycle: cover every tile along
+      a nonintersecting route and return along the first column. Follow the cycle
+      instead of greedily heading for each apple. Keep at least side\xB2+1 cactus
+      available. Stop or switch to Straw_Hat to settle the current tail.\n\nBone
+      = floor(length \xD7 min(length,64) \xD7 (1 + 0.25\xD7(research level\u22121))).
+      After length 64, each extra segment still adds production, while the length
+      multiplier stays bounded. The template ends when its full route becomes blocked."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133513
+    m_Localized: 13 / Independent drones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133514
+    m_Localized: 'Parallel research raises capacity from 1 to 2, 4, 8, 16 and 32.
+      The main controller uses a slot. spawn_drone(function,args...) returns a handle
+      or None if capacity is full. Workers get independent copies of variables and
+      collections, but share the field and inventory. They can occupy the same cell
+      without collision.
+
+
+      Use per-column or per-region jobs to avoid two workers
+      planting the same plot or racing for seeds. Save handles, then wait_for() each
+      result. has_finished() checks without waiting. Modifying a worker''s global
+      variable does not update the controller''s copy; return a value instead. Completed
+      workers release slots.
+
+
+      When spawning fails, let the main controller
+      perform the job. A program that never joins or terminates its workers will
+      not finish a resource competition.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133515
+    m_Localized: 14 / Experiments & races
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133516
+    m_Localized: "Create a module named experiment. simulate(name,unlocks,items,globals,seed,speedup)
+      runs a separate farm and returns game seconds. Unlocks means all research;
+      dictionaries can select research levels. Input items and globals are isolated
+      copies. Repeating a nonnegative seed reproduces the same initial randomness.
+      Actual inventory and crops are unchanged. A simulation is capped at one game
+      hour; nested simulations are unsupported.\n\nResource competitions use a standard
+      8\xD78 mid-tier farm and seed 41 with supplied inputs. Targets differ: hay
+      4096, wood 6000, carrots 2048, pumpkins 12000, power 8000, cactus 20000, gold
+      4096, bone 30000. Produce the target AND terminate all workers. _Single categories
+      restrict capacity to one. Resource challenges allow one game hour; Fastest_Reset
+      starts from zero and allows four, ending when local competition research is
+      purchased.\n\nRecords stay on this computer. Old-rule scores are marked historical
+      and are not compared with current scores. Achievements and successful challenges
+      open a completion notice; unread notices survive restarting. There is no online
+      Steam submission."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133517
+    m_Localized: 15 / Diagnose & recover
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133518
+    m_Localized: 'Crop never appears: check its research, seed inventory, soil and
+      whether the cell is empty. A failed plant() returns False; waiting on an empty
+      plot cannot mature it.
+
+
+      Research stays locked with enough funds: read
+      the next-level crop discovery and cumulative-production requirements. Speed
+      and yield tiers no longer all unlock together.
+
+
+      Pumpkins never merge:
+      inspect every cell for dead or immature plants. Cactus chains fail: find an
+      east/north inversion or an immature member. Power disappears: stop repeated
+      walking and reduce scans. Maze gets stuck: use visited and backtracking; normal
+      wrapping does not apply. Drone globals do not return: use wait_for() return
+      values.
+
+
+      Use F9 breakpoints, Pause and Step to inspect one line at a
+      time. Syntax errors include line numbers. Save backups end with .bak. Farm
+      Library creates independent saves and program folders. External editor mode
+      exports .py and __builtins__.py hints, then watches saves; avoid editing a
+      file in two editors simultaneously. Audio level is saved when you release the
+      slider.
+
+
+      Full progression after an update is best tested on a new farm.
+      Updating does not take back resources earned under earlier balance rules.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133519
+    m_Localized: 16 / API reference
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133520
+    m_Localized: 'All public game APIs are listed below with prerequisites and return
+      values. Entities, Items, Grounds, Unlocks, Hats and Leaderboards are namespaces.
+      Calls are case-sensitive. Successful research is paid from shared inventory.
+      A cost may exist even when its discovery or production requirements are unmet.
+      A fully researched node returns None for cost and requirements.
+
+
+      Examples
+      in other chapters may be fragments intended for an existing field or loop;
+      each chapter names its assumptions. Templates provide complete algorithms for
+      the major crop mechanics.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133521
+    m_Localized: Harvest a mature crop; at treasure, award gold. Immature/empty plots
+      return False.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133522
+    m_Localized: Test maturity at the current plot; does not harvest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133523
+    m_Localized: Planting/crop research and seed inputs required; False if occupied
+      or wrong ground.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133524
+    m_Localized: Switch grassland and soil; use before planting soil crops.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133525
+    m_Localized: Move North/East/South/West; walls and tails may block it. Ordinary
+      fields wrap.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133526
+    m_Localized: Sensors. Test the same walls/tail rules without moving.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133527
+    m_Localized: Consume Water, Fertilizer or Weird_Substance; False if unsuitable
+      or insufficient.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133528
+    m_Localized: Sensors. Zero-based position and current field side length.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133529
+    m_Localized: Sensors. Return an entity, None, or the ground namespace value.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133530
+    m_Localized: Sensors. Current moisture in [0,1].
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133531
+    m_Localized: Sensors. Spendable current inventory, shared between drones.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133532
+    m_Localized: Sensors. Cumulative successfully produced amount; spending does
+      not reduce it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133533
+    m_Localized: Purchased level of the named research.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133534
+    m_Localized: Costs. Entity gives planting inputs; Unlocks gives next research
+      cost. Optional level is zero-based purchased-level index.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133535
+    m_Localized: Costs. Keys unlock:<id> and produced:<item> give required discovery
+      levels and cumulative production. Does not include payable price.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133536
+    m_Localized: Costs. True only when discoveries, production totals and funds all
+      suffice.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133537
+    m_Localized: Automatic research. Pay and purchase the next level; missing requirements
+      return False with no payment.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133538
+    m_Localized: Sensors and companion research. Returns (entity, (x,y)) for eligible
+      plants.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133539
+    m_Localized: Sensors. Flower petals/cactus size; maze treasure or next-apple
+      coordinates. None when unsupported.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133540
+    m_Localized: Exchange adjacent cactus cells; does not buy seeds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133541
+    m_Localized: Parallel research. Independent memory copy; None when slots are
+      full.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133542
+    m_Localized: Wait and return the worker result; the field and other workers keep
+      advancing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133543
+    m_Localized: Check a worker without blocking.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133544
+    m_Localized: Count active workers, including the main task, and available capacity.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133545
+    m_Localized: Simulation research. Isolated program execution; fixed seed reproduces
+      its starting randomness.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133546
+    m_Localized: Local competition research. Run a named program in a fixed preset
+      and record success after termination.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133547
+    m_Localized: Timing tools. Current world seconds / this drone's instruction cost
+      count.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133548
+    m_Localized: World testing tools. Temporarily resize to an already purchased
+      maximum; restored when execution ends. 0 means maximum.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133549
+    m_Localized: World testing tools. Cap current execution speed; does not exceed
+      purchased speed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133550
+    m_Localized: Select a hat; Dinosaur_Hat and Top_Hat require their research. Leaving
+      tail mode settles bone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133551
+    m_Localized: Numeric utilities. Seeded uniform value in [0,1).
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133552
+    m_Localized: Debugging. Write to the journal. Frequent print adds execution cost.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133553
+    m_Localized: clear resets the current field and loses standing plants. do_a_flip
+      consumes an action without moving.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133554
+    m_Localized: " files \xB7 "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133555
+    m_Localized: ' active'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040444682133556
+    m_Localized: Sensors. Cumulative harvested production, including harvested Weird
+      Substance; spending does not reduce it. Passive water/fertilizer supplies use
+      num_items().
     m_Metadata:
       m_Items: []
   references:

@@ -17,11 +17,11 @@ namespace Verdant.Automation
         void CreateFarm(string name)
         {
             if(!SafeFarmName(name)||File.Exists(Path.Combine(FarmFolder,name+".json"))){Log(Tr("Choose a unique farm name using letters, digits, underscores or hyphens.","请使用不重复的农场名称，仅限英文字母、数字、下划线和短横线。"));return;}
-            Save();if(race!=null){race.Stop();race=null;}bool watched=Watching;Watch(false);Session.Stop();Farm.Message-=Log;SelectFarmPath(name);Farm=new ClassicFarm();SeedPrograms();Session=new ClassicSession(Farm);Farm.Message+=Log;ResetPresentation();Save();if(watched)Watch(true);
+            Save();if(race!=null){race.Stop();race=null;}bool watched=Watching;Watch(false);Session.Stop();Farm.Message-=Log;SelectFarmPath(name);Farm=new ClassicFarm();SeedPrograms();Session=new ClassicSession(Farm){ChallengeCompleted=NotifyChallengeCompleted};Farm.Message+=Log;ResetPresentation();Save();if(watched)Watch(true);
         }
         void LoadFarm(string name)
         {
-            if(!SafeFarmName(name))return;var path=Path.Combine(FarmFolder,name+".json");var data=JsonUtility.FromJson<ClassicSave>(File.ReadAllText(path));Validate(data);Save();if(race!=null){race.Stop();race=null;}bool watched=Watching;Watch(false);Session.Stop();Farm.Message-=Log;SelectFarmPath(name);Farm=new ClassicFarm{Data=data};Session=new ClassicSession(Farm);Farm.Message+=Log;ResetPresentation();if(watched)Watch(true);
+            if(!SafeFarmName(name))return;var path=Path.Combine(FarmFolder,name+".json");var data=JsonUtility.FromJson<ClassicSave>(File.ReadAllText(path));Validate(data);Save();if(race!=null){race.Stop();race=null;}bool watched=Watching;Watch(false);Session.Stop();Farm.Message-=Log;SelectFarmPath(name);Farm=new ClassicFarm{Data=data};Session=new ClassicSession(Farm){ChallengeCompleted=NotifyChallengeCompleted};Farm.Message+=Log;ResetPresentation();if(watched)Watch(true);
         }
         void BuildFarms()
         {

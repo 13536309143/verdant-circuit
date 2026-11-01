@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-01",
+  "revision": "one-hour-2026-11-01",
+  "sourceFingerprint": "6603ceac37b7e0037ad1b2fabb62ada350a5afc1a1ea1ab4ab8d22d2e6f36feb",
+  "researchGrowth": 2.65,
+  "runs": [
+    {
+      "seed": 731,
+      "all_research_seconds": 3538.333333350776,
+      "main_world_final_seconds": 3705.066666686232,
+      "test_wall_seconds": 58.117488099999996,
+      "phases": 299,
+      "paid_levels": 120,
+      "maxed_nodes": 34,
+      "achievements": 13,
+      "race_records": 16,
+      "peak_drones": 32
+    },
+    {
+      "seed": 17,
+      "all_research_seconds": 3452.833333349687,
+      "main_world_final_seconds": 3626.766666685235,
+      "test_wall_seconds": 57.030240199999994,
+      "phases": 295,
+      "paid_levels": 120,
+      "maxed_nodes": 34,
+      "achievements": 13,
+      "race_records": 16,
+      "peak_drones": 32
+    },
+    {
+      "seed": 20261101,
+      "all_research_seconds": 3442.666666682891,
+      "main_world_final_seconds": 3638.1666666853803,
+      "test_wall_seconds": 58.4464671,
+      "phases": 293,
+      "paid_levels": 120,
+      "maxed_nodes": 34,
+      "achievements": 13,
+      "race_records": 16,
+      "peak_drones": 32
+    }
+  ],
+  "medianResearchSeconds": 3452.833333349687,
+  "medianMainWorldFinalSeconds": 3638.1666666853803,
+  "paidTransactionsVerified": 360,
+  "publicReleaseUpdated": false
+}

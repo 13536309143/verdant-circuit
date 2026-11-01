@@ -14,11 +14,11 @@ namespace Verdant.Automation
         readonly Dictionary<int,CodeHistory> histories=new Dictionary<int,CodeHistory>();FileSystemWatcher watcher;volatile bool filesChanged;float saveTimer,refreshTimer;double lastWrite;bool languageDirty;
         public void Initialize()
         {
-            Font=L10n.UIFont;string active=PlayerPrefs.GetString("automation.activeFarm","farm-0.11.1");if(!SafeFarmName(active))active="farm-0.11.1";SavePath=Path.Combine(FarmFolder,active+".json");
+            Font=L10n.UIFont;string active=PlayerPrefs.GetString("automation.activeFarm","farm-0.11.2");if(!SafeFarmName(active))active="farm-0.11.2";SavePath=Path.Combine(FarmFolder,active+".json");
 #if UNITY_EDITOR
-            if(Environment.GetEnvironmentVariable("VERDANT_AUTOMATION_QA")=="1"){SavePath=Path.Combine(Application.persistentDataPath,"Automation","qa-0.11.1.json");if(File.Exists(SavePath))File.Delete(SavePath);}
+            if(Environment.GetEnvironmentVariable("VERDANT_AUTOMATION_QA")=="1"){SavePath=Path.Combine(Application.persistentDataPath,"Automation","qa-0.11.2.json");if(File.Exists(SavePath))File.Delete(SavePath);}
 #endif
-            Load();Volume=Farm.Data.volume;Session=new ClassicSession(Farm);Farm.Message+=Log;
+            Load();Volume=Farm.Data.volume;Session=new ClassicSession(Farm){ChallengeCompleted=NotifyChallengeCompleted};Farm.Message+=Log;
             Audio=new GameObject("Sound Garden").AddComponent<VerdantAudio>();Audio.transform.SetParent(transform);Audio.Initialize(Volume);
             View=new GameObject("Farm View").AddComponent<ClassicView>();View.transform.SetParent(transform);View.Initialize(this);BuildUI();L10n.Changed+=LanguageChanged;
             Log(Tr("Welcome. Harvest grass to earn hay, then unlock planting and expansion.","欢迎。先收获草获得干草，再解锁种植和扩田。"));
@@ -28,20 +28,21 @@ namespace Verdant.Automation
         {
             if(Farm==null)return;if(race==null)Session.Tick(Time.unscaledDeltaTime,Speed);TickRace();if(!Session.Running&&RunningProgram>=0){RunningProgram=-1;Save();}
             if(Editor!=null&&Editor.isFocused&&Input.GetKeyDown(KeyCode.Tab)){int n=Editor.stringPosition;Editor.text=Editor.text.Insert(n,"    ");Editor.stringPosition=n+4;}
-            if(modal==null&&Editor!=null&&!Editor.isFocused&&View.Camera.pixelRect.Contains(UnityEngine.Input.mousePosition))
+            if(!CompletionOpen&&modal==null&&Editor!=null&&!Editor.isFocused&&View.Camera.pixelRect.Contains(UnityEngine.Input.mousePosition))
             {
                 if(UnityEngine.Input.GetMouseButtonDown(0)){var ray=View.Camera.ScreenPointToRay(UnityEngine.Input.mousePosition);float distance;if(new Plane(Vector3.up,Vector3.zero).Raycast(ray,out distance)){var point=ray.GetPoint(distance);int x=Mathf.RoundToInt(point.x+(Farm.Data.size-1)*.5f),y=Mathf.RoundToInt(point.z+(Farm.Data.size-1)*.5f);if(x>=0&&y>=0&&x<Farm.Data.size&&y<Farm.Data.size){var cell=Farm.Cell(x,y);Log("("+x+", "+y+") / "+cell.entity+" / "+Tr("Water ","水分 ")+(cell.water*100).ToString("F0")+"% / "+Tr("Measure ","测量值 ")+cell.measure+" / "+(Farm.Ready(cell)?Tr("Ready to harvest","可以收获"):Tr("Growing","生长中")));}}}
                 if(Math.Abs(UnityEngine.Input.mouseScrollDelta.y)>.01f)View.Camera.orthographicSize=Mathf.Clamp(View.Camera.orthographicSize-UnityEngine.Input.mouseScrollDelta.y*.5f,1.2f,30);
             }
             if(Editor!=null&&Editor.isFocused&&UnityEngine.Input.GetKeyDown(KeyCode.F9)){int position=Math.Max(0,Math.Min(Editor.stringPosition,Editor.text.Length));int line=1+Editor.text.Substring(0,position).Count(c=>c=='\n');if(!Session.breakpoints.Add(line))Session.breakpoints.Remove(line);Log(Tr("Breakpoint line: ","断点行：")+line);}
             bool command=Input.GetKey(KeyCode.LeftControl)||Input.GetKey(KeyCode.RightControl)||Input.GetKey(KeyCode.LeftCommand)||Input.GetKey(KeyCode.RightCommand);
-            if(command&&Input.GetKeyDown(KeyCode.Return))Run();if(Input.GetKeyDown(KeyCode.F8))L10n.Set(L10n.Code=="en"?"zh-Hans":"en");if(Input.GetKeyDown(KeyCode.Escape)){if(modal!=null)Close();else Open("settings");}
-            if(languageDirty){languageDirty=false;Font=L10n.UIFont;foreach(var t in canvas.GetComponentsInChildren<TMP_Text>(true))t.font=Font;string kind=modalKind;if(kind!=null)Open(kind);Refresh();}
+            if(command&&Input.GetKeyDown(KeyCode.Return))Run();if(Input.GetKeyDown(KeyCode.F2)&&!CompletionOpen)Open("research");if(Input.GetKeyDown(KeyCode.F8))L10n.Set(L10n.Code=="en"?"zh-Hans":"en");if(Input.GetKeyDown(KeyCode.Escape)){if(CompletionOpen)DismissCompletion();else if(modal!=null)Close();else Open("settings");}
+            if(languageDirty){languageDirty=false;Font=L10n.UIFont;foreach(var t in canvas.GetComponentsInChildren<TMP_Text>(true))t.font=Font;string kind=modalKind;float zoom=kind=="research"&&researchMap!=null?researchMap.Zoom:0;Vector2 mapPosition=zoom>0?researchMap.content.anchoredPosition:Vector2.zero;if(kind!=null){Open(kind);if(zoom>0){researchMap.SetZoom(zoom);researchMap.content.anchoredPosition=mapPosition;}}Refresh();}
             saveTimer+=Time.unscaledDeltaTime;if(saveTimer>=30){saveTimer=0;Save();}refreshTimer+=Time.unscaledDeltaTime;if(refreshTimer>=.15f){refreshTimer=0;UpdateProduction();Refresh();}
+            TickResearchNavigation();TickCompletionNotice();
             if(filesChanged&&Watching&&Time.realtimeSinceStartupAsDouble-lastWrite>1){filesChanged=false;ImportFiles();}
         }
-        public void Run(){try{StoreEditor();Session.Start(Editor.text).program=Farm.Data.programs[Farm.Data.selectedProgram].name;RunningProgram=Farm.Data.selectedProgram;Close();Log(Tr("Program started.","程序已启动。"));}catch(Exception e){Log(e.Message);}Refresh();}
-        public void Log(string message){if(message.StartsWith("Line ")||message.StartsWith("Save: "))message=ClassicDiagnostics.Localize(message);Logs.Add(message);if(Logs.Count>120)Logs.RemoveAt(0);if(console!=null)console.text=string.Join("\n",Logs.Skip(Math.Max(0,Logs.Count-12)));}
+        public void Run(){if(CompletionOpen)return;try{StoreEditor();Session.Start(Editor.text).program=Farm.Data.programs[Farm.Data.selectedProgram].name;RunningProgram=Farm.Data.selectedProgram;Close();Log(Tr("Program started.","程序已启动。"));}catch(Exception e){Log(e.Message);}Refresh();}
+        public void Log(string message){if(message.StartsWith("Line ")||message.StartsWith("Save: "))message=ClassicDiagnostics.Localize(message);Logs.Add(message);if(Logs.Count>120)Logs.RemoveAt(0);if(console!=null)console.text=string.Join("\n",Logs.Skip(Math.Max(0,Logs.Count-8)));}
         void StoreEditor(){if(Editor!=null&&Farm.Data.selectedProgram<Farm.Data.programs.Count)Farm.Data.programs[Farm.Data.selectedProgram].source=Editor.text;}
         void Switch(int index){StoreEditor();Farm.Data.selectedProgram=index;Editor.SetTextWithoutNotify(Farm.Data.programs[index].source);History().Record(Editor.text,0,0);Refresh();}
         CodeHistory History(){int slot=Farm.Data.selectedProgram;CodeHistory h;if(!histories.TryGetValue(slot,out h)){h=new CodeHistory();histories[slot]=h;}return h;}

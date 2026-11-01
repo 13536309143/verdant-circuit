@@ -1,0 +1,70 @@
+{
+  "version": "0.11.2",
+  "date": "2026-11-01",
+  "sourceFingerprint": "fad941ab6a0f6655d615d01eb60c40bf3dc1193898949452e9184381c9263159",
+  "targetSeconds": 10800,
+  "toleranceSeconds": 900,
+  "runs": [
+    {
+      "seed": 731,
+      "all_research_seconds": 10717.016666594862,
+      "main_world_final_seconds": 10905.566666592118,
+      "wall_seconds": 84.04274529999999,
+      "steps": 382,
+      "paid_levels": 120,
+      "maxed_nodes": 34,
+      "achievements": 13,
+      "race_records": 16,
+      "peak_drones": 32
+    },
+    {
+      "seed": 17,
+      "all_research_seconds": 10572.283333263635,
+      "main_world_final_seconds": 10754.749999927646,
+      "wall_seconds": 78.3504387,
+      "steps": 379,
+      "paid_levels": 120,
+      "maxed_nodes": 34,
+      "achievements": 13,
+      "race_records": 16,
+      "peak_drones": 32
+    },
+    {
+      "seed": 20261101,
+      "all_research_seconds": 10712.849999928256,
+      "main_world_final_seconds": 10892.916666592302,
+      "wall_seconds": 81.2476272,
+      "steps": 381,
+      "paid_levels": 120,
+      "maxed_nodes": 34,
+      "achievements": 13,
+      "race_records": 16,
+      "peak_drones": 32
+    }
+  ],
+  "medianResearchSeconds": 10712.849999928256,
+  "medianMainSeconds": 10892.916666592302,
+  "paidTransactionsVerified": 360,
+  "discoveryAndProductionGatesVerified": true,
+  "modelChecks": 44,
+  "balanceChecks": 38,
+  "progressionChecks": 118,
+  "languageChecks": 9,
+  "ui": {
+    "frames": 1135,
+    "runtimeErrors": 0,
+    "firstHarvest": true,
+    "independentDrones": true,
+    "locales": 2,
+    "profiles": true,
+    "externalFiles": true,
+    "floatingWindows": true,
+    "completionNotices": true,
+    "researchTree": true,
+    "researchPurchase": true,
+    "panZoom": true,
+    "volumeSlider": true,
+    "programCards": true,
+    "manual": true
+  }
+}

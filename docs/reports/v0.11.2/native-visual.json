@@ -1,0 +1,11 @@
+{
+  "version": "0.11.2",
+  "standaloneStartup": true,
+  "keyboardProgramExecution": true,
+  "localizedCardsAndManualVisual": true,
+  "editingAndRunningStatesDistinct": true,
+  "fixture": "Isolated visual farm copied from the real completed run, resized to 8x8 with six demo programs; excluded from timing.",
+  "captureMethod": "Temporary native test harness invoked the unchanged controller UI through test-only keys. No harness shipped in release players.",
+  "nativePointerAcceptance": false,
+  "pointerAutomationNote": "The native automation cursor changed its target but Unity continued reading a fixed pointer position. Native pointer interaction was not signed off through this tool. Editor EventSystem raycast and button checks passed."
+}

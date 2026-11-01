@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-01",
+  "edition": "Discovery Studio / current local source",
+  "sourceFingerprint": "991ac1b7f0bb2175fd560eeed2a19e3b33aa33d07a298e2cb8e0e384c6d57a6b",
+  "seeds": [
+    {
+      "seed": 731,
+      "status": "passed",
+      "mainWorldSeconds": 1903.3666666652643,
+      "testExecutionWallSeconds": 29.957098799999997,
+      "steps": 249,
+      "paidResearchPurchases": 120,
+      "researchMaxed": 34,
+      "achievements": 13,
+      "competitionRecords": 16,
+      "peakDrones": 32
+    },
+    {
+      "seed": 17,
+      "status": "passed",
+      "mainWorldSeconds": 1800.1999999986915,
+      "testExecutionWallSeconds": 27.9837247,
+      "steps": 243,
+      "paidResearchPurchases": 120,
+      "researchMaxed": 34,
+      "achievements": 13,
+      "competitionRecords": 16,
+      "peakDrones": 32
+    },
+    {
+      "seed": 20261101,
+      "status": "passed",
+      "mainWorldSeconds": 1859.3999999986377,
+      "testExecutionWallSeconds": 28.319267,
+      "steps": 244,
+      "paidResearchPurchases": 120,
+      "researchMaxed": 34,
+      "achievements": 13,
+      "competitionRecords": 16,
+      "peakDrones": 32
+    }
+  ],
+  "regression": {
+    "modelChecks": 44,
+    "languageChecks": 9,
+    "uiFrames": 1136,
+    "uiRuntimeErrors": 0
+  },
+  "fixedBug": "Pumpkins challenge alias",
+  "publicGithubReleaseUpdated": false
+}

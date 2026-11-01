@@ -11,17 +11,18 @@ namespace Verdant.Automation
     public sealed class ClassicView:MonoBehaviour
     {
         sealed class CropView {public Transform root;public string key;public Renderer[] parts;public bool infected;}
-        ClassicController app;public Camera Camera;Transform root,wallsRoot;int size;float refresh;int[] drawnWalls;int drawnReuse=-1;
+        ClassicController app;public Camera Camera;Camera sky;Transform root,wallsRoot;int size;float refresh;int[] drawnWalls;int drawnReuse=-1;
         readonly List<CropView> plants=new List<CropView>();readonly List<Renderer> grounds=new List<Renderer>();readonly List<Transform> units=new List<Transform>();readonly List<Renderer> hats=new List<Renderer>();
         readonly Dictionary<string,Material> materials=new Dictionary<string,Material>();MaterialPropertyBlock block;
         Material Material(string hex){Material m;if(!materials.TryGetValue(hex,out m)){m=new Material(Shader.Find("Standard"));m.color=ColorOf(hex);m.enableInstancing=true;materials[hex]=m;}return m;}
         public void Initialize(ClassicController controller)
         {
             app=controller;block=new MaterialPropertyBlock();
-            var background=new GameObject("Sky",typeof(Camera)).GetComponent<Camera>();background.transform.SetParent(transform);background.depth=-10;background.clearFlags=CameraClearFlags.SolidColor;background.backgroundColor=ColorOf("EBEFE5");background.cullingMask=0;
-            Camera=new GameObject("Automation Camera",typeof(Camera),typeof(AudioListener)).GetComponent<Camera>();Camera.transform.SetParent(transform);Camera.orthographic=true;Camera.clearFlags=CameraClearFlags.SolidColor;Camera.backgroundColor=ColorOf("DAE5D3");Camera.rect=new Rect(.015f,.225f,.595f,.635f);Camera.nearClipPlane=.1f;Camera.farClipPlane=200;
+            var background=new GameObject("Sky",typeof(Camera)).GetComponent<Camera>();sky=background;background.transform.SetParent(transform);background.depth=-10;background.clearFlags=CameraClearFlags.SolidColor;background.backgroundColor=ColorOf("EBEFE5");background.cullingMask=0;
+            Camera=new GameObject("Automation Camera",typeof(Camera),typeof(AudioListener)).GetComponent<Camera>();Camera.transform.SetParent(transform);Camera.orthographic=true;Camera.clearFlags=CameraClearFlags.SolidColor;Camera.backgroundColor=ColorOf("DAE5D3");Camera.rect=new Rect(.085f,.365f,.5f,.365f);Camera.nearClipPlane=.1f;Camera.farClipPlane=200;
             var sun=new GameObject("Sun",typeof(Light)).GetComponent<Light>();sun.transform.SetParent(transform);sun.type=LightType.Directional;sun.transform.rotation=Quaternion.Euler(45,-35,0);sun.intensity=1.1f;Rebuild();
         }
+        public void RefreshPalette(){if(sky!=null)sky.backgroundColor=ColorOf(app.Farm.Data.theme=="night"?"122B28":"E8EDE3");if(Camera!=null)Camera.backgroundColor=ColorOf(app.Farm.Data.theme=="night"?"244337":"DCE6D1");}
         Transform Shape(string name,PrimitiveType type,Vector3 p,Vector3 scale,string color,Transform parent)
         {var o=GameObject.CreatePrimitive(type);o.name=name;o.transform.SetParent(parent,false);o.transform.localPosition=p;o.transform.localScale=scale;o.GetComponent<Renderer>().sharedMaterial=Material(color);var c=o.GetComponent<Collider>();if(c!=null)Destroy(c);return o.transform;}
         Vector3 Position(int x,int y){return new Vector3(x-(size-1)*.5f,0,y-(size-1)*.5f);}
@@ -30,7 +31,7 @@ namespace Verdant.Automation
             if(root!=null)Destroy(root.gameObject);root=new GameObject("Living Field").transform;root.SetParent(transform);plants.Clear();grounds.Clear();size=app.Farm.Data.size;drawnWalls=null;drawnReuse=-1;
             for(int y=0;y<size;y++)for(int x=0;x<size;x++){Vector3 p=Position(x,y);grounds.Add(Shape("Plot",PrimitiveType.Cube,p,new Vector3(.96f,.12f,.96f),"BCCB9D",root).GetComponent<Renderer>());plants.Add(new CropView());}
             Shape("Island Foundation",PrimitiveType.Cube,new Vector3(0,-.3f,0),new Vector3(size+.5f,.5f,size+.5f),"A4B58B",root);
-            Camera.transform.position=new Vector3(0,14,-11);Camera.transform.LookAt(Vector3.zero);Camera.orthographicSize=Math.Max(2,(size+2)*.59f);refresh=0;
+            Camera.transform.position=new Vector3(11,14,-11);Camera.transform.LookAt(Vector3.zero);Camera.orthographicSize=Math.Max(1.9f,(size+1.8f)*.46f);refresh=0;
         }
         void Update()
         {

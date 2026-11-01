@@ -1,5 +1,25 @@
 # Changelog / 更新日志
 
+## [0.11.2] — 2026-11-01 · Staged Discovery
+
+- Two-column program cards with file/active counts, selected/running/paused/idle indicators, live worker counts and active-file deletion protection.
+- Searchable bilingual manual: 16 chapters, 33 API groups, crop algorithms, prerequisites, examples and troubleshooting; English/Chinese Markdown manuals generated from the same content.
+- Add `get_unlock_requirements()`, `can_unlock()` and `num_produced()`; enforce all discovery/production gates in the paid research path, including script calls.
+
+- Rebalance fresh-farm progression toward three hours of normal game time with crop-gated field, speed and yield upgrades; cumulative-production milestones and [three-seed paid-research timing evidence](docs/BALANCE-3H.md).
+- Bound late cactus/tail scaling, gate companion bonuses behind research, fix proportional merged infection and fertilizer maturity checks; tune research, crop growth and late milestones without timer gates.
+- Unify mid-tier competition presets and per-resource targets; separate historical scores and require meaningful maze routes.
+
+- Fix declared `Leaderboards.Pumpkins` / `Pumpkins_Single` aliases; both now complete and have regression checks.
+- Add a reproducible zero-inventory full playthrough runner and report: three seeds, all 34 research nodes / 120 paid levels, 13 achievements, 16 competition categories, 32 concurrent workers and phase-by-phase timings/algorithms.
+
+- Continuous 0–100% audio slider with live percentage, immediate music/effect volume and saved settings.
+
+- Connected, searchable, pannable and zoomable research tree covering all 34 existing cultivation, syntax and automation nodes; live prerequisites/costs and node details.
+- Botanical laboratory interface: navigation rail, resource cards, next-discovery progress, code line numbers, field journal, isometric farm view and hover feedback.
+- Completion notices for local achievements/challenges, persisted unread notifications, grouping and acknowledgment.
+- Mac Universal, Windows x64 Mono and complete Unity source packages; earlier releases are preserved.
+
 ## [0.11.1] — 2026-11-01
 
 A fresh automation-farm rebuild. Earlier releases are preserved; saves are not migrated.
