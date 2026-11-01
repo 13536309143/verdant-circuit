@@ -6107,6 +6107,42 @@
       "source": "传感器。累计收获产量，包含收获的奇异物质；花掉库存不会减少。自动生成的水和肥料请用 num_items() 查询。",
       "zh": "传感器。累计收获产量，包含收获的奇异物质；花掉库存不会减少。自动生成的水和肥料请用 num_items() 查询。",
       "en": "Sensors. Cumulative harvested production, including harvested Weird Substance; spending does not reduce it. Passive water/fertilizer supplies use num_items()."
+    },
+    {
+      "key": "t_bd137d5b4a156fa5",
+      "source": "请输入程序名称。",
+      "zh": "请输入程序名称。",
+      "en": "Enter a program name."
+    },
+    {
+      "key": "t_3624496802c13d68",
+      "source": "这个名称已被系统保留，请换一个名称。",
+      "zh": "这个名称已被系统保留，请换一个名称。",
+      "en": "This name is reserved. Choose another name."
+    },
+    {
+      "key": "t_29e0c9cf5ad3fef2",
+      "source": "请使用汉字、字母、数字或下划线，最多80个字符，不需要填写 .py。",
+      "zh": "请使用汉字、字母、数字或下划线，最多80个字符，不需要填写 .py。",
+      "en": "Use Chinese characters, letters, digits or underscores, up to 80 characters. Do not add .py."
+    },
+    {
+      "key": "t_3f25c01d47fbd89b",
+      "source": "程序名称已存在；仅修改英文字母大小写也会重名。",
+      "zh": "程序名称已存在；仅修改英文字母大小写也会重名。",
+      "en": "This program name already exists. Names cannot differ only by letter case."
+    },
+    {
+      "key": "t_a6e4bb6d363afdf5",
+      "source": "支持数字或汉字开头，例如 123、1号农场、浇水程序；至少保留一个程序。",
+      "zh": "支持数字或汉字开头，例如 123、1号农场、浇水程序；至少保留一个程序。",
+      "en": "Chinese or digits may come first, for example 123, 1_farm or 浇水程序. At least one program is kept."
+    },
+    {
+      "key": "t_be3dfd815b19da64",
+      "source": "程序名称支持数字或汉字开头，例如123、1号农场、浇水程序。允许汉字、字母、数字和下划线，最多80字符，不填.py。重复名称（含仅大小写不同）不能创建。数字文件可用 from 123 import work 或 import 123 as farm；中文文件可直接 import 浇水程序。\n\n程序也是可复用模块。程序库按文件显示卡片，并显示总数、活跃程序数和无人机槽位。绿色表示还有工作机在运行；琥珀色边框表示当前主编辑器打开的文件。同一个程序可以同时处于运行和编辑状态。暂停仍算活跃，空闲表示没有存活工作机。\n\n编辑只切换查看，不会停止已有工作。主运行按钮会替换控制程序及其全部工作机。窗口按钮打开可拖动编辑器，独立运行在有空余槽位时启动文件。全部停止会结束所有任务。关闭编辑窗口不删除代码，也不停止任务；活跃程序不能删除，至少保留一个文件。\n\nCmd/Ctrl+Z 撤销，Cmd/Ctrl+Shift+Z 重做；F9 在光标行切换断点。用暂停、单步和变量监视定位问题。",
+      "zh": "程序名称支持数字或汉字开头，例如123、1号农场、浇水程序。允许汉字、字母、数字和下划线，最多80字符，不填.py。重复名称（含仅大小写不同）不能创建。数字文件可用 from 123 import work 或 import 123 as farm；中文文件可直接 import 浇水程序。\n\n程序也是可复用模块。程序库按文件显示卡片，并显示总数、活跃程序数和无人机槽位。绿色表示还有工作机在运行；琥珀色边框表示当前主编辑器打开的文件。同一个程序可以同时处于运行和编辑状态。暂停仍算活跃，空闲表示没有存活工作机。\n\n编辑只切换查看，不会停止已有工作。主运行按钮会替换控制程序及其全部工作机。窗口按钮打开可拖动编辑器，独立运行在有空余槽位时启动文件。全部停止会结束所有任务。关闭编辑窗口不删除代码，也不停止任务；活跃程序不能删除，至少保留一个文件。\n\nCmd/Ctrl+Z 撤销，Cmd/Ctrl+Shift+Z 重做；F9 在光标行切换断点。用暂停、单步和变量监视定位问题。",
+      "en": "Program names may start with Chinese characters or digits: 123, 1_farm and 浇水程序 are valid. Use letters, digits or underscores, up to 80 characters, without .py. Duplicate names, including case-only variants, are rejected. Import a numeric file with from 123 import work or import 123 as farm. Chinese module names work directly, for example import 浇水程序.\n\nPrograms are reusable modules. The library shows a card for every file, a total count, active-file count and drone-slot usage. Green means the file has running workers; an amber border means it is open in the main editor. A file may be both running and selected. Paused tasks remain active; idle files have no live workers.\n\nEdit switches the main editor without stopping existing work. Main Run replaces the current controller and its workers. Window opens a draggable editor; Run separately launches that file if a drone slot is free. Stop all terminates every worker. Closing an editor window leaves its code and running tasks intact. Running files cannot be deleted; at least one file is retained.\n\nUse Cmd/Ctrl+Z to undo and Cmd/Ctrl+Shift+Z to redo. F9 toggles a breakpoint at the caret line. Pause, Step and the variable watch help diagnose a program."
     }
   ]
 }

@@ -42,16 +42,26 @@ namespace Verdant.Automation
                 }
                 if(s.StartsWith("def "))
                 {
-                    var match=Regex.Match(s,"^def ([A-Za-z_]\\w*)\\((.*)\\):$");if(!match.Success)throw new ScriptError(l,"Expected def name(parameters):");var parameters=new List<string>();var defaults=new List<Expression>();bool optional=false;
+                    var match=Regex.Match(s,"^def ("+ScriptIdentifier.Pattern+@")\((.*)\):$");if(!match.Success)throw new ScriptError(l,"Expected def name(parameters):");var parameters=new List<string>();var defaults=new List<Expression>();bool optional=false;
                     foreach(var arg in Split(match.Groups[2].Value))
-                    {int equal=AssignmentAt(arg);string name=equal<0?arg.Trim():arg.Substring(0,equal).Trim();if(!Regex.IsMatch(name,"^[A-Za-z_]\\w*$")||parameters.Contains(name))throw new ScriptError(l,"Invalid or duplicate parameter.");parameters.Add(name);if(equal>=0){optional=true;defaults.Add(Expr(arg.Substring(equal+1),l));}else if(optional)throw new ScriptError(l,"Required parameter after default parameter.");}
+                    {int equal=AssignmentAt(arg);string name=equal<0?arg.Trim():arg.Substring(0,equal).Trim();if(!ScriptIdentifier.IsValid(name)||parameters.Contains(name))throw new ScriptError(l,"Invalid or duplicate parameter.");parameters.Add(name);if(equal>=0){optional=true;defaults.Add(Expr(arg.Substring(equal+1),l));}else if(optional)throw new ScriptError(l,"Required parameter after default parameter.");}
                     int previous=loops;loops=0;functions++;var body=Body(row);functions--;loops=previous;block.statements.Add(new FunctionStatement(l,match.Groups[1].Value,parameters.ToArray(),defaults.ToArray(),body));continue;
                 }
                 if(s=="return"||s.StartsWith("return ")){if(functions==0)throw new ScriptError(l,"return outside a function.");block.statements.Add(new FlowStatement(l,"return",s=="return"?null:Expr(s.Substring(7),l)));continue;}
                 if(s=="break"||s=="continue"){if(loops==0)throw new ScriptError(l,s+" outside a loop.");block.statements.Add(new FlowStatement(l,s));continue;}
-                if(s.StartsWith("global ")){var names=Split(s.Substring(7));if(names.Any(n=>!Regex.IsMatch(n,"^[A-Za-z_]\\w*$")))throw new ScriptError(l,"Invalid global name.");block.statements.Add(new GlobalStatement(l,names.ToArray()));continue;}
-                if(s.StartsWith("import ")){string name=s.Substring(7).Trim();if(!Regex.IsMatch(name,"^[A-Za-z_]\\w*$"))throw new ScriptError(l,"Import a single named game module.");block.statements.Add(new ImportStatement(l,name,null));continue;}
-                if(s.StartsWith("from ")){var m=Regex.Match(s,"^from ([A-Za-z_]\\w*) import (.+)$");if(!m.Success)throw new ScriptError(l,"Invalid import.");block.statements.Add(new ImportStatement(l,m.Groups[1].Value,Split(m.Groups[2].Value).ToArray()));continue;}
+                if(s.StartsWith("global ")){var names=Split(s.Substring(7));if(names.Any(n=>!ScriptIdentifier.IsValid(n)))throw new ScriptError(l,"Invalid global name.");block.statements.Add(new GlobalStatement(l,names.ToArray()));continue;}
+                if(s.StartsWith("import "))
+                {
+                    var m=Regex.Match(s,@"^import (\S+)(?: as (\S+))?$");
+                    if(!m.Success||!ClassicProgramNames.IsStoredNameSafe(m.Groups[1].Value)||m.Groups[2].Success&&!ScriptIdentifier.IsValid(m.Groups[2].Value))throw new ScriptError(l,"Import a single named game module, optionally as an alias.");
+                    block.statements.Add(new ImportStatement(l,m.Groups[1].Value,null,m.Groups[2].Success?m.Groups[2].Value:null));continue;
+                }
+                if(s.StartsWith("from "))
+                {
+                    var m=Regex.Match(s,@"^from (\S+) import (.+)$");if(!m.Success||!ClassicProgramNames.IsStoredNameSafe(m.Groups[1].Value))throw new ScriptError(l,"Invalid import.");
+                    var imported=Split(m.Groups[2].Value);if(imported.Count==0||imported.Any(n=>n!="*"&&!ScriptIdentifier.IsValid(n)))throw new ScriptError(l,"Invalid import name.");
+                    block.statements.Add(new ImportStatement(l,m.Groups[1].Value,imported.ToArray()));continue;
+                }
                 if(s=="pass"){block.statements.Add(new ExprStatement(l,new Literal(l,null)));continue;}
                 int assignment=AssignmentAt(s);if(assignment>=0){string left=s.Substring(0,assignment).Trim(),right=s.Substring(assignment+1).Trim();string op=left.Length>0?left.Substring(left.Length-1):"";if("+-*/%".Contains(op)&&op!=""){left=left.Substring(0,left.Length-1).Trim();block.statements.Add(new Assignment(l,Expr(left,l),new Binary(l,op,Expr(left,l),Expr(right,l))));}else block.statements.Add(new Assignment(l,Expr(left,l),Expr(right,l)));}
                 else block.statements.Add(new ExprStatement(l,Expr(s,l)));
@@ -74,7 +84,7 @@ namespace Verdant.Automation
                 char c=source[i];if(char.IsWhiteSpace(c)){i++;continue;}
                 if(c=='\''||c=='"'){char quote=c;i++;var b=new StringBuilder();while(i<source.Length&&source[i]!=quote){if(source[i]=='\\'&&i+1<source.Length){i++;char escape=source[i++];b.Append(escape=='n'?'\n':escape=='t'?'\t':escape=='r'?'\r':escape);}else b.Append(source[i++]);}if(i>=source.Length)throw new ScriptError(line,"Unterminated string.");i++;tokens.Add(new Token("string",b.ToString(),true));continue;}
                 if(char.IsDigit(c)||c=='.'&&i+1<source.Length&&char.IsDigit(source[i+1])){int start=i++;while(i<source.Length&&(char.IsDigit(source[i])||source[i]=='.'))i++;double n;if(!double.TryParse(source.Substring(start,i-start),NumberStyles.Float,CultureInfo.InvariantCulture,out n))throw new ScriptError(line,"Invalid number.");tokens.Add(new Token("number",n,true));continue;}
-                if(char.IsLetter(c)||c=='_'){int start=i++;while(i<source.Length&&(char.IsLetterOrDigit(source[i])||source[i]=='_'))i++;tokens.Add(new Token(source.Substring(start,i-start)));continue;}
+                if(ScriptIdentifier.IsStart(c)){int start=i++;while(i<source.Length&&ScriptIdentifier.IsContinue(source[i]))i++;tokens.Add(new Token(source.Substring(start,i-start)));continue;}
                 string two=i+1<source.Length?source.Substring(i,2):"";if(new[]{"==","!=","<=",">=","//","**"}.Contains(two)){tokens.Add(new Token(two));i+=2;continue;}
                 if("()[]{},:.+-*/%<>".IndexOf(c)<0)throw new ScriptError(line,"Unsupported character: "+c);tokens.Add(new Token(c.ToString()));i++;
             }
@@ -94,13 +104,13 @@ namespace Verdant.Automation
         Expression Product(){var e=Unary();while(Peek=="*"||Peek=="/"||Peek=="//"||Peek=="%"){string op=Take().text;e=new Binary(line,op,e,Unary());}return e;}
         Expression Unary(){if(++depth>96)throw new ScriptError(line,"Expression nesting limit.");Expression e;if(Peek=="-"||Peek=="+"){string op=Take().text;e=new Unary(line,op,Unary());}else{e=Postfix();if(Match("**"))e=new Binary(line,"**",e,Unary());}depth--;return e;}
 
-        Expression Postfix(){var e=Primary();while(true){if(Match("(")){var args=new List<Expression>();if(!Match(")")){do{args.Add(Or());}while(Match(",")&&Peek!=")");Need(")");}e=new Call(line,e,args);}else if(Match("[")){var key=Or();Need("]");e=new Index(line,e,key);}else if(Match(".")){string name=Take().text;if(!Regex.IsMatch(name,"^[A-Za-z_]\\w*$"))throw new ScriptError(line,"Invalid member name.");e=new Member(line,e,name);}else return e;}}
+        Expression Postfix(){var e=Primary();while(true){if(Match("(")){var args=new List<Expression>();if(!Match(")")){do{args.Add(Or());}while(Match(",")&&Peek!=")");Need(")");}e=new Call(line,e,args);}else if(Match("[")){var key=Or();Need("]");e=new Index(line,e,key);}else if(Match(".")){string name=Take().text;if(!ScriptIdentifier.IsValid(name))throw new ScriptError(line,"Invalid member name.");e=new Member(line,e,name);}else return e;}}
         Expression Primary()
         {
             var t=Take();if(t.literal)return new Literal(line,t.value);if(t.text=="("){if(Match(")"))return new Collection(line,"tuple",new List<Expression>());var e=Tuple();Need(")");return e;}
             if(t.text=="["){var items=new List<Expression>();if(!Match("]")){do{items.Add(Or());}while(Match(",")&&Peek!="]");Need("]");}return new Collection(line,"list",items);}
             if(t.text=="{"){var items=new List<Expression>();if(Match("}"))return new Collection(line,"dict",items);items.Add(Or());bool dict=Match(":");if(dict)items.Add(Or());while(Match(",")&&Peek!="}"){items.Add(Or());if(dict){Need(":");items.Add(Or());}}Need("}");return new Collection(line,dict?"dict":"set",items);}
-            if(!Regex.IsMatch(t.text,"^[A-Za-z_]\\w*$"))throw new ScriptError(line,"Invalid expression.");return new Name(line,t.text);
+            if(!ScriptIdentifier.IsValid(t.text))throw new ScriptError(line,"Invalid expression.");return new Name(line,t.text);
         }
     }
 }

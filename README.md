@@ -2,19 +2,19 @@
 
 **Program the farm. Discover the algorithm.**
 
-**English** · [简体中文](README.zh-CN.md) · [Download 0.11.2](https://github.com/13536309143/verdant-circuit/releases/tag/v0.11.2) · [Test guide](docs/TESTING.md)
+**English** · [简体中文](README.zh-CN.md) · [Download 0.11.3](https://github.com/13536309143/verdant-circuit/releases/tag/v0.11.3) · [Test guide](docs/TESTING.md)
 
 Verdant Circuit is a single-player programming farm, independently implemented in Unity. Write Python-inspired code to grow resources, unlock technology and solve different agricultural algorithms.
 
-**0.11.2 adds a staged campaign built around roughly three hours of normal game time.** Crop discoveries open the next field, execution-speed and yield tiers. The research tree shows required discoveries, cumulative production and payable costs. Program cards distinguish active work from the file you are editing, and a searchable bilingual field manual explains every major system.
+**0.11.3 fixes custom program names and includes a staged campaign built around roughly three hours of normal game time.** Crop discoveries open the next field, execution-speed and yield tiers. The research tree shows required discoveries, cumulative production and payable costs. Program cards distinguish active work from the file you are editing, and a searchable bilingual field manual explains every major system.
 
-Updating from 0.11.1 preserves inventory and purchased research. Create a new farm to experience the complete staged progression. Earlier Releases and tags remain available.
+The naming fix works in existing farms without restarting. Updating from 0.11.1 or 0.11.2 preserves inventory and purchased research; a fresh farm is only needed to experience the full staged campaign introduced in 0.11.2. Earlier Releases and tags remain available.
 
 ![Automation studio](docs/images/discovery-studio-en.png)
 
 ## Playable systems
 
-| System | Included in 0.11.2 |
+| System | Included in 0.11.3 |
 |---|---|
 | Production | Grass, bushes, trees, carrots, pumpkins, sunflowers and cacti; hay, wood, power, cactus, bone, gold and supplies |
 | Spatial crops | Tree spacing, randomized companion requests, giant pumpkin squares and dead-plant replacement |
@@ -38,11 +38,11 @@ This is an independent reimplementation of programming-farm mechanics, not the o
 
 ## Download and run
 
-Get the complete package from [v0.11.2 Releases](https://github.com/13536309143/verdant-circuit/releases/tag/v0.11.2):
+Get the complete package from [v0.11.3 Releases](https://github.com/13536309143/verdant-circuit/releases/tag/v0.11.3):
 
-- **Mac:** `HeXu-macOS-0.11.2.zip` → extract and open `HeXu-0.11.2.app`. Intel and Apple Silicon are included.
-- **Windows x64:** `HeXu-Windows-x64-0.11.2.zip` → extract the entire folder and open `HeXu.exe`. Keep the data folder, UnityPlayer.dll and Mono runtime beside it.
-- **Source:** `HeXu-UnityProject-0.11.2.zip` → extract and add its root in Unity Hub.
+- **Mac:** `HeXu-macOS-0.11.3.zip` → extract and open `HeXu-0.11.3.app`. Intel and Apple Silicon are included.
+- **Windows x64:** `HeXu-Windows-x64-0.11.3.zip` → extract the entire folder and open `HeXu.exe`. Keep the data folder, UnityPlayer.dll and Mono runtime beside it.
+- **Source:** `HeXu-UnityProject-0.11.3.zip` → extract and add its root in Unity Hub.
 
 No Unity installation is needed to play. Checksums are supplied in the release. The Mac app is not distribution-signed or notarized. Windows is cross-built on Mac; native Windows acceptance remains outstanding.
 
@@ -94,6 +94,8 @@ Use Settings → Unrestricted syntax when experimenting without the language-res
 Browsing another file keeps existing work running. Main Run starts a fresh controller and replaces current tasks. A floating window can launch another independent program if a drone slot is available. Stop halts all tasks. Worker drones disappear after completing their functions; handles remain usable for `wait_for()` results. Programs resume through explicit Run after loading, rather than restoring interpreter stacks.
 
 Research is a connected discovery tree, including programming syntax. Use **F2**, drag to pan, scroll to zoom, or keys **1–4** to jump between the overview and three branches. Select a node for its effect, prerequisites and live resource requirements.
+
+Program names may start with digits or Chinese characters, such as `123`, `1号农场` and `浇水程序`. Use up to 80 letters, digits or underscores without `.py`. Import numeric modules with `from 123 import work` or `import 123 as farm`; Chinese modules can use `import 浇水程序`. Invalid names keep the typed text and show a reason below the input.
 
 ## Interfaces and experiments
 
@@ -178,6 +180,8 @@ The [0.11.2 playthrough and balance report](docs/BALANCE-3H.en.md) records three
 The rebuilt implementation is in `Assets/VerdantCircuit/Scripts/Automation/`. Test reports and the manual acceptance procedure are in [docs/TESTING.md](docs/TESTING.md). The old standalone fleet/island Python prototype under `tools/` is historical and does not validate this interpreter or world.
 
 ## Release history
+
+- **0.11.3 — Program Name Fix:** numeric/Chinese file names, Unicode module imports, aliases and visible validation errors.
 
 - **0.11.2 — Staged Discovery:** three-hour progression, crop-gated upgrades, program cards, expanded manual, discovery tree, completion notices and audio slider.
 - **0.11.1 — Automation Rebuild:** resource economy, language runtime, crop algorithms and independent function drones.

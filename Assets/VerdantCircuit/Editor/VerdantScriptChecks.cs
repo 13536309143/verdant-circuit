@@ -24,6 +24,6 @@ public static class VerdantScriptChecks
         host=new Host();run(host,"s=0\nfor i in range(10,0,-2):\n    if i==6:\n        continue\n    s+=i\n    if i==4:\n        break\nprint(s)\nprint(-2**2, 7//2, -1%4)");check(string.Join(",",host.output)=="22,-4 3 3","Loop control and arithmetic semantics");
         var task=new ScriptTask(new Host(),"while True:\n    pass");for(int i=0;i<160;i++)task.Step();check(!task.Finished&&task.Steps==160,"Infinite loops yield to frame budgets");
         bool error=false;try{run(new Host(),"def f():\n    return f()\nf()");}catch(ScriptError){error=true;}check(error,"Recursion is bounded");
-        Directory.CreateDirectory("InternalTestReports/0.11.2");File.WriteAllText("InternalTestReports/0.11.2/language.json","{\"passed\":"+checks+"}");UnityEngine.Debug.Log("SCRIPT CHECKS PASSED: "+checks);
+        Directory.CreateDirectory("InternalTestReports/0.11.3");File.WriteAllText("InternalTestReports/0.11.3/language.json","{\"passed\":"+checks+"}");UnityEngine.Debug.Log("SCRIPT CHECKS PASSED: "+checks);
     }
 }

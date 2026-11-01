@@ -1,0 +1,39 @@
+{
+  "version": "0.11.3",
+  "sourceFingerprint": "32366b062504234f503744406de3750f6d817ce00f273542b3d2ffb2e42be8d8",
+  "checks": {
+    "classic": 44,
+    "language": 9,
+    "balance": 38,
+    "progression": 118,
+    "program-names": 35
+  },
+  "totalChecks": 244,
+  "ui": {
+    "frames": 1132,
+    "runtimeErrors": 0,
+    "firstHarvest": true,
+    "independentDrones": true,
+    "locales": 2,
+    "profiles": true,
+    "externalFiles": true,
+    "floatingWindows": true,
+    "completionNotices": true,
+    "researchTree": true,
+    "researchPurchase": true,
+    "panZoom": true,
+    "volumeSlider": true,
+    "programCards": true,
+    "manual": true,
+    "customProgramNames": true
+  },
+  "fullReplay": {
+    "seed": 731,
+    "status": "passed",
+    "researchMaxed": 34,
+    "achievements": 13,
+    "raceRecords": 16,
+    "gameSeconds": 10905.566666592118,
+    "economyTimingMatches0112": true
+  }
+}

@@ -33,7 +33,7 @@ public static class VerdantBalanceChecks
         for(int seed=1;seed<=12;seed++){f=Farm(8);f.Data.randomState=(uint)seed;f.Cell(0,0).entity="bush";f.Use("weird_substance",0,0,1024);var d=Distances(f,0);Check(d.All(x=>x>=0)&&d[f.treasure]>=Math.Ceiling(d.Max()*.65),"Maze treasure requires a substantial connected route, seed "+seed);int old=f.treasure;f.Use("weird_substance",old%8,old/8,1024);d=Distances(f,old);Check(f.treasure!=old&&d[f.treasure]>=Math.Ceiling(d.Max()*.65),"Reused maze cannot pay repeatedly at the same tile, seed "+seed);}
         f=new ClassicFarm(41);ClassicBalance.ConfigureCompetition(f,"carrot",true);Check(f.Data.size==8&&f.MaxDrones==1&&f.Level("speed")==3&&f.Count("carrot")==0&&f.Count("hay")>0,"Single-drone competition has an isolated mid-tier preset");
         Check(new[]{"hay","wood","carrot","pumpkin","power","cactus","bone"}.Select(ClassicBalance.CompetitionTarget).Distinct().Count()==7,"Major production challenges have distinct quantity targets");
-        System.IO.Directory.CreateDirectory("InternalTestReports/0.11.2");System.IO.File.WriteAllText("InternalTestReports/0.11.2/balance.json",UnityEngine.JsonUtility.ToJson(new Report{passed=names.Count,checks=names.ToArray()},true));
+        System.IO.Directory.CreateDirectory("InternalTestReports/0.11.3");System.IO.File.WriteAllText("InternalTestReports/0.11.3/balance.json",UnityEngine.JsonUtility.ToJson(new Report{passed=names.Count,checks=names.ToArray()},true));
         UnityEngine.Debug.Log("BALANCE CHECKS PASSED: "+names.Count);
     }
 }

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 verdant_project_dir="$(cd "$(dirname "$0")/.." && pwd)"
-verdant_version="0.11.2"
+verdant_version="0.11.3"
 verdant_release_dir="$verdant_project_dir/Builds/release"
 if [[ -z "${VERDANT_UNITY_EDITOR:-}" || ! -x "$VERDANT_UNITY_EDITOR" ]]; then
   echo 'Set VERDANT_UNITY_EDITOR to your Unity Editor executable.' >&2; exit 1

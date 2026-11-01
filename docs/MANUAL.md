@@ -1,4 +1,4 @@
-# Verdant Circuit 0.11.2 — Field Manual
+# Verdant Circuit 0.11.3 — Field Manual
 
 [English](MANUAL.md) · [简体中文](MANUAL.zh-CN.md)
 
@@ -17,6 +17,8 @@ while True:
 ```
 
 ## 02 / Programs & states
+
+Program names may start with Chinese characters or digits: 123, 1_farm and 浇水程序 are valid. Use letters, digits or underscores, up to 80 characters, without .py. Duplicate names, including case-only variants, are rejected. Import a numeric file with from 123 import work or import 123 as farm. Chinese module names work directly, for example import 浇水程序.
 
 Programs are reusable modules. The library shows a card for every file, a total count, active-file count and drone-slot usage. Green means the file has running workers; an amber border means it is open in the main editor. A file may be both running and selected. Paused tasks remain active; idle files have no live workers.
 

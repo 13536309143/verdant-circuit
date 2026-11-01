@@ -1,5 +1,12 @@
 # Changelog / 更新日志
 
+## [0.11.3] — 2026-11-01 · Program Name Fix
+
+- Accept Chinese- and digit-leading program names across creation, saves, file export/import, module lookup and simulations.
+- Preserve invalid input and show creation errors inline; reject duplicate case/Unicode variants and reserved file names; suggest an unused default name.
+- Support Unicode script identifiers and module aliases such as `import 123 as farm`; numeric files also support `from 123 import work`.
+- Keep the 0.11.2 progression and economy. Existing farms and programs are retained.
+
 ## [0.11.2] — 2026-11-01 · Staged Discovery
 
 - Two-column program cards with file/active counts, selected/running/paused/idle indicators, live worker counts and active-file deletion protection.

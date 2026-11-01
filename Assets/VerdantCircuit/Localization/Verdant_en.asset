@@ -4623,6 +4623,48 @@ MonoBehaviour:
       num_items().
     m_Metadata:
       m_Items: []
+  - m_Id: 1076756604772352
+    m_Localized: Enter a program name.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1076756604772353
+    m_Localized: This name is reserved. Choose another name.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1076756604772354
+    m_Localized: Use Chinese characters, letters, digits or underscores, up to 80
+      characters. Do not add .py.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1076756604772355
+    m_Localized: This program name already exists. Names cannot differ only by letter
+      case.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1076756604772356
+    m_Localized: "Chinese or digits may come first, for example 123, 1_farm or \u6D47\u6C34\u7A0B\u5E8F.
+      At least one program is kept."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1076756604772357
+    m_Localized: "Program names may start with Chinese characters or digits: 123,
+      1_farm and \u6D47\u6C34\u7A0B\u5E8F are valid. Use letters, digits or underscores,
+      up to 80 characters, without .py. Duplicate names, including case-only variants,
+      are rejected. Import a numeric file with from 123 import work or import 123
+      as farm. Chinese module names work directly, for example import \u6D47\u6C34\u7A0B\u5E8F.\n\nPrograms
+      are reusable modules. The library shows a card for every file, a total count,
+      active-file count and drone-slot usage. Green means the file has running workers;
+      an amber border means it is open in the main editor. A file may be both running
+      and selected. Paused tasks remain active; idle files have no live workers.\n\nEdit
+      switches the main editor without stopping existing work. Main Run replaces
+      the current controller and its workers. Window opens a draggable editor; Run
+      separately launches that file if a drone slot is free. Stop all terminates
+      every worker. Closing an editor window leaves its code and running tasks intact.
+      Running files cannot be deleted; at least one file is retained.\n\nUse Cmd/Ctrl+Z
+      to undo and Cmd/Ctrl+Shift+Z to redo. F9 toggles a breakpoint at the caret
+      line. Pause, Step and the variable watch help diagnose a program."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

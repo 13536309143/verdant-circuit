@@ -3,6 +3,7 @@
 from pathlib import Path
 import re,json,hashlib
 root=Path(__file__).resolve().parents[1];assets=root/'Assets/VerdantCircuit'
+version=re.search(r'Version="([^"]+)"',(assets/'Scripts/VerdantContent.cs').read_text())[1]
 quoted=r'"(?:[^"\\]|\\.)*"'
 strings=assets/'Localization/strings.json';data=json.loads(strings.read_text());entries={e['key']:e for e in data['entries']}
 def register(en,zh):
@@ -20,7 +21,7 @@ assert len(chapters)==16 and len(apis)>=30
 progress=(assets/'Scripts/Automation/ClassicProgression.cs').read_text();tiers={k:json.loads('['+v+']') for k,v in re.findall(r'\{"(\w+)",new\[\]\{([^}]+)\}\}',progress)}
 goals=[(id,item,int(amount)) for id,item,amount in re.findall(r'\{"(\w+)",new Stock\("(\w+)",(\d+)\)\}',progress)]
 for locale,name in [('en','MANUAL.md'),('zh','MANUAL.zh-CN.md')]:
-    lines=['# '+('Verdant Circuit 0.11.2 — Field Manual' if locale=='en' else '禾序 0.11.2 — 田野手册'),'\n[English](MANUAL.md) · [简体中文](MANUAL.zh-CN.md)\n']
+    lines=['# '+(f'Verdant Circuit {version} — Field Manual' if locale=='en' else f'禾序 {version} — 田野手册'),'\n[English](MANUAL.md) · [简体中文](MANUAL.zh-CN.md)\n']
     for c in chapters:
         lines+=['## '+c[locale+'_title']+'\n',c[locale]+'\n']
         if c['id']=='progression':

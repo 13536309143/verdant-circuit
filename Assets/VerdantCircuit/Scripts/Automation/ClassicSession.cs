@@ -39,7 +39,7 @@ namespace Verdant.Automation
 
         public IEnumerable<Pulse> Simulate(string file,object unlocks,object items,object globals,int seed,int speedup,Box result,int line)
         {
-            if(Simulating||IsSimulation)throw new Exception("Nested simulations are not supported.");string source=Farm.Data.programs.FirstOrDefault(p=>p.name==file)?.source;if(source==null)throw new Exception("Simulation program not found: "+file);
+            if(Simulating||IsSimulation)throw new Exception("Nested simulations are not supported.");string source=Farm.Data.programs.FirstOrDefault(p=>ClassicProgramNames.Same(p.name,file))?.source;if(source==null)throw new Exception("Simulation program not found: "+file);
             var world=new ClassicFarm((uint)(seed<0?DateTime.UtcNow.Ticks:seed+1));world.Data.allowLockedSyntax=true;world.Data.programs=Farm.Data.programs.Select(p=>new ClassicProgram(p.name,p.source)).ToList();
             if(unlocks is string&&(string)unlocks=="_all_unlocks")foreach(var tech in ClassicFarm.Techs)world.Data.unlocks.Add(new Stock(tech.id,tech.max));else if(unlocks is Dictionary<object,object>)foreach(var p in (Dictionary<object,object>)unlocks)world.Data.unlocks.Add(new Stock(Convert.ToString(p.Key).Replace("unlock:",""),Math.Max(0,ScriptValue.Integer(p.Value))));else if(unlocks!=null)foreach(var v in ScriptValue.Items(unlocks)){string id=Convert.ToString(v).Replace("unlock:","");var t=ClassicFarm.Techs.FirstOrDefault(x=>x.id==id);if(t==null)throw new Exception("Unknown simulation research: "+id);world.Data.unlocks.Add(new Stock(id,t.max));}
             world.Resize(world.MaxSize);if(items is Dictionary<object,object>)foreach(var p in (Dictionary<object,object>)items)world.Add(Convert.ToString(p.Key),ScriptValue.Number(p.Value));
@@ -51,7 +51,7 @@ namespace Verdant.Automation
             if(Simulating||IsSimulation)throw new Exception("Nested challenges are not supported.");string key=category.Replace("_","").ToLowerInvariant();bool single=key.EndsWith("single");if(single)key=key.Substring(0,key.Length-6);
             string item=key=="carrots"?"carrot":key=="pumpkins"?"pumpkin":key=="sunflowers"?"power":key=="dinosaur"?"bone":key=="maze"?"gold":key=="fastestreset"?"reset":key;
             if(item!="reset"&&!new[]{"hay","wood","carrot","pumpkin","power","cactus","gold","bone"}.Contains(item))throw new Exception("Unknown local challenge: "+category);
-            string source=Farm.Data.programs.Find(p=>p.name==file)?.source;if(source==null)throw new Exception("Challenge program not found: "+file);var world=new ClassicFarm(41);world.Data.programs=Farm.Data.programs.Select(p=>new ClassicProgram(p.name,p.source)).ToList();ClassicBalance.ConfigureCompetition(world,item,single);
+            string source=Farm.Data.programs.Find(p=>ClassicProgramNames.Same(p.name,file))?.source;if(source==null)throw new Exception("Challenge program not found: "+file);var world=new ClassicFarm(41);world.Data.programs=Farm.Data.programs.Select(p=>new ClassicProgram(p.name,p.source)).ToList();ClassicBalance.ConfigureCompetition(world,item,single);
             var run=new ClassicSession(world){IsSimulation=true};run.Start(source);Simulating=true;try{int ticks=0;while(run.Running){for(int i=0;i<100&&run.Running;i++){run.FixedTick();if(++ticks>ClassicBalance.CompetitionTimeLimit(item)*60)throw new Exception("Challenge exceeded its game-time limit.");}yield return new Pulse(line);}bool won=run.Error==""&&(item=="reset"?world.Level("leaderboard")>0:(world.Data.harvested.Find(s=>s.id==item)?.amount??0)>=ClassicBalance.CompetitionTarget(item));if(!won)throw new Exception("Challenge target not reached. "+run.Error);var record=Farm.Data.records.Find(r=>r.category==category&&r.seed==41&&r.rules==ClassicBalance.CompetitionRevision);if(record==null)Farm.Data.records.Add(new RaceRecord{rules=ClassicBalance.CompetitionRevision,category=category,seconds=run.elapsed,program=file,seed=41});else if(run.elapsed<record.seconds){record.seconds=run.elapsed;record.program=file;}Farm.Say("Local record: "+category+" / "+run.elapsed.ToString("F3")+"s");if(ChallengeCompleted!=null)ChallengeCompleted(category,run.elapsed);result.value=null;}finally{Simulating=false;}
         }
 
@@ -75,7 +75,7 @@ namespace Verdant.Automation
             return null;
         }
         public bool Allows(string feature){return Farm.Data.allowLockedSyntax||Farm.Level(feature)>0;}
-        public string Module(string name){return Farm.Data.programs.FirstOrDefault(p=>p.name==name)?.source;}
+        public string Module(string name){return Farm.Data.programs.FirstOrDefault(p=>ClassicProgramNames.Same(p.name,name))?.source;}
         int Direction(object value){int i=Array.IndexOf(new[]{"North","East","South","West"},Convert.ToString(value));if(i<0)throw new Exception("Expected North, East, South or West.");return i;}
         int Index {get{return drone.y*Farm.Data.size+drone.x;}}
         object Measure(int index){if(Farm.maze)return new object[]{(double)(Farm.treasure%Farm.Data.size),(double)(Farm.treasure/Farm.Data.size)};var p=Farm.Data.cells[index];if(index==Farm.apple)return Farm.nextApple<0?null:new object[]{(double)(Farm.nextApple%Farm.Data.size),(double)(Farm.nextApple/Farm.Data.size)};if(p.entity=="cactus"||p.entity=="sunflower")return (double)p.measure;return null;}

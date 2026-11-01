@@ -10,7 +10,7 @@ public static class VerdantClassicChecks
     static ClassicSession Execute(ClassicFarm f,string source,int frames=36000){var s=new ClassicSession(f);s.Start(source);while(s.Running&&frames-->0)s.FixedTick();if(s.Error!="")throw new Exception(s.Error);if(s.Running)throw new Exception("Task did not finish.");return s;}
     public static void Run()
     {
-        checks=0;names=new List<string>();VerdantScriptChecks.Run();VerdantBalanceChecks.Run();VerdantProgressionChecks.Run();
+        checks=0;names=new List<string>();VerdantScriptChecks.Run();VerdantBalanceChecks.Run();VerdantProgressionChecks.Run();VerdantProgramNameChecks.Run();
         Check(ClassicResearchLayout.Positions.Count==ClassicFarm.Techs.Length&&ClassicFarm.Techs.All(t=>ClassicResearchLayout.Positions.ContainsKey(t.id)),"Every cultivation, language and tool research has exactly one tree node");
         Check(ClassicFarm.Techs.Where(t=>t.prerequisite!="").All(t=>ClassicResearchLayout.Positions[t.prerequisite].x+240<ClassicResearchLayout.Positions[t.id].x),"Dependency links point forward without cyclic routes");
         var positions=ClassicResearchLayout.Positions.Values.ToArray();bool overlap=false;for(int a=0;a<positions.Length;a++)for(int b=a+1;b<positions.Length;b++)if(Math.Abs(positions[a].x-positions[b].x)<240&&Math.Abs(positions[a].y-positions[b].y)<132)overlap=true;Check(!overlap,"Tree cards do not overlap");foreach(string example in ClassicExamples.Sources)new ScriptParser().Parse(example);Check(true,"All nine shipped programs compile");
@@ -45,7 +45,7 @@ public static class VerdantClassicChecks
         f=Sandbox(8);Execute(f,"set_world_size(2)\nset_execution_speed(1)\nharvest()");Check(f.Data.size==8&&f.Data.defaultSize==0,"Temporary debug field size restores after execution");
         f=Sandbox(8);session=new ClassicSession(f);session.Start("set_world_size(2)\nprint(1/0)");for(int i=0;i<1000&&session.Running;i++)session.FixedTick();Check(session.Error!=""&&f.Data.size==8&&f.Data.defaultSize==0,"Failed debug programs restore the original field size");
         f=Sandbox(8);session=new ClassicSession(f);session.Start("set_world_size(2)\nharvest()");for(int i=0;i<1000&&session.Running;i++)session.Step();Check(!session.Running&&f.Data.size==8&&f.Data.defaultSize==0,"Stepping to completion restores the original field size");
-        Directory.CreateDirectory("InternalTestReports/0.11.2");File.WriteAllText("InternalTestReports/0.11.2/classic.json",UnityEngine.JsonUtility.ToJson(new Report{passed=checks,checks=names.ToArray()},true));UnityEngine.Debug.Log("CLASSIC CHECKS PASSED: "+checks);
+        Directory.CreateDirectory("InternalTestReports/0.11.3");File.WriteAllText("InternalTestReports/0.11.3/classic.json",UnityEngine.JsonUtility.ToJson(new Report{passed=checks,checks=names.ToArray()},true));UnityEngine.Debug.Log("CLASSIC CHECKS PASSED: "+checks);
     }
     [Serializable] public class Report {public int passed;public string[] checks;}
 }
