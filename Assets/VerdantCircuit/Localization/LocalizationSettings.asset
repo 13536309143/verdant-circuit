@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: LocalizationSettings
   m_EditorClassIdentifier: 
   m_StartupSelectors:
-  - rid: 328414899164676096
-  - rid: 328414899164676097
+  - rid: 5660058288670900224
+  - rid: 5660058288670900225
   m_AvailableLocales:
     rid: 328414898830180355
   m_AssetDatabase:
@@ -192,11 +192,11 @@ MonoBehaviour:
         - default
         - d
         - 
-    - rid: 328414899164676096
+    - rid: 5660058288670900224
       type: {class: PlayerPrefLocaleSelector, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
       data:
         m_PlayerPreferenceKey: verdant.language
-    - rid: 328414899164676097
+    - rid: 5660058288670900225
       type: {class: SpecificLocaleSelector, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
       data:
         m_LocaleId:

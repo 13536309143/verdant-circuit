@@ -7,12 +7,12 @@ using UnityEngine;
 
 public static class VerdantRelease
 {
-    [MenuItem("Tools/禾序/发行/运行规则与主线回归")]
+    [MenuItem("Tools/禾序/发行/运行自动化农场回归")]
     public static void Verify()
     {
         if(EditorApplication.isPlayingOrWillChangePlaymode)
             throw new InvalidOperationException("请先停止 Play 模式。");
-        VerdantFleetChecks.VerifyAll();
+        VerdantClassicChecks.Run();
     }
 
     [MenuItem("Tools/禾序/发行/构建 macOS 通用版")]

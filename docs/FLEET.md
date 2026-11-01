@@ -1,3 +1,5 @@
+> Historical guide for v0.10.2. The 0.11.1 rebuild uses independent function workers and a new save. These queue/airframe APIs are not current. See [README](../README.md).
+
 # Fleet, airframes and economy — v0.10.2
 
 [English README](../README.md) · [中文 README](../README.zh-CN.md)

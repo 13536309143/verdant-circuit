@@ -951,8 +951,8 @@
     {
       "key": "t_3864529fce0ab788",
       "source": "第一份收获",
-      "en": "A First Harvest",
-      "zh": "第一份收获"
+      "zh": "第一份收获",
+      "en": "First harvest"
     },
     {
       "key": "t_11013e9699e5a880",
@@ -1305,8 +1305,8 @@
     {
       "key": "t_9ecbdf387732ddbc",
       "source": "禾序",
-      "en": "Verdant",
-      "zh": "禾序"
+      "zh": "禾序",
+      "en": "VERDANT CIRCUIT"
     },
     {
       "key": "t_81b3798bebc63c69",
@@ -1323,8 +1323,8 @@
     {
       "key": "t_c00da5c4ce4b59d3",
       "source": "科技",
-      "en": "Research",
-      "zh": "科技"
+      "zh": "科技",
+      "en": "Research"
     },
     {
       "key": "t_55914e1c50df9c9e",
@@ -1335,8 +1335,8 @@
     {
       "key": "t_7fb713d3d01ff11d",
       "source": "手册",
-      "en": "Guide",
-      "zh": "手册"
+      "zh": "手册",
+      "en": "Guide"
     },
     {
       "key": "t_76608bf5af4bf4d2",
@@ -1353,8 +1353,8 @@
     {
       "key": "t_7debf9cb0372cb43",
       "source": "设置",
-      "en": "Settings",
-      "zh": "设置"
+      "zh": "设置",
+      "en": "Settings"
     },
     {
       "key": "t_e167603eaa1b996c",
@@ -1413,8 +1413,8 @@
     {
       "key": "t_73a78a3e1db9497b",
       "source": "自动化工作台",
-      "en": "Automation Studio",
-      "zh": "自动化工作台"
+      "zh": "自动化工作台",
+      "en": "Automation Studio"
     },
     {
       "key": "t_1c36b647bcf65963",
@@ -1425,50 +1425,50 @@
     {
       "key": "t_9fcefd8dc81ef205",
       "source": "撤销",
-      "en": "Undo",
-      "zh": "撤销"
+      "zh": "撤销",
+      "en": "Undo"
     },
     {
       "key": "t_1238f0d363619389",
       "source": "重做",
-      "en": "Redo",
-      "zh": "重做"
+      "zh": "重做",
+      "en": "Redo"
     },
     {
       "key": "t_06d0f38dd26cccb7",
       "source": "模板",
-      "en": "Templates",
-      "zh": "模板"
+      "zh": "模板",
+      "en": "Templates"
     },
     {
       "key": "t_0c3acd446f19a325",
       "source": "运行",
-      "en": "Run",
-      "zh": "运行"
+      "zh": "运行",
+      "en": "Run"
     },
     {
       "key": "t_130448bce6758f08",
       "source": "暂停",
-      "en": "Pause",
-      "zh": "暂停"
+      "zh": "暂停",
+      "en": "Pause"
     },
     {
       "key": "t_175a1da4d66a46f2",
       "source": "单步",
-      "en": "Step",
-      "zh": "单步"
+      "zh": "单步",
+      "en": "Step"
     },
     {
       "key": "t_a17f70a8d3d66e14",
       "source": "停止",
-      "en": "Stop",
-      "zh": "停止"
+      "zh": "停止",
+      "en": "Stop"
     },
     {
       "key": "t_b796f2d4ca85812a",
       "source": "就绪",
-      "en": "Ready",
-      "zh": "就绪"
+      "zh": "就绪",
+      "en": "Ready"
     },
     {
       "key": "t_19fcb151d1ea913e",
@@ -1809,14 +1809,14 @@
     {
       "key": "t_e99b48a29bdfdc82",
       "source": "已完成",
-      "en": "Completed",
-      "zh": "已完成"
+      "zh": "已完成",
+      "en": "Complete"
     },
     {
       "key": "t_b31c66f6eae12601",
       "source": "研究",
-      "en": "Research",
-      "zh": "研究"
+      "zh": "研究",
+      "en": "Research"
     },
     {
       "key": "t_c51e2ff70e5ef370",
@@ -1905,8 +1905,8 @@
     {
       "key": "t_6c14bd7f6f9e54e4",
       "source": "关闭",
-      "en": "Close",
-      "zh": "关闭"
+      "zh": "关闭",
+      "en": "Close"
     },
     {
       "key": "t_682bb2313589019d",
@@ -2001,8 +2001,8 @@
     {
       "key": "t_da4738cea06462ca",
       "source": "载入",
-      "en": "Load",
-      "zh": "载入"
+      "zh": "载入",
+      "en": "Load"
     },
     {
       "key": "t_6795e8e00884d3a9",
@@ -2019,8 +2019,8 @@
     {
       "key": "t_071bfc06bd858cda",
       "source": "新建程序",
-      "en": "New Program",
-      "zh": "新建程序"
+      "zh": "新建程序",
+      "en": "New program"
     },
     {
       "key": "t_0c09ebf8c53cc23b",
@@ -2049,8 +2049,8 @@
     {
       "key": "t_7d03d8f58723cfa4",
       "source": " 字符",
-      "en": " characters",
-      "zh": " 字符"
+      "zh": " 字符",
+      "en": " characters"
     },
     {
       "key": "t_f7acefd2d4cd1deb",
@@ -2073,8 +2073,8 @@
     {
       "key": "t_3755f56f2f831876",
       "source": "删除",
-      "en": "Delete",
-      "zh": "删除"
+      "zh": "删除",
+      "en": "Remove"
     },
     {
       "key": "t_8e9e5d7db8e48bb1",
@@ -2127,8 +2127,8 @@
     {
       "key": "t_70b208202ce59f6b",
       "source": "选择",
-      "en": "Select",
-      "zh": "选择"
+      "zh": "选择",
+      "en": "Choose"
     },
     {
       "key": "t_06b52db2451eb3d2",
@@ -2151,8 +2151,8 @@
     {
       "key": "t_79cc871ca99292a4",
       "source": "开始",
-      "en": "Start",
-      "zh": "开始"
+      "zh": "开始",
+      "en": "Start"
     },
     {
       "key": "t_8245c93843d49900",
@@ -2313,8 +2313,8 @@
     {
       "key": "t_ab9ff81dac9b1eb8",
       "source": "声音",
-      "en": "Audio",
-      "zh": "声音"
+      "zh": "声音",
+      "en": "Audio"
     },
     {
       "key": "t_cab045887aa0ca1b",
@@ -2343,8 +2343,8 @@
     {
       "key": "t_5e4644a2c8939cff",
       "source": "立即保存",
-      "en": "Save Now",
-      "zh": "立即保存"
+      "zh": "立即保存",
+      "en": "Save now"
     },
     {
       "key": "t_b1f0f4b764496c56",
@@ -2367,8 +2367,8 @@
     {
       "key": "t_f17fc9b7f685759a",
       "source": "重新开始",
-      "en": "Start Over",
-      "zh": "重新开始"
+      "zh": "重新开始",
+      "en": "Restart"
     },
     {
       "key": "t_af7c03670116a4fb",
@@ -2379,8 +2379,8 @@
     {
       "key": "t_71ba47045945fe8a",
       "source": "新建农场",
-      "en": "New Farm",
-      "zh": "新建农场"
+      "zh": "新建农场",
+      "en": "New farm"
     },
     {
       "key": "t_ccc620ecad6d865b",
@@ -2409,8 +2409,8 @@
     {
       "key": "t_27207345c0e36fed",
       "source": "保存并退出",
-      "en": "Save and Quit",
-      "zh": "保存并退出"
+      "zh": "保存并退出",
+      "en": "Save and quit"
     },
     {
       "key": "t_c70c2dcf06270fb0",
@@ -2661,8 +2661,8 @@
     {
       "key": "t_6783884b2390229b",
       "source": "成就解锁：",
-      "en": "Achievement unlocked: ",
-      "zh": "成就解锁："
+      "zh": "成就解锁：",
+      "en": "Achievement unlocked: "
     },
     {
       "key": "t_3ac430ad68731dad",
@@ -2727,8 +2727,8 @@
     {
       "key": "t_594249700590a268",
       "source": "运行中",
-      "en": "Running",
-      "zh": "运行中"
+      "zh": "运行中",
+      "en": "Running"
     },
     {
       "key": "t_678ed6483d05f4a1",
@@ -2763,8 +2763,8 @@
     {
       "key": "t_fcbae46bf890386e",
       "source": "已暂停",
-      "en": "Paused",
-      "zh": "已暂停"
+      "zh": "已暂停",
+      "en": "Paused"
     },
     {
       "key": "t_e753ee3ed2b83ba8",
@@ -3309,8 +3309,8 @@
     {
       "key": "t_0a4d26e42b5a86c7",
       "source": "调整",
-      "en": "Resize",
-      "zh": "调整"
+      "zh": "调整",
+      "en": "Change"
     },
     {
       "key": "t_31703b720e6915ff",
@@ -3363,8 +3363,8 @@
     {
       "key": "t_4562024ddec75c55",
       "source": "应用",
-      "en": "Apply",
-      "zh": "应用"
+      "zh": "应用",
+      "en": "Apply"
     },
     {
       "key": "t_a74d4c76b8b8a5a9",
@@ -3641,6 +3641,1404 @@
       "source": "专用灌溉队列",
       "zh": "专用灌溉队列",
       "en": "Irrigation queue"
+    },
+    {
+      "key": "t_e7afa93c2fdd1631",
+      "source": "欢迎。先收获草获得干草，再解锁种植和扩田。",
+      "zh": "欢迎。先收获草获得干草，再解锁种植和扩田。",
+      "en": "Welcome. Harvest grass to earn hay, then unlock planting and expansion."
+    },
+    {
+      "key": "t_ae484793e57312d4",
+      "source": "程序已启动。",
+      "zh": "程序已启动。",
+      "en": "Program started."
+    },
+    {
+      "key": "t_843c63484007b5f7",
+      "source": "请使用不重复的字母、数字、下划线名称。",
+      "zh": "请使用不重复的字母、数字、下划线名称。",
+      "en": "Choose a unique name using letters, digits and underscores."
+    },
+    {
+      "key": "t_d9005edd15078e64",
+      "source": "已重新载入外部代码。",
+      "zh": "已重新载入外部代码。",
+      "en": "External code reloaded."
+    },
+    {
+      "key": "t_a6184e0ef46f9ae5",
+      "source": "干草",
+      "zh": "干草",
+      "en": "Hay"
+    },
+    {
+      "key": "t_b6da0476951bbd80",
+      "source": "木材",
+      "zh": "木材",
+      "en": "Wood"
+    },
+    {
+      "key": "t_837782f44036d45f",
+      "source": "胡萝卜",
+      "zh": "胡萝卜",
+      "en": "Carrot"
+    },
+    {
+      "key": "t_0d1150bde3f9eee0",
+      "source": "南瓜",
+      "zh": "南瓜",
+      "en": "Pumpkin"
+    },
+    {
+      "key": "t_6e01538b7fa565c8",
+      "source": "能量",
+      "zh": "能量",
+      "en": "Power"
+    },
+    {
+      "key": "t_620a448551b6b86c",
+      "source": "仙人掌",
+      "zh": "仙人掌",
+      "en": "Cactus"
+    },
+    {
+      "key": "t_8b36825aa394d5c3",
+      "source": "骨头",
+      "zh": "骨头",
+      "en": "Bone"
+    },
+    {
+      "key": "t_fe06f03eb3c3a4f6",
+      "source": "宝藏金币",
+      "zh": "宝藏金币",
+      "en": "Gold"
+    },
+    {
+      "key": "t_8ffbf192934ab70c",
+      "source": "水",
+      "zh": "水",
+      "en": "Water"
+    },
+    {
+      "key": "t_867cb2fd1f527e86",
+      "source": "肥料",
+      "zh": "肥料",
+      "en": "Fertilizer"
+    },
+    {
+      "key": "t_41fb5a6ac58664a7",
+      "source": "奇异物质",
+      "zh": "奇异物质",
+      "en": "Catalyst"
+    },
+    {
+      "key": "t_c8d67b9d26afe4f6",
+      "source": "资源累计与本地成就。竞速使用固定开局，成绩仅保存在本机。",
+      "zh": "资源累计与本地成就。竞速使用固定开局，成绩仅保存在本机。",
+      "en": "Resource totals and local achievements. Challenge records use fixed starts and remain on this computer."
+    },
+    {
+      "key": "t_55d84910526d8218",
+      "source": "本地竞速",
+      "zh": "本地竞速",
+      "en": "Local competition"
+    },
+    {
+      "key": "t_d3679ef63ea3dd9c",
+      "source": "用固定生产目标测试程序。",
+      "zh": "用固定生产目标测试程序。",
+      "en": "Test a program against a fixed production target."
+    },
+    {
+      "key": "t_2980c16d0148f4c4",
+      "source": "第一捆干草",
+      "zh": "第一捆干草",
+      "en": "First hay"
+    },
+    {
+      "key": "t_bb2a12fa02df8471",
+      "source": "千份收成",
+      "zh": "千份收成",
+      "en": "A thousand harvests"
+    },
+    {
+      "key": "t_217b5d5844215fb4",
+      "source": "林木生产",
+      "zh": "林木生产",
+      "en": "The woodland"
+    },
+    {
+      "key": "t_40f86657f5a99d3c",
+      "source": "根系生产",
+      "zh": "根系生产",
+      "en": "Root production"
+    },
+    {
+      "key": "t_d65c82482baffdc8",
+      "source": "巨型丰收",
+      "zh": "巨型丰收",
+      "en": "A giant harvest"
+    },
+    {
+      "key": "t_401dc675343e37cf",
+      "source": "能量储备",
+      "zh": "能量储备",
+      "en": "Solar reserve"
+    },
+    {
+      "key": "t_855b2769ac6a3969",
+      "source": "田间有序",
+      "zh": "田间有序",
+      "en": "Order in the field"
+    },
+    {
+      "key": "t_5f8a675a7f99a68e",
+      "source": "宝藏路线",
+      "zh": "宝藏路线",
+      "en": "Treasure route"
+    },
+    {
+      "key": "t_c5f9756b0afa686e",
+      "source": "长尾探索者",
+      "zh": "长尾探索者",
+      "en": "Long-tail explorer"
+    },
+    {
+      "key": "t_046eaa992c2d6c13",
+      "source": "并行生产",
+      "zh": "并行生产",
+      "en": "Parallel production"
+    },
+    {
+      "key": "t_cc9e841ed9169ecf",
+      "source": "开阔天地",
+      "zh": "开阔天地",
+      "en": "Open horizons"
+    },
+    {
+      "key": "t_c3cc840cf98b40f5",
+      "source": "研究完成",
+      "zh": "研究完成",
+      "en": "Research complete"
+    },
+    {
+      "key": "t_88ef9fc72a30066a",
+      "source": "策略留名",
+      "zh": "策略留名",
+      "en": "A recorded strategy"
+    },
+    {
+      "key": "t_c9fb37a2f429a225",
+      "source": "使用选中程序，在独立的 8×8 农场、全部研究、种子 41 和充足种植材料下测试。达标后需让所有工作机结束。最快重置从一格、零物资开始。停止可取消竞速。",
+      "zh": "使用选中程序，在独立的 8×8 农场、全部研究、种子 41 和充足种植材料下测试。达标后需让所有工作机结束。最快重置从一格、零物资开始。停止可取消竞速。",
+      "en": "The selected program is evaluated on a separate 8×8 farm with all research, seed 41 and supplied inputs. Reach the target and let all workers terminate. Fastest reset starts with one plot and no resources. Stop cancels the challenge."
+    },
+    {
+      "key": "t_5a94326082a269b1",
+      "source": "新增生产 1000 份，然后结束程序。",
+      "zh": "新增生产 1000 份，然后结束程序。",
+      "en": "Produce 1000 new units, then terminate the program."
+    },
+    {
+      "key": "t_099942f0b9338865",
+      "source": "最快重置",
+      "zh": "最快重置",
+      "en": "Fastest reset"
+    },
+    {
+      "key": "t_231b7a4351690996",
+      "source": "从零开始，通过程序解锁本地竞速研究。",
+      "zh": "从零开始，通过程序解锁本地竞速研究。",
+      "en": "Start from zero and unlock local competition through code."
+    },
+    {
+      "key": "t_1e07ff90526c3b7b",
+      "source": "已有竞速正在运行。",
+      "zh": "已有竞速正在运行。",
+      "en": "A challenge is already running."
+    },
+    {
+      "key": "t_94982312bd19cded",
+      "source": "竞速已在独立农场启动。",
+      "zh": "竞速已在独立农场启动。",
+      "en": "Challenge started on an isolated farm."
+    },
+    {
+      "key": "t_127f67364dabecf3",
+      "source": "竞速超出一小时游戏时间限制。",
+      "zh": "竞速超出一小时游戏时间限制。",
+      "en": "Challenge exceeded the one-hour game-time limit."
+    },
+    {
+      "key": "t_656ff486f2503777",
+      "source": "竞速完成：",
+      "zh": "竞速完成：",
+      "en": "Challenge completed: "
+    },
+    {
+      "key": "t_6395207efb9895d9",
+      "source": "竞速结束，尚未达到目标。",
+      "zh": "竞速结束，尚未达到目标。",
+      "en": "Challenge ended before reaching its target. "
+    },
+    {
+      "key": "t_9e2f79bd73c58eba",
+      "source": "禾序  /  0.11.1",
+      "zh": "禾序  /  0.11.1",
+      "en": "VERDANT CIRCUIT  /  0.11.1"
+    },
+    {
+      "key": "t_1a68c2deea5daeb0",
+      "source": "程序",
+      "zh": "程序",
+      "en": "Programs"
+    },
+    {
+      "key": "t_9e08d77146b1d321",
+      "source": "模拟实验",
+      "zh": "模拟实验",
+      "en": "Lab"
+    },
+    {
+      "key": "t_13a1e04374096f1e",
+      "source": "纪录",
+      "zh": "纪录",
+      "en": "Records"
+    },
+    {
+      "key": "t_039f32c13ce3b0fa",
+      "source": "输出  /  点击地块查看状态，用代码控制无人机。",
+      "zh": "输出  /  点击地块查看状态，用代码控制无人机。",
+      "en": "OUTPUT  /  Click a plot to inspect it. Code controls the drone."
+    },
+    {
+      "key": "t_2a2b777ae485ecb8",
+      "source": "行",
+      "zh": "行",
+      "en": "Line"
+    },
+    {
+      "key": "t_1674b06f5525ce97",
+      "source": "无人机",
+      "zh": "无人机",
+      "en": "Drones"
+    },
+    {
+      "key": "t_c3c394dd09b3eeb2",
+      "source": "Ctrl/Cmd+Enter 运行  /  F8 语言  /  Esc 设置",
+      "zh": "Ctrl/Cmd+Enter 运行  /  F8 语言  /  Esc 设置",
+      "en": "Ctrl/Cmd+Enter: run  /  F8: language  /  Esc: settings"
+    },
+    {
+      "key": "t_86aa84b0f3b34220",
+      "source": "科技消耗实际收获物资。新分支引入不同的生产规则。编程功能可逐步学习，也可在设置中允许全部语法。",
+      "zh": "科技消耗实际收获物资。新分支引入不同的生产规则。编程功能可逐步学习，也可在设置中允许全部语法。",
+      "en": "Research uses harvested resources. Unlocking a branch adds new production rules. Programming features can be learned gradually; unrestricted syntax is available in Settings."
+    },
+    {
+      "key": "t_72854905c9589044",
+      "source": "消耗：",
+      "zh": "消耗：",
+      "en": "Cost: "
+    },
+    {
+      "key": "t_a354a0410747f3f8",
+      "source": "前置：",
+      "zh": "前置：",
+      "en": "Prerequisite: "
+    },
+    {
+      "key": "t_76cd3f502b8387b9",
+      "source": "程序也是模块：用名称 import 其他文件。切换查看不会停止工作机；运行会启动新的控制程序与独立任务。",
+      "zh": "程序也是模块：用名称 import 其他文件。切换查看不会停止工作机；运行会启动新的控制程序与独立任务。",
+      "en": "Programs are modules: import another file by name. Browsing does not stop running workers. Running starts a new controller and its independent tasks."
+    },
+    {
+      "key": "t_0074f61e09e8aeda",
+      "source": "使用不重复的标识符，例如 helpers。",
+      "zh": "使用不重复的标识符，例如 helpers。",
+      "en": "Use a unique identifier, for example helpers."
+    },
+    {
+      "key": "t_fcbd0932929ec7e6",
+      "source": "创建",
+      "zh": "创建",
+      "en": "Create"
+    },
+    {
+      "key": "t_65fc81e161198bc6",
+      "source": "打开",
+      "zh": "打开",
+      "en": "Open"
+    },
+    {
+      "key": "t_a4ea5e98f608562e",
+      "source": "删除程序",
+      "zh": "删除程序",
+      "en": "Remove program"
+    },
+    {
+      "key": "t_8d4ef05c39fe35c1",
+      "source": "模板用于学习，不会替你完成研究。先解锁所需作物；每个模板会创建为新程序。",
+      "zh": "模板用于学习，不会替你完成研究。先解锁所需作物；每个模板会创建为新程序。",
+      "en": "Templates are examples, not automatic solutions. Unlock the required crops first. Each template opens as a new program."
+    },
+    {
+      "key": "t_13b9dc3ffcc9fa1d",
+      "source": "写代码生产资源，解锁新规则，再测量和优化。先收获起始地块的草；最早的科技开放种植和扩田。",
+      "zh": "写代码生产资源，解锁新规则，再测量和优化。先收获起始地块的草；最早的科技开放种植和扩田。",
+      "en": "Write code, produce resources, unlock new rules, measure and improve. Begin with grass on the starting plot. Planting and expansion come from the first research branch."
+    },
+    {
+      "key": "t_006d56f140293661",
+      "source": "语言：变量、条件、循环、带参和返回值函数、列表、元组、集合、字典、global、模块导入与闭包。每层缩进四个空格或一个 Tab。",
+      "zh": "语言：变量、条件、循环、带参和返回值函数、列表、元组、集合、字典、global、模块导入与闭包。每层缩进四个空格或一个 Tab。",
+      "en": "LANGUAGE: variables, if/elif/else, while, for, functions with parameters and returned values, lists, tuples, sets, dictionaries, global, imports and closures. Four spaces or one tab indent each block."
+    },
+    {
+      "key": "t_dcdeddb755c46ab5",
+      "source": "模拟使用独立农场并返回耗时。先创建实验程序，再调用 simulate(名称, 科技, 库存, 全局变量, 种子, 加速)。相同种子复现相同开局，真实农场库存和作物不受影响。",
+      "zh": "模拟使用独立农场并返回耗时。先创建实验程序，再调用 simulate(名称, 科技, 库存, 全局变量, 种子, 加速)。相同种子复现相同开局，真实农场库存和作物不受影响。",
+      "en": "Simulations use a separate farm and return runtime. Add an experiment program, then invoke simulate(name, unlocks, items, globals, seed, speedup). Repeating a seed reproduces the same starting conditions. Live inventory and crop state are preserved."
+    },
+    {
+      "key": "t_629a0dbaafc23bca",
+      "source": "固定开局、独立农场、记录耗时。成绩保存在本机。",
+      "zh": "固定开局、独立农场、记录耗时。成绩保存在本机。",
+      "en": "Fixed start, measured runtime, separate farm. Records stay on this computer."
+    },
+    {
+      "key": "t_11a3cdf22e1b5a9e",
+      "source": "竞速列表",
+      "zh": "竞速列表",
+      "en": "Challenges"
+    },
+    {
+      "key": "t_cd99b225a08ea013",
+      "source": "语言",
+      "zh": "语言",
+      "en": "Language"
+    },
+    {
+      "key": "t_e3b77fb116d34aa1",
+      "source": "英文或简体中文，也可以按 F8 切换。",
+      "zh": "英文或简体中文，也可以按 F8 切换。",
+      "en": "English or Simplified Chinese. F8 also switches languages."
+    },
+    {
+      "key": "t_2f116b7d1c182cfc",
+      "source": "切换",
+      "zh": "切换",
+      "en": "Switch"
+    },
+    {
+      "key": "t_44ecdc6e508c26ca",
+      "source": "运行速度",
+      "zh": "运行速度",
+      "en": "Simulation speed"
+    },
+    {
+      "key": "t_a48a8cb7cc554c16",
+      "source": "配色主题",
+      "zh": "配色主题",
+      "en": "Color theme"
+    },
+    {
+      "key": "t_407fad7332b5f166",
+      "source": "允许未解锁语法",
+      "zh": "允许未解锁语法",
+      "en": "Unrestricted syntax"
+    },
+    {
+      "key": "t_25d2843150633f32",
+      "source": "已启用",
+      "zh": "已启用",
+      "en": "Enabled"
+    },
+    {
+      "key": "t_0fe5a98e9f8c0879",
+      "source": "已禁用",
+      "zh": "已禁用",
+      "en": "Disabled"
+    },
+    {
+      "key": "t_f9fb39fefeab6076",
+      "source": "外部编辑器",
+      "zh": "外部编辑器",
+      "en": "External editor"
+    },
+    {
+      "key": "t_cbc08fe9ac30753c",
+      "source": "停止监视",
+      "zh": "停止监视",
+      "en": "Disable watcher"
+    },
+    {
+      "key": "t_7bd05947cca9861e",
+      "source": "导出并监视",
+      "zh": "导出并监视",
+      "en": "Export and watch"
+    },
+    {
+      "key": "t_fadf24dbc5a9e0bb",
+      "source": "保存",
+      "zh": "保存",
+      "en": "Save"
+    },
+    {
+      "key": "t_13d0f2f4e99626fc",
+      "source": "创建全新的自动化农场，当前存档会保留备份。",
+      "zh": "创建全新的自动化农场，当前存档会保留备份。",
+      "en": "Start a fresh automation farm. Your current save is backed up."
+    },
+    {
+      "key": "t_8a1b4dbb63156483",
+      "source": "断点",
+      "zh": "断点",
+      "en": "Breakpoints"
+    },
+    {
+      "key": "t_77772143b23edbb8",
+      "source": "用逗号分隔行号。到达断点时暂停所有工作机。",
+      "zh": "用逗号分隔行号。到达断点时暂停所有工作机。",
+      "en": "Comma-separated line numbers. A matching line pauses every worker."
+    },
+    {
+      "key": "t_b2fe785bd0ba1a54",
+      "source": "断点已更新。",
+      "zh": "断点已更新。",
+      "en": "Breakpoints updated."
+    },
+    {
+      "key": "t_feecb1e6adecc96c",
+      "source": "退出",
+      "zh": "退出",
+      "en": "Quit"
+    },
+    {
+      "key": "t_65a6ad0d8cf366bc",
+      "source": "退出前保存。",
+      "zh": "退出前保存。",
+      "en": "Save before closing."
+    },
+    {
+      "key": "t_ff7f7651ec9e4106",
+      "source": "重新开始？",
+      "zh": "重新开始？",
+      "en": "Start again?"
+    },
+    {
+      "key": "t_836d35f0eef4770c",
+      "source": "这将创建一格农田、零物资的新开局。",
+      "zh": "这将创建一格农田、零物资的新开局。",
+      "en": "This creates a fresh one-plot farm with no resources."
+    },
+    {
+      "key": "t_4836564922e109b0",
+      "source": "种植",
+      "zh": "种植",
+      "en": "Planting"
+    },
+    {
+      "key": "t_6bdd5fa12de39679",
+      "source": "农田扩张",
+      "zh": "农田扩张",
+      "en": "Field expansion"
+    },
+    {
+      "key": "t_7df833b2fbabd8ad",
+      "source": "执行速度",
+      "zh": "执行速度",
+      "en": "Execution speed"
+    },
+    {
+      "key": "t_b3744135a456b287",
+      "source": "干草增产",
+      "zh": "干草增产",
+      "en": "Grass yield"
+    },
+    {
+      "key": "t_3020c8a839d9838e",
+      "source": "林木",
+      "zh": "林木",
+      "en": "Woodland"
+    },
+    {
+      "key": "t_7f7af6877d0127ee",
+      "source": "胡萝卜种植",
+      "zh": "胡萝卜种植",
+      "en": "Carrots"
+    },
+    {
+      "key": "t_b8b32397851f48a4",
+      "source": "灌溉",
+      "zh": "灌溉",
+      "en": "Irrigation"
+    },
+    {
+      "key": "t_3263694eb3f6f606",
+      "source": "巨型南瓜",
+      "zh": "巨型南瓜",
+      "en": "Growing giant pumpkins"
+    },
+    {
+      "key": "t_cbe577d1ba8881ea",
+      "source": "太阳花",
+      "zh": "太阳花",
+      "en": "Solar flowers"
+    },
+    {
+      "key": "t_a438547a4b7f92aa",
+      "source": "肥料与感染",
+      "zh": "肥料与感染",
+      "en": "Fertilizer and infection"
+    },
+    {
+      "key": "t_e427fe55d8e49d3a",
+      "source": "伴生种植",
+      "zh": "伴生种植",
+      "en": "Companion planting"
+    },
+    {
+      "key": "t_50a15c16d88af3e1",
+      "source": "仙人掌排序",
+      "zh": "仙人掌排序",
+      "en": "Sorting cacti"
+    },
+    {
+      "key": "t_d867baa74f8bd88f",
+      "source": "树篱迷宫",
+      "zh": "树篱迷宫",
+      "en": "Hedge mazes"
+    },
+    {
+      "key": "t_2083f8c83d0e7adf",
+      "source": "长尾探索",
+      "zh": "长尾探索",
+      "en": "Tail exploration"
+    },
+    {
+      "key": "t_f219f679cb6aca5c",
+      "source": "并行无人机",
+      "zh": "并行无人机",
+      "en": "Parallel drones"
+    },
+    {
+      "key": "t_339fee2ada5ec193",
+      "source": "模拟实验室",
+      "zh": "模拟实验室",
+      "en": "Simulation lab"
+    },
+    {
+      "key": "t_a76d0b30310673a9",
+      "source": "循环",
+      "zh": "循环",
+      "en": "Loops"
+    },
+    {
+      "key": "t_27ae541f530f945f",
+      "source": "运算符",
+      "zh": "运算符",
+      "en": "Operators"
+    },
+    {
+      "key": "t_b418ca60d417bf26",
+      "source": "变量",
+      "zh": "变量",
+      "en": "Variables"
+    },
+    {
+      "key": "t_7209958c07e505bf",
+      "source": "函数",
+      "zh": "函数",
+      "en": "Functions"
+    },
+    {
+      "key": "t_2ce85f985b9a2c81",
+      "source": "列表与元组",
+      "zh": "列表与元组",
+      "en": "Lists and tuples"
+    },
+    {
+      "key": "t_5211f05cc93b5450",
+      "source": "字典与集合",
+      "zh": "字典与集合",
+      "en": "Dictionaries and sets"
+    },
+    {
+      "key": "t_c1bebd4ab371d99d",
+      "source": "模块",
+      "zh": "模块",
+      "en": "Modules"
+    },
+    {
+      "key": "t_23362670e4904f57",
+      "source": "传感器",
+      "zh": "传感器",
+      "en": "Sensors"
+    },
+    {
+      "key": "t_51421c523d45fa3d",
+      "source": "成本查询",
+      "zh": "成本查询",
+      "en": "Cost queries"
+    },
+    {
+      "key": "t_4ee2df33933b15dc",
+      "source": "自动科研",
+      "zh": "自动科研",
+      "en": "Automatic research"
+    },
+    {
+      "key": "t_4a9d45957d30fffd",
+      "source": "计时工具",
+      "zh": "计时工具",
+      "en": "Timing tools"
+    },
+    {
+      "key": "t_f4c117afe8a3f12f",
+      "source": "调试",
+      "zh": "调试",
+      "en": "Debugging"
+    },
+    {
+      "key": "t_8dccc4a2e6ce3e6e",
+      "source": "帽子",
+      "zh": "帽子",
+      "en": "Hats"
+    },
+    {
+      "key": "t_08da818ada52131b",
+      "source": "整田巡查",
+      "zh": "整田巡查",
+      "en": "A full-field patrol"
+    },
+    {
+      "key": "t_daed8945c34a22fb",
+      "source": "棋盘林地",
+      "zh": "棋盘林地",
+      "en": "Checkerboard woodland"
+    },
+    {
+      "key": "t_39ace8de41065855",
+      "source": "探索迷宫",
+      "zh": "探索迷宫",
+      "en": "Searching a maze"
+    },
+    {
+      "key": "t_45a07a8215d38209",
+      "source": "并行分列",
+      "zh": "并行分列",
+      "en": "Parallel columns"
+    },
+    {
+      "key": "t_936036f7de5cd081",
+      "source": "科研控制器",
+      "zh": "科研控制器",
+      "en": "Research controller"
+    },
+    {
+      "key": "t_b7ce4c890e41fabf",
+      "source": "长尾覆盖",
+      "zh": "长尾覆盖",
+      "en": "Tail coverage"
+    },
+    {
+      "key": "t_8b079adfedd8937b",
+      "source": "独立运行",
+      "zh": "独立运行",
+      "en": "Run separately"
+    },
+    {
+      "key": "t_cd811c900b6aba41",
+      "source": "无人机数量已达上限。",
+      "zh": "无人机数量已达上限。",
+      "en": "Drone capacity is full."
+    },
+    {
+      "key": "t_2737ed12f2f2559f",
+      "source": "已启动程序：",
+      "zh": "已启动程序：",
+      "en": "Started program: "
+    },
+    {
+      "key": "t_502a889164bfbf74",
+      "source": "全部停止",
+      "zh": "全部停止",
+      "en": "Stop all"
+    },
+    {
+      "key": "t_b14617c53d7201be",
+      "source": "最近60秒：",
+      "zh": "最近60秒：",
+      "en": "Last 60s: "
+    },
+    {
+      "key": "t_5ec72cf8c3af8395",
+      "source": "最佳：",
+      "zh": "最佳：",
+      "en": "Best: "
+    },
+    {
+      "key": "t_d7d213f517b2ac95",
+      "source": "浮动编辑器",
+      "zh": "浮动编辑器",
+      "en": "Floating editor"
+    },
+    {
+      "key": "t_a70a15135c371260",
+      "source": "窗口",
+      "zh": "窗口",
+      "en": "Window"
+    },
+    {
+      "key": "t_751d97925433fc8b",
+      "source": "用代码照料农田，收获物资并解锁新的规则。新开局请先运行 harvest()，等草成熟后再运行，积累干草。研究循环后可载入第一份循环模板。\n\n【生产】\nharvest() 收获；can_harvest() 是否成熟\nplant(Entities.Grass / Bush / Tree / Carrot / Pumpkin / Sunflower / Cactus)\ntill() 切换草地与耕地\nuse_item(Items.Water) 浇水；use_item(Items.Fertilizer) 催熟并感染\nuse_item(Items.Weird_Substance) 翻转本格和邻格感染\n\n【观察】\nget_pos_x() / get_pos_y() / get_world_size()\nget_entity_type() / get_ground_type() / get_water()\nnum_items(Items.Hay) 查询库存\nget_companion() 返回伴生类型和目标坐标\nmeasure() 测量花瓣、仙人掌尺寸或目标位置\nswap(direction) 交换相邻仙人掌\n\n【移动】\nmove(North / East / South / West) 返回是否成功\ncan_move(direction) 预判墙壁及尾巴\n普通田地越界环绕，迷宫和长尾模式不能环绕。\n\n【研究】\nget_cost(Unlocks.Speed) 查询资源成本\nnum_unlocked(Unlocks.Speed) 查询研究等级\nunlock(Unlocks.Speed) 支付物资完成研究\n\n【并行】\nspawn_drone(function, 参数...) 返回任务句柄或 None\nwait_for(handle) 等待任务并取得返回值\nhas_finished(handle) 检查任务是否结束\nnum_drones() / max_drones()\n每台机器具有独立变量与集合副本，农场与库存共享。机器可以位于同一格，不发生实体碰撞。\n\n【实验】\nsimulate(程序名, 科技, 库存, 全局变量, 随机种子, 加速)\n模拟不会改变真实农场库存或作物，结束返回耗时。\nleaderboard_run(Leaderboards.Hay, 程序名, 加速)\n本地资源竞速目标为新增1000份，并要求程序自行结束。\nget_time() / get_tick_count() 查询时间与指令计数\nset_world_size(size) / set_execution_speed(speed) 用于调试\n\n【语言与调试】\n支持带参函数、默认参数、返回值、闭包、模块导入、列表、元组、集合和字典。\nimport helpers / from helpers import tend\nvalues.append(3) / visited.add((x,y)) / costs['hay']\n暂停后可单步；F9 为当前光标行切换断点，也可在设置中输入行号。\nCmd/Ctrl+Z 撤销，Cmd/Ctrl+Shift+Z 重做。\nprint(...) / quick_print(...) 输出值。\n程序执行受步骤、集合大小与递归深度限制，无操作系统访问能力。\n\n【文件】\n设置中启用外部编辑器可导出 .py 和接口提示文件，再监视保存的修改。\n多个程序可以分别打开为可拖动的编辑窗口。主工作台运行会重启控制程序，浮动窗口可在数量允许时独立启动另一个程序。",
+      "zh": "用代码照料农田，收获物资并解锁新的规则。新开局请先运行 harvest()，等草成熟后再运行，积累干草。研究循环后可载入第一份循环模板。\n\n【生产】\nharvest() 收获；can_harvest() 是否成熟\nplant(Entities.Grass / Bush / Tree / Carrot / Pumpkin / Sunflower / Cactus)\ntill() 切换草地与耕地\nuse_item(Items.Water) 浇水；use_item(Items.Fertilizer) 催熟并感染\nuse_item(Items.Weird_Substance) 翻转本格和邻格感染\n\n【观察】\nget_pos_x() / get_pos_y() / get_world_size()\nget_entity_type() / get_ground_type() / get_water()\nnum_items(Items.Hay) 查询库存\nget_companion() 返回伴生类型和目标坐标\nmeasure() 测量花瓣、仙人掌尺寸或目标位置\nswap(direction) 交换相邻仙人掌\n\n【移动】\nmove(North / East / South / West) 返回是否成功\ncan_move(direction) 预判墙壁及尾巴\n普通田地越界环绕，迷宫和长尾模式不能环绕。\n\n【研究】\nget_cost(Unlocks.Speed) 查询资源成本\nnum_unlocked(Unlocks.Speed) 查询研究等级\nunlock(Unlocks.Speed) 支付物资完成研究\n\n【并行】\nspawn_drone(function, 参数...) 返回任务句柄或 None\nwait_for(handle) 等待任务并取得返回值\nhas_finished(handle) 检查任务是否结束\nnum_drones() / max_drones()\n每台机器具有独立变量与集合副本，农场与库存共享。机器可以位于同一格，不发生实体碰撞。\n\n【实验】\nsimulate(程序名, 科技, 库存, 全局变量, 随机种子, 加速)\n模拟不会改变真实农场库存或作物，结束返回耗时。\nleaderboard_run(Leaderboards.Hay, 程序名, 加速)\n本地资源竞速目标为新增1000份，并要求程序自行结束。\nget_time() / get_tick_count() 查询时间与指令计数\nset_world_size(size) / set_execution_speed(speed) 用于调试\n\n【语言与调试】\n支持带参函数、默认参数、返回值、闭包、模块导入、列表、元组、集合和字典。\nimport helpers / from helpers import tend\nvalues.append(3) / visited.add((x,y)) / costs['hay']\n暂停后可单步；F9 为当前光标行切换断点，也可在设置中输入行号。\nCmd/Ctrl+Z 撤销，Cmd/Ctrl+Shift+Z 重做。\nprint(...) / quick_print(...) 输出值。\n程序执行受步骤、集合大小与递归深度限制，无操作系统访问能力。\n\n【文件】\n设置中启用外部编辑器可导出 .py 和接口提示文件，再监视保存的修改。\n多个程序可以分别打开为可拖动的编辑窗口。主工作台运行会重启控制程序，浮动窗口可在数量允许时独立启动另一个程序。",
+      "en": "harvest() / can_harvest()\nplant(Entities.Grass) / plant(Entities.Bush) / plant(Entities.Tree)\nplant(Entities.Carrot) / plant(Entities.Pumpkin)\nplant(Entities.Sunflower) / plant(Entities.Cactus)\nmove(North / East / South / West) -> True / False\ncan_move(direction) -> True / False\ntill() / use_item(Items.Water) / use_item(Items.Fertilizer)\nget_pos_x() / get_pos_y() / get_world_size()\nget_entity_type() / get_ground_type() / get_water()\nnum_items(Items.Hay) / num_unlocked(Unlocks.Speed)\nget_cost(Unlocks.Speed) / unlock(Unlocks.Speed)\nget_companion() -> (entity, (x, y)) or None\nmeasure() / measure(direction) / swap(direction)\nspawn_drone(function, args...) -> handle or None\nwait_for(handle) -> return value / has_finished(handle)\nnum_drones() / max_drones()\nget_time() / get_tick_count() / random()\nsimulate(file, unlocks, items, globals, seed, speedup)\nchange_hat(Hats.Straw_Hat) / change_hat(Hats.Dinosaur_Hat)\nset_world_size(size) / set_execution_speed(speed)\nclear() / do_a_flip()\nprint(values...) / quick_print(values...)\n\nNamespaces: Entities, Items, Grounds, Unlocks, Hats, Leaderboards.\nPrograms: import helpers / from helpers import tend.\nCollections: [1,2], (1,2), {1,2}, {'seed': 4}.\nData: values[0], costs['hay'], values.append(3), visited.add((x,y)).\nFunctions: def work(x, count=1): ... return result.\n\nA task has independent memory. Return values are collected by wait_for().\nA blocked maze move returns False. Normal field edges wrap; tail mode does not.\nSimulation creates a new isolated farm. It cannot modify the live inventory."
+    },
+    {
+      "key": "t_7fbac0fe08a7a04f",
+      "source": "水分 ",
+      "zh": "水分 ",
+      "en": "Water "
+    },
+    {
+      "key": "t_f11f718da68159a1",
+      "source": "测量值 ",
+      "zh": "测量值 ",
+      "en": "Measure "
+    },
+    {
+      "key": "t_724daa35c551ea3b",
+      "source": "可以收获",
+      "zh": "可以收获",
+      "en": "Ready to harvest"
+    },
+    {
+      "key": "t_2f449a3a0d4999a0",
+      "source": "生长中",
+      "zh": "生长中",
+      "en": "Growing"
+    },
+    {
+      "key": "t_6d9dc1a9c394a372",
+      "source": "断点行：",
+      "zh": "断点行：",
+      "en": "Breakpoint line: "
+    },
+    {
+      "key": "t_f39b3724a8b3f84d",
+      "source": "世界调试工具",
+      "zh": "世界调试工具",
+      "en": "World testing tools"
+    },
+    {
+      "key": "t_6b348fb7a8cbcedd",
+      "source": "数值工具",
+      "zh": "数值工具",
+      "en": "Numeric utilities"
+    },
+    {
+      "key": "t_d44418520f23acba",
+      "source": "自治信标",
+      "zh": "自治信标",
+      "en": "Autonomy beacon"
+    },
+    {
+      "key": "t_a1c11b1c0801e1b0",
+      "source": "大师礼帽",
+      "zh": "大师礼帽",
+      "en": "The master hat"
+    },
+    {
+      "key": "t_8328f425b266ce94",
+      "source": "Invalid automation save.",
+      "en": "Invalid automation save.",
+      "zh": "自动化存档无效。"
+    },
+    {
+      "key": "t_26611ab6e3e70b95",
+      "source": "Invalid automation state.",
+      "en": "Invalid automation state.",
+      "zh": "自动化状态无效。"
+    },
+    {
+      "key": "t_8f58ed4d93f806da",
+      "source": "Source exceeds 200000 characters.",
+      "en": "Source exceeds 200000 characters.",
+      "zh": "程序超过200000字符。"
+    },
+    {
+      "key": "t_4dd6a09c194542a3",
+      "source": "Use indentation in groups of four spaces.",
+      "en": "Use indentation in groups of four spaces.",
+      "zh": "每层请缩进四个空格。"
+    },
+    {
+      "key": "t_cb67d165f7d7012c",
+      "source": "Enter a program first.",
+      "en": "Enter a program first.",
+      "zh": "请先输入程序。"
+    },
+    {
+      "key": "t_a944a98dbb3a2273",
+      "source": "Unexpected indentation.",
+      "en": "Unexpected indentation.",
+      "zh": "缩进不符合预期。"
+    },
+    {
+      "key": "t_a636276860b03085",
+      "source": "Expected an indented body.",
+      "en": "Expected an indented body.",
+      "zh": "此处需要缩进的代码块。"
+    },
+    {
+      "key": "t_95786423239f4d63",
+      "source": "Block nesting limit.",
+      "en": "Block nesting limit.",
+      "zh": "代码块嵌套过深。"
+    },
+    {
+      "key": "t_f099d30062d99d0d",
+      "source": "Expected for target in sequence:",
+      "en": "Expected for target in sequence:",
+      "zh": "格式应为 for 目标 in 序列:"
+    },
+    {
+      "key": "t_19a0af3b81f1a561",
+      "source": "Expected def name(parameters):",
+      "en": "Expected def name(parameters):",
+      "zh": "格式应为 def 名称(参数):"
+    },
+    {
+      "key": "t_8e35de8abb7a97c8",
+      "source": "Invalid or duplicate parameter.",
+      "en": "Invalid or duplicate parameter.",
+      "zh": "参数名称无效或重复。"
+    },
+    {
+      "key": "t_f064b49910f3a8dd",
+      "source": "Required parameter after default parameter.",
+      "en": "Required parameter after default parameter.",
+      "zh": "默认参数后不能放置必填参数。"
+    },
+    {
+      "key": "t_1e9f5f98d5c1ec5b",
+      "source": "return outside a function.",
+      "en": "return outside a function.",
+      "zh": "return 只能写在函数内。"
+    },
+    {
+      "key": "t_6a40e43926d6c186",
+      "source": " outside a loop.",
+      "en": " outside a loop.",
+      "zh": " 只能写在循环内。"
+    },
+    {
+      "key": "t_b10535c715546b1b",
+      "source": "Invalid global name.",
+      "en": "Invalid global name.",
+      "zh": "全局变量名称无效。"
+    },
+    {
+      "key": "t_3f360f4bb3d69c95",
+      "source": "Import a single named game module.",
+      "en": "Import a single named game module.",
+      "zh": "请导入一个具名的游戏内模块。"
+    },
+    {
+      "key": "t_ad8872ff53222d68",
+      "source": "Invalid import.",
+      "en": "Invalid import.",
+      "zh": "导入语句无效。"
+    },
+    {
+      "key": "t_07004286bd6ba8aa",
+      "source": "Expected ':' at the end of the statement.",
+      "en": "Expected ':' at the end of the statement.",
+      "zh": "语句末尾需要冒号。"
+    },
+    {
+      "key": "t_0255a54e2bf2238c",
+      "source": "Unterminated string.",
+      "en": "Unterminated string.",
+      "zh": "字符串缺少结束引号。"
+    },
+    {
+      "key": "t_e75151f96da7c229",
+      "source": "Invalid number.",
+      "en": "Invalid number.",
+      "zh": "数值格式无效。"
+    },
+    {
+      "key": "t_b59c5e9bc46af7ba",
+      "source": "Unsupported character: ",
+      "en": "Unsupported character: ",
+      "zh": "不支持的字符："
+    },
+    {
+      "key": "t_a425a6202d2fa659",
+      "source": "Incomplete expression.",
+      "en": "Incomplete expression.",
+      "zh": "表达式不完整。"
+    },
+    {
+      "key": "t_7010266927021a7c",
+      "source": "Expected '",
+      "en": "Expected '",
+      "zh": "需要符号 '"
+    },
+    {
+      "key": "t_6a1bada2d268df28",
+      "source": "Missing expression.",
+      "en": "Missing expression.",
+      "zh": "缺少表达式。"
+    },
+    {
+      "key": "t_03abaeefe527307a",
+      "source": "Unexpected token: ",
+      "en": "Unexpected token: ",
+      "zh": "无法识别的符号："
+    },
+    {
+      "key": "t_93244d906a5bee4e",
+      "source": "Expression nesting limit.",
+      "en": "Expression nesting limit.",
+      "zh": "表达式嵌套过深。"
+    },
+    {
+      "key": "t_b307adf1b0b79c10",
+      "source": "Invalid member name.",
+      "en": "Invalid member name.",
+      "zh": "成员名称无效。"
+    },
+    {
+      "key": "t_d8c436ab4c39e58d",
+      "source": "Invalid expression.",
+      "en": "Invalid expression.",
+      "zh": "表达式无效。"
+    },
+    {
+      "key": "t_3d2161ce70ae6177",
+      "source": "Mutable collections cannot be dictionary keys.",
+      "en": "Mutable collections cannot be dictionary keys.",
+      "zh": "可变集合不能作为字典键。"
+    },
+    {
+      "key": "t_4cb05543f61a597a",
+      "source": "Research needed: ",
+      "en": "Research needed: ",
+      "zh": "需要研究："
+    },
+    {
+      "key": "t_616b34d55ed69997",
+      "source": "A finite number is required.",
+      "en": "A finite number is required.",
+      "zh": "此处需要有限数值。"
+    },
+    {
+      "key": "t_a7607c52669c5407",
+      "source": "An integer is required.",
+      "en": "An integer is required.",
+      "zh": "此处需要整数。"
+    },
+    {
+      "key": "t_3b0b3edb62949422",
+      "source": "The value is not iterable.",
+      "en": "The value is not iterable.",
+      "zh": "此值不能用于迭代。"
+    },
+    {
+      "key": "t_daabe0fdee34f203",
+      "source": "Comparison nesting limit.",
+      "en": "Comparison nesting limit.",
+      "zh": "比较嵌套过深。"
+    },
+    {
+      "key": "t_d04f1d745690e187",
+      "source": "String size limit.",
+      "en": "String size limit.",
+      "zh": "字符串超过大小上限。"
+    },
+    {
+      "key": "t_fe7398785b6e3088",
+      "source": "Collection size limit.",
+      "en": "Collection size limit.",
+      "zh": "集合超过大小上限。"
+    },
+    {
+      "key": "t_729da4a485ffb6f3",
+      "source": "Division by zero.",
+      "en": "Division by zero.",
+      "zh": "不能除以零。"
+    },
+    {
+      "key": "t_6979b571e2949aef",
+      "source": "Unknown operator: ",
+      "en": "Unknown operator: ",
+      "zh": "未知运算符："
+    },
+    {
+      "key": "t_467f045fcf708e81",
+      "source": "Missing dictionary key: ",
+      "en": "Missing dictionary key: ",
+      "zh": "缺少字典键："
+    },
+    {
+      "key": "t_d19b56b5f058b026",
+      "source": "Index out of range.",
+      "en": "Index out of range.",
+      "zh": "索引超出范围。"
+    },
+    {
+      "key": "t_feb75de69a89f989",
+      "source": "Tuples are immutable.",
+      "en": "Tuples are immutable.",
+      "zh": "元组不能修改。"
+    },
+    {
+      "key": "t_f79eadcb2a338b34",
+      "source": "This value cannot be indexed for assignment.",
+      "en": "This value cannot be indexed for assignment.",
+      "zh": "此值不支持通过索引赋值。"
+    },
+    {
+      "key": "t_ab317076c0039f67",
+      "source": "Invalid assignment target.",
+      "en": "Invalid assignment target.",
+      "zh": "赋值目标无效。"
+    },
+    {
+      "key": "t_ddd470cdc1e8e966",
+      "source": "Undefined variable: ",
+      "en": "Undefined variable: ",
+      "zh": "未定义变量："
+    },
+    {
+      "key": "t_64c6ec495b33d33e",
+      "source": "Unpacking length mismatch.",
+      "en": "Unpacking length mismatch.",
+      "zh": "解包数量不匹配。"
+    },
+    {
+      "key": "t_49e4ed149060aee2",
+      "source": "Unknown module member: ",
+      "en": "Unknown module member: ",
+      "zh": "未知模块成员："
+    },
+    {
+      "key": "t_0ecd79120db78b1d",
+      "source": "The value is not callable.",
+      "en": "The value is not callable.",
+      "zh": "此值不能作为函数调用。"
+    },
+    {
+      "key": "t_201a3afab1adfcc3",
+      "source": "Value not found.",
+      "en": "Value not found.",
+      "zh": "找不到指定的值。"
+    },
+    {
+      "key": "t_b6aa66bc039b1eab",
+      "source": "pop expects zero or one argument.",
+      "en": "pop expects zero or one argument.",
+      "zh": "pop 接受零个或一个参数。"
+    },
+    {
+      "key": "t_eaa2220c1d2a208d",
+      "source": "Unsupported collection method: ",
+      "en": "Unsupported collection method: ",
+      "zh": "不支持的集合方法："
+    },
+    {
+      "key": "t_f1376dc67df2c8bf",
+      "source": "Expected ",
+      "en": "Expected ",
+      "zh": "需要 "
+    },
+    {
+      "key": "t_664bb747cb5e9e4e",
+      "source": "Empty collection.",
+      "en": "Empty collection.",
+      "zh": "集合不能为空。"
+    },
+    {
+      "key": "t_3168b5f93d30b96b",
+      "source": "range expects 1 to 3 arguments.",
+      "en": "range expects 1 to 3 arguments.",
+      "zh": "range 接受1至3个参数。"
+    },
+    {
+      "key": "t_03c17cc8a70bb089",
+      "source": "range step cannot be zero.",
+      "en": "range step cannot be zero.",
+      "zh": "range 步长不能为零。"
+    },
+    {
+      "key": "t_18c51f10f93b7b32",
+      "source": "Range size limit.",
+      "en": "Range size limit.",
+      "zh": "range 超过长度上限。"
+    },
+    {
+      "key": "t_88f523fd163362dc",
+      "source": "Expected at most one argument.",
+      "en": "Expected at most one argument.",
+      "zh": "最多接受一个参数。"
+    },
+    {
+      "key": "t_019e1a41fba7332f",
+      "source": "Missing collection.",
+      "en": "Missing collection.",
+      "zh": "缺少集合参数。"
+    },
+    {
+      "key": "t_b8439d7c7cd99780",
+      "source": "Function recursion exceeds 24 levels.",
+      "en": "Function recursion exceeds 24 levels.",
+      "zh": "函数递归超过24层。"
+    },
+    {
+      "key": "t_48b979035b050a6f",
+      "source": "Incorrect argument count for ",
+      "en": "Incorrect argument count for ",
+      "zh": "函数参数数量不正确："
+    },
+    {
+      "key": "t_f4d4dcd37e0ddd63",
+      "source": "Module not found: ",
+      "en": "Module not found: ",
+      "zh": "找不到模块："
+    },
+    {
+      "key": "t_286e1ad37693ec3e",
+      "source": "Import depth limit.",
+      "en": "Import depth limit.",
+      "zh": "模块导入层级过深。"
+    },
+    {
+      "key": "t_ade12f7cffde2cdf",
+      "source": "Missing import: ",
+      "en": "Missing import: ",
+      "zh": "找不到导入成员："
+    },
+    {
+      "key": "t_bab15cc927072c5d",
+      "source": "Instruction limit reached.",
+      "en": "Instruction limit reached.",
+      "zh": "程序达到执行步骤上限。"
+    },
+    {
+      "key": "t_f5ab0bedc3cf60c4",
+      "source": "Unknown research: ",
+      "en": "Unknown research: ",
+      "zh": "未知研究："
+    },
+    {
+      "key": "t_a7024789705cd036",
+      "source": "Farm size is locked.",
+      "en": "Farm size is locked.",
+      "zh": "尚未解锁该农田尺寸。"
+    },
+    {
+      "key": "t_0e40a024849c1faf",
+      "source": "Unknown plant: ",
+      "en": "Unknown plant: ",
+      "zh": "未知植物："
+    },
+    {
+      "key": "t_452d6e1b812b382c",
+      "source": "Nested simulations are not supported.",
+      "en": "Nested simulations are not supported.",
+      "zh": "不支持嵌套模拟。"
+    },
+    {
+      "key": "t_7f42ed11c40060cc",
+      "source": "Simulation program not found: ",
+      "en": "Simulation program not found: ",
+      "zh": "找不到模拟程序："
+    },
+    {
+      "key": "t_98200291766a24da",
+      "source": "Unknown simulation research: ",
+      "en": "Unknown simulation research: ",
+      "zh": "未知模拟科技："
+    },
+    {
+      "key": "t_9cc593fbc0e1676d",
+      "source": "Simulation exceeded one hour of game time.",
+      "en": "Simulation exceeded one hour of game time.",
+      "zh": "模拟超过一小时游戏时间。"
+    },
+    {
+      "key": "t_ab6212c26584837a",
+      "source": "Nested challenges are not supported.",
+      "en": "Nested challenges are not supported.",
+      "zh": "不支持嵌套竞速。"
+    },
+    {
+      "key": "t_0048350498b44140",
+      "source": "Unknown local challenge: ",
+      "en": "Unknown local challenge: ",
+      "zh": "未知本地竞速类别："
+    },
+    {
+      "key": "t_786a86db52db100f",
+      "source": "Challenge program not found: ",
+      "en": "Challenge program not found: ",
+      "zh": "找不到竞速程序："
+    },
+    {
+      "key": "t_dfab63550a2335d1",
+      "source": "Challenge exceeded one game hour.",
+      "en": "Challenge exceeded one game hour.",
+      "zh": "竞速超过一小时游戏时间。"
+    },
+    {
+      "key": "t_e9cbecebfc6bd188",
+      "source": "Challenge target not reached. ",
+      "en": "Challenge target not reached. ",
+      "zh": "尚未达到竞速目标。"
+    },
+    {
+      "key": "t_4b8ddb69620cb697",
+      "source": "Unknown entity: ",
+      "en": "Unknown entity: ",
+      "zh": "未知实体："
+    },
+    {
+      "key": "t_9bae5a6d2a572e97",
+      "source": "Unknown item: ",
+      "en": "Unknown item: ",
+      "zh": "未知物品："
+    },
+    {
+      "key": "t_a64af073ba5c1b0f",
+      "source": "Expected North, East, South or West.",
+      "en": "Expected North, East, South or West.",
+      "zh": "方向应为 North、East、South 或 West。"
+    },
+    {
+      "key": "t_a2953312024964b6",
+      "source": "get_cost expects 1 or 2 arguments.",
+      "en": "get_cost expects 1 or 2 arguments.",
+      "zh": "get_cost 接受1至2个参数。"
+    },
+    {
+      "key": "t_dfad762ca3bb1c9e",
+      "source": "use_item expects 1 or 2 arguments.",
+      "en": "use_item expects 1 or 2 arguments.",
+      "zh": "use_item 接受1至2个参数。"
+    },
+    {
+      "key": "t_f6334a44efa66f81",
+      "source": "measure expects at most one direction.",
+      "en": "measure expects at most one direction.",
+      "zh": "measure 最多接受一个方向。"
+    },
+    {
+      "key": "t_69c5e2f2d2889524",
+      "source": "spawn_drone expects a function.",
+      "en": "spawn_drone expects a function.",
+      "zh": "spawn_drone 需要传入函数。"
+    },
+    {
+      "key": "t_e19cca0f43daea0b",
+      "source": "Expected a drone handle.",
+      "en": "Expected a drone handle.",
+      "zh": "此处需要无人机任务句柄。"
+    },
+    {
+      "key": "t_b5de958d6bf17f52",
+      "source": "Invalid drone handle.",
+      "en": "Invalid drone handle.",
+      "zh": "无人机任务句柄无效。"
+    },
+    {
+      "key": "t_5af0b4138f6a5601",
+      "source": "simulate expects 1 to 6 arguments.",
+      "en": "simulate expects 1 to 6 arguments.",
+      "zh": "simulate 接受1至6个参数。"
+    },
+    {
+      "key": "t_970f1cc9e324d8c2",
+      "source": "Unknown function: ",
+      "en": "Unknown function: ",
+      "zh": "未知函数："
+    },
+    {
+      "key": "t_935d67f2a1c69f95",
+      "source": "Fork memory limit.",
+      "en": "Fork memory limit.",
+      "zh": "复制任务内存超过安全限制。"
+    },
+    {
+      "key": "t_218a8d56d5a41e4e",
+      "source": "第 {0} 行：{1}",
+      "en": "Line {0}: {1}",
+      "zh": "第 {0} 行：{1}"
+    },
+    {
+      "key": "t_b26f2b053281bdd9",
+      "source": "需要 {0} 个参数，收到 {1} 个。",
+      "en": "Expected {0} arguments; received {1}.",
+      "zh": "需要 {0} 个参数，收到 {1} 个。"
+    },
+    {
+      "key": "t_6c8320eccb4e8b24",
+      "source": "保存：{0}",
+      "en": "Save: {0}",
+      "zh": "保存：{0}"
+    },
+    {
+      "key": "t_f5f3635d767ecf4c",
+      "source": "可在设置中允许未解锁语法以练习。",
+      "en": "Enable unrestricted syntax in Settings to practice.",
+      "zh": "可在设置中允许未解锁语法以练习。"
+    },
+    {
+      "key": "t_0462f80c3a3b11d1",
+      "source": "请使用不重复的农场名称，仅限英文字母、数字、下划线和短横线。",
+      "zh": "请使用不重复的农场名称，仅限英文字母、数字、下划线和短横线。",
+      "en": "Choose a unique farm name using letters, digits, underscores or hyphens."
+    },
+    {
+      "key": "t_97a1b5cd67d997f9",
+      "source": "每个农场独立保存进度、程序目录、纪录和备份。载入前会保存当前农场并结束执行。",
+      "zh": "每个农场独立保存进度、程序目录、纪录和备份。载入前会保存当前农场并结束执行。",
+      "en": "Each farm has its own progress, program folder, records and backup. Loading closes the current execution after saving it."
+    },
+    {
+      "key": "t_b38e283f5ca75d10",
+      "source": "创建农场",
+      "zh": "创建农场",
+      "en": "Create farm"
+    },
+    {
+      "key": "t_49a1fb812b48c08c",
+      "source": "名称可用英文字母、数字、下划线和短横线。",
+      "zh": "名称可用英文字母、数字、下划线和短横线。",
+      "en": "Use letters, digits, underscores and hyphens."
+    },
+    {
+      "key": "t_d92104e70c7430cc",
+      "source": "农场列表",
+      "zh": "农场列表",
+      "en": "Farm library"
+    },
+    {
+      "key": "t_50b8ee9b1fd74079",
+      "source": "独立存档和程序。",
+      "zh": "独立存档和程序。",
+      "en": "Independent saves and programs."
+    },
+    {
+      "key": "t_4989b5cf94838935",
+      "source": "管理",
+      "zh": "管理",
+      "en": "Manage"
     }
   ]
 }

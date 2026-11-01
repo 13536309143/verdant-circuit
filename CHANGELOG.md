@@ -1,5 +1,20 @@
 # Changelog / 更新日志
 
+## [0.11.1] — 2026-11-01
+
+A fresh automation-farm rebuild. Earlier releases are preserved; saves are not migrated.
+
+- Independent coroutine interpreter: functions, closures, returns, modules and collections; isolated worker drones with handles and results.
+- Resource-funded progression with 33 research nodes, crop algorithms, giant/dead pumpkins, sunflower priorities, cactus sorting, companions and infection.
+- Seeded reusable mazes, treasure, apple/tail movement and bone production.
+- Configurable simulations, local fixed-start races, production records and 13 persistent local achievements. Steam online services deferred.
+- Code studio with multiple programs/windows, 100-state undo/redo, breakpoints, stepping, variable hover/watch and exported external-editor files.
+- Separate farm profiles, automatic backups and default English / optional Simplified Chinese.
+- Replaces the earlier contract, money/research-point and large-body traffic model. No floating islands or mining expansion.
+- Automated model/interpreter and real-frame bilingual/profile/file tests; Mac Universal and Windows x64 Mono packages. See [scope](docs/PARITY-0.11.1.md) and [acceptance guide](docs/TESTING.md).
+
+本版完整重写为资源驱动的自动化农场，旧存档不迁移。采用独立函数无人机及作物算法，先提供本地竞速、纪录和成就。Windows 真机验收、长期真人平衡和 Mac 签名公证仍待完成。
+
 ## [0.10.2] — 2026-10-30
 
 - Playable multi-drone fleet: capacity 1/2/4/8, independently researched airframe tiers, 1×1, 2×2, 3×2, 2×3 and 3×3 bodies.

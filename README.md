@@ -1,123 +1,152 @@
-<div align="center">
-
 # Verdant Circuit · 禾序
 
-**Write the routine. Grow the system.**
+**Program the farm. Discover the algorithm.**
 
-A single-player programming farm: grow eight crops, build a drone fleet, and turn repeated work into an automated production system.
+**English** · [简体中文](README.zh-CN.md) · [Download 0.11.1](https://github.com/13536309143/verdant-circuit/releases/tag/v0.11.1) · [Test guide](docs/TESTING.md)
 
-**English** · [简体中文](README.zh-CN.md)
+Verdant Circuit is a single-player programming farm, independently implemented in Unity. Write Python-inspired code to grow resources, unlock technology and solve different agricultural algorithms.
 
-[Download v0.10.2](https://github.com/13536309143/verdant-circuit/releases/tag/v0.10.2) · [Fleet & economy guide](docs/FLEET.md) · [Changelog](CHANGELOG.md) · [Report an issue](https://github.com/13536309143/verdant-circuit/issues)
+**0.11.1 rebuilds the game around a fresh automation simulation. Start a new farm.** Its save format, economy, research and interpreter replace the earlier contract-based game. Earlier releases remain available through Git tags and Releases.
 
-![Unity](https://img.shields.io/badge/Unity-2022.3_LTS-222222)
-![Release](https://img.shields.io/badge/version-0.10.2-3c7c64)
-![Platforms](https://img.shields.io/badge/platforms-macOS_%7C_Windows-5b7466)
-![Status](https://img.shields.io/badge/status-public_test-e7c57d)
+![Automation studio](docs/images/0.11.1-english.png)
 
-</div>
+## Playable systems
 
-![The automation studio](docs/images/0.10.2-english.png)
-
-Start with a free grain crop and one drone. Learn loops, soil preparation, water management and companion planting; then coordinate several machines with different physical footprints. The game uses a small Python-inspired language, with visible execution state, sensors and an editable program library.
-
-**v0.10.2 is a public test release.** Multiple drones and large airframes are playable. Floating islands and inter-island logistics remain future work. The game defaults to English; choose Simplified Chinese in **Settings → Language**, or press **F8**. Your choice persists, and your own code is never translated.
-
-## What you can play
-
-| System | Included |
+| System | Included in 0.11.1 |
 |---|---|
-| Farm | 4×4 → 6×6 → 8×8 fields; seasons, rain, moisture and fertility |
-| Crops | Grain, radish, flax, berry, sunflower, pumpkin, tea and starbloom |
-| Progression | Six chapters, 30 contracts, 26 research projects, 12 achievements |
-| Fleet | Capacity 1 → 2 → 4 → 8; general, irrigation and harvesting drones |
-| Airframes | 1×1, 2×2, 3×2, 2×3 and 3×3; full-footprint collision checks |
-| Scheduling | One controller program, concurrent per-drone FIFO queues, local pathfinding and waiting |
-| Economy | Harvest income, five processing recipes, three rotating supply orders, active-fleet upkeep |
-| Challenges | Six separate timed trials; main-farm resources are restored afterward |
-| Code studio | Eleven templates, current-line/variable display, pause/step, 100-state undo/redo per program |
-| Programs | Start with one; add/remove freely, keep at least one; browsing preserves the running program |
-| Saves | Autosave, manual save, rolling backup and recovery; old saves migrate to a one-drone fleet |
+| Production | Grass, bushes, trees, carrots, pumpkins, sunflowers and cacti; hay, wood, power, cactus, bone, gold and supplies |
+| Spatial crops | Tree spacing, randomized companion requests, giant pumpkin squares and dead-plant replacement |
+| Algorithm crops | Petal measurement and sunflower priority; neighboring cactus swaps and two-dimensional sorted harvests |
+| Infection | Fertilizer accelerates growth and infects plants; catalyst toggles local infection and generates mazes |
+| Mazes | Seeded connected hedge mazes, treasure, reusable layouts and wall removal |
+| Tail mode | Apple targets, growing occupied tails, blocked movement and bone production |
+| Drones | Independent function execution, isolated variable/collection copies, spawn handles, joins and returned results; no inter-drone collision |
+| Progression | 33 resource-funded research nodes, repeatable upgrades, API cost queries and automatic research |
+| Programming | Parameters, defaults, returned values, recursion, closures, modules, lists, tuples, sets, dictionaries, indices and unpacking |
+| Code studio | Multiple programs, draggable code windows, 100-state undo/redo, pause/step, breakpoints, variable watch and hover |
+| Experiments | Configurable isolated simulations with deterministic seeds and local fixed-start competition |
+| Feedback | Resource statistics, personal bests, persistent local achievements and challenge records |
+| Files | Independent save/backup, exported `.py` files, interface hints, external-file watching and output log |
+| Languages | English by default; Simplified Chinese through Settings or F8 |
 
-Crop contracts count **new harvests after accepting that contract**. There is no fixed 600-second gate. Targets are grain 2,000; radish 1,000; flax 1,400; berry 2,400; sunflower 1,300; pumpkin 1,200; tea 1,250; starbloom 500. Better algorithms, research and fleets can shorten completion time.
+This is an independent reimplementation of programming-farm mechanics, not the original Steam application. It uses project-owned code, geometry and synthesized audio. Its interface, economy curves, execution accounting and local challenge targets are defined by this project. See [implementation scope](docs/PARITY-0.11.1.md) for evidence and limits.
 
 ## Download and run
 
-Open [Releases](https://github.com/13536309143/verdant-circuit/releases/tag/v0.10.2). You do not need Unity to play.
+Get the complete package from [v0.11.1 Releases](https://github.com/13536309143/verdant-circuit/releases/tag/v0.11.1):
 
-| Platform | Download | Launch |
-|---|---|---|
-| macOS Intel + Apple Silicon | `HeXu-macOS-0.10.2.zip` | Extract and open `HeXu-0.10.2.app` |
-| Windows x64 | `HeXu-Windows-x64-0.10.2.zip` | Extract the **whole folder**, then open `HeXu.exe` |
-| Unity source project | `HeXu-UnityProject-0.10.2.zip` | Extract and add the project root in Unity Hub |
+- **Mac:** `HeXu-macOS-0.11.1.zip` → extract and open `HeXu-0.11.1.app`. Intel and Apple Silicon are included.
+- **Windows x64:** `HeXu-Windows-x64-0.11.1.zip` → extract the entire folder and open `HeXu.exe`. Keep the data folder, UnityPlayer.dll and Mono runtime beside it.
+- **Source:** `HeXu-UnityProject-0.11.1.zip` → extract and add its root in Unity Hub.
 
-Keep `HeXu_Data`, `UnityPlayer.dll` and `MonoBleedingEdge` beside the Windows executable. Verify downloads against `SHA256SUMS-0.10.2.txt` when needed. Save and quit the old game before opening an upgrade. v0.10.1 remains available separately.
+No Unity installation is needed to play. Checksums are supplied in the release. The Mac app is not distribution-signed or notarized. Windows is cross-built on Mac; native Windows acceptance remains outstanding.
 
-The macOS app is locally built and has not been distribution-signed or notarized. The Windows Mono build is cross-compiled on macOS and is not yet validated on a native Windows machine. Linux, WebGL and Steam distributions are not provided.
+## First steps
 
-## Your first program
-
-Use arrows/WASD to move, Space to plant and **E** to harvest. Start with grain, then paste this into the studio and click **Run**:
+1. The fresh farm has one plot and no inventory. Let its grass mature for a few seconds.
+2. Run `harvest()` to collect hay. Repeat until you can research **Loops**.
+3. Open Templates and create **First harvest**. Its loop will keep harvesting the starting plot.
+4. Research planting, expansion, operators, variables and sensors. Use new production to fund further branches.
+5. Advanced systems require new programs: repair pumpkin squares, sort cacti, search mazes or coordinate drones.
 
 ```python
 while True:
-    for row in range(size()):
-        for col in range(size()):
-            if ready():
+    harvest()
+```
+
+After unlocking the required language features and field expansion:
+
+```python
+while True:
+    for row in range(get_world_size()):
+        for col in range(get_world_size()):
+            if can_harvest():
                 harvest()
-            if crop() == empty:
-                plant(grain)
             move(East)
         move(North)
 ```
 
-Claim each completed contract on the left to advance. Research unlocks crops and better tools. For the watering contract, use the **Irrigation patrol** template (`moisture() < 0.6`); stored water and plot moisture are different measurements.
+Use Settings → Unrestricted syntax when experimenting without the language-research gates. Crop availability and resource costs still apply.
 
-| Action | Control |
+| Control | Action |
 |---|---|
-| Move / navigate | Arrows or WASD / click a plot |
-| Plant / harvest | Space / E |
-| Water / till / fertilize | Q / T / F, after the relevant unlock |
-| Run | Cmd/Ctrl+Enter |
+| Run / stop | Studio buttons; Cmd/Ctrl+Enter runs the selected program |
 | Undo / redo | Cmd/Ctrl+Z / Cmd/Ctrl+Shift+Z or Ctrl+Y |
-| Programs, fleet, research | Header and studio buttons; F7 opens Fleet |
-| Settings / close panel | Esc |
-| Change language | Settings → Language, or F8 |
+| Pause / step | Studio buttons |
+| Breakpoint | F9 at the caret line, or enter line numbers in Settings |
+| Variable value | Hover a variable in code, or read the watch panel |
+| Multiple files | Programs; import a file by its name without `.py` |
+| Floating code window | Programs → Window; drag its title to move it |
+| Field inspection / zoom | Click a plot / scroll over the farm |
+| Language | F8 or Settings |
+| Settings / close dialog | Esc |
 
-Typing takes priority over farming shortcuts. Settings and research panels pause the world; program, fleet and airframe panels keep it running. Pausing the controller also pauses fleet queues, while crops continue growing. Stop clears queued jobs. Finishing a controller naturally leaves its submitted jobs running. Loading a save restores jobs **paused**: resume them explicitly from Fleet.
+Browsing another file keeps existing work running. Main Run starts a fresh controller and replaces current tasks. A floating window can launch another independent program if a drone slot is available. Stop halts all tasks. Worker drones disappear after completing their functions; handles remain usable for `wait_for()` results. Programs resume through explicit Run after loading, rather than restoring interpreter stacks.
 
-## Build a fleet
+## Interfaces and experiments
 
-Research **Dual-Drone Scheduling**, then deploy a second general drone from **Fleet**. Capacity and footprint level are independent saved variables: `droneCapacity` and `footprintTier`. Size research does not grant more machines; capacity research does not grant larger bodies.
-
-![Mixed-size fleet](docs/images/0.10.2-fleet.png)
-
-Queued work moves the full rectangular footprint to its anchor, then acts on each covered plot. Queue routes wait for occupied space; manual/direct movement into another machine incurs a capped repair fee. Large bodies cannot wrap around field edges. Leave space for passing and use separate work lanes.
+The in-game Guide lists the implemented APIs. Useful groups:
 
 ```python
-# Requires two deployed general drones in clear lanes.
-left = drone_id(0)
-right = drone_id(1)
-queue_plant(left, grain, 0, 0)
-queue_plant(right, grain, size() - drone_width(right), 0)
-while drone_busy(left) or drone_busy(right):
-    wait(0.2)
+# Actions and observations
+harvest()
+plant(Entities.Carrot)
+till()
+move(North)
+can_move(East)
+use_item(Items.Water)
+get_water()
+measure()
+swap(East)
+get_companion()
+
+# Research and resources
+num_items(Items.Hay)
+get_cost(Unlocks.Speed)
+num_unlocked(Unlocks.Speed)
+unlock(Unlocks.Speed)
+
+# Independent workers
+def work(amount):
+    return amount * 2
+
+handle = spawn_drone(work, 7)
+if handle != None:
+    result = wait_for(handle)
+    print(result)
 ```
 
-These are void commands, not Python threads or promise/ticket APIs. One VM dispatches work; each machine advances its own queue. The [fleet guide](docs/FLEET.md) gives exact costs, unlocks, complete API signatures, scheduling limits and a repeatable internal acceptance test.
+These calls are an API index rather than a complete farming program. The language is not full Python and does not expose the operating system or Python's standard library.
 
-## Open and build the Unity project
+Create a separate program named `experiment`, then run:
 
-Use the editor version in `ProjectSettings/ProjectVersion.txt`: **Unity 2022.3.62f3c1**. Other 2022.3 versions require compatibility checks. Install Mac Build Support and/or Windows Build Support (Mono) for that same Editor, with an active Unity license.
+```python
+duration = simulate("experiment", Unlocks, {Items.Carrot: 10000}, {}, 7, 64)
+print(duration)
+```
+
+Simulation starts from a separate configured farm and returns elapsed game time. A fixed seed makes repeated starts reproducible. Simulations/challenges are bounded to one game hour; nested simulation is unsupported. Local resource competitions target **1,000 newly produced units**, followed by program termination. They use this project's presets and do not submit to the original game's Steam leaderboards. Steam integration is deferred; local records and achievements are available now.
+
+## External editor and saves
+
+Settings shows the actual save path. The new format lives under:
+
+```text
+Application.persistentDataPath/Automation/<farm>.json
+```
+
+Settings → Farm library → Manage creates and loads independent farms, each with its own progress, programs and records. The default file is `farm-0.11.1.json`. The previous save is retained as `.bak`. Code and output are stored under the same Automation folder. Enable **External editor → Export and watch** to export `.py` files plus `__builtins__.py` hints; saved external edits are reloaded. Avoid editing the same file in two places simultaneously. Use the Programs panel to remove files from the game.
+
+## Develop and build
+
+Use **Unity 2022.3.62f3c1**, matching `ProjectSettings/ProjectVersion.txt`, with an active license and the relevant Mac / Windows Mono build module. Dependencies are pinned in `Packages/`, including Unity Localization and Addressables. Unity MCP is optional.
 
 ```bash
 git clone https://github.com/13536309143/verdant-circuit.git
 cd verdant-circuit
 ```
 
-Add the repository root in Unity Hub and open `Assets/VerdantCircuit/Scenes/VerdantCircuit.unity`. Let Package Manager finish before pressing Play. Dependencies include **Unity Localization 1.5.3** and Addressables, pinned in `Packages/`. Unity MCP is an optional development integration; the project and players do not require it.
-
-Use **Tools → 禾序 → 发行** to generate localization assets, run regression checks, and build either platform. For command-line builds, close the Editor for this project first:
+Open `Assets/VerdantCircuit/Scenes/VerdantCircuit.unity` and press Play. Release tools are under **Tools → 禾序 → 发行**. Close this project's Editor before command-line builds:
 
 ```bash
 export VERDANT_UNITY_EDITOR="/path/to/Unity.app/Contents/MacOS/Unity"
@@ -125,40 +154,10 @@ bash tools/build-macos.sh
 bash tools/build-windows.sh
 ```
 
-The scripts regenerate bilingual tables/fonts, verify rules and the campaign, build, zip and checksum into `Builds/release/`. They do not upload releases or perform signing/notarization. Share the complete package through GitHub Releases; this is a local single-player application and needs no backend deployment. Do not run a standalone player and Editor Play against the same save simultaneously.
+The scripts generate bilingual assets, run model/interpreter checks, build and package into `Builds/release/`. They do not upload or sign packages. This is a local single-player game; no backend server is required.
 
-## Validation and limits
+The rebuilt implementation is in `Assets/VerdantCircuit/Scripts/Automation/`. Test reports and the manual acceptance procedure are in [docs/TESTING.md](docs/TESTING.md). The old standalone fleet/island Python prototype under `tools/` is historical and does not validate this interpreter or world.
 
-The release checks exercise the actual Unity game model: **45 fleet checks**, **50 core checks**, all 30 campaign contracts, compilation of all eleven templates and both localization tables. Fleet coverage includes independent unlocks, area billing, roles, saves, insufficient funds, capped collision fees and 1,000 scheduling ticks with eight mixed-size bodies. Real Play-mode checks also verify advancing frames, both UI languages and completed queued irrigation. Reports are in [docs/reports/v0.10.2](docs/reports/v0.10.2/).
+## Credits
 
-The campaign replay is a deterministic reachability check, not a promise of human playtime or final balance. Queue pathfinding respects current occupancy; it does not guarantee resolution of every packed layout. A blocked job expires after 30 game seconds so the controller can replan. Native Windows testing, prolonged human balance testing and a wider hardware matrix remain outstanding. The old standalone Python fleet/island model under `tools/` is a historical design prototype, not the implementation used by this release.
-
-## Saves and source layout
-
-The original product name is retained to preserve save compatibility. macOS commonly uses either of these compatibility locations; **Settings → Save location** shows the exact path in use:
-
-```text
-~/Library/Application Support/Fieldworks/禾序/verdant-farm.json
-~/Library/Application Support/com.fieldworks.verdantcircuit/verdant-farm.json
-```
-
-Windows uses Unity's `Application.persistentDataPath` under the current user's LocalLow directory (`Fieldworks/禾序`). `.bak` holds the previous save. A new campaign creates a dated backup. Existing programs and completed contracts are preserved; new fleet research is earned normally.
-
-```text
-Assets/VerdantCircuit/
-  Scripts/       Farming, VM, fleet, economy, runtime UI and localization
-  Editor/        Scene generation, release builders and automated checks
-  Localization/  English/Chinese String Tables, Asset Tables and authoring JSON
-  Scenes/        Main game scene
-  Fonts/         Bundled CJK source and TMP font assets
-Packages/        Pinned dependencies
-ProjectSettings/ Unity project configuration
-docs/            Guides, screenshots, test reports and roadmap
-tools/           Reproducible build scripts and historical rule prototype
-```
-
-## Credits and contribution
-
-Inspired by programming-farm games as a genre. This project does not use the source code, branding or art of *The Farmer Was Replaced*. Geometry, UI and synthesized audio are implemented in this project. Fonts and engine packages retain their own licenses; see [third-party notices](THIRD_PARTY_NOTICES.md). No project-wide open-source license has been selected; a public repository does not itself grant additional rights.
-
-For issues, include the release, OS/chip, reproduction steps, expected/actual behavior and a short program if relevant. Avoid posting private paths, player saves or credentials. Run rule checks after changing gameplay, and check real keyboard/mouse interaction after changing UI.
+Inspired by the programming-farm genre and *The Farmer Was Replaced*. No executable, proprietary game code, artwork, soundtrack or manual from the Steam installation is included. Fonts and engine packages keep their original licenses; see [third-party notices](THIRD_PARTY_NOTICES.md). No project-wide open-source license has been selected.

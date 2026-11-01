@@ -660,7 +660,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662229213341
-    m_Localized: A First Harvest
+    m_Localized: First harvest
     m_Metadata:
       m_Items: []
   - m_Id: 662229213342
@@ -929,7 +929,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662229213400
-    m_Localized: Verdant
+    m_Localized: VERDANT CIRCUIT
     m_Metadata:
       m_Items: []
   - m_Id: 662229213401
@@ -1277,7 +1277,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662229213484
-    m_Localized: Completed
+    m_Localized: Complete
     m_Metadata:
       m_Items: []
   - m_Id: 662229213485
@@ -1430,7 +1430,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662229213519
-    m_Localized: New Program
+    m_Localized: New program
     m_Metadata:
       m_Items: []
   - m_Id: 662229213520
@@ -1467,7 +1467,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662229213528
-    m_Localized: Delete
+    m_Localized: Remove
     m_Metadata:
       m_Items: []
   - m_Id: 662229213529
@@ -1508,7 +1508,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662229213537
-    m_Localized: Select
+    m_Localized: Choose
     m_Metadata:
       m_Items: []
   - m_Id: 662229213538
@@ -1659,7 +1659,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662229213573
-    m_Localized: Save Now
+    m_Localized: Save now
     m_Metadata:
       m_Items: []
   - m_Id: 662229213574
@@ -1676,7 +1676,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662229213577
-    m_Localized: Start Over
+    m_Localized: Restart
     m_Metadata:
       m_Items: []
   - m_Id: 662229213578
@@ -1684,7 +1684,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662229213579
-    m_Localized: New Farm
+    m_Localized: New farm
     m_Metadata:
       m_Items: []
   - m_Id: 662229213580
@@ -1711,7 +1711,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662229213584
-    m_Localized: Save and Quit
+    m_Localized: Save and quit
     m_Metadata:
       m_Items: []
   - m_Id: 662229213585
@@ -2325,7 +2325,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662229213734
-    m_Localized: Resize
+    m_Localized: Change
     m_Metadata:
       m_Items: []
   - m_Id: 662229213735
@@ -2602,6 +2602,1036 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5349854666753
     m_Localized: Irrigation queue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250470387712
+    m_Localized: Welcome. Harvest grass to earn hay, then unlock planting and expansion.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582016
+    m_Localized: Program started.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582017
+    m_Localized: Choose a unique name using letters, digits and underscores.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582018
+    m_Localized: External code reloaded.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582019
+    m_Localized: Hay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582020
+    m_Localized: Wood
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582021
+    m_Localized: Carrot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582022
+    m_Localized: Pumpkin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582023
+    m_Localized: Power
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582024
+    m_Localized: Cactus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582025
+    m_Localized: Bone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582026
+    m_Localized: Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582027
+    m_Localized: Water
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582028
+    m_Localized: Fertilizer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582029
+    m_Localized: Catalyst
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582030
+    m_Localized: Resource totals and local achievements. Challenge records use fixed
+      starts and remain on this computer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582031
+    m_Localized: Local competition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582032
+    m_Localized: Test a program against a fixed production target.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582033
+    m_Localized: First hay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582034
+    m_Localized: A thousand harvests
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582035
+    m_Localized: The woodland
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582036
+    m_Localized: Root production
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582037
+    m_Localized: A giant harvest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582038
+    m_Localized: Solar reserve
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582039
+    m_Localized: Order in the field
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582040
+    m_Localized: Treasure route
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582041
+    m_Localized: Long-tail explorer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582042
+    m_Localized: Parallel production
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582043
+    m_Localized: Open horizons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582044
+    m_Localized: Research complete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582045
+    m_Localized: A recorded strategy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582046
+    m_Localized: "The selected program is evaluated on a separate 8\xD78 farm with
+      all research, seed 41 and supplied inputs. Reach the target and let all workers
+      terminate. Fastest reset starts with one plot and no resources. Stop cancels
+      the challenge."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582047
+    m_Localized: Produce 1000 new units, then terminate the program.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582048
+    m_Localized: Fastest reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582049
+    m_Localized: Start from zero and unlock local competition through code.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582050
+    m_Localized: A challenge is already running.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582051
+    m_Localized: Challenge started on an isolated farm.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582052
+    m_Localized: Challenge exceeded the one-hour game-time limit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582053
+    m_Localized: 'Challenge completed: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582054
+    m_Localized: 'Challenge ended before reaching its target. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582055
+    m_Localized: VERDANT CIRCUIT  /  0.11.1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582056
+    m_Localized: Programs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582057
+    m_Localized: Lab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582058
+    m_Localized: Records
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582059
+    m_Localized: OUTPUT  /  Click a plot to inspect it. Code controls the drone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582060
+    m_Localized: Line
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582061
+    m_Localized: Drones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582062
+    m_Localized: 'Ctrl/Cmd+Enter: run  /  F8: language  /  Esc: settings'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582063
+    m_Localized: Research uses harvested resources. Unlocking a branch adds new production
+      rules. Programming features can be learned gradually; unrestricted syntax is
+      available in Settings.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582064
+    m_Localized: 'Cost: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582065
+    m_Localized: 'Prerequisite: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582066
+    m_Localized: 'Programs are modules: import another file by name. Browsing does
+      not stop running workers. Running starts a new controller and its independent
+      tasks.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582067
+    m_Localized: Use a unique identifier, for example helpers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582068
+    m_Localized: Create
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582069
+    m_Localized: Open
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582070
+    m_Localized: Remove program
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582071
+    m_Localized: Templates are examples, not automatic solutions. Unlock the required
+      crops first. Each template opens as a new program.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582072
+    m_Localized: Write code, produce resources, unlock new rules, measure and improve.
+      Begin with grass on the starting plot. Planting and expansion come from the
+      first research branch.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582073
+    m_Localized: 'LANGUAGE: variables, if/elif/else, while, for, functions with parameters
+      and returned values, lists, tuples, sets, dictionaries, global, imports and
+      closures. Four spaces or one tab indent each block.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582074
+    m_Localized: Simulations use a separate farm and return runtime. Add an experiment
+      program, then invoke simulate(name, unlocks, items, globals, seed, speedup).
+      Repeating a seed reproduces the same starting conditions. Live inventory and
+      crop state are preserved.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582075
+    m_Localized: Fixed start, measured runtime, separate farm. Records stay on this
+      computer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582076
+    m_Localized: Challenges
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582077
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582078
+    m_Localized: English or Simplified Chinese. F8 also switches languages.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582079
+    m_Localized: Switch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582080
+    m_Localized: Simulation speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582081
+    m_Localized: Color theme
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582082
+    m_Localized: Unrestricted syntax
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582083
+    m_Localized: Enabled
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582084
+    m_Localized: Disabled
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582085
+    m_Localized: External editor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582086
+    m_Localized: Disable watcher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582087
+    m_Localized: Export and watch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582088
+    m_Localized: Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582089
+    m_Localized: Start a fresh automation farm. Your current save is backed up.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582090
+    m_Localized: Breakpoints
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582091
+    m_Localized: Comma-separated line numbers. A matching line pauses every worker.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582092
+    m_Localized: Breakpoints updated.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582093
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582094
+    m_Localized: Save before closing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582095
+    m_Localized: Start again?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582096
+    m_Localized: This creates a fresh one-plot farm with no resources.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582097
+    m_Localized: Planting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582098
+    m_Localized: Field expansion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582099
+    m_Localized: Execution speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582100
+    m_Localized: Grass yield
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582101
+    m_Localized: Woodland
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582102
+    m_Localized: Carrots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582103
+    m_Localized: Irrigation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582104
+    m_Localized: Growing giant pumpkins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582105
+    m_Localized: Solar flowers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582106
+    m_Localized: Fertilizer and infection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582107
+    m_Localized: Companion planting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582108
+    m_Localized: Sorting cacti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582109
+    m_Localized: Hedge mazes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582110
+    m_Localized: Tail exploration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582111
+    m_Localized: Parallel drones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582112
+    m_Localized: Simulation lab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582113
+    m_Localized: Loops
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582114
+    m_Localized: Operators
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582115
+    m_Localized: Variables
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582116
+    m_Localized: Functions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582117
+    m_Localized: Lists and tuples
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582118
+    m_Localized: Dictionaries and sets
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582119
+    m_Localized: Modules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582120
+    m_Localized: Sensors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582121
+    m_Localized: Cost queries
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582122
+    m_Localized: Automatic research
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582123
+    m_Localized: Timing tools
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582124
+    m_Localized: Debugging
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582125
+    m_Localized: Hats
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582126
+    m_Localized: A full-field patrol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582127
+    m_Localized: Checkerboard woodland
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582128
+    m_Localized: Searching a maze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582129
+    m_Localized: Parallel columns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582130
+    m_Localized: Research controller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385250474582131
+    m_Localized: Tail coverage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392000787439616
+    m_Localized: Run separately
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392000787439617
+    m_Localized: Drone capacity is full.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392000787439618
+    m_Localized: 'Started program: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392000787439619
+    m_Localized: Stop all
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392000787439620
+    m_Localized: 'Last 60s: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392000787439621
+    m_Localized: 'Best: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392000787439622
+    m_Localized: Floating editor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392000787439623
+    m_Localized: Window
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392000787439624
+    m_Localized: 'harvest() / can_harvest()
+
+      plant(Entities.Grass) / plant(Entities.Bush)
+      / plant(Entities.Tree)
+
+      plant(Entities.Carrot) / plant(Entities.Pumpkin)
+
+      plant(Entities.Sunflower)
+      / plant(Entities.Cactus)
+
+      move(North / East / South / West) -> True /
+      False
+
+      can_move(direction) -> True / False
+
+      till() / use_item(Items.Water)
+      / use_item(Items.Fertilizer)
+
+      get_pos_x() / get_pos_y() / get_world_size()
+
+      get_entity_type()
+      / get_ground_type() / get_water()
+
+      num_items(Items.Hay) / num_unlocked(Unlocks.Speed)
+
+      get_cost(Unlocks.Speed)
+      / unlock(Unlocks.Speed)
+
+      get_companion() -> (entity, (x, y)) or None
+
+      measure()
+      / measure(direction) / swap(direction)
+
+      spawn_drone(function, args...)
+      -> handle or None
+
+      wait_for(handle) -> return value / has_finished(handle)
+
+      num_drones()
+      / max_drones()
+
+      get_time() / get_tick_count() / random()
+
+      simulate(file,
+      unlocks, items, globals, seed, speedup)
+
+      change_hat(Hats.Straw_Hat) /
+      change_hat(Hats.Dinosaur_Hat)
+
+      set_world_size(size) / set_execution_speed(speed)
+
+      clear()
+      / do_a_flip()
+
+      print(values...) / quick_print(values...)
+
+
+      Namespaces:
+      Entities, Items, Grounds, Unlocks, Hats, Leaderboards.
+
+      Programs: import
+      helpers / from helpers import tend.
+
+      Collections: [1,2], (1,2), {1,2},
+      {''seed'': 4}.
+
+      Data: values[0], costs[''hay''], values.append(3), visited.add((x,y)).
+
+      Functions:
+      def work(x, count=1): ... return result.
+
+
+      A task has independent memory.
+      Return values are collected by wait_for().
+
+      A blocked maze move returns
+      False. Normal field edges wrap; tail mode does not.
+
+      Simulation creates
+      a new isolated farm. It cannot modify the live inventory.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392000787439625
+    m_Localized: 'Water '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392000787439626
+    m_Localized: 'Measure '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392000787439627
+    m_Localized: Ready to harvest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392000787439628
+    m_Localized: Growing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 392000787439629
+    m_Localized: 'Breakpoint line: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393635450314752
+    m_Localized: World testing tools
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393635458703360
+    m_Localized: Numeric utilities
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393635458703361
+    m_Localized: Autonomy beacon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 393635458703362
+    m_Localized: The master hat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703621439488
+    m_Localized: Invalid automation save.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633792
+    m_Localized: Invalid automation state.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633793
+    m_Localized: Source exceeds 200000 characters.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633794
+    m_Localized: Use indentation in groups of four spaces.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633795
+    m_Localized: Enter a program first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633796
+    m_Localized: Unexpected indentation.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633797
+    m_Localized: Expected an indented body.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633798
+    m_Localized: Block nesting limit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633799
+    m_Localized: 'Expected for target in sequence:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633800
+    m_Localized: 'Expected def name(parameters):'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633801
+    m_Localized: Invalid or duplicate parameter.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633802
+    m_Localized: Required parameter after default parameter.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633803
+    m_Localized: return outside a function.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633804
+    m_Localized: ' outside a loop.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633805
+    m_Localized: Invalid global name.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633806
+    m_Localized: Import a single named game module.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633807
+    m_Localized: Invalid import.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633808
+    m_Localized: Expected ':' at the end of the statement.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633809
+    m_Localized: Unterminated string.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633810
+    m_Localized: Invalid number.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633811
+    m_Localized: 'Unsupported character: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633812
+    m_Localized: Incomplete expression.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633813
+    m_Localized: Expected '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633814
+    m_Localized: Missing expression.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633815
+    m_Localized: 'Unexpected token: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633816
+    m_Localized: Expression nesting limit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633817
+    m_Localized: Invalid member name.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633818
+    m_Localized: Invalid expression.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633819
+    m_Localized: Mutable collections cannot be dictionary keys.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633820
+    m_Localized: 'Research needed: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633821
+    m_Localized: A finite number is required.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633822
+    m_Localized: An integer is required.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633823
+    m_Localized: The value is not iterable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633824
+    m_Localized: Comparison nesting limit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633825
+    m_Localized: String size limit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633826
+    m_Localized: Collection size limit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633827
+    m_Localized: Division by zero.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633828
+    m_Localized: 'Unknown operator: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633829
+    m_Localized: 'Missing dictionary key: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633830
+    m_Localized: Index out of range.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633831
+    m_Localized: Tuples are immutable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633832
+    m_Localized: This value cannot be indexed for assignment.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633833
+    m_Localized: Invalid assignment target.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633834
+    m_Localized: 'Undefined variable: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633835
+    m_Localized: Unpacking length mismatch.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633836
+    m_Localized: 'Unknown module member: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633837
+    m_Localized: The value is not callable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633838
+    m_Localized: Value not found.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633839
+    m_Localized: pop expects zero or one argument.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633840
+    m_Localized: 'Unsupported collection method: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633841
+    m_Localized: 'Expected '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633842
+    m_Localized: Empty collection.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633843
+    m_Localized: range expects 1 to 3 arguments.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633844
+    m_Localized: range step cannot be zero.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633845
+    m_Localized: Range size limit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633846
+    m_Localized: Expected at most one argument.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633847
+    m_Localized: Missing collection.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633848
+    m_Localized: Function recursion exceeds 24 levels.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633849
+    m_Localized: 'Incorrect argument count for '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633850
+    m_Localized: 'Module not found: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633851
+    m_Localized: Import depth limit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633852
+    m_Localized: 'Missing import: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633853
+    m_Localized: Instruction limit reached.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633854
+    m_Localized: 'Unknown research: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633855
+    m_Localized: Farm size is locked.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633856
+    m_Localized: 'Unknown plant: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633857
+    m_Localized: Nested simulations are not supported.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633858
+    m_Localized: 'Simulation program not found: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633859
+    m_Localized: 'Unknown simulation research: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633860
+    m_Localized: Simulation exceeded one hour of game time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633861
+    m_Localized: Nested challenges are not supported.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633862
+    m_Localized: 'Unknown local challenge: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633863
+    m_Localized: 'Challenge program not found: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633864
+    m_Localized: Challenge exceeded one game hour.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633865
+    m_Localized: 'Challenge target not reached. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633866
+    m_Localized: 'Unknown entity: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633867
+    m_Localized: 'Unknown item: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633868
+    m_Localized: Expected North, East, South or West.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633869
+    m_Localized: get_cost expects 1 or 2 arguments.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633870
+    m_Localized: use_item expects 1 or 2 arguments.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633871
+    m_Localized: measure expects at most one direction.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633872
+    m_Localized: spawn_drone expects a function.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633873
+    m_Localized: Expected a drone handle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633874
+    m_Localized: Invalid drone handle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633875
+    m_Localized: simulate expects 1 to 6 arguments.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633876
+    m_Localized: 'Unknown function: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633877
+    m_Localized: Fork memory limit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633878
+    m_Localized: 'Line {0}: {1}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633879
+    m_Localized: Expected {0} arguments; received {1}.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633880
+    m_Localized: 'Save: {0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396703625633881
+    m_Localized: Enable unrestricted syntax in Settings to practice.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399993482502144
+    m_Localized: Choose a unique farm name using letters, digits, underscores or
+      hyphens.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399993482502145
+    m_Localized: Each farm has its own progress, program folder, records and backup.
+      Loading closes the current execution after saving it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399993482502146
+    m_Localized: Create farm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399993482502147
+    m_Localized: Use letters, digits, underscores and hyphens.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399993482502148
+    m_Localized: Farm library
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399993482502149
+    m_Localized: Independent saves and programs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399993482502150
+    m_Localized: Manage
     m_Metadata:
       m_Items: []
   references:

@@ -22,11 +22,17 @@ namespace Verdant
     public sealed class VerdantCodeInput : TMP_InputField
     {
         public Action<bool> RestoreHistory;
+        protected override void Append(char input)
+        {
+            if(char.IsControl(input)&&input!='\n'&&input!='\t'&&input!='\r')return;
+            base.Append(input);
+        }
         public override void OnUpdateSelected(BaseEventData data)
         {
             bool command=Input.GetKey(KeyCode.LeftCommand)||Input.GetKey(KeyCode.RightCommand)||Input.GetKey(KeyCode.LeftControl)||Input.GetKey(KeyCode.RightControl);
             if(isFocused&&command&&(Input.GetKeyDown(KeyCode.Z)||Input.GetKeyDown(KeyCode.Y)))
             {if(RestoreHistory!=null)RestoreHistory(Input.GetKeyDown(KeyCode.Y)||Input.GetKey(KeyCode.LeftShift)||Input.GetKey(KeyCode.RightShift));data.Use();return;}
+            if(isFocused&&(Input.GetKeyDown(KeyCode.Escape)||Input.GetKeyDown(KeyCode.F8)||Input.GetKeyDown(KeyCode.F9)||command&&Input.GetKeyDown(KeyCode.Return))){data.Use();return;}
             base.OnUpdateSelected(data);
         }
     }

@@ -1,0 +1,20 @@
+{
+  "version": "0.11.1",
+  "platform": "macOS",
+  "architecture": [
+    "x86_64",
+    "arm64"
+  ],
+  "freshStart": true,
+  "idleGrowth": true,
+  "harvestShortcut": true,
+  "defaultEnglish": true,
+  "chineseSwitch": true,
+  "pasteAndExecute": true,
+  "outputObserved": "7",
+  "undoRedoObserved": true,
+  "escapePreservesCode": true,
+  "richFixtureRestored": true,
+  "nativeWindowsTested": false,
+  "notes": "Mouse clicks from the desktop automation did not activate Unity controls reliably. The engine play-mode suite separately checks UI raycast routing and pointer dispatch."
+}
