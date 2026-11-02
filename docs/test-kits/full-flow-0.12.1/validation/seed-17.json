@@ -1,0 +1,5909 @@
+{
+    "edition": "Verdant Circuit 0.12.1 / zero-inventory farm + archipelago campaign",
+    "unityVersion": "2022.3.62f3c1",
+    "sourceFingerprint": "26f60531486630a4a0c8a525c9cc45623b876b498d51be90a268b4a2dbd0904d",
+    "startedUtc": "2026-11-01T18:56:10.0571900Z",
+    "finishedUtc": "2026-11-01T18:58:35.0485960Z",
+    "status": "passed",
+    "error": "",
+    "seed": 17,
+    "freshZeroInventory": true,
+    "unrestrictedSyntax": false,
+    "resourceGrants": false,
+    "usesActualInterpreter": true,
+    "gameSeconds": 26498.783333031875,
+    "wallSeconds": 144.9906368,
+    "fixedFrames": 1589993,
+    "researchNodes": 34,
+    "maxedResearchNodes": 34,
+    "achievements": 13,
+    "phases": [
+        {
+            "index": 1,
+            "kind": "bootstrap",
+            "title": "重复运行 boot，收获5份干草",
+            "algorithm": "只执行 harvest()，不赠物资，不提前开放语法。",
+            "program": "programs/0001.py",
+            "status": "passed",
+            "gameStart": 0.0,
+            "gameEnd": 16.01666666666704,
+            "wallSeconds": 0.0147046,
+            "frames": 961,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 0.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 5.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": []
+        },
+        {
+            "index": 2,
+            "kind": "research",
+            "title": "手动研究 loops → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 16.01666666666704,
+            "gameEnd": 16.01666666666704,
+            "wallSeconds": 0.0008434,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 5.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 0.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1"
+            ]
+        },
+        {
+            "index": 3,
+            "kind": "bootstrap-loop",
+            "title": "运行 start，干草库存60时停止",
+            "algorithm": "玩家只需要循环研究；在指定库存点击停止。",
+            "program": "programs/0003.py",
+            "status": "passed",
+            "gameStart": 16.01666666666704,
+            "gameEnd": 198.23333333338324,
+            "wallSeconds": 0.0088863,
+            "frames": 10933,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 0.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 60.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1"
+            ]
+        },
+        {
+            "index": 4,
+            "kind": "research",
+            "title": "手动研究 operators → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 198.23333333338324,
+            "gameEnd": 198.23333333338324,
+            "wallSeconds": 0.0000708,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 60.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 50.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1"
+            ]
+        },
+        {
+            "index": 5,
+            "kind": "research",
+            "title": "手动研究 variables → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 198.23333333338324,
+            "gameEnd": 198.23333333338324,
+            "wallSeconds": 0.0000044,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 50.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 35.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1"
+            ]
+        },
+        {
+            "index": 6,
+            "kind": "research",
+            "title": "手动研究 senses → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 198.23333333338324,
+            "gameEnd": 198.23333333338324,
+            "wallSeconds": 0.0000041,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 35.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 25.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1"
+            ]
+        },
+        {
+            "index": 7,
+            "kind": "research",
+            "title": "手动研究 plant → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 198.23333333338324,
+            "gameEnd": 198.23333333338324,
+            "wallSeconds": 0.0000025999999999999998,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 25.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 20.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1"
+            ]
+        },
+        {
+            "index": 8,
+            "kind": "research",
+            "title": "手动研究 expand → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 198.23333333338324,
+            "gameEnd": 198.23333333338324,
+            "wallSeconds": 0.0005369,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 20.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 12.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:1"
+            ]
+        },
+        {
+            "index": 9,
+            "kind": "guide-program",
+            "title": "运行玩家程序 hay，target=50",
+            "algorithm": "实际执行交付文件；保持普通语法、资源成本、随机数和自然生长。",
+            "program": "programs/0009.py",
+            "status": "passed",
+            "gameStart": 198.23333333338324,
+            "gameEnd": 253.88333333342752,
+            "wallSeconds": 0.0062391,
+            "frames": 3339,
+            "pulses": 965,
+            "instructionTicks": 22257,
+            "spawned": 1,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 1,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 12.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 52.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:1"
+            ]
+        },
+        {
+            "index": 10,
+            "kind": "research",
+            "title": "手动研究 grass → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 253.88333333342752,
+            "gameEnd": 253.88333333342752,
+            "wallSeconds": 0.000005199999999999999,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 52.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 2.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:1",
+                "grass:1"
+            ]
+        },
+        {
+            "index": 11,
+            "kind": "guide-program",
+            "title": "运行玩家程序 hay，target=200",
+            "algorithm": "实际执行交付文件；保持普通语法、资源成本、随机数和自然生长。",
+            "program": "programs/0011.py",
+            "status": "passed",
+            "gameStart": 253.88333333342752,
+            "gameEnd": 387.46666666664296,
+            "wallSeconds": 0.0102171,
+            "frames": 8015,
+            "pulses": 2285,
+            "instructionTicks": 53427,
+            "spawned": 1,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 1,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 2.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 202.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:1",
+                "grass:1"
+            ]
+        },
+        {
+            "index": 12,
+            "kind": "guide-program",
+            "title": "运行玩家程序 wood，target=30",
+            "algorithm": "实际执行交付文件；保持普通语法、资源成本、随机数和自然生长。",
+            "program": "programs/0012.py",
+            "status": "passed",
+            "gameStart": 387.46666666664296,
+            "gameEnd": 456.71666666657998,
+            "wallSeconds": 0.005870299999999999,
+            "frames": 4155,
+            "pulses": 1230,
+            "instructionTicks": 27696,
+            "spawned": 1,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 1,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 202.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 0.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 202.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 32.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:1",
+                "grass:1"
+            ]
+        },
+        {
+            "index": 13,
+            "kind": "research",
+            "title": "手动研究 trees → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 456.71666666657998,
+            "gameEnd": 456.71666666657998,
+            "wallSeconds": 0.000018599999999999998,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 202.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 32.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 202.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 2.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:1",
+                "grass:1",
+                "trees:1"
+            ]
+        },
+        {
+            "index": 14,
+            "kind": "research",
+            "title": "手动研究 expand → 2",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 456.71666666657998,
+            "gameEnd": 456.71666666657998,
+            "wallSeconds": 0.000014099999999999999,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 202.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 2.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 178.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 2.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:1",
+                "trees:1"
+            ]
+        },
+        {
+            "index": 15,
+            "kind": "research",
+            "title": "手动研究 grass → 2",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 456.71666666657998,
+            "gameEnd": 456.71666666657998,
+            "wallSeconds": 0.0000044,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 178.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 2.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 33.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 2.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1"
+            ]
+        },
+        {
+            "index": 16,
+            "kind": "research",
+            "title": "手动研究 speed → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 456.71666666657998,
+            "gameEnd": 456.71666666657998,
+            "wallSeconds": 0.0000057999999999999999,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 33.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 2.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 2.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1"
+            ]
+        },
+        {
+            "index": 17,
+            "kind": "guide-program",
+            "title": "运行玩家程序 wood，target=900",
+            "algorithm": "实际执行交付文件；保持普通语法、资源成本、随机数和自然生长。",
+            "program": "programs/0017.py",
+            "status": "passed",
+            "gameStart": 456.71666666657998,
+            "gameEnd": 766.1666666662985,
+            "wallSeconds": 0.056574099999999998,
+            "frames": 18567,
+            "pulses": 11664,
+            "instructionTicks": 222802,
+            "spawned": 1,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 1,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 2.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 914.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1"
+            ]
+        },
+        {
+            "index": 18,
+            "kind": "research",
+            "title": "手动研究 functions → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 766.1666666662985,
+            "gameEnd": 766.1666666662985,
+            "wallSeconds": 0.000006,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 914.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 894.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1",
+                "functions:1"
+            ]
+        },
+        {
+            "index": 19,
+            "kind": "research",
+            "title": "手动研究 lists → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 766.1666666662985,
+            "gameEnd": 766.1666666662985,
+            "wallSeconds": 0.0000064,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 894.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 844.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1",
+                "functions:1",
+                "lists:1"
+            ]
+        },
+        {
+            "index": 20,
+            "kind": "research",
+            "title": "手动研究 costs → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 766.1666666662985,
+            "gameEnd": 766.1666666662985,
+            "wallSeconds": 0.0000057999999999999999,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 844.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 834.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1",
+                "functions:1",
+                "lists:1",
+                "costs:1"
+            ]
+        },
+        {
+            "index": 21,
+            "kind": "research",
+            "title": "手动研究 timing → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 766.1666666662985,
+            "gameEnd": 766.1666666662985,
+            "wallSeconds": 0.0000042999999999999999,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 834.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 814.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1"
+            ]
+        },
+        {
+            "index": 22,
+            "kind": "research",
+            "title": "手动研究 hats → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 766.1666666662985,
+            "gameEnd": 766.1666666662985,
+            "wallSeconds": 0.0000038,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 814.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 789.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1"
+            ]
+        },
+        {
+            "index": 23,
+            "kind": "research",
+            "title": "手动研究 carrots → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 766.1666666662985,
+            "gameEnd": 766.1666666662985,
+            "wallSeconds": 0.0000056,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 789.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 749.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:1"
+            ]
+        },
+        {
+            "index": 24,
+            "kind": "research",
+            "title": "手动研究 watering → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 766.1666666662985,
+            "gameEnd": 766.1666666662985,
+            "wallSeconds": 0.0000035,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 749.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 669.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:1",
+                "watering:1"
+            ]
+        },
+        {
+            "index": 25,
+            "kind": "guide-program",
+            "title": "运行玩家程序 hay，target=500",
+            "algorithm": "实际执行交付文件；保持普通语法、资源成本、随机数和自然生长。",
+            "program": "programs/0025.py",
+            "status": "passed",
+            "gameStart": 766.1666666662985,
+            "gameEnd": 860.0999999995464,
+            "wallSeconds": 0.012271899999999999,
+            "frames": 5636,
+            "pulses": 2751,
+            "instructionTicks": 67624,
+            "spawned": 1,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 1,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 13.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 669.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 557.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 669.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:1",
+                "watering:1"
+            ]
+        },
+        {
+            "index": 26,
+            "kind": "guide-program",
+            "title": "运行玩家程序 carrot",
+            "algorithm": "实际执行交付文件；保持普通语法、资源成本、随机数和自然生长。",
+            "program": "programs/0026.py",
+            "status": "passed",
+            "gameStart": 860.0999999995464,
+            "gameEnd": 1035.3666666660538,
+            "wallSeconds": 0.023884299999999998,
+            "frames": 10516,
+            "pulses": 4799,
+            "instructionTicks": 126188,
+            "spawned": 1,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 1,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 557.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 669.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 0.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 205.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 317.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 160.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:1",
+                "watering:1"
+            ]
+        },
+        {
+            "index": 27,
+            "kind": "research",
+            "title": "手动研究 dicts → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 1035.3666666660538,
+            "gameEnd": 1035.3666666660538,
+            "wallSeconds": 0.0000062,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 205.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 317.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 160.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 205.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 317.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 130.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:1",
+                "watering:1",
+                "dicts:1"
+            ]
+        },
+        {
+            "index": 28,
+            "kind": "research",
+            "title": "手动研究 import → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 1035.3666666660538,
+            "gameEnd": 1035.3666666660538,
+            "wallSeconds": 0.0000054,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 205.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 317.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 130.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 205.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 317.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 80.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:1",
+                "watering:1",
+                "dicts:1",
+                "import:1"
+            ]
+        },
+        {
+            "index": 29,
+            "kind": "research",
+            "title": "手动研究 auto_unlock → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 1035.3666666660538,
+            "gameEnd": 1035.3666666660538,
+            "wallSeconds": 0.0000042999999999999999,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 205.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 317.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 80.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 205.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 317.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 20.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:1",
+                "watering:1",
+                "dicts:1",
+                "import:1",
+                "auto_unlock:1"
+            ]
+        },
+        {
+            "index": 30,
+            "kind": "research",
+            "title": "手动研究 debug → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 1035.3666666660538,
+            "gameEnd": 1035.3666666660538,
+            "wallSeconds": 0.0000046,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 205.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 317.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 20.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 200.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 317.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 20.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:1",
+                "watering:1",
+                "dicts:1",
+                "import:1",
+                "auto_unlock:1",
+                "debug:1"
+            ]
+        },
+        {
+            "index": 31,
+            "kind": "research",
+            "title": "手动研究 debug2 → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 1035.3666666660538,
+            "gameEnd": 1035.3666666660538,
+            "wallSeconds": 0.0000054,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 200.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 317.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 20.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 200.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 217.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 20.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:1",
+                "watering:1",
+                "dicts:1",
+                "import:1",
+                "auto_unlock:1",
+                "debug:1",
+                "debug2:1"
+            ]
+        },
+        {
+            "index": 32,
+            "kind": "research",
+            "title": "手动研究 utilities → 1",
+            "algorithm": "玩家在科技树点击付费；不代为生产缺少的资源。",
+            "program": "",
+            "status": "passed",
+            "gameStart": 1035.3666666660538,
+            "gameEnd": 1035.3666666660538,
+            "wallSeconds": 0.0000053,
+            "frames": 0,
+            "pulses": 0,
+            "instructionTicks": 0,
+            "spawned": 0,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 200.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 217.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 20.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 200.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 157.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 20.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:2",
+                "grass:2",
+                "trees:1",
+                "speed:1",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:1",
+                "watering:1",
+                "dicts:1",
+                "import:1",
+                "auto_unlock:1",
+                "debug:1",
+                "debug2:1",
+                "utilities:1"
+            ]
+        },
+        {
+            "index": 33,
+            "kind": "guide-program",
+            "title": "运行玩家程序 campaign",
+            "algorithm": "实际执行交付文件；保持普通语法、资源成本、随机数和自然生长。",
+            "program": "programs/0033.py",
+            "status": "passed",
+            "gameStart": 1035.3666666660538,
+            "gameEnd": 10672.616666595508,
+            "wallSeconds": 59.7537847,
+            "frames": 578235,
+            "pulses": 20592648,
+            "instructionTicks": 215386157,
+            "spawned": 1,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 1,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 200.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 157.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 20.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 0.0
+                },
+                {
+                    "id": "power",
+                    "amount": 0.0
+                },
+                {
+                    "id": "cactus",
+                    "amount": 0.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 0.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 0.0
+                },
+                {
+                    "id": "water",
+                    "amount": 0.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 0.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 0.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 427971.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 332998.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1069369.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 3272526.0
+                },
+                {
+                    "id": "power",
+                    "amount": 503108.63525980067
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1860271.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 26316.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 26145.0
+                },
+                {
+                    "id": "water",
+                    "amount": 800.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 8463.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 303.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:5",
+                "grass:8",
+                "trees:8",
+                "speed:8",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:8",
+                "watering:6",
+                "dicts:1",
+                "import:1",
+                "auto_unlock:1",
+                "debug:1",
+                "debug2:1",
+                "utilities:1",
+                "polyculture:6",
+                "pumpkins:8",
+                "fertilizer:6",
+                "sunflowers:8",
+                "cactus:8",
+                "mazes:8",
+                "dinosaurs:8",
+                "megafarm:5",
+                "simulation:1",
+                "leaderboard:1",
+                "the_farmers_remains:1",
+                "top_hat:1"
+            ]
+        },
+        {
+            "index": 34,
+            "kind": "fleet-materials",
+            "title": "群岛开拓材料",
+            "algorithm": "正常生产100木材和100胡萝卜，准备真实开拓成本。",
+            "program": "programs/0034.py",
+            "status": "passed",
+            "gameStart": 10672.616666595508,
+            "gameEnd": 10672.633333262174,
+            "wallSeconds": 0.0029934,
+            "frames": 1,
+            "pulses": 93,
+            "instructionTicks": 92,
+            "spawned": 1,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 0,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 427971.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 332998.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1069369.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 3272526.0
+                },
+                {
+                    "id": "power",
+                    "amount": 503108.63525980067
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1860271.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 26316.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 26145.0
+                },
+                {
+                    "id": "water",
+                    "amount": 800.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 8463.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 303.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 427971.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 332998.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1069369.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 3272526.0
+                },
+                {
+                    "id": "power",
+                    "amount": 503108.6199264648
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1860271.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 26316.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 26145.0
+                },
+                {
+                    "id": "water",
+                    "amount": 800.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 8463.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 303.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:5",
+                "grass:8",
+                "trees:8",
+                "speed:8",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:8",
+                "watering:6",
+                "dicts:1",
+                "import:1",
+                "auto_unlock:1",
+                "debug:1",
+                "debug2:1",
+                "utilities:1",
+                "polyculture:6",
+                "pumpkins:8",
+                "fertilizer:6",
+                "sunflowers:8",
+                "cactus:8",
+                "mazes:8",
+                "dinosaurs:8",
+                "megafarm:5",
+                "simulation:1",
+                "leaderboard:1",
+                "the_farmers_remains:1",
+                "top_hat:1"
+            ]
+        },
+        {
+            "index": 35,
+            "kind": "archipelago-campaign",
+            "title": "群岛完整18单／多文件多机控制",
+            "algorithm": "真实解释器运行总控、规划器、七类单机程序与共享模块；所有机体、研究、配方与运输正常付费。",
+            "program": "programs/0035.py",
+            "status": "passed",
+            "gameStart": 10672.633333262174,
+            "gameEnd": 25984.166666372697,
+            "wallSeconds": 57.828127699999999,
+            "frames": 918692,
+            "pulses": 18103351,
+            "instructionTicks": 1079883783,
+            "spawned": 1,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 1,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 427971.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 332998.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1069369.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 3272526.0
+                },
+                {
+                    "id": "power",
+                    "amount": 503108.6199264648
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1860271.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 26316.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 26145.0
+                },
+                {
+                    "id": "water",
+                    "amount": 800.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 8463.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 303.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 427971.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 332898.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1069269.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 3272526.0
+                },
+                {
+                    "id": "power",
+                    "amount": 323127.98893219119
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1860271.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 26316.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 26145.0
+                },
+                {
+                    "id": "water",
+                    "amount": 49792.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 57487.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 303.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:5",
+                "grass:8",
+                "trees:8",
+                "speed:8",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:8",
+                "watering:6",
+                "dicts:1",
+                "import:1",
+                "auto_unlock:1",
+                "debug:1",
+                "debug2:1",
+                "utilities:1",
+                "polyculture:6",
+                "pumpkins:8",
+                "fertilizer:6",
+                "sunflowers:8",
+                "cactus:8",
+                "mazes:8",
+                "dinosaurs:8",
+                "megafarm:5",
+                "simulation:1",
+                "leaderboard:1",
+                "the_farmers_remains:1",
+                "top_hat:1"
+            ]
+        },
+        {
+            "index": 36,
+            "kind": "guide-program",
+            "title": "运行玩家程序 verify_companion",
+            "algorithm": "实际执行交付文件；保持普通语法、资源成本、随机数和自然生长。",
+            "program": "programs/0036.py",
+            "status": "passed",
+            "gameStart": 25984.166666372697,
+            "gameEnd": 25987.249999705986,
+            "wallSeconds": 0.0186207,
+            "frames": 185,
+            "pulses": 6348,
+            "instructionTicks": 216633,
+            "spawned": 1,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 1,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 427971.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 332898.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1069269.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 3272526.0
+                },
+                {
+                    "id": "power",
+                    "amount": 323127.98893219119
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1860271.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 26316.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 26145.0
+                },
+                {
+                    "id": "water",
+                    "amount": 49792.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 57487.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 303.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 428867.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 332642.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1069269.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 3272526.0
+                },
+                {
+                    "id": "power",
+                    "amount": 323091.88343205428
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1860271.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 26316.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 26145.0
+                },
+                {
+                    "id": "water",
+                    "amount": 49824.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 57487.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 303.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:5",
+                "grass:8",
+                "trees:8",
+                "speed:8",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:8",
+                "watering:6",
+                "dicts:1",
+                "import:1",
+                "auto_unlock:1",
+                "debug:1",
+                "debug2:1",
+                "utilities:1",
+                "polyculture:6",
+                "pumpkins:8",
+                "fertilizer:6",
+                "sunflowers:8",
+                "cactus:8",
+                "mazes:8",
+                "dinosaurs:8",
+                "megafarm:5",
+                "simulation:1",
+                "leaderboard:1",
+                "the_farmers_remains:1",
+                "top_hat:1"
+            ]
+        },
+        {
+            "index": 37,
+            "kind": "guide-program",
+            "title": "运行玩家程序 verify_maze",
+            "algorithm": "实际执行交付文件；保持普通语法、资源成本、随机数和自然生长。",
+            "program": "programs/0037.py",
+            "status": "passed",
+            "gameStart": 25987.249999705986,
+            "gameEnd": 26111.81666637084,
+            "wallSeconds": 1.9849149,
+            "frames": 7474,
+            "pulses": 541113,
+            "instructionTicks": 8784232,
+            "spawned": 1,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 1,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 428867.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 332642.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1069269.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 3272526.0
+                },
+                {
+                    "id": "power",
+                    "amount": 323091.88343205428
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1860271.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 26316.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 26145.0
+                },
+                {
+                    "id": "water",
+                    "amount": 49824.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 57487.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 303.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 435011.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 512482.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1040469.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 4050894.0
+                },
+                {
+                    "id": "power",
+                    "amount": 321627.8447520576
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1860271.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 26316.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 288289.0
+                },
+                {
+                    "id": "water",
+                    "amount": 48160.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 57850.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 175.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:5",
+                "grass:8",
+                "trees:8",
+                "speed:8",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:8",
+                "watering:6",
+                "dicts:1",
+                "import:1",
+                "auto_unlock:1",
+                "debug:1",
+                "debug2:1",
+                "utilities:1",
+                "polyculture:6",
+                "pumpkins:8",
+                "fertilizer:6",
+                "sunflowers:8",
+                "cactus:8",
+                "mazes:8",
+                "dinosaurs:8",
+                "megafarm:5",
+                "simulation:1",
+                "leaderboard:1",
+                "the_farmers_remains:1",
+                "top_hat:1"
+            ]
+        },
+        {
+            "index": 38,
+            "kind": "guide-program",
+            "title": "运行玩家程序 verify_drones",
+            "algorithm": "实际执行交付文件；保持普通语法、资源成本、随机数和自然生长。",
+            "program": "programs/0038.py",
+            "status": "passed",
+            "gameStart": 26111.81666637084,
+            "gameEnd": 26123.849999703998,
+            "wallSeconds": 1.6020466,
+            "frames": 722,
+            "pulses": 892581,
+            "instructionTicks": 18379018,
+            "spawned": 32,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 32,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 435011.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 512482.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1040469.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 4050894.0
+                },
+                {
+                    "id": "power",
+                    "amount": 321627.8447520576
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1860271.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 26316.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 288289.0
+                },
+                {
+                    "id": "water",
+                    "amount": 48160.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 57850.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 175.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 1221443.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 512482.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1040469.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 4050894.0
+                },
+                {
+                    "id": "power",
+                    "amount": 318564.6750640502
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1860271.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 26316.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 288289.0
+                },
+                {
+                    "id": "water",
+                    "amount": 48192.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 57914.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 175.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:5",
+                "grass:8",
+                "trees:8",
+                "speed:8",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:8",
+                "watering:6",
+                "dicts:1",
+                "import:1",
+                "auto_unlock:1",
+                "debug:1",
+                "debug2:1",
+                "utilities:1",
+                "polyculture:6",
+                "pumpkins:8",
+                "fertilizer:6",
+                "sunflowers:8",
+                "cactus:8",
+                "mazes:8",
+                "dinosaurs:8",
+                "megafarm:5",
+                "simulation:1",
+                "leaderboard:1",
+                "the_farmers_remains:1",
+                "top_hat:1"
+            ]
+        },
+        {
+            "index": 39,
+            "kind": "guide-program",
+            "title": "运行玩家程序 verify_simulation",
+            "algorithm": "实际执行交付文件；保持普通语法、资源成本、随机数和自然生长。",
+            "program": "programs/0039.py",
+            "status": "passed",
+            "gameStart": 26123.849999703998,
+            "gameEnd": 26123.966666370663,
+            "wallSeconds": 0.0033731,
+            "frames": 53,
+            "pulses": 77,
+            "instructionTicks": 61130,
+            "spawned": 1,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 1,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 1221443.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 512482.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1040469.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 4050894.0
+                },
+                {
+                    "id": "power",
+                    "amount": 318564.6750640502
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1860271.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 26316.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 288289.0
+                },
+                {
+                    "id": "water",
+                    "amount": 48192.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 57914.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 175.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 1221443.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 512482.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1040469.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 4050894.0
+                },
+                {
+                    "id": "power",
+                    "amount": 318554.48673071488
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1860271.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 26316.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 288289.0
+                },
+                {
+                    "id": "water",
+                    "amount": 48192.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 57914.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 175.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:5",
+                "grass:8",
+                "trees:8",
+                "speed:8",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:8",
+                "watering:6",
+                "dicts:1",
+                "import:1",
+                "auto_unlock:1",
+                "debug:1",
+                "debug2:1",
+                "utilities:1",
+                "polyculture:6",
+                "pumpkins:8",
+                "fertilizer:6",
+                "sunflowers:8",
+                "cactus:8",
+                "mazes:8",
+                "dinosaurs:8",
+                "megafarm:5",
+                "simulation:1",
+                "leaderboard:1",
+                "the_farmers_remains:1",
+                "top_hat:1"
+            ]
+        },
+        {
+            "index": 40,
+            "kind": "guide-program",
+            "title": "运行玩家程序 verify_tail",
+            "algorithm": "实际执行交付文件；保持普通语法、资源成本、随机数和自然生长。",
+            "program": "programs/0040.py",
+            "status": "passed",
+            "gameStart": 26123.966666370663,
+            "gameEnd": 26497.099999698567,
+            "wallSeconds": 8.3400664,
+            "frames": 22388,
+            "pulses": 4899241,
+            "instructionTicks": 13634035,
+            "spawned": 1,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 1,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 1221443.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 512482.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1040469.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 4050894.0
+                },
+                {
+                    "id": "power",
+                    "amount": 318554.48673071488
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1860271.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 26316.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 288289.0
+                },
+                {
+                    "id": "water",
+                    "amount": 48192.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 57914.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 175.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 1221443.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 512482.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1040469.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 4050894.0
+                },
+                {
+                    "id": "power",
+                    "amount": 316282.1474405877
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1859247.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 206364.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 288289.0
+                },
+                {
+                    "id": "water",
+                    "amount": 49408.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 59098.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 175.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:5",
+                "grass:8",
+                "trees:8",
+                "speed:8",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:8",
+                "watering:6",
+                "dicts:1",
+                "import:1",
+                "auto_unlock:1",
+                "debug:1",
+                "debug2:1",
+                "utilities:1",
+                "polyculture:6",
+                "pumpkins:8",
+                "fertilizer:6",
+                "sunflowers:8",
+                "cactus:8",
+                "mazes:8",
+                "dinosaurs:8",
+                "megafarm:5",
+                "simulation:1",
+                "leaderboard:1",
+                "the_farmers_remains:1",
+                "top_hat:1"
+            ]
+        },
+        {
+            "index": 41,
+            "kind": "guide-program",
+            "title": "运行玩家程序 verify_hat",
+            "algorithm": "实际执行交付文件；保持普通语法、资源成本、随机数和自然生长。",
+            "program": "programs/0041.py",
+            "status": "passed",
+            "gameStart": 26497.099999698567,
+            "gameEnd": 26497.166666365232,
+            "wallSeconds": 0.0001568,
+            "frames": 4,
+            "pulses": 10,
+            "instructionTicks": 3932,
+            "spawned": 1,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 1,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 1221443.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 512482.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1040469.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 4050894.0
+                },
+                {
+                    "id": "power",
+                    "amount": 316282.1474405877
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1859247.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 206364.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 288289.0
+                },
+                {
+                    "id": "water",
+                    "amount": 49408.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 59098.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 175.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 1221443.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 512482.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1040469.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 4050894.0
+                },
+                {
+                    "id": "power",
+                    "amount": 316281.4921072542
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1859247.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 206364.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 288289.0
+                },
+                {
+                    "id": "water",
+                    "amount": 49408.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 59098.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 175.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:5",
+                "grass:8",
+                "trees:8",
+                "speed:8",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:8",
+                "watering:6",
+                "dicts:1",
+                "import:1",
+                "auto_unlock:1",
+                "debug:1",
+                "debug2:1",
+                "utilities:1",
+                "polyculture:6",
+                "pumpkins:8",
+                "fertilizer:6",
+                "sunflowers:8",
+                "cactus:8",
+                "mazes:8",
+                "dinosaurs:8",
+                "megafarm:5",
+                "simulation:1",
+                "leaderboard:1",
+                "the_farmers_remains:1",
+                "top_hat:1"
+            ]
+        },
+        {
+            "index": 42,
+            "kind": "guide-program",
+            "title": "运行玩家程序 verify_debug",
+            "algorithm": "实际执行交付文件；保持普通语法、资源成本、随机数和自然生长。",
+            "program": "programs/0042.py",
+            "status": "passed",
+            "gameStart": 26497.166666365232,
+            "gameEnd": 26497.249999698564,
+            "wallSeconds": 0.0010936,
+            "frames": 5,
+            "pulses": 16,
+            "instructionTicks": 34,
+            "spawned": 1,
+            "isolatedGameSeconds": 0.0,
+            "category": "",
+            "peakDrones": 1,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 1221443.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 512482.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1040469.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 4050894.0
+                },
+                {
+                    "id": "power",
+                    "amount": 316281.4921072542
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1859247.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 206364.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 288289.0
+                },
+                {
+                    "id": "water",
+                    "amount": 49408.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 59098.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 175.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 1221443.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 512482.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1040469.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 4050894.0
+                },
+                {
+                    "id": "power",
+                    "amount": 316281.48644058717
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1859247.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 206364.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 288289.0
+                },
+                {
+                    "id": "water",
+                    "amount": 49408.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 59098.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 175.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:5",
+                "grass:8",
+                "trees:8",
+                "speed:8",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:8",
+                "watering:6",
+                "dicts:1",
+                "import:1",
+                "auto_unlock:1",
+                "debug:1",
+                "debug2:1",
+                "utilities:1",
+                "polyculture:6",
+                "pumpkins:8",
+                "fertilizer:6",
+                "sunflowers:8",
+                "cactus:8",
+                "mazes:8",
+                "dinosaurs:8",
+                "megafarm:5",
+                "simulation:1",
+                "leaderboard:1",
+                "the_farmers_remains:1",
+                "top_hat:1"
+            ]
+        },
+        {
+            "index": 43,
+            "kind": "guide-program",
+            "title": "运行玩家程序 races",
+            "algorithm": "实际执行交付文件；保持普通语法、资源成本、随机数和自然生长。",
+            "program": "programs/0043.py",
+            "status": "passed",
+            "gameStart": 26497.249999698564,
+            "gameEnd": 26498.783333031875,
+            "wallSeconds": 15.238820299999999,
+            "frames": 112,
+            "pulses": 6436,
+            "instructionTicks": 122760,
+            "spawned": 1,
+            "isolatedGameSeconds": 7304.649999977851,
+            "category": "Fastest_Reset",
+            "peakDrones": 1,
+            "before": [
+                {
+                    "id": "hay",
+                    "amount": 1221443.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 512482.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1040469.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 4050894.0
+                },
+                {
+                    "id": "power",
+                    "amount": 316281.48644058717
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1859247.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 206364.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 288289.0
+                },
+                {
+                    "id": "water",
+                    "amount": 49408.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 59098.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 175.0
+                }
+            ],
+            "after": [
+                {
+                    "id": "hay",
+                    "amount": 1221443.0
+                },
+                {
+                    "id": "wood",
+                    "amount": 512482.0
+                },
+                {
+                    "id": "carrot",
+                    "amount": 1040469.0
+                },
+                {
+                    "id": "pumpkin",
+                    "amount": 4050894.0
+                },
+                {
+                    "id": "power",
+                    "amount": 316261.0264404125
+                },
+                {
+                    "id": "cactus",
+                    "amount": 1859247.0
+                },
+                {
+                    "id": "bone",
+                    "amount": 206364.0
+                },
+                {
+                    "id": "gold",
+                    "amount": 288289.0
+                },
+                {
+                    "id": "water",
+                    "amount": 49408.0
+                },
+                {
+                    "id": "fertilizer",
+                    "amount": 59098.0
+                },
+                {
+                    "id": "weird_substance",
+                    "amount": 175.0
+                }
+            ],
+            "research": [
+                "loops:1",
+                "operators:1",
+                "variables:1",
+                "senses:1",
+                "plant:1",
+                "expand:5",
+                "grass:8",
+                "trees:8",
+                "speed:8",
+                "functions:1",
+                "lists:1",
+                "costs:1",
+                "timing:1",
+                "hats:1",
+                "carrots:8",
+                "watering:6",
+                "dicts:1",
+                "import:1",
+                "auto_unlock:1",
+                "debug:1",
+                "debug2:1",
+                "utilities:1",
+                "polyculture:6",
+                "pumpkins:8",
+                "fertilizer:6",
+                "sunflowers:8",
+                "cactus:8",
+                "mazes:8",
+                "dinosaurs:8",
+                "megafarm:5",
+                "simulation:1",
+                "leaderboard:1",
+                "the_farmers_remains:1",
+                "top_hat:1"
+            ]
+        }
+    ],
+    "milestones": [
+        {
+            "id": "achievement:first_hay",
+            "gameSeconds": 3.9999999999999908,
+            "wallSeconds": 0.034053099999999999
+        },
+        {
+            "id": "research:loops:1",
+            "gameSeconds": 16.01666666666704,
+            "wallSeconds": 0.0387982
+        },
+        {
+            "id": "research:operators:1",
+            "gameSeconds": 198.23333333338324,
+            "wallSeconds": 0.048940399999999998
+        },
+        {
+            "id": "research:variables:1",
+            "gameSeconds": 198.23333333338324,
+            "wallSeconds": 0.0494693
+        },
+        {
+            "id": "research:senses:1",
+            "gameSeconds": 198.23333333338324,
+            "wallSeconds": 0.0499772
+        },
+        {
+            "id": "research:plant:1",
+            "gameSeconds": 198.23333333338324,
+            "wallSeconds": 0.0505539
+        },
+        {
+            "id": "research:expand:1",
+            "gameSeconds": 198.23333333338324,
+            "wallSeconds": 0.0516902
+        },
+        {
+            "id": "research:grass:1",
+            "gameSeconds": 253.88333333342752,
+            "wallSeconds": 0.0596047
+        },
+        {
+            "id": "research:trees:1",
+            "gameSeconds": 456.71666666657998,
+            "wallSeconds": 0.0778056
+        },
+        {
+            "id": "research:expand:2",
+            "gameSeconds": 456.71666666657998,
+            "wallSeconds": 0.07846779999999999
+        },
+        {
+            "id": "research:grass:2",
+            "gameSeconds": 456.71666666657998,
+            "wallSeconds": 0.0797397
+        },
+        {
+            "id": "research:speed:1",
+            "gameSeconds": 456.71666666657998,
+            "wallSeconds": 0.0804373
+        },
+        {
+            "id": "achievement:thousand",
+            "gameSeconds": 687.9999999997029,
+            "wallSeconds": 0.1231887
+        },
+        {
+            "id": "research:functions:1",
+            "gameSeconds": 766.1666666662985,
+            "wallSeconds": 0.1386324
+        },
+        {
+            "id": "research:lists:1",
+            "gameSeconds": 766.1666666662985,
+            "wallSeconds": 0.13994769999999999
+        },
+        {
+            "id": "research:costs:1",
+            "gameSeconds": 766.1666666662985,
+            "wallSeconds": 0.1407091
+        },
+        {
+            "id": "research:timing:1",
+            "gameSeconds": 766.1666666662985,
+            "wallSeconds": 0.1414491
+        },
+        {
+            "id": "research:hats:1",
+            "gameSeconds": 766.1666666662985,
+            "wallSeconds": 0.1422379
+        },
+        {
+            "id": "research:carrots:1",
+            "gameSeconds": 766.1666666662985,
+            "wallSeconds": 0.1429827
+        },
+        {
+            "id": "research:watering:1",
+            "gameSeconds": 766.1666666662985,
+            "wallSeconds": 0.1437397
+        },
+        {
+            "id": "research:dicts:1",
+            "gameSeconds": 1035.3666666660538,
+            "wallSeconds": 0.1833062
+        },
+        {
+            "id": "research:import:1",
+            "gameSeconds": 1035.3666666660538,
+            "wallSeconds": 0.1842353
+        },
+        {
+            "id": "research:auto_unlock:1",
+            "gameSeconds": 1035.3666666660538,
+            "wallSeconds": 0.1851264
+        },
+        {
+            "id": "research:debug:1",
+            "gameSeconds": 1035.3666666660538,
+            "wallSeconds": 0.18604479999999999
+        },
+        {
+            "id": "research:debug2:1",
+            "gameSeconds": 1035.3666666660538,
+            "wallSeconds": 0.1869264
+        },
+        {
+            "id": "research:utilities:1",
+            "gameSeconds": 1035.3666666660538,
+            "wallSeconds": 0.18825989999999999
+        },
+        {
+            "id": "achievement:wood",
+            "gameSeconds": 1261.999999999181,
+            "wallSeconds": 0.23307419999999999
+        },
+        {
+            "id": "achievement:carrot",
+            "gameSeconds": 1896.9999999986035,
+            "wallSeconds": 0.3516661
+        },
+        {
+            "id": "achievement:pumpkin",
+            "gameSeconds": 3132.0000000122686,
+            "wallSeconds": 0.7938725
+        },
+        {
+            "id": "achievement:power",
+            "gameSeconds": 4574.000000017587,
+            "wallSeconds": 1.9271243
+        },
+        {
+            "id": "achievement:cactus",
+            "gameSeconds": 5274.000000007401,
+            "wallSeconds": 3.4907017999999998
+        },
+        {
+            "id": "achievement:gold",
+            "gameSeconds": 6916.999999983492,
+            "wallSeconds": 6.807276
+        },
+        {
+            "id": "achievement:field",
+            "gameSeconds": 7567.9999999740185,
+            "wallSeconds": 13.538177699999999
+        },
+        {
+            "id": "achievement:parallel",
+            "gameSeconds": 8006.99999996763,
+            "wallSeconds": 15.673357
+        },
+        {
+            "id": "achievement:bone",
+            "gameSeconds": 8633.999999958507,
+            "wallSeconds": 26.875088899999999
+        },
+        {
+            "id": "guide:all-research-maxed",
+            "gameSeconds": 10672.616666595508,
+            "wallSeconds": 59.9440235
+        },
+        {
+            "id": "achievement:research",
+            "gameSeconds": 10672.999999928836,
+            "wallSeconds": 59.963451
+        },
+        {
+            "id": "island-order:1",
+            "gameSeconds": 10795.383333260388,
+            "wallSeconds": 60.2346303
+        },
+        {
+            "id": "island-order:2",
+            "gameSeconds": 11056.866666589916,
+            "wallSeconds": 60.797951899999997
+        },
+        {
+            "id": "island-order:3",
+            "gameSeconds": 11306.58333325295,
+            "wallSeconds": 61.3972475
+        },
+        {
+            "id": "island-order:4",
+            "gameSeconds": 11659.016666581154,
+            "wallSeconds": 62.235456
+        },
+        {
+            "id": "island-order:5",
+            "gameSeconds": 12321.849999904842,
+            "wallSeconds": 63.8389239
+        },
+        {
+            "id": "island-order:6",
+            "gameSeconds": 12596.516666567511,
+            "wallSeconds": 64.6038964
+        },
+        {
+            "id": "island-order:7",
+            "gameSeconds": 12952.249999895668,
+            "wallSeconds": 65.6285221
+        },
+        {
+            "id": "island-order:8",
+            "gameSeconds": 13435.099999888642,
+            "wallSeconds": 66.9953551
+        },
+        {
+            "id": "island-order:9",
+            "gameSeconds": 13830.599999882887,
+            "wallSeconds": 68.3207216
+        },
+        {
+            "id": "island-order:10",
+            "gameSeconds": 14558.649999872292,
+            "wallSeconds": 70.7577104
+        },
+        {
+            "id": "island-order:11",
+            "gameSeconds": 15620.866666523501,
+            "wallSeconds": 74.2652651
+        },
+        {
+            "id": "island-order:12",
+            "gameSeconds": 16245.599999847744,
+            "wallSeconds": 76.6527754
+        },
+        {
+            "id": "island-order:13",
+            "gameSeconds": 17386.783333164472,
+            "wallSeconds": 80.9696872
+        },
+        {
+            "id": "island-order:14",
+            "gameSeconds": 18704.09999981197,
+            "wallSeconds": 86.0617043
+        },
+        {
+            "id": "island-order:15",
+            "gameSeconds": 19512.816666466868,
+            "wallSeconds": 89.5802116
+        },
+        {
+            "id": "island-order:16",
+            "gameSeconds": 20983.383333112135,
+            "wallSeconds": 95.9574346
+        },
+        {
+            "id": "island-order:17",
+            "gameSeconds": 23091.916666414785,
+            "wallSeconds": 105.1855957
+        },
+        {
+            "id": "island-order:18",
+            "gameSeconds": 25982.183333039393,
+            "wallSeconds": 117.7744056
+        },
+        {
+            "id": "complete:0.12.1-campaign",
+            "gameSeconds": 25984.166666372697,
+            "wallSeconds": 117.783203
+        },
+        {
+            "id": "race:Hay:64.417",
+            "gameSeconds": 26497.31666636523,
+            "wallSeconds": 129.771242
+        },
+        {
+            "id": "race:Hay_Single:64.417",
+            "gameSeconds": 26497.41666636523,
+            "wallSeconds": 129.791797
+        },
+        {
+            "id": "race:Wood:81.983",
+            "gameSeconds": 26497.516666365227,
+            "wallSeconds": 129.8414362
+        },
+        {
+            "id": "race:Wood_Single:81.983",
+            "gameSeconds": 26497.616666365226,
+            "wallSeconds": 129.8911967
+        },
+        {
+            "id": "race:Carrots:102.733",
+            "gameSeconds": 26497.716666365224,
+            "wallSeconds": 129.92826209999999
+        },
+        {
+            "id": "race:Carrots_Single:102.733",
+            "gameSeconds": 26497.816666365223,
+            "wallSeconds": 129.9637687
+        },
+        {
+            "id": "race:Pumpkins:241.383",
+            "gameSeconds": 26497.91666636522,
+            "wallSeconds": 130.1389802
+        },
+        {
+            "id": "race:Pumpkins_Single:241.383",
+            "gameSeconds": 26498.01666636522,
+            "wallSeconds": 130.3140436
+        },
+        {
+            "id": "race:Sunflowers:288.317",
+            "gameSeconds": 26498.11666636522,
+            "wallSeconds": 130.5159536
+        },
+        {
+            "id": "race:Sunflowers_Single:288.317",
+            "gameSeconds": 26498.216666365217,
+            "wallSeconds": 130.7176742
+        },
+        {
+            "id": "achievement:race",
+            "gameSeconds": 26498.233333031883,
+            "wallSeconds": 130.72001989999999
+        },
+        {
+            "id": "race:Cactus:431.750",
+            "gameSeconds": 26498.316666365215,
+            "wallSeconds": 130.91927479999999
+        },
+        {
+            "id": "race:Cactus_Single:431.750",
+            "gameSeconds": 26498.416666365214,
+            "wallSeconds": 131.11892369999999
+        },
+        {
+            "id": "race:Maze:112.617",
+            "gameSeconds": 26498.499999698546,
+            "wallSeconds": 131.2347792
+        },
+        {
+            "id": "race:Maze_Single:112.617",
+            "gameSeconds": 26498.599999698545,
+            "wallSeconds": 131.35109649999999
+        },
+        {
+            "id": "race:Dinosaur:457.383",
+            "gameSeconds": 26498.699999698543,
+            "wallSeconds": 131.57388749999999
+        },
+        {
+            "id": "race:Fastest_Reset:7304.650",
+            "gameSeconds": 26498.783333031875,
+            "wallSeconds": 144.9882843
+        }
+    ]
+}

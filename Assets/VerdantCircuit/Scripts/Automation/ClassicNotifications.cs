@@ -54,6 +54,7 @@ namespace Verdant.Automation
             }
             completionDetail.text=string.Join("\n",PendingCompletions.Take(6).Select(n=>n.kind=="achievement"
                 ?Tr("Achievement: ","成就：")+AchievementLabel(n.id)
+                :n.kind=="archipelago"?Tr("Island order: ","群岛订单：")+L10n.T(ArchipelagoWorld.Contracts[int.Parse(n.id)].zh)
                 :Tr("Challenge: ","竞速：")+ChallengeName(n.id)+" / "+n.seconds.ToString("F3")+"s"));
             if(PendingCompletions.Count>6)completionDetail.text+="\n"+Tr("More completed goals: ","其他已完成目标：")+(PendingCompletions.Count-6);
             completionDetail.text+="\n\n"+Tr("Saved automatically. View Records for details.","已自动记录，详细结果可在纪录中查看。");

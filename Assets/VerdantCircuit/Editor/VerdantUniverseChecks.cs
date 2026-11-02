@@ -1,0 +1,63 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+using UnityEngine;
+using Verdant.Automation;
+public static class VerdantUniverseChecks
+{
+    static int count;static readonly List<string> results=new List<string>();
+    static void Check(bool ok,string name){if(!ok)throw new Exception("UNIVERSE FAIL: "+name);count++;results.Add(name);}
+    static ClassicFarm Fixture(int side=8)
+    {var f=new ClassicFarm();foreach(var t in ClassicFarm.Techs)f.Data.unlocks.Add(new Stock(t.id,t.max));f.Resize(side);foreach(string item in ClassicFarm.Items)f.Add(item,100000);var w=f.Fleet;w.Sell(0,"wood",1000);for(int p=1;p<4;p++){w.Data.islands[p].width=8;w.Data.islands[p].height=8;w.Data.islands[p].expansion=3;}return f;}
+    static void Step(ArchipelagoWorld w,double seconds){for(int i=0;i<seconds*4;i++)w.Advance(.25);}
+    static void Wait(ArchipelagoWorld w,int id,double max=1000){for(int i=0;i<max*4;i++){if(w.Unit(id).jobs.Count==0)return;w.Advance(.25);}throw new Exception("Worker wait timed out");}
+    static void AddProgram(ClassicFarm f,string name,string code){f.Data.programs.Add(new ClassicProgram(name,code));}
+    public static void Run()
+    {
+        count=0;results.Clear();var fresh=new ClassicFarm();var fw=fresh.Fleet;
+        Check(fresh.Data.size==1&&fresh.Height==1&&fresh.Count("hay")==0,"Fresh Earth starts with one real plot and no gifted resources");Check(ArchipelagoWorld.Definitions.Length==4&&fw.DiscoveredCount==1,"Exactly four planets, only Earth unlocked");
+        int starter=fw.EnsureEarthDrone();Check(starter>0&&fw.Unit(starter).role=="drone","Initial Earth worker is a real local drone");fresh.Advance(4);AddProgram(fresh,"main","harvest()");fw.RunProgram(starter,"main");fresh.Advance(2);Check(fresh.Count("hay")==1,"Bound drone harvests original Earth crop logic");Check(!fw.ManualStep(starter,0,1)&&!fw.ManualStep(starter,1,0),"Locked latitude and longitude edges do not silently teleport");
+        var f=Fixture();var world=f.Fleet;Check(world.IsUnlocked(1)&&world.IsUnlocked(2)&&world.IsUnlocked(3),"Research opens the three specialist planets");
+        foreach(var tech in ClassicFarm.Techs){var req=ClassicProgression.Requirements(tech.id,1);Check(req!=null,"Research requirement exists: "+tech.id);}
+        // Preserve original crop content while expanding rectangular sphere extents.
+        f.Cell(0,0).entity="tree";f.ExpandSurface(360,128);Check(f.Data.cells.Count==46080&&f.Height==128&&f.Cell(176,60).entity=="tree","Maximal Earth is 360×128 and expansion preserves planted cells");Check(Math.Abs(world.Latitude(0,0)+63.5)<.001&&Math.Abs(world.Latitude(0,127)-63.5)<.001,"Latitude cell centers cover -63.5 to +63.5 degrees, never the poles");
+        int root=world.EnsureEarthDrone();var drone=world.Unit(root);drone.x=drone.cropX=359;drone.y=drone.cropY=64;Check(world.ManualStep(root,1,0)&&drone.x==0,"East crosses the full 360-column longitude seam");Step(world,1);drone.y=drone.cropY=127;Check(!world.ManualStep(root,0,1),"North cannot cross the +64-degree belt edge");
+        Check((double)world.UniverseInvoke("surface_distance",new object[]{0.0,359.0,64.0,0.0,64.0})==1,"Seam distance uses the short longitude arc");
+        foreach(int planet in new[]{1,2,3}){int id=world.EnsurePlanetWorker(planet);Check(world.Unit(id).role==ArchipelagoWorld.Roles[planet],"Distinct native craft: "+ArchipelagoWorld.Roles[planet]);Check(!world.Rebase(id,0),"Native craft cannot teleport between planets: "+planet);Check(world.Build("drone",1,1,planet)<0,"Wrong species cannot be built on another planet: "+planet);}
+        f=Fixture();world=f.Fleet;int bee=world.EnsurePlanetWorker(1),boat=world.EnsurePlanetWorker(2),miner=world.EnsurePlanetWorker(3);int ship=world.BuildUfo();Check(ship>0,"UFO is built separately from local workers");
+        double before=f.Count("water");Check(world.LaunchUfo(ship,0,1,"water",30)&&f.Count("water")==before-30,"UFO transfer atomically reserves real Earth water");Check(!world.LaunchUfo(ship,0,2,"water",1),"Busy UFO cannot accept a conflicting transfer");Check(world.Stock(1,"water")==0,"Cargo is not visible before actual arrival");Step(world,5);
+        var loaded=new ClassicFarm{Data=JsonUtility.FromJson<ClassicSave>(JsonUtility.ToJson(f.Data))};Step(loaded.Fleet,240);Check(loaded.Fleet.Stock(1,"water")==30&&loaded.Fleet.Data.ufos[0].cargo==0&&loaded.Fleet.Audit()=="","Mid-flight save resumes multiple holds and unloads exactly once");
+        Check(world.CancelUfo(ship),"In-flight cancellation is accepted safely");Step(world,100);Check(f.Count("water")+world.Stock(1,"water")+world.Stock(-1,"water")==before,"Canceled cargo is conserved across source and destination");Check(world.Audit()=="","Cancellation and flight ledgers balance");
+        int earth=world.EnsureEarthDrone();Check(!world.CreateGroup("mixed",new List<int>{bee,boat}),"A local swarm cannot mix workers from different planets");
+        f.Add("hay",1000);Check(world.ResearchWorker(0,"slots"),"Earth worker count has its own independent research");Check(world.WorkerLimit(1)==1,"Earth research does not grant free bee capacity");
+        // Seed inputs only in recipe unit fixtures; no manufactured outputs are granted in the flight checks above.
+        foreach(var recipe in ArchipelagoWorld.Recipes)
+        {
+            var test=Fixture();var w=test.Fleet;int id=w.EnsurePlanetWorker(recipe.island);foreach(var input in recipe.inputs){if(recipe.island==0)test.Add(input.Key,input.Value);else{w.Add(recipe.island,input.Key,input.Value);ArchipelagoWorld.Put(w.Data.islands[recipe.island].made,input.Key,input.Value);}}
+            int index=Array.IndexOf(ArchipelagoWorld.NatureItems,recipe.item);string function=ArchipelagoWorld.NatureFunctions[index];double outputBefore=w.Stock(recipe.island,recipe.item);AddProgram(test,"recipe","result = "+function+"(worker_self(), 1)");w.RunProgram(id,"recipe");Step(w,1);Check(w.Unit(id).jobs.Count==1,"Named function queues its actual product: "+function);Wait(w,id);Check(w.Stock(recipe.island,recipe.item)==outputBefore+recipe.amount,"Physical recipe finishes: "+recipe.item);Check(w.Audit()=="","Recipe ledger balances: "+recipe.item);
+        }
+        f=Fixture();world=f.Fleet;bee=world.EnsurePlanetWorker(1);miner=world.EnsurePlanetWorker(3);AddProgram(f,"bee_code","worker_wait(3)\nresult = planet_self()");AddProgram(f,"miner_code","worker_wait(3)\nresult = planet_self()");AddProgram(f,"flower_mgr","program_bind("+bee+", 'bee_code')\nprogram_run("+bee+")");AddProgram(f,"mine_mgr","program_bind("+miner+", 'miner_code')\nprogram_run("+miner+")");AddProgram(f,"universe","planet_run(1, 'flower_mgr')\nplanet_run(3, 'mine_mgr')");world.RunControl("network","universe");Step(world,1);Check(!world.ControlRunning("network")&&world.ProgramRunning(bee)&&world.ProgramRunning(miner),"Planet workers outlive a finite universe controller");Step(world,4);Check((double)world.Result(bee)==1&&(double)world.Result(miner)==3,"Per-planet programs have independent contexts and results");
+        AddProgram(f,"python","a = sum([1, 2, 3])\nb = list(zip([1,2], ['a']))\nc = sorted([3,1,2])\nd = round(2.5)\ne = divmod(-7,3)\nf = ' A,B '.strip().lower().split(',')\ng = '-'.join(['a','b'])\nh = all([]) and not any([])\nresult = [a, len(b), c[0], d, e[0], f[1], g, h, ord(chr(128512))]");world.RunProgram(bee,"python");Step(world,4);var answer=(List<object>)world.Result(bee);Check(answer!=null&&(double)answer[0]==6&&(double)answer[1]==1&&(double)answer[2]==1&&(double)answer[3]==2&&(double)answer[4]==-3&&(string)answer[5]=="b"&&(string)answer[6]=="a-b"&&(bool)answer[7]&&(double)answer[8]==128512,"Python-inspired numeric, sequence, Unicode and string helpers match documented semantics");
+        ExtraCases();
+        foreach(string file in UnifiedExamples.Names)new ScriptParser().Parse(UnifiedExamples.Code(file));Check(true,"All shipped universe example programs parse");
+        var saved=JsonUtility.FromJson<ClassicSave>(JsonUtility.ToJson(f.Data));ArchipelagoWorld.Validate(saved.archipelago);Check(saved.archipelago.controls.Count==3&&saved.archipelago.units.Any(u=>u.program=="python"),"Save retains universe/planet bindings and local worker assignments");
+        double credit=world.Data.credits;for(int i=0;i<10;i++){int id=world.EnsurePlanetWorker(2);world.Remove(id);}Check(world.Data.credits==credit,"Repeated free native starters cannot mint credits");
+        Directory.CreateDirectory("InternalTestReports/0.13.2");File.WriteAllText("InternalTestReports/0.13.2/universe.json",JsonUtility.ToJson(new Report{status="passed",checks=count,names=results.ToArray()},true));Debug.Log("UNIVERSE CHECKS PASSED / "+count);
+    }
+    static void ExtraCases()
+    {
+        var f=Fixture();f.Resize(8,4);foreach(var c in f.Data.cells){c.entity="pumpkin";c.ground="soil";c.growth=100;c.measure=1;}double before=f.Count("pumpkin");Check(f.Harvest(1,1)&&f.Count("pumpkin")-before==16*4*128&&f.Data.cells.Count(c=>c.entity=="pumpkin")==16,"Linear pumpkin search finds the maximal square inside a rectangular planet field");
+        f=Fixture();f.Resize(4,2);int value=0;foreach(var c in f.Data.cells){c.entity="cactus";c.ground="soil";c.growth=100;c.measure=value++;}before=f.Count("cactus");f.Harvest(0,0);Check(f.Count("cactus")-before==64*128&&f.Data.cells.All(c=>c.entity==""),"Sorted rectangular cactus chains retain original area-based yield");
+        f=Fixture();f.Resize(4,2);f.Cell(0,0).entity="bush";Check(f.Use("catalyst",0,0,10000)&&f.maze&&f.walls.Length==8,"Original maze generation supports a rectangular spherical patch");before=f.Count("coins");f.Harvest(f.treasure%4,f.treasure/4);Check(f.Count("coins")>before&&f.Count("gold")==0,"Treasure coins and refined mineral gold are strictly separate items");
+        f=Fixture();var w=f.Fleet;int a=w.EnsurePlanetWorker(1);w.Add(1,"rose",200);ArchipelagoWorld.Put(w.Data.islands[1].made,"rose",200);Check(w.ResearchWorker(1,"slots")&&w.WorkerLimit(1)==2&&w.WorkerLimit(2)==1,"Per-planet swarm capacity variables are independent");Check(w.ResearchWorker(1,"size"),"Hull unlock consumes local botanical output");int b=w.Build("bee",2,1,1);Check(b>0&&!w.Fits(w.Unit(b),w.Unit(a).x,w.Unit(a).y),"Larger native hulls occupy actual cells and avoid another bee");
+        Check(w.CreateGroup("bees",new List<int>{a,b}),"Multiple native hull sizes can share a named local swarm");AddProgram(f,"same","result = worker_self()\nworker_wait(2)");w.UnifiedInvoke("group_run",new object[]{"bees","same"});Step(w,3);Check((double)w.Result(a)==a&&(double)w.Result(b)==b,"Grouped programs keep distinct worker identities");
+        AddProgram(f,"breakpoint","value = 7\nworker_wait(1)\nresult = value");w.Breakpoints.Add(1);w.RunProgram(a,"breakpoint");Step(w,1);Check(w.ProgramsPaused&&w.ProgramRunning(a),"A breakpoint pauses the bound native interpreter");long pulses=w.ProgramTask(a).Steps;w.StepProgram(a);Check(w.ProgramTask(a).Steps==pulses+1,"Step executes exactly one native interpreter pulse");w.Breakpoints.Clear();w.ProgramsPaused=false;Step(w,3);Check((double)w.Result(a)==7,"Paused native code resumes to its independent result");
+        AddProgram(f,"bad","worker_build(1, 1.5, 1)");w.RunProgram(a,"bad");Step(w,1);Check(w.Unit(a).codeError!="","Fractional dimensions are rejected instead of silently truncated");
+        AddProgram(f,"good","worker_wait(1)\nresult = 9");w.RunProgram(b,"good");Step(w,2);Check((double)w.Result(b)==9,"One function error leaves another swarm member alive");
+        foreach(var entry in UnifiedManual.Functions){new ScriptParser().Parse(entry.example);Check(!string.IsNullOrWhiteSpace(entry.en)&&!string.IsNullOrWhiteSpace(entry.zh)&&!string.IsNullOrWhiteSpace(entry.parametersEn),"Documented and parsable function: "+entry.name);}
+        Check(ClassicHost.Api.Concat(ArchipelagoWorld.Api).All(name=>UnifiedManual.Functions.Any(e=>e.name==name)),"Every exported Earth/universe/worker/UFO function has an individual reference");
+        f=Fixture();w=f.Fleet;int ship=w.BuildUfo();var u=w.Data.ufos[0];u.battery=0;before=f.Count("water");Check(!w.LaunchUfo(ship,0,1,"water",1)&&f.Count("water")==before,"Insufficient UFO fuel never reserves or loses cargo");Check(w.RefuelUfo(ship,10)&&u.battery==50,"UFO refueling uses actual locally docked solar energy");Check(w.RepositionUfo(ship,1),"Empty UFO repositioning is a separate real flight");Step(w,60);Check(u.planet==1&&u.phase==0&&!w.RefuelUfo(ship,1),"UFO cannot refuel from Earth remotely when docked on a dry foreign planet");
+    }
+    [Serializable] public sealed class Report {public string status;public int checks;public string[] names;}
+}

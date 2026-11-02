@@ -1,0 +1,5 @@
+{
+  "version": "0.13.0",
+  "status": "not_run",
+  "reason": "An existing 0.12.1 native player was running; its session and save files were left intact. Editor Play-mode UI and gameplay tests passed separately."
+}

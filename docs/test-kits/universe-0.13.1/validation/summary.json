@@ -1,0 +1,39 @@
+{
+  "version": "0.13.1",
+  "publication": "local-only",
+  "sourceFingerprint": "0fa6b41e978cfc5074cc11c386b712d17be380ba391ab81c329dde15e393d82f",
+  "referenceFingerprint": "440b891b52340fc029824abf2b7eb576ea52f86a0af54efa5818f5062254958e",
+  "shaderFingerprint": "f9e1b9565bb03fe186ea3e4533b286a27a5bdf93420f9eb4dcdcc73536862feb",
+  "modelChecks": 401,
+  "campaignChecks": 297,
+  "totalAssertions": 698,
+  "uiChecks": 19,
+  "uiScreenshots": 13,
+  "uiLocales": 2,
+  "runtimeUiErrors": 0,
+  "nativeMac": "passed",
+  "nativeMacScope": "Standalone opening animation and four-planet universe only. Gameplay covered separately in Editor Play mode.",
+  "windowsNative": "not tested",
+  "chapters": 17,
+  "functions": 215,
+  "recipes": 31,
+  "programFiles": 11,
+  "contractFixture": {
+    "status": "passed",
+    "scope": "Integration fixture: all research and original Earth inputs supplied; all native manufactured products, UFO fuel, physical queues and 8 contracts produced through actual rules.",
+    "checks": 297,
+    "contracts": 8,
+    "shipments": 67,
+    "gameSeconds": 7412.0,
+    "orderSeconds": [
+      43.5,
+      359.0,
+      333.5,
+      529.25,
+      685.25,
+      743.5,
+      1427.25,
+      3142.5
+    ]
+  }
+}

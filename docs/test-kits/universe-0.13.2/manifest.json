@@ -1,0 +1,19 @@
+{
+  "version": "0.13.2",
+  "chapters": 19,
+  "functions": 218,
+  "recipes": 31,
+  "programs": {
+    "bee_worker.py": "d7d5c3723a63db288dbbc781de24dce6ee07b671388203cb36c67d422d17fd32",
+    "boat_worker.py": "042a5057ca26b3186c26bb01c50ad57400e06ca27b5fe0353b129080a202d2aa",
+    "earth_manager.py": "bd6f80c3a65a049841bd95cd4970100f465c239c9c57bad9ca53f6e08f45b11d",
+    "earth_worker.py": "96d53b162d38b10b1a6c559636634bae6cc0b559eaf7c5e8aadcbae9d74668b7",
+    "flower_manager.py": "08b9013750dc35f1d6cb2d19c5925b7780f858b44a8c7a20f45d0e032444e1ae",
+    "miner_worker.py": "fa13de245f4061dad5246914984b658172f12bd861bbb653134cde5b359342e4",
+    "mineral_manager.py": "dec56d7bb59ef5ae03db98ec699e6bb33971cbe609e6ed9273674ae3706b888e",
+    "ocean_manager.py": "a469e5d7edfd77da5331839e0148caf52f1d136e989da62d75eddda83429876f",
+    "ufo_dispatch.py": "b1ae3b16ae490b5ffd03b8606c4eae233a08aba98cb75cdb164f733e42d47a77",
+    "universe_controller.py": "20876eba9feb75fcb7efb257db053e29cd5f76d4b6597133fe186612954bd40d",
+    "worker_helpers.py": "72924b7ac8816ea2034545f286ba342e5d8c23f9b679a5bbf0d88e4b3d00139c"
+  }
+}

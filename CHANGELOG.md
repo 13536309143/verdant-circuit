@@ -1,5 +1,59 @@
 # Changelog / 更新日志
 
+## 0.13.2 — 2026-11-02 · Orbital Mothership + Night (public preview)
+
+- Keep only Night styling; remove the theme switch and light palette branches.
+- Ignore legacy saved theme preferences without changing farm progress or per-planet accents.
+
+### Universe content included in 0.13.2
+
+- Fix invisible growth: continuous crop silhouettes, readable growth status and close-up one-plot entry.
+- Grey locked worlds, independently randomized rotation, cloud/atmosphere effects, mothership model and animated shuttle descent.
+- Route every interplanetary payload through the physical mothership; add persistent depot -1 with safe cancellation and mid-flight saves.
+- Pool harvest effects, reuse crop batches/materials, cull hidden/distant chunks and cap visible crop instances.
+- Split research into Universe and four native sectors; add thirteen specialist technology branches with real effects and color-coded states.
+- Extend the campaign to24 varied manufacturing/logistics projects, with no elapsed-time unlock gates.
+- Add fresh zero-inventory reference walkthrough, continuous growth, hub conservation, native science and actual Play-mode rendering checks.
+
+
+## 0.13.1 — A Small Universe (local build, not uploaded)
+
+- Replace the island presentation with exactly four planets. Earth is the original farm on a sphere, initially one plot; unlock a360×128 one-degree belt excluding both poles.
+- Preserve planted crops during staged rectangular expansion; wrap longitude only at full360 columns and always bound latitude.
+- Add native drones, bees, fishing boats and mining drones with independent planet-local count, hull and swarm research.
+- Introduce real UFO-only freight, battery, local refueling, payload upgrades, empty repositioning and save-safe cargo reservations.
+- Separate raw ores and refined materials; distinguish treasure coins, gold ore and gold bullion. Add31 native recipes and eight universe contracts.
+- Rework the interface with top navigation, per-planet palettes, spherical orbit/focus views, rotor/wing/propeller/drill animation and full-size instanced rendering.
+- Extend Python-inspired numeric, sequence, Unicode and string helpers; document215 individual functions/methods in17 bilingual chapters and11 complete hierarchical programs.
+- Use a separate Universe0131 save namespace to preserve older farms and live sessions.
+- Verify native geometry, crop regressions, safe freight cancellation, flight saves, independent swarms, debuggers and a complete manufactured-product campaign fixture.
+
+
+## 0.13.0 — Unified Earth & Islands (local test build)
+
+- Integrate Earth and island logistics into one technology progression and inventory flow; merge old island-zero stock once.
+- Add an Earth world-selection screen, an original-farm home depot and three separately researched specialist islands.
+- Add six flower products, six mineral tiers, six fisheries products, compost/fishmeal and six further multi-objective contracts (24 total).
+- Bind independent programs to Earth farmers, specialist drones, named groups, island managers and a network controller.
+- Replace the program library with independently scrolling target and file panes, live bindings and activity cards.
+- Remove simulation lab research, navigation and simulate(); retain local races.
+- Expand the bilingual manual to 24 chapters, 127 individual function/method entries, 28 recipes and 11 hierarchical example files.
+- Validate original crop progression, specialist production, real shipping, mid-recipe saves, legacy inventory migration, execution isolation and both UI languages.
+
+
+## [0.12.1] — 2026-11-02 · Archipelago Operations (local build)
+
+- Add a 15.5-second bilingual illustrated opening with skip/replay and exact preservation of farm/program state.
+- Add a separately researched physical fleet: six specialisms, 3–8 slots, five hull tiers and rotated footprints.
+- Add six island depots, seven cargo goods, eight processing recipes and 18 multi-destination contracts, gated by order and farming discoveries.
+- Implement full-footprint pathfinding, directed wide lanes, narrow shortcuts, atomic occupancy, docking/landing queues and physically transported reserved manifests.
+- Add independent machine interpreters, shared module imports, copied bounded inboxes, results, per-worker error isolation and a 10-file coordinator example.
+- Save physical queues, processing inputs/timers, in-flight cargo and funding ledgers; validate malformed saves and preserve older farms without island state.
+- Show fractional balances accurately and settle exports to cents, including exact affordability after repeated small sales.
+- Add real-stock surplus exports and reconciled income, allowing recovery after repair-fee bankruptcy.
+- Show live fleet/module activity in program cards; include clear contract milestones, local order timings, 19 manual chapters and 52 API groups.
+- Fix batch-input underfunding, opposing heavy-hull deadlocks, overlapping landing pads, unavailable-cargo waits, UI map rendering legacy empty-inline save handling, deferred CPU wait debt, atomic self-dispatch and opening-skip input leakage found during verification.
+
 ## [0.11.3] — 2026-11-01 · Program Name Fix
 
 - Accept Chinese- and digit-leading program names across creation, saves, file export/import, module lookup and simulations.

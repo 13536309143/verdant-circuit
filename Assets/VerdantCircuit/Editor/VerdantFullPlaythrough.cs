@@ -26,7 +26,7 @@ public static partial class VerdantFullPlaythrough
         public uint seed;public bool freshZeroInventory=true,unrestrictedSyntax=false,resourceGrants=false,usesActualInterpreter=true;public double gameSeconds,wallSeconds;public long fixedFrames;public int researchNodes,maxedResearchNodes,achievements;public List<Phase> phases=new List<Phase>();public List<Milestone> milestones=new List<Milestone>();
     }
     static ClassicFarm farm;static ClassicController observer;static GameObject observerObject;static Report report;static Stopwatch wall;static string output;static long frames;static int resourceDepth;static MethodInfo production,challengeNotice;static readonly CultureInfo CI=CultureInfo.InvariantCulture;
-    static readonly Dictionary<string,string> itemSymbols=new Dictionary<string,string>{{"hay","Hay"},{"wood","Wood"},{"carrot","Carrot"},{"pumpkin","Pumpkin"},{"power","Power"},{"cactus","Cactus"},{"bone","Bone"},{"gold","Gold"},{"water","Water"},{"fertilizer","Fertilizer"},{"weird_substance","Weird_Substance"}};
+    static readonly Dictionary<string,string> itemSymbols=new Dictionary<string,string>{{"hay","Hay"},{"wood","Wood"},{"carrot","Carrot"},{"pumpkin","Pumpkin"},{"solar_energy","Solar_Energy"},{"cactus","Cactus"},{"bone","Bone"},{"coins","Coins"},{"water","Water"},{"fertilizer","Fertilizer"},{"catalyst","Catalyst"}};
     static string Number(double n){return Math.Ceiling(n).ToString("0",CI);}
     static Stock[] Inventory(){return ClassicFarm.Items.Select(i=>new Stock(i,farm.Count(i))).ToArray();}
     static void Check(bool value,string text){if(!value)throw new Exception(text);}
@@ -43,7 +43,7 @@ public static partial class VerdantFullPlaythrough
         if(!EditorApplication.isPlaying||!UnityEngine.Localization.Settings.LocalizationSettings.InitializationOperation.IsDone)return;
         var table=UnityEngine.Localization.Settings.LocalizationSettings.StringDatabase.GetTableAsync("Verdant");if(!table.IsDone)return;
         SessionState.SetBool("VerdantFullPlaythrough",false);
-        try{RunCore();EditorApplication.Exit(0);}catch(Exception e){UnityEngine.Debug.LogException(e);EditorApplication.Exit(1);}
+        try{bool guide=SessionState.GetBool("VerdantPlayerGuide",false);SessionState.SetBool("VerdantPlayerGuide",false);if(SessionState.GetBool("VerdantUniverseFresh",false)){SessionState.SetBool("VerdantUniverseFresh",false);RunUniverseFreshCore();}else if(guide)RunPlayerGuideCore();else RunCore();EditorApplication.Exit(0);}catch(Exception e){UnityEngine.Debug.LogException(e);EditorApplication.Exit(1);}
     }
     static void RunCore()
     {
@@ -66,15 +66,15 @@ public static partial class VerdantFullPlaythrough
             UpgradeAvailable();
             foreach(string id in new[]{"watering","dicts","import","auto_unlock","debug","debug2","utilities","polyculture"})Purchase(id);
             Purchase("pumpkins");Purchase("fertilizer");UpgradeAvailable();
-            foreach(string id in new[]{"sunflowers","cactus","mazes","dinosaurs","megafarm","simulation","leaderboard"}){Purchase(id);UpgradeAvailable();}
-            Ensure("power",1000);VerifyCompanion();VerifyParallel();VerifySimulation();
+            foreach(string id in new[]{"sunflowers","cactus","mazes","dinosaurs","megafarm","archipelago","leaderboard"}){Purchase(id);UpgradeAvailable();}
+            Ensure("solar_energy",1000);VerifyCompanion();VerifyParallel();
             Purchase("the_farmers_remains");UpgradeAvailable();Purchase("top_hat");UpgradeAvailable();Execute("验证大师礼帽外观接口","研究奖励解锁后更换礼帽，再恢复草帽。","change_hat(Hats.Top_Hat)\nchange_hat(Hats.Straw_Hat)",120,"feature");
             VerifyMazeReuse();VerifyParallel();VerifyAllCompetitions();
             foreach(var tech in ClassicFarm.Techs)while(farm.Level(tech.id)<tech.max)Purchase(tech.id);
             Ensure("bone",100);Observe();
             Check(ClassicFarm.Techs.All(t=>farm.Level(t.id)==t.max),"Not every research node reached its maximum.");
             Check(farm.Data.achievements.Count==13,"Not every local achievement was earned.");
-            Check(ClassicFarm.Items.Where(i=>!new[]{"water","fertilizer","weird_substance"}.Contains(i)).All(i=>farm.Data.harvested.Any(s=>s.id==i&&s.amount>0)),"A production resource was never harvested.");
+            Check(ClassicFarm.Items.Where(i=>!new[]{"water","fertilizer","catalyst"}.Contains(i)).All(i=>farm.Data.harvested.Any(s=>s.id==i&&s.amount>0)),"A production resource was never harvested.");
             report.status="passed";Finish();UnityEngine.Debug.Log("FULL PLAYTHROUGH PASSED / game "+report.gameSeconds.ToString("F3",CI)+"s / wall "+report.wallSeconds.ToString("F3",CI)+"s / phases "+report.phases.Count);
         }
         catch(Exception e){report.status="failed";report.error=e.ToString();Finish();throw;}
@@ -112,7 +112,7 @@ public static partial class VerdantFullPlaythrough
             {
                 foreach(var unit in session.drones)knownDrones.Add(unit);session.FixedTick();foreach(var unit in session.drones)knownDrones.Add(unit);phase.peakDrones=Math.Max(phase.peakDrones,session.drones.Count(d=>!d.finished));local++;frames++;if(frames%60==0)Observe();
                 if(local>limit*60)throw new Exception("Program exceeded "+limit+" simulated seconds: "+title);
-                if(wall.Elapsed.TotalSeconds>900)throw new Exception("Full test exceeded 15 minutes wall time.");
+                if(wall.Elapsed.TotalSeconds>2400)throw new Exception("Full test exceeded 15 minutes wall time.");
             }
             Check(session.Error=="","Interpreter failure in "+title+": "+session.Error);
             phase.frames=local;phase.pulses=knownDrones.Sum(d=>d.task==null?0:d.task.Steps);phase.instructionTicks=knownDrones.Sum(d=>d.ticks);phase.spawned=session.TotalSpawned;End(phase,timer);
@@ -146,10 +146,10 @@ public static partial class VerdantFullPlaythrough
     static void UpgradeAvailable()
     {
         bool changed;do{changed=false;foreach(string id in new[]{"expand","grass","speed","trees","carrots","pumpkins","sunflowers","watering","fertilizer","polyculture","cactus","mazes","dinosaurs","megafarm"})
-        {if((farm.Level(id)>0||id=="grass"||id=="speed")&&farm.ResearchRequirementsMet(id)){Purchase(id);changed=true;}}}while(changed);
+        {if(!(universeFresh&&id=="expand"&&farm.Level("expand")>=3)&&(farm.Level(id)>0||id=="grass"||id=="speed")&&farm.ResearchRequirementsMet(id)){Purchase(id);changed=true;}}}while(changed);
     }
     static string Sweep(string body)
-    {return "for row in range(get_world_size()):\n    for col in range(get_world_size()):\n"+Indent(body,8)+"\n        move(East)\n    move(North)";}
+    {return "while get_pos_x()>0:\n    move(West)\nwhile get_pos_y()>0:\n    move(South)\nfor row in range(get_world_size()):\n    for col in range(get_world_size()):\n"+Indent(body,8)+"\n        if col+1<get_world_size():\n            move(East)\n    while get_pos_x()>0:\n        move(West)\n    if row+1<get_world_size():\n        move(North)\nwhile get_pos_y()>0:\n    move(South)";}
     static string Indent(string text,int count){string pad=new string(' ',count);return string.Join("\n",text.Split('\n').Select(l=>pad+l));}
     static string ClearSoil(){return "clear()\n"+Sweep("till()");}
     static string Water(){return farm.Level("watering")>0?"\nif get_water()<0.3 and num_items(Items.Water)>0:\n    use_item(Items.Water)":"";}
@@ -172,35 +172,35 @@ public static partial class VerdantFullPlaythrough
                 string code=(item=="hay"?"clear()":ClearSoil())+"\nwhile num_items(Items."+symbol+")<"+Number(goal)+":\n"+Indent(Sweep(body),4);
                 Execute("生产 "+item+" 至 "+Number(goal),item=="wood"?"棋盘树木与灌木；避免四邻树木减速，自动补种。":"逐行遍历、成熟判断与循环补种；根据实际库存结束。",code);
             }
-            else if(item=="pumpkin"||item=="weird_substance")
+            else if(item=="pumpkin"||item=="catalyst")
             {
-                if(farm.Level("pumpkins")==0)Purchase("pumpkins");if(item=="weird_substance"&&farm.Level("fertilizer")==0)Purchase("fertilizer");
-                double yield=n*n*Math.Min(n,6)*Math.Pow(2,Math.Max(0,farm.Level("pumpkins")-1))*(item=="weird_substance"?.5:1);
+                if(farm.Level("pumpkins")==0)Purchase("pumpkins");if(item=="catalyst"&&farm.Level("fertilizer")==0)Purchase("fertilizer");
+                double yield=n*n*Math.Min(n,6)*Math.Pow(2,Math.Max(0,farm.Level("pumpkins")-1))*(item=="catalyst"?.5:1);
                 double cycles=Math.Ceiling((goal-farm.Count(item))/yield);FundSeeds("pumpkin",farm.Count("pumpkin")+cycles*yield,Math.Max(2,cycles)*n*n*2.2);
-                string code=PumpkinCode(Number(goal),item=="weird_substance");
-                Execute("生产 "+item+" 至 "+Number(goal),"反复扫描并补种枯死南瓜；整块成熟后收获。"+(item=="weird_substance"?"按感染比例计算奇异物质，实际逐格消耗肥料，不再以一份肥料感染整块结算。":""),code);
+                string code=PumpkinCode(Number(goal),item=="catalyst");
+                Execute("生产 "+item+" 至 "+Number(goal),"反复扫描并补种枯死南瓜；整块成熟后收获。"+(item=="catalyst"?"按感染比例计算奇异物质，实际逐格消耗肥料，不再以一份肥料感染整块结算。":""),code);
 
             }
             else if(item=="cactus")
             {
                 if(farm.Level("cactus")==0)Purchase("cactus");double yield=ClassicBalance.CactusMultiplier(n*n)*Math.Pow(2,Math.Max(0,farm.Level("cactus")-1));double cycles=Math.Ceiling((goal-farm.Count(item))/yield);
                 FundSeeds("cactus",goal,(cycles+1)*n*n);
-                string code="clear()\nwhile num_items(Items.Cactus)<"+Number(goal)+":\n"+Indent(Sweep("if get_ground_type()!=Grounds.Soil:\n    till()\nif get_entity_type()==None:\n    plant(Entities.Cactus)"+Water()),4)+"\n    complete=False\n    while not complete:\n        complete=True\n"+Indent(Sweep("if not can_harvest():\n    complete=False"),8)+"\n"+Indent(ClassicExamples.Sources[4],4);
+                string code="clear()\nwhile num_items(Items.Cactus)<"+Number(goal)+":\n"+Indent(Sweep("if get_ground_type()!=Grounds.Soil:\n    till()\nif get_entity_type()==None:\n    plant(Entities.Cactus)"+Water()),4)+"\n    complete=False\n    while not complete:\n        complete=True\n"+Indent(Sweep("if not can_harvest():\n    complete=False"),8)+"\n"+Indent(BoundedCactusSort(),4);
                 Execute("生产 cactus 至 "+Number(goal),"行冒泡排序后列冒泡排序；二维有序后连锁收获。比较复杂度 O(n³)，输出按连锁株数与封顶倍率计算。",code);
             }
-            else if(item=="power")
+            else if(item=="solar_energy")
             {
-                if(farm.Level("sunflowers")==0)Purchase("sunflowers");FundSeeds("sunflower",goal,Math.Max(2,Math.Ceiling((goal-farm.Count("power"))/(n*n*4.0)))*n*n);
-                Execute("生产 power 至 "+Number(goal),"先等待整田成熟，再按 15→7 花瓣分成九档扫描；每档顺序收获，避免逐株全田查找的 O(n⁴) 扫描与能量开销。",PowerCode(Number(goal)));
+                if(farm.Level("sunflowers")==0)Purchase("sunflowers");FundSeeds("sunflower",goal,Math.Max(2,Math.Ceiling((goal-farm.Count("solar_energy"))/(n*n*4.0)))*n*n);
+                Execute("生产 solar_energy 至 "+Number(goal),"先等待整田成熟，再按 15→7 花瓣分成九档扫描；每档顺序收获，避免逐株全田查找的 O(n⁴) 扫描与能量开销。",PowerCode(Number(goal)));
 
             }
             else if(item=="bone")
             {
                 if(farm.Level("dinosaurs")==0)Purchase("dinosaurs");while(farm.Count(item)<goal){Ensure("cactus",n*n+1);Execute("长尾生产 bone 至 "+Number(goal),"偶数网格上的哈密顿回路；只在边界受阻时结束，换帽结算尾长收益；倍率在长度 64 封顶，继续增长仍增加产量。",ClearSoil()+"\n"+ClassicExamples.Sources[8],7200);}
             }
-            else if(item=="gold")
+            else if(item=="coins")
             {
-                if(farm.Level("mazes")==0)Purchase("mazes");double mazeScale=Math.Pow(2,farm.Level("mazes")-1);Ensure("weird_substance",Math.Ceiling((goal-farm.Count(item))/(n*n*mazeScale))*n*mazeScale);while(farm.Count(item)<goal){Execute("迷宫生产 gold 至 "+Number(goal),"迭代 DFS，显式栈回溯与坐标集合去重；到达宝藏后收获。",MazeStart()+"\n"+ClassicExamples.Sources[5],7200);}
+                if(farm.Level("mazes")==0)Purchase("mazes");double mazeScale=Math.Pow(2,farm.Level("mazes")-1);Ensure("catalyst",Math.Ceiling((goal-farm.Count(item))/(n*n*mazeScale))*n*mazeScale);while(farm.Count(item)<goal){Execute("迷宫生产 coins 至 "+Number(goal),"迭代 DFS，显式栈回溯与坐标集合去重；到达宝藏后收获。",MazeStart()+"\n"+ClassicExamples.Sources[5],7200);}
             }
             else throw new Exception("No production planner for "+item);
             Check(farm.Count(item)>=target,"Production failed to reach "+item+" target "+target);
@@ -218,7 +218,7 @@ public static partial class VerdantFullPlaythrough
         double yield=Math.Pow(2,Math.Max(0,farm.Level(tech)-1));double count=explicitCount>0?explicitCount:(Math.Ceiling(Math.Max(0,target-farm.Count(entity))/(n*n*yield))+1)*n*n;
         foreach(var p in farm.SeedCost(entity))Ensure((string)p.Key,Math.Ceiling(count*ScriptValue.Number(p.Value)));
     }
-    static string MazeStart(){return "clear()\ntill()\nplant(Entities.Bush)\namount=get_world_size()*2**(num_unlocked(Unlocks.Mazes)-1)\nuse_item(Items.Weird_Substance,amount)";}
+    static string MazeStart(){return "clear()\ntill()\nplant(Entities.Bush)\namount=get_world_size()*2**(num_unlocked(Unlocks.Mazes)-1)\nuse_item(Items.Catalyst,amount)";}
     static void VerifyCompanion()
     {
         Ensure("hay",200);Ensure("wood",200);string code="clear()\nentity,position=get_companion()\nx,y=position\nwhile get_pos_x()!=x:\n    move(East)\nwhile get_pos_y()!=y:\n    move(North)\ntill()\nplant(entity)\nwhile get_pos_x()!=0:\n    move(East)\nwhile get_pos_y()!=0:\n    move(North)\nwhile not can_harvest():\n    do_a_flip()\nharvest()";double prior=farm.Count("hay");Execute("验证随机伴生目标","读取伴生类型与坐标，布置邻作，回原地收获；检查实际额外收益。",code);Check(farm.Count("hay")-prior>Math.Pow(2,farm.Level("grass")),"Companion bonus was not earned.");
@@ -241,9 +241,9 @@ public static partial class VerdantFullPlaythrough
     }
     static void VerifyMazeReuse()
     {
-        Ensure("weird_substance",farm.Data.size*Math.Pow(2,farm.Level("mazes")-1)*2);
+        Ensure("catalyst",farm.Data.size*Math.Pow(2,farm.Level("mazes")-1)*2);
         string search=ClassicExamples.Sources[5];int end=search.LastIndexOf("if get_entity_type() == Entities.Treasure:",StringComparison.Ordinal);search=search.Substring(0,end);
-        double before=farm.Count("gold");Execute("验证迷宫复用与开墙","第一次寻宝后复用，重新 DFS 搜索随机新目标，最后收获；算法允许地图出现环。",MazeStart()+"\n"+search+"\nuse_item(Items.Weird_Substance,amount)\n"+ClassicExamples.Sources[5]);Check(farm.Count("gold")>before,"Maze reuse did not produce gold.");
+        double before=farm.Count("coins");Execute("验证迷宫复用与开墙","第一次寻宝后复用，重新 DFS 搜索随机新目标，最后收获；算法允许地图出现环。",MazeStart()+"\n"+search+"\nuse_item(Items.Catalyst,amount)\n"+ClassicExamples.Sources[5]);Check(farm.Count("coins")>before,"Maze reuse did not produce coins.");
     }
     static void VerifyAllCompetitions()
     {

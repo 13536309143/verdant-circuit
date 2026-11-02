@@ -1,192 +1,134 @@
 # Verdant Circuit · 禾序
 
-**Program the farm. Discover the algorithm.**
+**Start with one plot. Program a living universe.**
 
-**English** · [简体中文](README.zh-CN.md) · [Download 0.11.3](https://github.com/13536309143/verdant-circuit/releases/tag/v0.11.3) · [Test guide](docs/TESTING.md)
+**English** · [简体中文](README.zh-CN.md) · [Download v0.13.2](https://github.com/13536309143/verdant-circuit/releases/tag/v0.13.2) · [Full manual](docs/MANUAL.md)
 
-Verdant Circuit is a single-player programming farm, independently implemented in Unity. Write Python-inspired code to grow resources, unlock technology and solve different agricultural algorithms.
+Verdant Circuit is a single-player programming and production game built with Unity. Harvest your first patch of grass, develop an automated farm on a sphere, then connect flower, ocean and mineral colonies through an orbital mothership. Write Python-inspired programs for individual workers, local swarms, planet managers and the universe itself.
 
-**0.11.3 fixes custom program names and includes a staged campaign built around roughly three hours of normal game time.** Crop discoveries open the next field, execution-speed and yield tiers. The research tree shows required discoveries, cumulative production and payable costs. Program cards distinguish active work from the file you are editing, and a searchable bilingual field manual explains every major system.
+| Current release | Platforms | Languages | Development |
+|---|---|---|---|
+| **0.13.2 · Orbital Mothership** — public preview, Night theme included | macOS Intel / Apple Silicon · Windows x64 | English by default · 简体中文 | Unity **2022.3.62f3c1** |
 
-The naming fix works in existing farms without restarting. Updating from 0.11.1 or 0.11.2 preserves inventory and purchased research; a fresh farm is only needed to experience the full staged campaign introduced in 0.11.2. Earlier Releases and tags remain available.
+![Earth, three locked planets, and the orbital mothership](docs/images/universe-en-0.13.2.png)
 
-![Automation studio](docs/images/discovery-studio-en.png)
+## Download and play
 
-## Playable systems
+Download the complete archive for your platform from [v0.13.2 Releases](https://github.com/13536309143/verdant-circuit/releases/tag/v0.13.2).
 
-| System | Included in 0.11.3 |
-|---|---|
-| Production | Grass, bushes, trees, carrots, pumpkins, sunflowers and cacti; hay, wood, power, cactus, bone, gold and supplies |
-| Spatial crops | Tree spacing, randomized companion requests, giant pumpkin squares and dead-plant replacement |
-| Algorithm crops | Petal measurement and sunflower priority; neighboring cactus swaps and two-dimensional sorted harvests |
-| Infection | Fertilizer accelerates growth and infects plants; catalyst toggles local infection and generates mazes |
-| Mazes | Seeded connected hedge mazes, treasure, reusable layouts and wall removal |
-| Tail mode | Apple targets, growing occupied tails, blocked movement and bone production |
-| Drones | Independent function execution, isolated variable/collection copies, spawn handles, joins and returned results; no inter-drone collision |
-| Progression | 34 resource-funded research nodes / 120 levels; crop-gated expansion, speed and yields; cumulative-production milestones and automatic research |
-| Programming | Parameters, defaults, returned values, recursion, closures, modules, lists, tuples, sets, dictionaries, indices and unpacking |
-| Code studio | Program cards with file/active counts and editing/running/paused states; draggable code windows, 100-state undo/redo, pause/step, breakpoints, variable watch and hover |
-| Experiments | Configurable isolated simulations with deterministic seeds and local fixed-start competition |
-| Field manual | 16 searchable bilingual chapters, 33 API groups, crop strategies, code fragments and troubleshooting |
-| Feedback | Resource statistics, personal bests, persistent local achievements and challenge records |
-| Files | Independent save/backup, exported `.py` files, interface hints, external-file watching and output log |
-| Languages | English by default; Simplified Chinese through Settings or F8 |
+| Download | What it contains | Start here |
+|---|---|---|
+| [macOS](https://github.com/13536309143/verdant-circuit/releases/download/v0.13.2/HeXu-macOS-0.13.2.zip) | Universal app for Apple Silicon and Intel | Extract and open `HeXu-0.13.2.app` |
+| [Windows x64](https://github.com/13536309143/verdant-circuit/releases/download/v0.13.2/HeXu-Windows-x64-0.13.2.zip) | Executable, data and Mono runtime | Extract the **whole folder**, then run `HeXu.exe` |
+| [Unity source](https://github.com/13536309143/verdant-circuit/releases/download/v0.13.2/HeXu-Source-0.13.2.zip) | Project, bilingual documentation and build tools | Open the extracted project in the matching Editor |
+| [Program kit](https://github.com/13536309143/verdant-circuit/releases/download/v0.13.2/HeXu-Program-Kit-0.13.2.zip) | 11 complete example files, manuals and validation records | Follow the included English or Chinese README |
+| [Test evidence](https://github.com/13536309143/verdant-circuit/releases/download/v0.13.2/HeXu-TestEvidence-0.13.2.zip) | Rules, UI, timing, build and Night-patch reports | Read `README.md` in the archive |
 
-This is an independent reimplementation of programming-farm mechanics, not the original Steam application. It uses project-owned code, geometry and synthesized audio. Its interface, economy curves, execution accounting and local challenge targets are defined by this project. See [implementation scope](docs/PARITY-0.11.2.md) for evidence and limits.
+Use [SHA256SUMS-0.13.2.txt](https://github.com/13536309143/verdant-circuit/releases/download/v0.13.2/SHA256SUMS-0.13.2.txt) to verify downloads. Keep earlier releases available through the [release history](https://github.com/13536309143/verdant-circuit/releases).
 
-![Program cards — UI demonstration farm](docs/images/program-cards-en.png)
+The Mac app is unsigned, not notarized, and carries the current Unity trial watermark. Windows was cross-built on Mac and still needs native Windows acceptance testing. Neither platform needs a Unity installation to play. Linux, browser and Steam builds are not included.
 
-## Download and run
+## Your first harvest
 
-Get the complete package from [v0.11.3 Releases](https://github.com/13536309143/verdant-circuit/releases/tag/v0.11.3):
-
-- **Mac:** `HeXu-macOS-0.11.3.zip` → extract and open `HeXu-0.11.3.app`. Intel and Apple Silicon are included.
-- **Windows x64:** `HeXu-Windows-x64-0.11.3.zip` → extract the entire folder and open `HeXu.exe`. Keep the data folder, UnityPlayer.dll and Mono runtime beside it.
-- **Source:** `HeXu-UnityProject-0.11.3.zip` → extract and add its root in Unity Hub.
-
-No Unity installation is needed to play. Checksums are supplied in the release. The Mac app is not distribution-signed or notarized. Windows is cross-built on Mac; native Windows acceptance remains outstanding.
-
-## First steps
-
-1. The fresh farm has one plot and no inventory. Let its grass mature for a few seconds.
-2. Run `harvest()` to collect hay. Repeat until you can research **Loops**.
-3. Open Templates and create **First harvest**. Its loop will keep harvesting the starting plot.
-4. Research planting, expansion, operators, variables and sensors. Use new production to fund further branches.
-5. Advanced systems require new programs: repair pumpkin squares, sort cacti, search mazes or coordinate drones.
+1. Choose **Earth** in the universe view. The shuttle descends from the mothership; only Earth is initially unlocked.
+2. Wait for the first grass plot to mature. Its visible growth percentage should reach 100%.
+3. Run the initial `harvest()` program. Repeat as grass regrows; collect five hay and purchase **Loops** in Research.
+4. Run the loop below for continuous harvesting. Research Planting, sensors, variables and staged field expansion as supplies allow.
+5. Create files in **Programs**, bind them to a worker, planet or universe target, then run them. Viewing a different file keeps existing work active.
 
 ```python
+# Requires Loops. Bind to the Earth drone.
 while True:
     harvest()
 ```
 
-After unlocking the required language features and field expansion:
+Use the top bar for Universe, Colony, Research, Programs, Manual, UFO, Records and Settings. **F8** switches languages; **Ctrl/Cmd+Enter** runs code; **Ctrl/Cmd+Z** undoes edits. Scroll to zoom the planet, right-drag to orbit, or choose **Focus worker**. The interface uses **Night** styling with distinct planet accents.
 
-```python
-while True:
-    for row in range(get_world_size()):
-        for col in range(get_world_size()):
-            if can_harvest():
-                harvest()
-            move(East)
-        move(North)
-```
+[The walkthrough](docs/UNIVERSE-0.13.2.md) explains progression and the 11-file controller example. Examples require actual research and supplies; they do not automatically solve the campaign.
 
-Expansion follows discoveries: **Planting 2×2 → Trees 4×4 → Pumpkins 8×8 → Cacti 16×16 → Tail exploration 32×32**. Each tier is paid separately. Speed and yield levels follow their own discovery lists; producing enough hay alone cannot unlock every tier. Cumulative production counts harvests even after the resource is spent.
+## Four worlds, one supply network
 
-[Read the complete field manual](docs/MANUAL.md) · [Three-hour balance and measured playthrough](docs/BALANCE-3H.en.md)
+| ID | World | Native worker | Specialization |
+|---|---|---|---|
+| `0` | Earth | Drone | Original crops, water, compost, fish feed and solar energy |
+| `1` | Floralia · Flower Planet | Bee | Six flower varieties and honey |
+| `2` | Pelagia · Ocean Planet | Fishing boat | Six fish species, matching shoals and fishmeal |
+| `3` | Aurelia · Mineral Planet | Mining drone | Raw deposits, smelting, refining and diamond cutting |
+| `-1` | Orbital mothership | UFO docking and warehouse | Persistent resource storage and transport hub |
 
-Use Settings → Unrestricted syntax when experimenting without the language-research gates. Crop availability and resource costs still apply.
+Earth retains giant pumpkins, cactus sorting, companion planting, hedge mazes and long-tail exploration. Later colonies extend the same progression. **24 multi-product projects**, **31 production recipes** and **13 specialist technology branches** connect the worlds.
 
-| Control | Action |
-|---|---|
-| Run / stop | Studio buttons; Cmd/Ctrl+Enter runs the selected program |
-| Undo / redo | Cmd/Ctrl+Z / Cmd/Ctrl+Shift+Z or Ctrl+Y |
-| Pause / step | Studio buttons |
-| Research tree | F2; drag to pan, scroll to zoom, 1–4 to switch areas |
-| Breakpoint | F9 at the caret line, or enter line numbers in Settings |
-| Variable value | Hover a variable in code, or read the watch panel |
-| Multiple files | Programs; import a file by its name without `.py` |
-| Floating code window | Programs → Window; drag its title to move it |
-| Field inspection / zoom | Click a plot / scroll over the farm |
-| Language | F8 or Settings |
-| Settings / close dialog | Esc |
+- **Spherical farming:** expand from `1×1` to `360×128` through paid discoveries. The maximum is 46,080 one-degree cells between latitude −64° and +64°; the poles remain untouched. Longitude wraps only at the full 360 columns; latitude never wraps. Expansion preserves crops and recenters local coordinates.
+- **Native fleets:** each planet separately unlocks worker count and hulls: `1×1`, `2×1`, `2×2`, `3×2`, `3×3`. Production inputs and outputs scale with footprint; routes check occupied cells. Keep lanes available for larger craft.
+- **Real freight:** workers remain local. UFOs reserve cargo, consume battery, fly through the mothership and unload only on arrival. Refueling uses solar energy at the current dock. Cancellation returns unused reservations; airborne goods finish the current leg, possibly entering the mothership warehouse.
+- **Separate research sectors:** Universe contains planet discoveries and orbital science. Each planet has its own research. Production, automation, ecology and transport use different colors; researched nodes brighten.
+- **Visible work:** growing crop shapes, harvest bursts, rotating planets, atmospheric effects, bee wings, drone rotors, boat propellers and mining drills. Crop batches, visibility checks and pooled effects bound the rendering load.
 
-Browsing another file keeps existing work running. Main Run starts a fresh controller and replaces current tasks. A floating window can launch another independent program if a drone slot is available. Stop halts all tasks. Worker drones disappear after completing their functions; handles remain usable for `wait_for()` results. Programs resume through explicit Run after loading, rather than restoring interpreter stacks.
+Resource names distinguish `coins` (treasure coins), `gold_ore` (raw ore) and `gold` (bullion). Raw minerals and refined materials have separate production functions and inventories.
 
-Research is a connected discovery tree, including programming syntax. Use **F2**, drag to pan, scroll to zoom, or keys **1–4** to jump between the overview and three branches. Select a node for its effect, prerequisites and live resource requirements.
-
-Program names may start with digits or Chinese characters, such as `123`, `1号农场` and `浇水程序`. Use up to 80 letters, digits or underscores without `.py`. Import numeric modules with `from 123 import work` or `import 123 as farm`; Chinese modules can use `import 浇水程序`. Invalid names keep the typed text and show a reason below the input.
-
-## Interfaces and experiments
-
-The in-game Guide lists the implemented APIs. Useful groups:
-
-```python
-# Actions and observations
-harvest()
-plant(Entities.Carrot)
-till()
-move(North)
-can_move(East)
-use_item(Items.Water)
-get_water()
-measure()
-swap(East)
-get_companion()
-
-# Research and resources
-num_items(Items.Hay)
-get_cost(Unlocks.Speed)
-get_unlock_requirements(Unlocks.Speed)
-can_unlock(Unlocks.Speed)
-num_produced(Items.Wood)
-num_unlocked(Unlocks.Speed)
-unlock(Unlocks.Speed)
-
-# Independent workers
-def work(amount):
-    return amount * 2
-
-handle = spawn_drone(work, 7)
-if handle != None:
-    result = wait_for(handle)
-    print(result)
-```
-
-These calls are an API index rather than a complete farming program. The language is not full Python and does not expose the operating system or Python's standard library.
-
-Create a separate program named `experiment`, then run:
-
-```python
-duration = simulate("experiment", Unlocks, {Items.Carrot: 10000}, {}, 7, 64)
-print(duration)
-```
-
-Simulation starts from a separate configured farm and returns elapsed game time. A fixed seed makes repeated starts reproducible. Simulations and resource challenges are bounded to one game hour; the staged Fastest Reset challenge allows four; nested simulation is unsupported. Current-source resource competitions use a mid-tier 8×8 preset and **different production quantities by resource**, followed by program termination; see the in-game challenge list. Historical records remain separate. They use this project's presets and do not submit to the original game's Steam leaderboards. Steam integration is deferred; local records and achievements are available now.
-
-Completed achievements and successful challenges display a grouped completion notice. Acknowledge it or open Records; acknowledged achievements do not repeat, and unread notices survive restarting.
-
-## External editor and saves
-
-Settings shows the actual save path. The new format lives under:
+## Program the hierarchy
 
 ```text
-Application.persistentDataPath/Automation/<farm>.json
+Universe controller
+├── Earth manager → drone programs
+├── Flower manager → bee swarms
+├── Ocean manager → fishing fleets
+└── Mineral manager → mining-drone groups
+                  ↕ UFO routes through the mothership
 ```
 
-Settings → Farm library → Manage creates and loads independent farms, each with its own progress, programs and records. The default file is `farm-0.11.2.json`. The previous save is retained as `.bak`. Code and output are stored under the same Automation folder. Enable **External editor → Export and watch** to export `.py` files plus `__builtins__.py` hints; saved external edits are reloaded. Avoid editing the same file in two places simultaneously. Use the Programs panel to remove files from the game.
+Each worker or manager runs one interpreter at a time. Swarm members run independent copies of a shared file. Modules, copied inbox messages and returned results coordinate their work. A parent can finish while its child programs continue. Physical production queues may continue after code stops; use the documented cancellation controls when needed.
+
+For example, send a real payload to the mothership after researching Spaceflight and funding UFO construction:
+
+```python
+ship = ufo_build()
+if ship > 0 and planet_inventory(0, "water") >= 24:
+    if ufo_transfer(ship, 0, -1, "water", 24):
+        ufo_wait(ship)
+        print(mothership_inventory("water"))
+```
+
+The language is a **Python-inspired subset**, not CPython. It supports functions, modules, collections and documented numeric/string helpers; it does not provide the Python standard library, operating-system access or keyword arguments. Debugging includes pause/step, breakpoints, variable inspection, undo/redo and external file editing.
+
+## Manual and tested scope
+
+| Resource | Contents |
+|---|---|
+| [English manual](docs/MANUAL.md) · [中文手册](docs/MANUAL.zh-CN.md) | 19 chapters, 218 function/method entries, parameter and return contracts, all recipes and projects |
+| [English walkthrough](docs/UNIVERSE-0.13.2.md) · [中文操作与代码](docs/UNIVERSE-0.13.2.zh-CN.md) | Progression steps and 11 complete hierarchy files |
+| [Testing guide](docs/TESTING.md) | Reproducible Editor commands and manual acceptance steps |
+| [Campaign / rendering evidence](docs/reports/v0.13.2/README.md) | 452 rule assertions, 64 UI checks, 24-project fresh-start walkthrough and rendering measurements |
+| [Night patch evidence](docs/reports/v0.13.2-night/README.md) | 66 UI checks, legacy theme compatibility and both platform build reports |
+
+The fresh reference walkthrough starts with **one plot, zero inventory and zero research**. It completes all 24 main projects in approximately **38h 15m of game time**, using one paid `2×2` worker per planet and the documented scheduling policy. More workers and better parallel planning can shorten that substantially. This is **not a guaranteed minimum playtime or a speedrun**, and excludes human programming time and optional completion goals. The Night patch changes presentation only; its report identifies the separate source revision.
+
+## Saves and upgrades
+
+Save and quit an older running game before opening the new app. v0.13.2 retains v0.13.1 universe progress in `Application.persistentDataPath/Automation/Universe0131`; pre-universe farm files remain separate. Settings shows the actual save path. Legacy theme preferences are ignored in favor of Night.
+
+Saves retain worlds, stock, workers, battery, cargo, physical queues, swarms and file bindings. Interpreter stacks, inboxes and return objects are transient. After loading, inspect existing jobs and restart the appropriate controllers. Back up saves before moving between versions; earlier releases are not guaranteed to read newer save fields.
 
 ## Develop and build
-
-Use **Unity 2022.3.62f3c1**, matching `ProjectSettings/ProjectVersion.txt`, with an active license and the relevant Mac / Windows Mono build module. Dependencies are pinned in `Packages/`, including Unity Localization and Addressables. Unity MCP is optional.
 
 ```bash
 git clone https://github.com/13536309143/verdant-circuit.git
 cd verdant-circuit
 ```
 
-Open `Assets/VerdantCircuit/Scenes/VerdantCircuit.unity` and press Play. Release tools are under **Tools → 禾序 → 发行**. Close this project's Editor before command-line builds:
+Open the project with **Unity 2022.3.62f3c1**, let packages import, then open `Assets/VerdantCircuit/Scenes/VerdantCircuit.unity` and press Play. Install Mac Build Support and/or **Windows Build Support (Mono)** for that Editor. Windows x64 Mono builds can be produced from Mac.
 
 ```bash
-export VERDANT_UNITY_EDITOR="/path/to/Unity.app/Contents/MacOS/Unity"
-bash tools/build-macos.sh
-bash tools/build-windows.sh
+# Set this to the Unity executable installed on your machine.
+export VERDANT_UNITY_EDITOR="/Applications/Unity/Hub/Editor/2022.3.62f3c1/Unity.app/Contents/MacOS/Unity"
+./tools/build-macos.sh
+./tools/build-windows.sh
 ```
 
-After editing manual or UI copy, run `python3 tools/update-content.py` to regenerate the bilingual registry and Markdown manuals. The build scripts generate Unity localization assets, run model/interpreter checks, build and package into `Builds/release/`. They do not upload or sign packages. This is a local single-player game; no backend server is required.
+Build scripts refresh bilingual tables, run rule checks, and place apps, ZIPs, logs and checksums in `Builds/release`. They do not publish to GitHub. Unity MCP is optional for development and is not required to run the game. See the [testing guide](docs/TESTING.md) for UI checks and the fresh campaign replay.
 
-The [0.11.2 playthrough and balance report](docs/BALANCE-3H.en.md) records three zero-inventory runs, all 34 nodes / 120 paid levels, 13 achievements, 16 competition records, timing and reproducible algorithms. The [one-hour](docs/BALANCE-1H.md) and [earlier playthrough](docs/FULL_PLAYTHROUGH.md) reports are historical baselines.
+## Credits and licensing
 
-The rebuilt implementation is in `Assets/VerdantCircuit/Scripts/Automation/`. Test reports and the manual acceptance procedure are in [docs/TESTING.md](docs/TESTING.md). The old standalone fleet/island Python prototype under `tools/` is historical and does not validate this interpreter or world.
+Implemented independently with original procedural visuals; no source code or art assets from *The Farmer Was Replaced* are included. See [third-party notices](THIRD_PARTY_NOTICES.md) for fonts and Unity components. Public source availability does not grant an open-source license: a project-wide license has not yet been specified.
 
-## Release history
-
-- **0.11.3 — Program Name Fix:** numeric/Chinese file names, Unicode module imports, aliases and visible validation errors.
-
-- **0.11.2 — Staged Discovery:** three-hour progression, crop-gated upgrades, program cards, expanded manual, discovery tree, completion notices and audio slider.
-- **0.11.1 — Automation Rebuild:** resource economy, language runtime, crop algorithms and independent function drones.
-- **0.10.2 / 0.10.1:** earlier designs; preserved as historical releases.
-
-## Credits
-
-Inspired by the programming-farm genre and *The Farmer Was Replaced*. No executable, proprietary game code, artwork, soundtrack or manual from the Steam installation is included. Fonts and engine packages keep their original licenses; see [third-party notices](THIRD_PARTY_NOTICES.md). No project-wide open-source license has been selected.
+[Changelog](CHANGELOG.md) · [Releases](https://github.com/13536309143/verdant-circuit/releases) · [Report an issue](https://github.com/13536309143/verdant-circuit/issues)

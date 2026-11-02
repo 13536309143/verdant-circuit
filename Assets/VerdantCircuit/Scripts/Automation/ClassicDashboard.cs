@@ -13,8 +13,10 @@ namespace Verdant.Automation
         static Sprite roundedSurface;
         readonly Dictionary<string,TMP_Text> resourceValues=new Dictionary<string,TMP_Text>();
         readonly Dictionary<string,UnityEngine.UI.Button> navigation=new Dictionary<string,UnityEngine.UI.Button>();
+        TMP_Text cropStatus;RectTransform growthStatusFill;
         TMP_Text farmSizeLabel,headerStatus,goalTitle,goalCost,discoveryCount,programSummaryLabel;
         RectTransform goalProgress;
+        UnityEngine.UI.Button goalAction;
         string recommendedResearch;
         static readonly Color Lime=ClassicView.ColorOf("D2E58F"),Sea=ClassicView.ColorOf("6DB5A3"),Clay=ClassicView.ColorOf("D49369");
 
@@ -42,7 +44,7 @@ namespace Verdant.Automation
         }
         UnityEngine.UI.Button Skin(UnityEngine.UI.Button button,Color background,Color foreground)
         {
-            var image=button.GetComponent<UnityEngine.UI.Image>();image.sprite=SurfaceSprite();image.type=UnityEngine.UI.Image.Type.Sliced;image.color=background;
+            var image=button.GetComponent<UnityEngine.UI.Image>();image.sprite=SurfaceSprite();image.type=UnityEngine.UI.Image.Type.Sliced;image.color=background;if(activePlanet==3&&background==Accent)foreground=Dark;
             button.GetComponentInChildren<TMP_Text>().color=foreground;
             var colors=button.colors;colors.highlightedColor=new Color(1.12f,1.12f,1.12f);colors.pressedColor=new Color(.85f,.9f,.85f);colors.disabledColor=new Color(.7f,.7f,.7f,.65f);button.colors=colors;
             button.gameObject.AddComponent<ClassicButtonMotion>();return button;
@@ -54,65 +56,40 @@ namespace Verdant.Automation
             var scaler=go.GetComponent<CanvasScaler>();scaler.uiScaleMode=CanvasScaler.ScaleMode.ScaleWithScreenSize;scaler.referenceResolution=new Vector2(1600,1000);scaler.screenMatchMode=CanvasScaler.ScreenMatchMode.Expand;
             if(EventSystem.current==null)new GameObject("EventSystem",typeof(EventSystem),typeof(StandaloneInputModule));
             Panel("Workspace",canvas,Vector2.zero,Vector2.one,Color.clear);
-            var rail=Panel("Navigation Rail",canvas,Vector2.zero,new Vector2(.06f,1),Dark);
-            var logo=Panel("Sprout Mark",rail,new Vector2(.26f,.913f),new Vector2(.74f,.966f),Color.clear);var mark=new GameObject("Sprout",typeof(RectTransform),typeof(ClassicSprout));mark.transform.SetParent(logo,false);var markRect=(RectTransform)mark.transform;markRect.anchorMin=Vector2.zero;markRect.anchorMax=Vector2.one;markRect.offsetMin=markRect.offsetMax=Vector2.zero;mark.GetComponent<ClassicSprout>().color=Lime;mark.GetComponent<ClassicSprout>().raycastTarget=false;
-            Label("VC",rail,new Vector2(.1f,.873f),new Vector2(.9f,.91f),15,Lime).alignment=TextAlignmentOptions.Center;
-            string[] titles={Tr("Research","科技"),Tr("Programs","程序"),Tr("Guide","手册"),Tr("Lab","模拟实验"),Tr("Records","纪录"),Tr("Settings","设置")};
-            string[] modes={"research","programs","guide","lab","records","settings"};navigation.Clear();
-            for(int i=0;i<titles.Length;i++)
-            {
-                string mode=modes[i];float y=.79f-i*.105f;
-                var button=Skin(Button(titles[i],rail,new Vector2(.1f,y-.055f),new Vector2(.9f,y+.025f),()=>Open(mode)),Dark,Color.white);
-                button.GetComponentInChildren<TMP_Text>().fontSize=13;navigation[mode]=button;
-                Label((i+1).ToString("00"),rail,new Vector2(.15f,y+.027f),new Vector2(.85f,y+.05f),10,Muted).alignment=TextAlignmentOptions.Center;
-            }
-            Label(VerdantContent.Version,rail,new Vector2(.1f,.025f),new Vector2(.9f,.06f),10,Muted).alignment=TextAlignmentOptions.Center;
-            Label(Tr("VERDANT CIRCUIT","禾序"),canvas,new Vector2(.075f,.951f),new Vector2(.5f,.989f),30,Ink);
-            Label(Tr("An experimental garden, written by you.","用代码，培育一座会思考的花园。"),canvas,new Vector2(.076f,.918f),new Vector2(.62f,.95f),15,Accent);
-            var status=Surface("Farm Status",canvas,new Vector2(.75f,.925f),new Vector2(.985f,.985f),Paper);
-            headerStatus=Label("",status,new Vector2(.06f,.12f),new Vector2(.94f,.86f),16,Ink);headerStatus.alignment=TextAlignmentOptions.Center;
-
-            resourceValues.Clear();
-            for(int i=0;i<ClassicFarm.Items.Length;i++)
-            {
-                string item=ClassicFarm.Items[i];float x=.075f+i*.083f;
-                var tile=Surface("Resource "+item,canvas,new Vector2(x,.825f),new Vector2(x+.077f,.901f),Paper,true);
-                Panel("Resource Accent",tile,new Vector2(.08f,.2f),new Vector2(.105f,.8f),i%3==0?Accent:i%3==1?Clay:Sea);
-                Label(ItemName(item),tile,new Vector2(.17f,.57f),new Vector2(.95f,.91f),13,Muted);
-                resourceValues[item]=Label("0",tile,new Vector2(.17f,.09f),new Vector2(.95f,.59f),25,Ink);
-            }
-            var field=Surface("Field Observatory",canvas,new Vector2(.075f,.30f),new Vector2(.595f,.805f),Paper,true);
-            field.GetComponent<UnityEngine.UI.Image>().fillCenter=false;
-            Surface("Field Header",field,new Vector2(0,.875f),Vector2.one,Paper);Surface("Field Footer",field,Vector2.zero,new Vector2(1,.12f),Paper);
-            Label(Tr("01 / THE LIVING GRID","01 / 生长中的田野"),field,new Vector2(.035f,.9f),new Vector2(.74f,.975f),18,Ink);
-            farmSizeLabel=Label("",field,new Vector2(.74f,.9f),new Vector2(.965f,.975f),14,Accent);farmSizeLabel.alignment=TextAlignmentOptions.Right;
-            Label(Tr("N ↑   /   Click to inspect · scroll to explore","北 ↑   /   点击查看地块 · 滚轮探索农田"),field,new Vector2(.035f,.025f),new Vector2(.965f,.10f),12,Muted);
-            var goal=Surface("Next Discovery",canvas,new Vector2(.075f,.035f),new Vector2(.285f,.278f),Dark);
-            discoveryCount=Label("",goal,new Vector2(.065f,.82f),new Vector2(.94f,.95f),12,Lime);
-            goalTitle=Label("",goal,new Vector2(.065f,.60f),new Vector2(.94f,.81f),25,Color.white);
-            goalCost=Label("",goal,new Vector2(.065f,.30f),new Vector2(.94f,.59f),14,ClassicView.ColorOf("CEDBC7"));
-            var progress=Panel("Research Progress",goal,new Vector2(.065f,.255f),new Vector2(.935f,.272f),ClassicView.ColorOf("3C564B"));goalProgress=Panel("Fill",progress,Vector2.zero,Vector2.one,Lime);
-            Skin(Button(Tr("Open research tree","打开科技树"),goal,new Vector2(.065f,.065f),new Vector2(.935f,.215f),()=>{selectedResearch=recommendedResearch;Open("research");}),Lime,Dark);
-            var output=Surface("Output Journal",canvas,new Vector2(.299f,.035f),new Vector2(.595f,.278f),Paper);
-            Label(Tr("FIELD JOURNAL / OUTPUT","田野日志 / 程序输出"),output,new Vector2(.045f,.84f),new Vector2(.95f,.97f),13,Accent);
-            console=Label(string.Join("\n",Logs.Skip(Math.Max(0,Logs.Count-8))),output,new Vector2(.045f,.06f),new Vector2(.95f,.81f),12,Ink);console.alignment=TextAlignmentOptions.BottomLeft;console.overflowMode=TextOverflowModes.Truncate;
-
-            var studio=Surface("Studio",canvas,new Vector2(.611f,.035f),new Vector2(.985f,.805f),Dark,true);
+            var bar=Surface("Top Navigation",canvas,new Vector2(.015f,.925f),new Vector2(.985f,.988f),Dark,true);
+            Label("VERDANT / "+VerdantContent.Version,bar,new Vector2(.015f,.13f),new Vector2(.20f,.90f),20,Ink);
+            string[] titles={Tr("Universe","宇宙"),Tr("Colony","殖民地"),Tr("Research","科技"),Tr("Programs","程序"),Tr("Manual","手册"),"UFO",Tr("Records","纪录"),Tr("Settings","设置")};
+            string[] modes={"world","archipelago","research","programs","guide","ufos","records","settings"};navigation.Clear();
+            for(int i=0;i<modes.Length;i++){string mode=modes[i];float x=.22f+i*.096f;var button=Skin(Button(titles[i],bar,new Vector2(x,.12f),new Vector2(x+.087f,.88f),()=>{if(mode=="research")researchScope=WorldSelectionActive?-1:activePlanet;Open(mode);}),Dark,Ink);navigation[mode]=button;}
+            Label(IslandName(activePlanet),canvas,new Vector2(.025f,.857f),new Vector2(.49f,.92f),36,Ink);
+            var status=Surface("Farm Status",canvas,new Vector2(.64f,.865f),new Vector2(.98f,.915f),Paper);headerStatus=Label("",status,new Vector2(.04f,.12f),new Vector2(.96f,.88f),16,Ink);
+            Button(Tr("Inventory","库存"),canvas,new Vector2(.51f,.866f),new Vector2(.62f,.913f),()=>Open("inventory"));
+            resourceValues.Clear();var visible=activePlanet==0?ClassicFarm.Items.Take(8).ToArray():ArchipelagoWorld.Recipes.Where(v=>v.island==activePlanet).Select(v=>v.item).Take(8).ToArray();
+            for(int i=0;i<visible.Length;i++){string item=visible[i];float x=.025f+i*.075f;var tile=Surface("Resource "+item,canvas,new Vector2(x,.785f),new Vector2(x+.07f,.85f),Paper,true);Label(CargoName(item),tile,new Vector2(.09f,.57f),new Vector2(.94f,.94f),12,Muted);resourceValues[item]=Label("0",tile,new Vector2(.09f,.04f),new Vector2(.94f,.60f),23,Ink);}
+            var field=Surface("Spherical Surface",canvas,new Vector2(.025f,.265f),new Vector2(.62f,.765f),Paper,true);field.GetComponent<UnityEngine.UI.Image>().fillCenter=false;
+            Surface("Planet Caption",field,new Vector2(0,.88f),Vector2.one,Paper);Label(Tr("SPHERICAL SURFACE / 360° × 128°","球面表层 / 360° × 128°"),field,new Vector2(.025f,.91f),new Vector2(.70f,.98f),15,Ink);farmSizeLabel=Label("",field,new Vector2(.72f,.91f),new Vector2(.975f,.98f),15,Ink);
+            Button(Tr("Orbit view","全景"),field,new Vector2(.025f,.025f),new Vector2(.22f,.105f),()=>View.FocusPlot=false);Button(Tr("Focus worker","聚焦载具"),field,new Vector2(.24f,.025f),new Vector2(.49f,.105f),()=>View.FocusPlot=true);Button(Tr("Surface controls","表层管理"),field,new Vector2(.68f,.025f),new Vector2(.975f,.105f),()=>Open("archipelago"));
+            cropStatus=Label("",field,new Vector2(.025f,.80f),new Vector2(.975f,.88f),14,Ink);
+            var growthTrack=Panel("Growth Track",field,new Vector2(.025f,.77f),new Vector2(.975f,.778f),Dark);growthStatusFill=Panel("Growth",growthTrack,Vector2.zero,Vector2.one,Accent);
+            var goal=Surface("Next Discovery",canvas,new Vector2(.025f,.035f),new Vector2(.31f,.245f),Paper,true);discoveryCount=Label("",goal,new Vector2(.05f,.82f),new Vector2(.95f,.97f),12,Muted);goalTitle=Label("",goal,new Vector2(.05f,.61f),new Vector2(.95f,.82f),22,Ink);goalCost=Label("",goal,new Vector2(.05f,.31f),new Vector2(.95f,.60f),13,Muted);var progress=Panel("Progress",goal,new Vector2(.05f,.26f),new Vector2(.95f,.28f),Dark);goalProgress=Panel("Fill",progress,Vector2.zero,Vector2.one,Accent);goalAction=Skin(Button(Tr("Research & progression","科技与发展"),goal,new Vector2(.05f,.055f),new Vector2(.95f,.22f),()=>Open("research")),Accent,Ink);
+            var output=Surface("Flight Journal",canvas,new Vector2(.325f,.035f),new Vector2(.62f,.245f),Paper,true);Label(Tr("TRANSMISSIONS / PROGRAM OUTPUT","通讯 / 程序输出"),output,new Vector2(.04f,.83f),new Vector2(.96f,.98f),12,Muted);console=Label(string.Join("\n",Logs.Skip(Math.Max(0,Logs.Count-8))),output,new Vector2(.04f,.05f),new Vector2(.96f,.81f),12,Ink);console.overflowMode=TextOverflowModes.Truncate;
+            var studio=Surface("Studio",canvas,new Vector2(.64f,.035f),new Vector2(.98f,.85f),Dark,true);
             Label(Tr("02 / AUTOMATION STUDIO","02 / 自动化工作台"),studio,new Vector2(.04f,.949f),new Vector2(.57f,.99f),12,Sea);
+            BuildStudioTarget(studio);
             var library=Skin(Button("",studio,new Vector2(.60f,.949f),new Vector2(.96f,.99f),()=>Open("programs")),Dark,Sea);programSummaryLabel=library.GetComponentInChildren<TMP_Text>();programSummaryLabel.fontSize=12;
             programLabel=Label("",studio,new Vector2(.04f,.884f),new Vector2(.73f,.948f),26,Color.white);
-            Skin(Button(Tr("Templates","模板"),studio,new Vector2(.74f,.894f),new Vector2(.96f,.945f),()=>Open("templates")),ClassicView.ColorOf("36564A"),Color.white);
-            var code=Surface("Editor Well",studio,new Vector2(.025f,.24f),new Vector2(.975f,.866f),ClassicView.ColorOf("10251F"));
+            Skin(Button(Tr("Templates","模板"),studio,new Vector2(.74f,.894f),new Vector2(.96f,.945f),()=>Open("templates")),Paper,Color.white);
+            var code=Surface("Editor Well",studio,new Vector2(.025f,.24f),new Vector2(.975f,.81f),Dark);
             Editor=MakeInput("Code",code,new Vector2(.095f,.015f),new Vector2(.99f,.985f),true);
             var gutter=Panel("Line Number Viewport",code,new Vector2(.01f,.03f),new Vector2(.082f,.97f),Color.clear);gutter.gameObject.AddComponent<RectMask2D>();
             var numbers=Label("1",gutter,Vector2.zero,Vector2.one,18,ClassicView.ColorOf("647B6A"));numbers.enableAutoSizing=false;numbers.alignment=TextAlignmentOptions.TopRight;numbers.enableWordWrapping=false;
             var lineNumbers=code.gameObject.AddComponent<ClassicLineNumbers>();lineNumbers.field=Editor;lineNumbers.label=numbers;
             Editor.SetTextWithoutNotify(Farm.Data.programs[Farm.Data.selectedProgram].source);History().Record(Editor.text,0,0);((VerdantCodeInput)Editor).RestoreHistory=Restore;
             Editor.onValueChanged.AddListener(text=>{History().Record(text,Editor.selectionStringAnchorPosition,Editor.selectionStringFocusPosition);StoreEditor();SyncCodeWindows();});
-            Skin(Button(Tr("Run","运行"),studio,new Vector2(.04f,.165f),new Vector2(.28f,.22f),Run),Lime,Dark);
-            Skin(Button(Tr("Pause","暂停"),studio,new Vector2(.30f,.165f),new Vector2(.51f,.22f),()=>{Session.Paused=!Session.Paused;Refresh();}),ClassicView.ColorOf("36564A"),Color.white);
-            Skin(Button(Tr("Step","单步"),studio,new Vector2(.53f,.165f),new Vector2(.74f,.22f),()=>{if(!Session.Running)Run();Session.Step();}),ClassicView.ColorOf("36564A"),Color.white);
-            Skin(Button(Tr("Stop","停止"),studio,new Vector2(.76f,.165f),new Vector2(.96f,.22f),()=>{Session.Stop();if(race!=null){race.Stop();race=null;}}),ClassicView.ColorOf("685448"),Color.white);
+            Skin(Button(Tr("Run","运行"),studio,new Vector2(.04f,.165f),new Vector2(.28f,.22f),Run),Accent,Ink);
+            Skin(Button(Tr("Pause","暂停"),studio,new Vector2(.30f,.165f),new Vector2(.51f,.22f),()=>{Session.Paused=!Session.Paused;Farm.Fleet.ProgramsPaused=Session.Paused;Refresh();}),Paper,Color.white);
+            Skin(Button(Tr("Step","单步"),studio,new Vector2(.53f,.165f),new Vector2(.74f,.22f),StepSelectedTarget),Paper,Color.white);
+            Skin(Button(Tr("Stop all","全部停止"),studio,new Vector2(.76f,.165f),new Vector2(.96f,.22f),()=>{Session.Stop();if(Farm.Data.archipelago!=null)Farm.Fleet.HaltAll();if(race!=null){race.Stop();race=null;}}),ClassicView.ColorOf("685448"),Color.white);
             Skin(Button(Tr("Undo","撤销"),studio,new Vector2(.04f,.097f),new Vector2(.20f,.14f),()=>Restore(false)),Dark,Sea);
             Skin(Button(Tr("Redo","重做"),studio,new Vector2(.22f,.097f),new Vector2(.38f,.14f),()=>Restore(true)),Dark,Sea);
             stateLabel=Label("",studio,new Vector2(.40f,.087f),new Vector2(.96f,.145f),12,Lime);stateLabel.overflowMode=TextOverflowModes.Truncate;
@@ -122,27 +99,43 @@ namespace Verdant.Automation
 
         string NextResearch()
         {
-            string[] route={"loops","senses","plant","expand","operators","variables","trees","carrots","watering","functions","lists","pumpkins","sunflowers","dicts","import","fertilizer","polyculture","cactus","mazes","megafarm","dinosaurs","simulation","leaderboard"};
+            string[] route={"loops","senses","plant","expand","operators","variables","trees","carrots","watering","functions","lists","pumpkins","sunflowers","dicts","import","fertilizer","polyculture","cactus","mazes","megafarm","dinosaurs","spaceflight","flower_planet","mineral_planet","ocean_planet","leaderboard"};
             return route.FirstOrDefault(id=>Farm.Level(id)==0&&ResearchRouteOpen(id))??ClassicFarm.Techs.FirstOrDefault(t=>Farm.Level(t.id)<t.max&&CanReachResearch(t.id))?.id;
         }
         bool CanReachResearch(string id){return Farm.ResearchRequirementsMet(id);}
         void RefreshDashboard()
         {
-            foreach(var p in resourceValues)if(p.Value!=null)p.Value.text=Farm.Count(p.Key)>=1000000?(Farm.Count(p.Key)/1000000).ToString("0.#")+"m":Farm.Count(p.Key).ToString("N0");
-            if(programSummaryLabel!=null)programSummaryLabel.text=Farm.Data.programs.Count+Tr(" files · "," 个文件 · ")+Farm.Data.programs.Count(p=>Session.drones.Any(d=>!d.finished&&d.program==p.name))+Tr(" active"," 个活跃");
-            if(programLabel!=null)programLabel.color=Session.drones.Any(d=>!d.finished&&d.program==Farm.Data.programs[Farm.Data.selectedProgram].name)?Lime:Color.white;
-            if(farmSizeLabel!=null)farmSizeLabel.text=Farm.Data.size+" × "+Farm.Data.size;
-            if(headerStatus!=null)headerStatus.text=(Session.Running?Tr("AUTOMATION LIVE","自动化运行中"):Tr("YOUR LOCAL GARDEN","你的本地花园"))+"  /  "+Speed+"×";
+            if(cropStatus!=null)
+            {
+                var unit=Farm.Fleet.Data.units.FirstOrDefault(u=>u.island==activePlanet);float progress=0;
+                if(activePlanet==0){int x=unit?.x??0,y=unit?.y??0;var cell=Farm.Cell(x,y);progress=ClassicView.GrowthFraction(cell);cropStatus.text=(cell.entity=="grass"?Tr("Grass","草"):cell.entity=="tree"?Tr("Tree","树木"):cell.entity=="bush"?Tr("Bush","灌木"):ItemName(cell.entity))+"  ·  "+Mathf.RoundToInt(progress*100)+"%  ·  "+(Farm.Ready(cell)?Tr("Ready to harvest","可以收获"):Tr("Growing","生长中"))+"  ·  ("+x+","+y+")";}
+                else if(unit!=null&&unit.jobs.Count>0){var job=unit.jobs[0];var recipe=ArchipelagoWorld.Recipes.FirstOrDefault(r=>r.item==job.item);progress=recipe==null?0:1-(float)(job.timer/(recipe.seconds*(.8+.2*Math.Sqrt(unit.width*unit.height))/Farm.Fleet.ProductionSpeed(activePlanet,job.item)));cropStatus.text=CargoName(job.item)+"  ·  "+FleetStatus(unit.status)+"  ·  "+Math.Max(0,job.timer).ToString("F1")+"s";}
+                else cropStatus.text=Tr("Assign a production program to your local worker.","为本地载具绑定生产程序。");
+                growthStatusFill.anchorMax=new Vector2(Mathf.Clamp01(progress),1);
+            }
+            foreach(var p in resourceValues)if(p.Value!=null)p.Value.text=Farm.Fleet.Stock(activePlanet,p.Key)>=1000000?(Farm.Fleet.Stock(activePlanet,p.Key)/1000000).ToString("0.#")+"m":Farm.Fleet.Stock(activePlanet,p.Key).ToString("N0");
+            if(programSummaryLabel!=null)programSummaryLabel.text=Farm.Data.programs.Count+Tr(" files · "," 个文件 · ")+Farm.Data.programs.Count(p=>ProgramWorkers(p.name)>0)+Tr(" active"," 个活跃");
+            if(programLabel!=null)programLabel.color=ProgramWorkers(Farm.Data.programs[Farm.Data.selectedProgram].name)>0?Lime:Color.white;
+            if(farmSizeLabel!=null)farmSizeLabel.text=Farm.Fleet.SurfaceWidth(activePlanet)+" × "+Farm.Fleet.SurfaceHeight(activePlanet);
+            if(headerStatus!=null)headerStatus.text=(Session.Running||Farm.Fleet.AnyCodeRunning?Tr("AUTOMATION LIVE","自动化运行中"):Tr("COLONY ONLINE","殖民地在线"))+"  /  "+Speed+"×";
             int researched=ClassicFarm.Techs.Count(t=>Farm.Level(t.id)>0);
             if(discoveryCount!=null)discoveryCount.text=Tr("NEXT DISCOVERY","下一项发现")+"  /  "+researched+" : "+ClassicFarm.Techs.Length;
             recommendedResearch=NextResearch();
             if(goalTitle!=null)goalTitle.text=recommendedResearch==null?Tr("An open horizon","更广阔的天地"):TechName(recommendedResearch);
+            bool islandsNext=recommendedResearch==null;
+            if(goalAction!=null)goalAction.GetComponentInChildren<TMP_Text>().text=islandsNext?Tr("Open colony","打开殖民地"):Tr("Open research tree","打开科技树");
             if(goalCost!=null)
             {
                 var cost=recommendedResearch==null?null:Farm.Cost(recommendedResearch);
                 goalCost.text=cost==null?Tr("Refine your algorithms in local competition.","在本地竞速中继续优化你的算法。"):string.Join("\n",cost.Select(p=>ItemName((string)p.Key)+"  "+Farm.Count((string)p.Key).ToString("N0")+" / "+ScriptValue.Show(p.Value)));
                 if(recommendedResearch!=null&&!CanReachResearch(recommendedResearch))goalCost.text+="\n"+ResearchRequirementsText(recommendedResearch,true);
                 float ratio=cost==null?1:(float)cost.Min(p=>Math.Min(1,Farm.Count((string)p.Key)/ScriptValue.Number(p.Value)));if(recommendedResearch!=null){var requirements=Farm.Requirements(recommendedResearch);if(requirements!=null)foreach(var r in requirements.Where(r=>Convert.ToString(r.Key).StartsWith("produced:")))ratio=Math.Min(ratio,(float)Math.Min(1,Farm.Produced(Convert.ToString(r.Key).Substring(9))/ScriptValue.Number(r.Value)));}goalProgress.anchorMax=new Vector2(ratio,1);
+                if(islandsNext)
+                {
+                    var world=Farm.Fleet;goalTitle.text=world.Complete?Tr("Verdant concord","禾序协约"):world.Data.started?L10n.T(world.Current.zh):Tr("Build an island network","建设群岛网络");
+                    goalCost.text=world.Complete?Tr("Research and all universe projects complete.","研究与全部宇宙项目均已完成。"):world.Data.started?Tr("Universe contract ","宇宙订单 ")+(world.Data.order+1)+" / "+ArchipelagoWorld.Contracts.Length+"\n"+L10n.T(world.Current.lessonZh):Tr("Research the network and connect Earth to specialist islands.","研究群岛网络，连接地球与特色岛生产链。");
+                    goalProgress.anchorMax=new Vector2(world.Data.order/(float)ArchipelagoWorld.Contracts.Length,1);
+                }
             }
             foreach(var entry in navigation)if(entry.Value!=null)entry.Value.GetComponent<UnityEngine.UI.Image>().color=modalKind==entry.Key?Accent:Dark;
         }

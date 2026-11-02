@@ -10,6 +10,12 @@ def register(en,zh):
     key='t_'+hashlib.sha1(zh.encode()).hexdigest()[:16];entries[key]=dict(key=key,source=zh,zh=zh,en=en)
 for path in (assets/'Scripts/Automation').glob('*.cs'):
     for en,zh in re.findall(r'Tr\(('+quoted+r')\s*,\s*('+quoted+r')\)',path.read_text()):register(json.loads(en),json.loads(zh))
+# Island definitions and contract names/descriptions are authored as bilingual pairs.
+archipelago=(assets/'Scripts/Automation/ArchipelagoData.cs').read_text()
+for m in re.finditer(r'new IslandDefinition\(('+quoted+r'),('+quoted+r'),('+quoted+r'),',archipelago):
+    _,en,zh=map(json.loads,m.groups());register(en,zh)
+for m in re.finditer(r'new FleetContract\(('+quoted+r'),('+quoted+r'),('+quoted+r'),('+quoted+r'),',archipelago):
+    en,zh,lesson_en,lesson_zh=map(json.loads,m.groups());register(en,zh);register(lesson_en,lesson_zh)
 manual=(assets/'Scripts/Automation/ClassicManual.cs').read_text()
 chapters=[]
 for m in re.finditer(r'new ManualChapter\(\s*('+quoted+r')\s*,\s*('+quoted+r')\s*,\s*('+quoted+r')\s*,\s*('+quoted+r')\s*,\s*('+quoted+r')(?:\s*,\s*('+quoted+r'))?\s*\)',manual):
@@ -17,7 +23,7 @@ for m in re.finditer(r'new ManualChapter\(\s*('+quoted+r')\s*,\s*('+quoted+r')\s
 apis=[]
 for m in re.finditer(r'new Api\(\s*('+quoted+r')\s*,\s*('+quoted+r')\s*,\s*('+quoted+r')\s*\)',manual):
     signature,en,zh=map(json.loads,m.groups());register(en,zh);apis.append(dict(signature=signature,en=en,zh=zh))
-assert len(chapters)==16 and len(apis)>=30
+assert len(chapters)==19 and len(apis)>=30
 progress=(assets/'Scripts/Automation/ClassicProgression.cs').read_text();tiers={k:json.loads('['+v+']') for k,v in re.findall(r'\{"(\w+)",new\[\]\{([^}]+)\}\}',progress)}
 goals=[(id,item,int(amount)) for id,item,amount in re.findall(r'\{"(\w+)",new Stock\("(\w+)",(\d+)\)\}',progress)]
 for locale,name in [('en','MANUAL.md'),('zh','MANUAL.zh-CN.md')]:
@@ -34,4 +40,4 @@ for locale,name in [('en','MANUAL.md'),('zh','MANUAL.zh-CN.md')]:
             for a in apis:lines+=['### `'+a['signature']+'`\n',a[locale]+'\n']
     (root/'docs'/name).write_text('\n'.join(lines))
 data['entries']=list(entries.values());strings.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
-print(f'16 bilingual chapters; {len(apis)} API groups; {len(entries)} localized entries authored.')
+print(f'{len(chapters)} bilingual chapters; {len(apis)} API groups; {len(entries)} localized entries authored.')

@@ -7,12 +7,12 @@ namespace Verdant.Automation
 {
     public sealed partial class ClassicController
     {
-        string FarmFolder {get{return Path.Combine(Application.persistentDataPath,"Automation");}}
+        string FarmFolder {get{return Path.Combine(Application.persistentDataPath,"Automation/Universe0131");}}
         static bool SafeFarmName(string name){return name!=null&&Regex.IsMatch(name,"^[A-Za-z0-9][A-Za-z0-9_.-]{0,63}$")&&!name.Contains("..");}
-        void SelectFarmPath(string name){if(!SafeFarmName(name))throw new Exception("Invalid farm name.");SavePath=Path.Combine(FarmFolder,name+".json");PlayerPrefs.SetString("automation.activeFarm",name);PlayerPrefs.Save();}
+        void SelectFarmPath(string name){if(!SafeFarmName(name))throw new Exception("Invalid farm name.");SavePath=Path.Combine(FarmFolder,name+".json");PlayerPrefs.SetString("universe0131.activeFarm",name);PlayerPrefs.Save();}
         void ResetPresentation()
         {
-            Close();foreach(var f in codeWindows.Values)if(f!=null)Destroy(f.transform.parent.gameObject);codeWindows.Clear();histories.Clear();if(canvas!=null)Destroy(canvas.gameObject);hoverPanel=null;hoverText=null;Volume=Farm.Data.volume;Audio.SetVolume(Volume);BuildUI();
+            programTarget="earth";programIsland=0;Close();foreach(var f in codeWindows.Values)if(f!=null)Destroy(f.transform.parent.gameObject);codeWindows.Clear();histories.Clear();if(canvas!=null)Destroy(canvas.gameObject);hoverPanel=null;hoverText=null;Volume=Farm.Data.volume;Audio.SetVolume(Volume);BuildUI();
         }
         void CreateFarm(string name)
         {

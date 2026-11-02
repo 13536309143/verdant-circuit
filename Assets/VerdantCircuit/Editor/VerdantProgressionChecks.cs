@@ -17,7 +17,7 @@ public static class VerdantProgressionChecks
     }
     public static void Run()
     {
-        names=new List<string>();var visited=new HashSet<string>();foreach(var tech in ClassicFarm.Techs)Visit(tech.id,tech.max,new HashSet<string>(),visited);Check(visited.Count==120,"All 120 research levels have an acyclic dependency route");
+        names=new List<string>();var visited=new HashSet<string>();foreach(var tech in ClassicFarm.Techs)Visit(tech.id,tech.max,new HashSet<string>(),visited);Check(visited.Count==ClassicFarm.Techs.Sum(t=>t.max),"All current research levels have an acyclic dependency route");
         var f=new ClassicFarm();f.Add("hay",1e9);f.Data.unlocks.Add(new Stock("plant",1));int expectedSide=1;
         foreach(string crop in new[]{"plant","trees","pumpkins","cactus","dinosaurs"})
         {
@@ -46,8 +46,8 @@ public static class VerdantProgressionChecks
         }
         f=new ClassicFarm();f.Data.allowLockedSyntax=true;f.Data.unlocks.Add(new Stock("expand",1));f.Resize(2);var session=new ClassicSession(f);session.Start("set_world_size(32)");for(int i=0;i<100&&session.Running;i++)session.FixedTick();Check(session.Error!=""&&f.Data.size==2,"Debug world resizing cannot bypass unpurchased expansion tiers");
         f=new ClassicFarm();f.Data.allowLockedSyntax=true;f.Add("hay",1000000);f.Data.unlocks.Add(new Stock("plant",1));session=new ClassicSession(f);session.Start("a=can_unlock(Unlocks.Expand)\nr=get_unlock_requirements(Unlocks.Expand)\nn=num_produced(Items.Hay)\nb=unlock(Unlocks.Expand)\nc=can_unlock(Unlocks.Expand)");for(int i=0;i<1000&&session.Running;i++)session.FixedTick();var scope=session.drones[0].task.context.scope.values;Check(session.Error==""&&!session.Running&&ScriptValue.Truth(scope["a"])&&ScriptValue.Truth(scope["b"])&&!ScriptValue.Truth(scope["c"])&&ScriptValue.Number(scope["n"])==0,"New public research APIs distinguish funds, production and staged gates");
-        foreach(var chapter in ClassicManual.Chapters)if(chapter.code!="")new ScriptParser().Parse(chapter.code);Check(ClassicManual.Chapters.Length==16&&ClassicManual.Apis.Length>=30,"All 16 bilingual manual chapters and their code fragments are present and parse");
+        foreach(var chapter in ClassicManual.Chapters)if(chapter.code!="")new ScriptParser().Parse(chapter.code);Check(ClassicManual.Chapters.Length>=24&&ClassicManual.Apis.Length>=30,"All bilingual manual chapters and their code fragments are present and parse");
         Check(ClassicBalance.CompetitionTimeLimit("reset")==14400&&ClassicBalance.CompetitionTimeLimit("hay")==3600,"Staged reset challenge permits a longer run than resource competitions");
-        Directory.CreateDirectory("InternalTestReports/0.11.3");File.WriteAllText("InternalTestReports/0.11.3/progression.json",JsonUtility.ToJson(new Report{passed=names.Count,checks=names.ToArray()},true));Debug.Log("PROGRESSION CHECKS PASSED: "+names.Count);
+        Directory.CreateDirectory("InternalTestReports/0.13.0");File.WriteAllText("InternalTestReports/0.13.0/progression.json",JsonUtility.ToJson(new Report{passed=names.Count,checks=names.ToArray()},true));Debug.Log("PROGRESSION CHECKS PASSED: "+names.Count);
     }
 }

@@ -12,7 +12,9 @@ public static class VerdantRelease
     {
         if(EditorApplication.isPlayingOrWillChangePlaymode)
             throw new InvalidOperationException("请先停止 Play 模式。");
-        VerdantClassicChecks.Run();
+        VerdantUniverseChecks.Run();
+        VerdantOrbitalChecks.Run();
+        VerdantUnifiedDocs.Export();
     }
 
     [MenuItem("Tools/禾序/发行/构建 macOS 通用版")]

@@ -1,0 +1,1 @@
+{"status":"passed","checks":66,"runtimeErrors":0,"locales":2,"screenshots":22,"nativeAnimation":true,"visibleCropInstances":2217,"cropDrawCalls":3,"sampledEditorFrames":90,"frameMedianMs":16.69875,"frameP95Ms":20.55529,"stressWorkers":32,"effectPoolLimit":48,"viewCpuMedianMs":0.8562,"viewCpuP95Ms":1.05}

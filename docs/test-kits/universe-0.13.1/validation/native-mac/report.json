@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "version": "0.13.1",
+  "runtimeErrors": 0,
+  "renderedFramesAdvance": true,
+  "scope": "Standalone opening animation and four-planet universe only. Gameplay covered separately in Editor Play mode.",
+  "keyboardInjection": false,
+  "preferencesRestored": false,
+  "preferencesModifiedByHarness": false,
+  "screenshots": [
+    {
+      "name": "opening-a",
+      "sha256": "6419adb338a0e35676bc1abc4e257599b016a53d235191fcec970235b4317bbd",
+      "bytes": 156804
+    },
+    {
+      "name": "opening-b",
+      "sha256": "38d2576df3cb1b879c935db01d666f16e5e91d85ec7c0700ece41927f3cad0a6",
+      "bytes": 197113
+    },
+    {
+      "name": "universe-after-opening",
+      "sha256": "a2d89e4daa4624ba305e7aeabf0a2ce5446e855ebfbfa0806d1615b49ad64c71",
+      "bytes": 335443
+    }
+  ],
+  "captureMessages": [
+    "captured pid=79376 window=4366 pixels=2560x1656",
+    "captured pid=79376 window=4366 pixels=2560x1656",
+    "captured pid=79376 window=4366 pixels=2560x1656"
+  ],
+  "newSaveNamespaceRestored": true
+}

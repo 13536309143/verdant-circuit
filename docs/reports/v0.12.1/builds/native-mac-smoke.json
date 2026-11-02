@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "version": "0.12.1",
+  "runtimeErrors": 0,
+  "renderedFramesAdvance": true,
+  "automaticOpeningComplete": true,
+  "keyboardInjection": false,
+  "accessibilityAvailable": false,
+  "screenshots": [
+    {
+      "name": "opening-a",
+      "sha256": "9fa49a5f754b12774c1d47530986d1ebfc68f92a24dd31231cdc10e981acbe34",
+      "bytes": 235162
+    },
+    {
+      "name": "opening-b",
+      "sha256": "fdcf2bdb23e35028fa15859f0ff842136c065083be815da50f85cde2a38a038f",
+      "bytes": 261642
+    },
+    {
+      "name": "farm-after-opening",
+      "sha256": "ca1e446fcfcc28bd6d64df132606033142d723f719110cd75a1e7f640d8f10f4",
+      "bytes": 443515
+    }
+  ],
+  "captureMessages": [
+    "true",
+    "captured pid=6939 window=3956 pixels=3200x1932",
+    "captured pid=6939 window=3956 pixels=3200x1932",
+    "captured pid=6939 window=3956 pixels=3200x1932"
+  ],
+  "saveBackupRestored": true
+}

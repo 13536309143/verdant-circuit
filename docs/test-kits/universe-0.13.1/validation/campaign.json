@@ -1,0 +1,18 @@
+{
+    "status": "passed",
+    "scope": "Integration fixture: all research and original Earth inputs supplied; all native manufactured products, UFO fuel, physical queues and 8 contracts produced through actual rules.",
+    "checks": 297,
+    "contracts": 8,
+    "shipments": 67,
+    "gameSeconds": 7412.0,
+    "orderSeconds": [
+        43.5,
+        359.0,
+        333.5,
+        529.25,
+        685.25,
+        743.5,
+        1427.25,
+        3142.5
+    ]
+}

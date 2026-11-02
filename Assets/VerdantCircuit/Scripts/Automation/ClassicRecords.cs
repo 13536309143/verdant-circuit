@@ -14,6 +14,11 @@ namespace Verdant.Automation
             foreach(string item in ClassicFarm.Items){double minute;lastMinute.TryGetValue(item,out minute);Paragraph(ItemName(item)+" / "+Tr("Last 60s: ","最近60秒：")+minute.ToString("N0")+" / "+Tr("Best: ","最佳：")+(Farm.Data.personalBest.Find(s=>s.id==item)?.amount??0).ToString("N0"),45);}
             foreach(var a in Achievements())Paragraph((a.Value||Farm.Data.achievements.Contains(a.Key)?"✓ ":"○ ")+AchievementLabel(a.Key),45);
             foreach(var r in raceRecords)Paragraph((r.rules==ClassicBalance.CompetitionRevision?"":Tr("Historical rules / ","历史规则 / "))+r.category+" / "+r.seconds.ToString("F3")+"s / "+r.program+" / seed "+r.seed,45);
+            if(Farm.Data.archipelago!=null&&Farm.Fleet.Data.started)
+            {
+                var world=Farm.Fleet;Paragraph(Tr("Archipelago order record","群岛订单纪录")+" / "+world.Data.order+" / "+ArchipelagoWorld.Contracts.Length+" / "+TimeSpan.FromSeconds(world.Data.orderTimes.Sum()).ToString(@"hh\:mm\:ss"),65);
+                for(int i=0;i<world.Data.orderTimes.Count;i++)Paragraph((i+1).ToString("00")+" / "+L10n.T(ArchipelagoWorld.Contracts[i].zh)+" / "+TimeSpan.FromSeconds(world.Data.orderTimes[i]).ToString(@"hh\:mm\:ss"),45);
+            }
             Row(Tr("Local competition","本地竞速"),Tr("Test a program against a fixed production target.","用固定生产目标测试程序。"),Tr("Choose","选择"),()=>Open("challenges"));
         }
         Dictionary<string,bool> Achievements()
@@ -22,8 +27,8 @@ namespace Verdant.Automation
             return new Dictionary<string,bool>{
                 {"first_hay",count("hay")>=1},{"thousand",h.Sum(s=>s.amount)>=1000},
                 {"wood",count("wood")>=1000},{"carrot",count("carrot")>=1000},
-                {"pumpkin",count("pumpkin")>=1000},{"power",count("power")>=1000},
-                {"cactus",count("cactus")>=1000},{"gold",count("gold")>=100},
+                {"pumpkin",count("pumpkin")>=1000},{"solar_energy",count("solar_energy")>=1000},
+                {"cactus",count("cactus")>=1000},{"coins",count("coins")>=100},
                 {"bone",Farm.Count("bone")>=100},{"parallel",Farm.Level("megafarm")>0},
                 {"field",Farm.MaxSize>=32},{"research",ClassicFarm.Techs.All(t=>Farm.Level(t.id)>=t.max)},
                 {"race",raceRecords.Count>0}};
@@ -31,7 +36,7 @@ namespace Verdant.Automation
         void BuildChallenges()
         {
             Paragraph(Tr("The selected program uses a separate 8×8 farm with standard mid-tier research, seed 41 and supplied inputs. Each resource has its own target. All workers must terminate. Fastest reset starts from zero. Stop cancels the challenge.","使用选中程序，在独立 8×8 农场、统一中阶科技、种子 41 和充足材料下测试。各资源目标不同，达标后让所有工作机结束。最快重置从零开始，停止可取消。"),125);
-            foreach(string id in new[]{"hay","wood","carrot","pumpkin","power","cactus","gold","bone"}){string item=id;Row(ItemName(item),Tr("New production target: ","新增生产目标：")+ClassicBalance.CompetitionTarget(item).ToString("N0")+Tr(". Terminate all workers after reaching it.","。达标后结束所有工作机。"),Tr("Start","开始"),()=>StartRace(item,ClassicBalance.CompetitionTarget(item)));}
+            foreach(string id in new[]{"hay","wood","carrot","pumpkin","solar_energy","cactus","coins","bone"}){string item=id;Row(ItemName(item),Tr("New production target: ","新增生产目标：")+ClassicBalance.CompetitionTarget(item).ToString("N0")+Tr(". Terminate all workers after reaching it.","。达标后结束所有工作机。"),Tr("Start","开始"),()=>StartRace(item,ClassicBalance.CompetitionTarget(item)));}
             Row(Tr("Fastest reset","最快重置"),Tr("Start from zero and unlock local competition through code.","从零开始，通过程序解锁本地竞速研究。"),Tr("Start","开始"),()=>StartRace("reset",1));
         }
         void StartRace(string item,double target)

@@ -14,7 +14,7 @@ namespace Verdant.Automation
             {"speed",new Vector2(680,170)},{"carrots",new Vector2(680,360)},{"polyculture",new Vector2(680,550)},
             {"watering",new Vector2(990,170)},{"pumpkins",new Vector2(990,450)},{"sunflowers",new Vector2(1300,170)},
             {"fertilizer",new Vector2(1300,360)},{"cactus",new Vector2(1300,550)},{"mazes",new Vector2(1610,360)},{"dinosaurs",new Vector2(1610,550)},
-            {"megafarm",new Vector2(1920,360)},{"simulation",new Vector2(1920,550)},{"leaderboard",new Vector2(2230,550)},
+            {"megafarm",new Vector2(1920,360)},{"spaceflight",new Vector2(2230,360)},{"flower_planet",new Vector2(2540,170)},{"mineral_planet",new Vector2(2850,170)},{"ocean_planet",new Vector2(3160,170)},{"leaderboard",new Vector2(2230,550)},
             {"the_farmers_remains",new Vector2(2540,550)},{"top_hat",new Vector2(2850,550)},
             {"loops",new Vector2(60,950)},{"operators",new Vector2(370,950)},{"variables",new Vector2(680,950)},
             {"functions",new Vector2(990,950)},{"lists",new Vector2(1300,850)},{"dicts",new Vector2(1610,850)},
@@ -27,7 +27,7 @@ namespace Verdant.Automation
 
     public sealed partial class ClassicController
     {
-        string selectedResearch;
+        string selectedResearch;int researchScope;bool localEarthResearch;
         ClassicTreeScroll researchMap;
         TMP_Text researchTitle,researchDescription,researchCost,researchRequirement,researchCode,researchLevel,researchMessage;
         UnityEngine.UI.Button researchAction;
@@ -47,7 +47,7 @@ namespace Verdant.Automation
         }
         void TickResearchNavigation()
         {
-            if(modalKind!="research"||researchMap==null)return;
+            if(modalKind!="research"||researchScope!=0||localEarthResearch||researchMap==null)return;
             var focused=UnityEngine.EventSystems.EventSystem.current?.currentSelectedGameObject;if(focused!=null&&focused.GetComponent<TMP_InputField>()!=null)return;
             if(Input.GetKeyDown(KeyCode.Alpha1))FocusResearchLane(0);
             if(Input.GetKeyDown(KeyCode.Alpha2))FocusResearchLane(1);
@@ -56,10 +56,12 @@ namespace Verdant.Automation
         }
         void BuildResearchTree()
         {
+            if(researchScope!=0||localEarthResearch){BuildSectorResearch();return;}
             modal=Panel("Research Overlay",canvas,Vector2.zero,Vector2.one,new Color(.04f,.12f,.10f,.72f));modal.GetComponent<UnityEngine.UI.Image>().raycastTarget=true;
             var window=Surface("Research Tree",modal,new Vector2(.072f,.035f),new Vector2(.985f,.985f),Paper,true);
             Label(Tr("THE DISCOVERY TREE","发现之树"),window,new Vector2(.025f,.925f),new Vector2(.76f,.985f),31,Ink);
-            Label(Tr("Grow the field. Grow the language. Connect the possibilities.","让农田生长，也让语言生长。每一条连线，都是新的可能。"),window,new Vector2(.026f,.875f),new Vector2(.84f,.925f),15,Muted);
+            BuildResearchScopes(window);
+            Button(Tr("Earth ecology","地球生态"),window,new Vector2(.72f,.934f),new Vector2(.89f,.98f),()=>{localEarthResearch=true;Open("research");});
             Skin(Button(Tr("Close","关闭"),window,new Vector2(.9f,.934f),new Vector2(.978f,.98f),Close),Dark,Color.white);
             string[] labels={Tr("Overview","全览"),Tr("Cultivation","种植与产能"),Tr("Programming","编程语言"),Tr("Automation","自动化工具")};
             for(int i=0;i<labels.Length;i++)
@@ -72,20 +74,20 @@ namespace Verdant.Automation
             search.onEndEdit.AddListener(query=>
             {if(string.IsNullOrWhiteSpace(query))return;var found=ClassicFarm.Techs.FirstOrDefault(t=>TechName(t.id).IndexOf(query,StringComparison.OrdinalIgnoreCase)>=0||t.id.IndexOf(query,StringComparison.OrdinalIgnoreCase)>=0);if(found!=null)SelectResearch(found.id,true);else researchMessage.text=Tr("No matching discovery.","没有找到对应节点。");});
 
-            var scrollRoot=Surface("Research Map",window,new Vector2(.025f,.075f),new Vector2(.735f,.79f),Farm.Data.theme=="night"?ClassicView.ColorOf("19372F"):ClassicView.ColorOf("E5EBDD"));
+            var scrollRoot=Surface("Research Map",window,new Vector2(.025f,.075f),new Vector2(.735f,.79f),ClassicView.ColorOf("19372F"));
             researchMap=scrollRoot.gameObject.AddComponent<ClassicTreeScroll>();
             var viewport=Panel("Viewport",scrollRoot,Vector2.zero,Vector2.one,Color.clear);viewport.gameObject.AddComponent<RectMask2D>();viewport.GetComponent<UnityEngine.UI.Image>().raycastTarget=true;
-            var content=GraphRect("Research Graph",viewport,Vector2.zero,new Vector2(3160,1900),Color.clear);
+            var content=GraphRect("Research Graph",viewport,Vector2.zero,new Vector2(3490,1900),Color.clear);
             researchMap.viewport=viewport;researchMap.content=content;researchMap.horizontal=researchMap.vertical=true;researchMap.movementType=ScrollRect.MovementType.Clamped;researchMap.decelerationRate=.08f;researchMap.scrollSensitivity=20;
-            for(int x=0;x<3160;x+=155)GraphRect("Grid",content,new Vector2(x,0),new Vector2(1,1900),new Color(.25f,.45f,.32f,.08f));
-            for(int y=0;y<1900;y+=95)GraphRect("Grid",content,new Vector2(0,y),new Vector2(3160,1),new Color(.25f,.45f,.32f,.08f));
+            for(int x=0;x<3490;x+=155)GraphRect("Grid",content,new Vector2(x,0),new Vector2(1,1900),new Color(.25f,.45f,.32f,.08f));
+            for(int y=0;y<1900;y+=95)GraphRect("Grid",content,new Vector2(0,y),new Vector2(3490,1),new Color(.25f,.45f,.32f,.08f));
             string[] laneTitles={Tr("01 / CULTIVATION & YIELD","01 / 种植与产能"),Tr("02 / THE LANGUAGE OF AUTOMATION","02 / 自动化的语言"),Tr("03 / SENSE, MEASURE, REFINE","03 / 感知、测量与优化")};
             int[] laneTops={45,760,1390};
             for(int i=0;i<3;i++){var heading=GraphRect("Lane Heading",content,new Vector2(60,laneTops[i]),new Vector2(2950,60),Color.clear);Label(laneTitles[i],heading,Vector2.zero,Vector2.one,28,i==1?ClassicView.ColorOf("B47E4E"):Accent);}
-            foreach(var tech in ClassicFarm.Techs)if(tech.prerequisite!="")BuildResearchLink(content,tech.prerequisite,tech.id);
-            foreach(var tech in ClassicFarm.Techs)BuildResearchNode(content,tech);
+            foreach(var tech in ClassicFarm.Techs.Where(t=>TechScope(t.id)==0))if(tech.prerequisite!=""&&TechScope(tech.prerequisite)==0)BuildResearchLink(content,tech.prerequisite,tech.id);
+            foreach(var tech in ClassicFarm.Techs.Where(t=>TechScope(t.id)==0))BuildResearchNode(content,tech);
 
-            var detail=Surface("Research Inspector",window,new Vector2(.752f,.075f),new Vector2(.975f,.79f),Farm.Data.theme=="night"?ClassicView.ColorOf("1D3A32"):ClassicView.ColorOf("E6E9DE"));
+            var detail=Surface("Research Inspector",window,new Vector2(.752f,.075f),new Vector2(.975f,.79f),ClassicView.ColorOf("1D3A32"));
             Label(Tr("SELECTED DISCOVERY","当前发现"),detail,new Vector2(.065f,.91f),new Vector2(.935f,.97f),12,Accent);
             researchTitle=Label("",detail,new Vector2(.065f,.78f),new Vector2(.935f,.91f),27,Ink);
             researchLevel=Label("",detail,new Vector2(.065f,.72f),new Vector2(.935f,.78f),14,Muted);
@@ -116,7 +118,7 @@ namespace Verdant.Automation
             if(Math.Abs(a.y-b.y)>1)pieces.Add(GraphRect("Dependency Bend",content,new Vector2(mid,Math.Min(a.y,b.y)),new Vector2(3,Math.Abs(a.y-b.y)+3),Muted).GetComponent<UnityEngine.UI.Image>());
             pieces.Add(GraphRect("Dependency End",content,new Vector2(mid,b.y),new Vector2(b.x-mid,3),Muted).GetComponent<UnityEngine.UI.Image>());
             var tip=GraphRect("Dependency Tip",content,b-new Vector2(4,3),new Vector2(7,7),Muted);tip.localRotation=Quaternion.Euler(0,0,45);pieces.Add(tip.GetComponent<UnityEngine.UI.Image>());
-            modalRefreshers.Add(()=>{foreach(var line in pieces)if(line!=null)line.color=selectedResearch==child?Clay:Farm.Level(parent)>0?Accent:Muted;});
+            modalRefreshers.Add(()=>{foreach(var line in pieces)if(line!=null)line.color=selectedResearch==child?Clay:Farm.Level(parent)>0?ResearchCategoryColor(child):Color.Lerp(Dark,ResearchCategoryColor(child),.18f);});
         }
         void BuildResearchNode(Transform content,ClassicTech tech)
         {
@@ -131,9 +133,9 @@ namespace Verdant.Automation
             modalRefreshers.Add(()=>
             {
                 if(node==null)return;var cost=Farm.Cost(tech.id);bool reachable=CanReachResearch(tech.id),affordable=cost!=null&&reachable&&cost.All(p=>Farm.Count((string)p.Key)>=ScriptValue.Number(p.Value));int level=Farm.Level(tech.id);
-                image.color=affordable?Accent:level>0?ClassicView.ColorOf("D5E2C6"):Paper;
-                title.color=affordable?Color.white:level>0?ClassicView.ColorOf("243C33"):Ink;
-                status.color=price.color=affordable?Lime:level>0?Accent:Muted;
+                Color category=ResearchCategoryColor(tech.id);image.color=level>0?Color.Lerp(Dark,category,.72f):Color.Lerp(Dark,category,.12f);
+                title.color=level>0?Color.white:Ink;
+                status.color=price.color=level>0?Color.white:affordable?category:Muted;
                 status.text=cost==null?Tr("COMPLETE","已完成"):affordable?Tr("READY TO RESEARCH","可以研究"):!reachable?Tr("PREREQUISITE LOCKED","前置未解锁"):Tr("GATHER RESOURCES","收集资源");
                 price.text=level+" / "+tech.max+(cost==null?"":"  ·  "+string.Join(" + ",cost.Select(p=>ItemName((string)p.Key)+" "+ScriptValue.Show(p.Value))));
                 border.effectColor=tech.id==selectedResearch?Clay:new Color(0,0,0,0);
@@ -194,7 +196,10 @@ namespace Verdant.Automation
                 case "mazes":return Tr("Turn bushes into hedge mazes and search for treasure.","将灌木变成树篱迷宫，编写算法寻找宝藏。");
                 case "dinosaurs":return Tr("Grow a tail to produce bone. The length bonus caps at 64; each research level adds 25%.","增长尾巴生产骨头；长度加成在 64 格封顶，每级研究增加 25% 产出。");
                 case "megafarm":return Tr("Double independent drone capacity per level, up to 32 workers.","每级加倍独立无人机容量，最多 32 台工作机。");
-                case "simulation":return Tr("Evaluate programs on separate farms with repeatable seeds.","在独立农场中用固定种子验证程序和策略。");
+                case "spaceflight":return Tr("Connect Earth and island depots. Bind programs to drones, island managers and a network controller.","连接地球与群岛仓库，将程序绑定到无人机、岛屿管理和联合总控。");
+                case "flower_planet":return Tr("Six flowers, pollination supplies and botanical processing.","开放六种花卉和植物加工，需要地球原料与跨岛补给。");
+                case "mineral_planet":return Tr("Stone, bronze, silver, gold ore, platinum and diamonds.","开放石头、青铜、白银、黄金矿料、铂金和钻石的分层加工。");
+                case "ocean_planet":return Tr("Six fish species and fishmeal for a circular supply network.","开放六类鱼与鱼粉加工，为花卉提供循环原料。");
                 case "leaderboard":return Tr("Measure strategies in local fixed-start competitions.","在固定开局的本地竞速中比较策略耗时。");
                 case "loops":return Tr("Unlock repeated execution with while, for and repeat.","解锁 while、for 与 repeat，让重复工作自动执行。");
                 case "operators":return Tr("Unlock arithmetic, comparisons and conditional decisions.","解锁运算、比较和条件判断，按状态决定动作。");
@@ -231,7 +236,10 @@ namespace Verdant.Automation
                 case "megafarm":return "handle = spawn_drone(work)\nwait_for(handle)";
                 case "costs":return "get_cost(Unlocks.Speed)";
                 case "auto_unlock":return "unlock(Unlocks.Speed)";
-                case "simulation":return "simulate('experiment',\n         Unlocks, {}, {}, 7)";
+                case "spaceflight":return "network_run(\"unified_controller\")";
+                case "flower_planet":return "grow_rose(fleet_self(), 4)";
+                case "mineral_planet":return "mine_stone(fleet_self(), 4)";
+                case "ocean_planet":return "catch_carp(fleet_self(), 4)";
                 case "debug":return "print(get_pos_x())";
                 case "debug2":return "set_world_size(4)\nset_execution_speed(1)";
                 case "timing":return "start = get_time()";

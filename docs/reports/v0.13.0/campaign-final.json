@@ -1,0 +1,1390 @@
+{
+    "archipelago": {
+        "earthSent": [
+            {
+                "id": "wood",
+                "amount": 10135.0
+            },
+            {
+                "id": "water",
+                "amount": 612.0
+            },
+            {
+                "id": "hay",
+                "amount": 288.0
+            },
+            {
+                "id": "carrot",
+                "amount": 36.0
+            },
+            {
+                "id": "compost",
+                "amount": 45.0
+            },
+            {
+                "id": "fertilizer",
+                "amount": 18.0
+            },
+            {
+                "id": "power",
+                "amount": 603.0
+            },
+            {
+                "id": "grain",
+                "amount": 144.0
+            },
+            {
+                "id": "rose",
+                "amount": 60.0
+            },
+            {
+                "id": "silver",
+                "amount": 40.0
+            },
+            {
+                "id": "salmon",
+                "amount": 30.0
+            },
+            {
+                "id": "diamond",
+                "amount": 16.0
+            },
+            {
+                "id": "koi",
+                "amount": 20.0
+            },
+            {
+                "id": "orchid",
+                "amount": 40.0
+            }
+        ],
+        "earthReceived": [
+            {
+                "id": "compost",
+                "amount": 72.0
+            },
+            {
+                "id": "grain",
+                "amount": 144.0
+            },
+            {
+                "id": "rose",
+                "amount": 60.0
+            },
+            {
+                "id": "silver",
+                "amount": 40.0
+            },
+            {
+                "id": "salmon",
+                "amount": 30.0
+            },
+            {
+                "id": "diamond",
+                "amount": 16.0
+            },
+            {
+                "id": "koi",
+                "amount": 20.0
+            },
+            {
+                "id": "orchid",
+                "amount": 40.0
+            }
+        ],
+        "networkSchema": 1,
+        "controls": [],
+        "groups": [],
+        "earthOpening": [],
+        "started": true,
+        "order": 24,
+        "slotLevel": 0,
+        "sizeLevel": 4,
+        "nextId": 6,
+        "turn": 65791,
+        "time": 16447.75,
+        "accumulator": 0.0,
+        "credits": 6725.0,
+        "fees": 0.0,
+        "totalDistance": 4352.0,
+        "orderStarted": 16447.75,
+        "buildSpent": 275.0,
+        "researchSpent": 360.0,
+        "refunds": 0.0,
+        "saleIncome": 200.0,
+        "consumed": [
+            {
+                "id": "hay",
+                "amount": 288.0
+            },
+            {
+                "id": "carrot",
+                "amount": 36.0
+            },
+            {
+                "id": "water",
+                "amount": 612.0
+            },
+            {
+                "id": "compost",
+                "amount": 45.0
+            },
+            {
+                "id": "wood",
+                "amount": 135.0
+            },
+            {
+                "id": "fertilizer",
+                "amount": 18.0
+            },
+            {
+                "id": "stone",
+                "amount": 765.0
+            },
+            {
+                "id": "power",
+                "amount": 603.0
+            },
+            {
+                "id": "silver",
+                "amount": 216.0
+            },
+            {
+                "id": "lavender",
+                "amount": 99.0
+            },
+            {
+                "id": "carp",
+                "amount": 144.0
+            },
+            {
+                "id": "fishmeal",
+                "amount": 36.0
+            },
+            {
+                "id": "bronze",
+                "amount": 90.0
+            },
+            {
+                "id": "gold_ore",
+                "amount": 45.0
+            },
+            {
+                "id": "rose",
+                "amount": 45.0
+            },
+            {
+                "id": "platinum",
+                "amount": 27.0
+            },
+            {
+                "id": "orchid",
+                "amount": 27.0
+            },
+            {
+                "id": "grain",
+                "amount": 144.0
+            },
+            {
+                "id": "salmon",
+                "amount": 27.0
+            },
+            {
+                "id": "lotus",
+                "amount": 36.0
+            }
+        ],
+        "submitted": [
+            {
+                "id": "rose",
+                "amount": 90.0
+            },
+            {
+                "id": "tulip",
+                "amount": 32.0
+            },
+            {
+                "id": "lavender",
+                "amount": 30.0
+            },
+            {
+                "id": "lily",
+                "amount": 20.0
+            },
+            {
+                "id": "orchid",
+                "amount": 76.0
+            },
+            {
+                "id": "lotus",
+                "amount": 36.0
+            },
+            {
+                "id": "stone",
+                "amount": 40.0
+            },
+            {
+                "id": "bronze",
+                "amount": 24.0
+            },
+            {
+                "id": "silver",
+                "amount": 60.0
+            },
+            {
+                "id": "gold_ore",
+                "amount": 34.0
+            },
+            {
+                "id": "platinum",
+                "amount": 18.0
+            },
+            {
+                "id": "diamond",
+                "amount": 20.0
+            },
+            {
+                "id": "carp",
+                "amount": 30.0
+            },
+            {
+                "id": "trout",
+                "amount": 30.0
+            },
+            {
+                "id": "salmon",
+                "amount": 50.0
+            },
+            {
+                "id": "cod",
+                "amount": 24.0
+            },
+            {
+                "id": "tuna",
+                "amount": 48.0
+            },
+            {
+                "id": "koi",
+                "amount": 28.0
+            },
+            {
+                "id": "fishmeal",
+                "amount": 60.0
+            }
+        ],
+        "exported": [
+            {
+                "id": "wood",
+                "amount": 10000.0
+            }
+        ],
+        "usedRoles": [
+            "hauler",
+            "grower",
+            "engineer",
+            "harvester"
+        ],
+        "roles": [
+            "irrigator",
+            "grower",
+            "hauler",
+            "farmer",
+            "engineer",
+            "harvester"
+        ],
+        "units": [
+            {
+                "transient": false,
+                "freeStarter": false,
+                "cropX": 0,
+                "cropY": 0,
+                "hat": "straw",
+                "manual": false,
+                "stopAfterLanding": false,
+                "program": "",
+                "codeError": "",
+                "id": 1,
+                "island": 8,
+                "x": 1,
+                "y": 1,
+                "width": 3,
+                "height": 3,
+                "parkX": 0,
+                "parkY": 5,
+                "role": "hauler",
+                "status": "idle",
+                "cargoItem": "",
+                "cargo": 0,
+                "cargoSource": 7,
+                "delay": 1.11,
+                "blocked": 0.0,
+                "work": 0.0,
+                "jobs": [],
+                "hops": [],
+                "flightTarget": -1,
+                "flight": 0.0
+            },
+            {
+                "transient": false,
+                "freeStarter": false,
+                "cropX": 0,
+                "cropY": 0,
+                "hat": "straw",
+                "manual": false,
+                "stopAfterLanding": false,
+                "program": "campaign_worker_1",
+                "codeError": "",
+                "id": 2,
+                "island": 6,
+                "x": 0,
+                "y": 5,
+                "width": 3,
+                "height": 3,
+                "parkX": 0,
+                "parkY": 5,
+                "role": "grower",
+                "status": "idle",
+                "cargoItem": "",
+                "cargo": 0,
+                "cargoSource": 0,
+                "delay": 0.0,
+                "blocked": 0.0,
+                "work": 0.0,
+                "jobs": [],
+                "hops": [],
+                "flightTarget": -1,
+                "flight": 0.0
+            },
+            {
+                "transient": false,
+                "freeStarter": false,
+                "cropX": 0,
+                "cropY": 0,
+                "hat": "straw",
+                "manual": false,
+                "stopAfterLanding": false,
+                "program": "campaign_worker_2",
+                "codeError": "",
+                "id": 3,
+                "island": 0,
+                "x": 0,
+                "y": 5,
+                "width": 3,
+                "height": 3,
+                "parkX": 0,
+                "parkY": 5,
+                "role": "grower",
+                "status": "idle",
+                "cargoItem": "",
+                "cargo": 0,
+                "cargoSource": 0,
+                "delay": 0.0,
+                "blocked": 0.0,
+                "work": 0.0,
+                "jobs": [],
+                "hops": [],
+                "flightTarget": -1,
+                "flight": 0.0
+            },
+            {
+                "transient": false,
+                "freeStarter": false,
+                "cropX": 0,
+                "cropY": 0,
+                "hat": "straw",
+                "manual": false,
+                "stopAfterLanding": false,
+                "program": "campaign_worker_3",
+                "codeError": "",
+                "id": 4,
+                "island": 7,
+                "x": 4,
+                "y": 5,
+                "width": 3,
+                "height": 3,
+                "parkX": 0,
+                "parkY": 5,
+                "role": "engineer",
+                "status": "moving",
+                "cargoItem": "",
+                "cargo": 0,
+                "cargoSource": 0,
+                "delay": 0.050000000000000047,
+                "blocked": 0.0,
+                "work": 0.0,
+                "jobs": [],
+                "hops": [],
+                "flightTarget": -1,
+                "flight": 0.0
+            },
+            {
+                "transient": false,
+                "freeStarter": false,
+                "cropX": 0,
+                "cropY": 0,
+                "hat": "straw",
+                "manual": false,
+                "stopAfterLanding": false,
+                "program": "",
+                "codeError": "",
+                "id": 5,
+                "island": 8,
+                "x": 0,
+                "y": 5,
+                "width": 3,
+                "height": 3,
+                "parkX": 0,
+                "parkY": 5,
+                "role": "harvester",
+                "status": "idle",
+                "cargoItem": "",
+                "cargo": 0,
+                "cargoSource": 0,
+                "delay": 0.0,
+                "blocked": 0.0,
+                "work": 0.0,
+                "jobs": [],
+                "hops": [],
+                "flightTarget": -1,
+                "flight": 0.0
+            }
+        ],
+        "islands": [
+            {
+                "island": 0,
+                "items": [],
+                "made": [
+                    {
+                        "id": "compost",
+                        "amount": 72.0
+                    },
+                    {
+                        "id": "grain",
+                        "amount": 144.0
+                    }
+                ],
+                "delivered": [
+                    {
+                        "id": "rose",
+                        "amount": 60.0
+                    },
+                    {
+                        "id": "silver",
+                        "amount": 40.0
+                    },
+                    {
+                        "id": "salmon",
+                        "amount": 30.0
+                    },
+                    {
+                        "id": "diamond",
+                        "amount": 16.0
+                    },
+                    {
+                        "id": "koi",
+                        "amount": 20.0
+                    },
+                    {
+                        "id": "orchid",
+                        "amount": 40.0
+                    }
+                ]
+            },
+            {
+                "island": 1,
+                "items": [],
+                "made": [],
+                "delivered": []
+            },
+            {
+                "island": 2,
+                "items": [],
+                "made": [],
+                "delivered": []
+            },
+            {
+                "island": 3,
+                "items": [],
+                "made": [],
+                "delivered": []
+            },
+            {
+                "island": 4,
+                "items": [],
+                "made": [],
+                "delivered": []
+            },
+            {
+                "island": 5,
+                "items": [],
+                "made": [],
+                "delivered": []
+            },
+            {
+                "island": 6,
+                "items": [
+                    {
+                        "id": "water",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "compost",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "rose",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "wood",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "tulip",
+                        "amount": 4.0
+                    },
+                    {
+                        "id": "hay",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "lavender",
+                        "amount": 6.0
+                    },
+                    {
+                        "id": "fertilizer",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "lily",
+                        "amount": 16.0
+                    },
+                    {
+                        "id": "silver",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "orchid",
+                        "amount": 5.0
+                    },
+                    {
+                        "id": "fishmeal",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "lotus",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "platinum",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "tuna",
+                        "amount": 0.0
+                    }
+                ],
+                "made": [
+                    {
+                        "id": "rose",
+                        "amount": 135.0
+                    },
+                    {
+                        "id": "tulip",
+                        "amount": 36.0
+                    },
+                    {
+                        "id": "lavender",
+                        "amount": 135.0
+                    },
+                    {
+                        "id": "lily",
+                        "amount": 36.0
+                    },
+                    {
+                        "id": "orchid",
+                        "amount": 108.0
+                    },
+                    {
+                        "id": "lotus",
+                        "amount": 72.0
+                    }
+                ],
+                "delivered": [
+                    {
+                        "id": "water",
+                        "amount": 459.0
+                    },
+                    {
+                        "id": "compost",
+                        "amount": 45.0
+                    },
+                    {
+                        "id": "wood",
+                        "amount": 9.0
+                    },
+                    {
+                        "id": "hay",
+                        "amount": 90.0
+                    },
+                    {
+                        "id": "fertilizer",
+                        "amount": 18.0
+                    },
+                    {
+                        "id": "silver",
+                        "amount": 54.0
+                    },
+                    {
+                        "id": "fishmeal",
+                        "amount": 96.0
+                    },
+                    {
+                        "id": "platinum",
+                        "amount": 12.0
+                    },
+                    {
+                        "id": "tuna",
+                        "amount": 36.0
+                    }
+                ]
+            },
+            {
+                "island": 7,
+                "items": [
+                    {
+                        "id": "stone",
+                        "amount": 23.0
+                    },
+                    {
+                        "id": "power",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "silver",
+                        "amount": 12.0
+                    },
+                    {
+                        "id": "wood",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "bronze",
+                        "amount": 12.0
+                    },
+                    {
+                        "id": "gold_ore",
+                        "amount": 2.0
+                    },
+                    {
+                        "id": "rose",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "platinum",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "orchid",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "diamond",
+                        "amount": 7.0
+                    }
+                ],
+                "made": [
+                    {
+                        "id": "stone",
+                        "amount": 828.0
+                    },
+                    {
+                        "id": "silver",
+                        "amount": 288.0
+                    },
+                    {
+                        "id": "bronze",
+                        "amount": 126.0
+                    },
+                    {
+                        "id": "gold_ore",
+                        "amount": 81.0
+                    },
+                    {
+                        "id": "platinum",
+                        "amount": 45.0
+                    },
+                    {
+                        "id": "diamond",
+                        "amount": 27.0
+                    }
+                ],
+                "delivered": [
+                    {
+                        "id": "power",
+                        "amount": 549.0
+                    },
+                    {
+                        "id": "wood",
+                        "amount": 126.0
+                    },
+                    {
+                        "id": "rose",
+                        "amount": 45.0
+                    },
+                    {
+                        "id": "orchid",
+                        "amount": 51.0
+                    }
+                ]
+            },
+            {
+                "island": 8,
+                "items": [
+                    {
+                        "id": "hay",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "water",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "carp",
+                        "amount": 15.0
+                    },
+                    {
+                        "id": "fishmeal",
+                        "amount": 12.0
+                    },
+                    {
+                        "id": "grain",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "trout",
+                        "amount": 24.0
+                    },
+                    {
+                        "id": "lavender",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "salmon",
+                        "amount": 13.0
+                    },
+                    {
+                        "id": "bronze",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "cod",
+                        "amount": 3.0
+                    },
+                    {
+                        "id": "power",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "tuna",
+                        "amount": 6.0
+                    },
+                    {
+                        "id": "lotus",
+                        "amount": 0.0
+                    },
+                    {
+                        "id": "koi",
+                        "amount": 8.0
+                    },
+                    {
+                        "id": "gold_ore",
+                        "amount": 0.0
+                    }
+                ],
+                "made": [
+                    {
+                        "id": "carp",
+                        "amount": 189.0
+                    },
+                    {
+                        "id": "fishmeal",
+                        "amount": 108.0
+                    },
+                    {
+                        "id": "trout",
+                        "amount": 54.0
+                    },
+                    {
+                        "id": "salmon",
+                        "amount": 90.0
+                    },
+                    {
+                        "id": "cod",
+                        "amount": 27.0
+                    },
+                    {
+                        "id": "tuna",
+                        "amount": 54.0
+                    },
+                    {
+                        "id": "koi",
+                        "amount": 36.0
+                    }
+                ],
+                "delivered": [
+                    {
+                        "id": "hay",
+                        "amount": 126.0
+                    },
+                    {
+                        "id": "water",
+                        "amount": 81.0
+                    },
+                    {
+                        "id": "grain",
+                        "amount": 144.0
+                    },
+                    {
+                        "id": "lavender",
+                        "amount": 45.0
+                    },
+                    {
+                        "id": "bronze",
+                        "amount": 9.0
+                    },
+                    {
+                        "id": "power",
+                        "amount": 54.0
+                    },
+                    {
+                        "id": "lotus",
+                        "amount": 60.0
+                    },
+                    {
+                        "id": "gold_ore",
+                        "amount": 24.0
+                    }
+                ]
+            }
+        ],
+        "programFaults": 0,
+        "programRuns": 3,
+        "messages": 0,
+        "peakPrograms": 3,
+        "orderPeakHull": 0,
+        "orderPeakPrograms": 0,
+        "orderPeakFlights": 0,
+        "shipments": 108,
+        "nearMisses": 0,
+        "completedJobs": 196,
+        "orderTimes": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            2055.5,
+            3590.25,
+            2316.25,
+            1210.0,
+            2051.25,
+            5224.5
+        ]
+    },
+    "projectId": "9d5948889c87484aa740515ac6064a71",
+    "schema": 1,
+    "size": 4,
+    "defaultSize": 0,
+    "randomState": 2488336908,
+    "time": 0.0,
+    "waterTimer": 0.0,
+    "fertilizerTimer": 0.0,
+    "version": "0.13.0",
+    "items": [
+        {
+            "id": "wood",
+            "amount": 999865.0
+        },
+        {
+            "id": "hay",
+            "amount": 999712.0
+        },
+        {
+            "id": "carrot",
+            "amount": 999964.0
+        },
+        {
+            "id": "pumpkin",
+            "amount": 1000000.0
+        },
+        {
+            "id": "power",
+            "amount": 999397.0
+        },
+        {
+            "id": "cactus",
+            "amount": 1000000.0
+        },
+        {
+            "id": "bone",
+            "amount": 1000000.0
+        },
+        {
+            "id": "gold",
+            "amount": 1000000.0
+        },
+        {
+            "id": "water",
+            "amount": 999388.0
+        },
+        {
+            "id": "fertilizer",
+            "amount": 999982.0
+        },
+        {
+            "id": "weird_substance",
+            "amount": 1000000.0
+        },
+        {
+            "id": "compost",
+            "amount": 27.0
+        },
+        {
+            "id": "grain",
+            "amount": 0.0
+        },
+        {
+            "id": "rose",
+            "amount": 0.0
+        },
+        {
+            "id": "silver",
+            "amount": 0.0
+        },
+        {
+            "id": "salmon",
+            "amount": 0.0
+        },
+        {
+            "id": "diamond",
+            "amount": 0.0
+        },
+        {
+            "id": "koi",
+            "amount": 0.0
+        },
+        {
+            "id": "orchid",
+            "amount": 0.0
+        }
+    ],
+    "unlocks": [
+        {
+            "id": "plant",
+            "amount": 1.0
+        },
+        {
+            "id": "expand",
+            "amount": 5.0
+        },
+        {
+            "id": "speed",
+            "amount": 8.0
+        },
+        {
+            "id": "grass",
+            "amount": 8.0
+        },
+        {
+            "id": "trees",
+            "amount": 8.0
+        },
+        {
+            "id": "carrots",
+            "amount": 8.0
+        },
+        {
+            "id": "watering",
+            "amount": 6.0
+        },
+        {
+            "id": "pumpkins",
+            "amount": 8.0
+        },
+        {
+            "id": "sunflowers",
+            "amount": 8.0
+        },
+        {
+            "id": "fertilizer",
+            "amount": 6.0
+        },
+        {
+            "id": "polyculture",
+            "amount": 6.0
+        },
+        {
+            "id": "cactus",
+            "amount": 8.0
+        },
+        {
+            "id": "mazes",
+            "amount": 8.0
+        },
+        {
+            "id": "dinosaurs",
+            "amount": 8.0
+        },
+        {
+            "id": "megafarm",
+            "amount": 5.0
+        },
+        {
+            "id": "archipelago",
+            "amount": 1.0
+        },
+        {
+            "id": "flower_island",
+            "amount": 1.0
+        },
+        {
+            "id": "mineral_island",
+            "amount": 1.0
+        },
+        {
+            "id": "fish_island",
+            "amount": 1.0
+        },
+        {
+            "id": "leaderboard",
+            "amount": 1.0
+        },
+        {
+            "id": "loops",
+            "amount": 1.0
+        },
+        {
+            "id": "operators",
+            "amount": 1.0
+        },
+        {
+            "id": "variables",
+            "amount": 1.0
+        },
+        {
+            "id": "functions",
+            "amount": 1.0
+        },
+        {
+            "id": "lists",
+            "amount": 1.0
+        },
+        {
+            "id": "dicts",
+            "amount": 1.0
+        },
+        {
+            "id": "import",
+            "amount": 1.0
+        },
+        {
+            "id": "senses",
+            "amount": 1.0
+        },
+        {
+            "id": "costs",
+            "amount": 1.0
+        },
+        {
+            "id": "auto_unlock",
+            "amount": 1.0
+        },
+        {
+            "id": "timing",
+            "amount": 1.0
+        },
+        {
+            "id": "debug",
+            "amount": 1.0
+        },
+        {
+            "id": "hats",
+            "amount": 1.0
+        },
+        {
+            "id": "debug2",
+            "amount": 1.0
+        },
+        {
+            "id": "utilities",
+            "amount": 1.0
+        },
+        {
+            "id": "the_farmers_remains",
+            "amount": 1.0
+        },
+        {
+            "id": "top_hat",
+            "amount": 1.0
+        }
+    ],
+    "harvested": [],
+    "cells": [
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "bush",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 0,
+            "companionY": 2
+        },
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "tree",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 2,
+            "companionY": 0
+        },
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "bush",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 2,
+            "companionY": 1
+        },
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "bush",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 0,
+            "companionY": 3
+        },
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "bush",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 2,
+            "companionY": 2
+        },
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "tree",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 0,
+            "companionY": 0
+        },
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "tree",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 2,
+            "companionY": 2
+        },
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "tree",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 2,
+            "companionY": 3
+        },
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "carrot",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 0,
+            "companionY": 0
+        },
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "bush",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 2,
+            "companionY": 2
+        },
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "bush",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 1,
+            "companionY": 3
+        },
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "bush",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 2,
+            "companionY": 3
+        },
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "tree",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 0,
+            "companionY": 2
+        },
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "tree",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 2,
+            "companionY": 3
+        },
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "carrot",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 0,
+            "companionY": 0
+        },
+        {
+            "entity": "grass",
+            "ground": "grassland",
+            "companion": "carrot",
+            "growth": 0.0,
+            "water": 0.0,
+            "infected": false,
+            "measure": 0,
+            "companionX": 2,
+            "companionY": 0
+        }
+    ],
+    "programs": [
+        {
+            "name": "campaign_worker_1",
+            "source": "while True:\n    fleet_wait(10)"
+        },
+        {
+            "name": "campaign_worker_2",
+            "source": "while True:\n    fleet_wait(10)"
+        },
+        {
+            "name": "campaign_worker_3",
+            "source": "while True:\n    fleet_wait(10)"
+        }
+    ],
+    "completionNotices": [
+        {
+            "kind": "archipelago",
+            "id": "18",
+            "seconds": 0.0
+        },
+        {
+            "kind": "archipelago",
+            "id": "19",
+            "seconds": 0.0
+        },
+        {
+            "kind": "archipelago",
+            "id": "20",
+            "seconds": 0.0
+        },
+        {
+            "kind": "archipelago",
+            "id": "21",
+            "seconds": 0.0
+        },
+        {
+            "kind": "archipelago",
+            "id": "22",
+            "seconds": 0.0
+        },
+        {
+            "kind": "archipelago",
+            "id": "23",
+            "seconds": 0.0
+        }
+    ],
+    "achievements": [],
+    "best": [],
+    "selectedProgram": 0,
+    "personalBest": [],
+    "droneLimit": 0,
+    "records": [],
+    "playerX": 0,
+    "playerY": 0,
+    "maze": false,
+    "walls": [],
+    "tail": [],
+    "dinosaur": -1,
+    "apple": -1,
+    "nextApple": -1,
+    "treasure": -1,
+    "mazeReuses": 0,
+    "allowLockedSyntax": false,
+    "sunflowerPenalty": false,
+    "volume": 0.25,
+    "theme": "default"
+}

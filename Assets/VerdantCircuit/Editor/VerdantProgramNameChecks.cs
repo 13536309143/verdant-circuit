@@ -25,9 +25,9 @@ public static class VerdantProgramNameChecks
         session=Run(f,"from 123 import work\nimport 123 as farm\nimport 1号农场 as 农场\nassertion=work()==7 and farm.work()==7 and 农场.value==11");Check(ScriptValue.Truth(session.drones[0].task.context.scope.values["assertion"]),"Digit-leading module names support from-import and explicit aliases");
         session=Run(f,"import e\u0301cole as school\nassertion=school.value==13");Check(ScriptValue.Truth(session.drones[0].task.context.scope.values["assertion"]),"Decomposed Unicode file lookup resolves the canonical module");
         string saved=JsonUtility.ToJson(f.Data);var restored=JsonUtility.FromJson<ClassicSave>(saved);typeof(ClassicController).GetMethod("Validate",BindingFlags.NonPublic|BindingFlags.Static).Invoke(null,new object[]{restored});Check(restored.programs.Select(p=>p.name).SequenceEqual(f.Data.programs.Select(p=>p.name)),"Save validation and JSON roundtrip preserve numeric and Chinese program names");
-        f.Data.programs.Add(new ClassicProgram("数字实验","do_a_flip()"));session=Run(f,"value=simulate('数字实验', {}, {}, {}, 7,64)\nassertion=value>0");Check(ScriptValue.Truth(session.drones[0].task.context.scope.values["assertion"]),"Simulation finds Chinese program names");
+        Check(!ClassicHost.Api.Contains("simulate"),"Retired experiment API is no longer callable");
         bool rejected=false;try{new ScriptParser().Parse("1abc=5");}catch(ScriptError){rejected=true;}Check(rejected,"Numeric program names do not make digit-leading variables legal");
         rejected=false;try{new ScriptParser().Parse("import ../secret");}catch(ScriptError){rejected=true;}Check(rejected,"Module imports cannot escape the game program library");
-        Directory.CreateDirectory("InternalTestReports/0.11.3");File.WriteAllText("InternalTestReports/0.11.3/program-names.json",JsonUtility.ToJson(new Report{passed=names.Count,checks=names.ToArray()},true));Debug.Log("PROGRAM NAME CHECKS PASSED: "+names.Count);
+        Directory.CreateDirectory("InternalTestReports/0.13.0");File.WriteAllText("InternalTestReports/0.13.0/program-names.json",JsonUtility.ToJson(new Report{passed=names.Count,checks=names.ToArray()},true));Debug.Log("PROGRAM NAME CHECKS PASSED: "+names.Count);
     }
 }

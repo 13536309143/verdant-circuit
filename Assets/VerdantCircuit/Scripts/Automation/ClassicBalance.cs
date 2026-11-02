@@ -17,7 +17,7 @@ namespace Verdant.Automation
 
         public static double CompetitionTarget(string item)
         {
-            switch(item){case "hay":return 4096;case "wood":return 6000;case "carrot":return 2048;case "pumpkin":return 12000;case "power":return 8000;case "cactus":return 20000;case "bone":return 30000;case "gold":return 4096;default:return 1;}
+            switch(item){case "hay":return 4096;case "wood":return 6000;case "carrot":return 2048;case "pumpkin":return 12000;case "solar_energy":return 8000;case "cactus":return 20000;case "bone":return 30000;case "coins":return 4096;default:return 1;}
         }
         public static void ConfigureCompetition(ClassicFarm farm,string item,bool single=false)
         {

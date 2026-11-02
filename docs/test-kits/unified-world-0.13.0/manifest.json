@@ -1,0 +1,19 @@
+{
+  "version": "0.13.0",
+  "chapters": 24,
+  "functions": 127,
+  "recipes": 28,
+  "programs": {
+    "carp_worker.py": "5b85a512b1e32003d99a0aa21a8ea0aeca4214818e48dc6b444d404c3f99eb01",
+    "delivery_worker.py": "2278f8d9caecabe369cf23873f9850a5791ed1b88f7c70b3296c7598d5aa2c60",
+    "earth_manager.py": "6009f8a6d9929c23e6236cde6c5615b71cffef4067efad282f14aa945f6ad0ee",
+    "earth_worker.py": "bdbc980f88a9d5ecca77bdd2cfdb465cc4e94840ee3b600c3d5a6f012801c897",
+    "fish_manager.py": "a462faeca25474bb95e30584727a9f6c59d66790d0b978fd1beaa487ba960d7c",
+    "flower_manager.py": "bc726449df20157da9134a37fe931777362543ab3da966a05450ef9f88bccf8b",
+    "mineral_manager.py": "4868527f17be3dbbf146ad90bde4a9270e378d07ccb6460485ab88b689da5267",
+    "production_helpers.py": "c8291a32c3abf649279f1b634088fbced4ab615d2514a9b36450a8daf908e869",
+    "rose_worker.py": "7ef8f27311a85646c1770683de46ce7a96e8cb4bfd78390737a07cedc5608e3c",
+    "stone_worker.py": "3c180656ef6b1dfab4da448ec03878fd65a20c3af616280faee293428d4a911a",
+    "unified_controller.py": "2906f0d90d89b3ce4aa87ee40e25c400d027395a59d59b2acc6e85aa19156e2e"
+  }
+}

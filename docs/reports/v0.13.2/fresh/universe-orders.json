@@ -1,0 +1,106 @@
+{
+    "status": "passed",
+    "workerPolicy": "One paid 2x2 native worker per planet. Autonomous production and transport planning; not an optimized eight-worker speedrun.",
+    "zeroInventory": true,
+    "resourceGrants": false,
+    "shipments": 506,
+    "hubVisits": 825,
+    "orders": [
+        {
+            "id": "project_1",
+            "amount": 43.5
+        },
+        {
+            "id": "project_2",
+            "amount": 483.25
+        },
+        {
+            "id": "project_3",
+            "amount": 333.5
+        },
+        {
+            "id": "project_4",
+            "amount": 609.25
+        },
+        {
+            "id": "project_5",
+            "amount": 771.25
+        },
+        {
+            "id": "project_6",
+            "amount": 744.5
+        },
+        {
+            "id": "project_7",
+            "amount": 1434.0
+        },
+        {
+            "id": "project_8",
+            "amount": 3403.75
+        },
+        {
+            "id": "project_9",
+            "amount": 191.5
+        },
+        {
+            "id": "project_10",
+            "amount": 1376.75
+        },
+        {
+            "id": "project_11",
+            "amount": 1673.25
+        },
+        {
+            "id": "project_12",
+            "amount": 1059.25
+        },
+        {
+            "id": "project_13",
+            "amount": 719.5
+        },
+        {
+            "id": "project_14",
+            "amount": 2710.75
+        },
+        {
+            "id": "project_15",
+            "amount": 2378.0
+        },
+        {
+            "id": "project_16",
+            "amount": 2371.0
+        },
+        {
+            "id": "project_17",
+            "amount": 4684.5
+        },
+        {
+            "id": "project_18",
+            "amount": 3720.5000000000073
+        },
+        {
+            "id": "project_19",
+            "amount": 4268.75
+        },
+        {
+            "id": "project_20",
+            "amount": 9430.0
+        },
+        {
+            "id": "project_21",
+            "amount": 1447.25
+        },
+        {
+            "id": "project_22",
+            "amount": 13475.5
+        },
+        {
+            "id": "project_23",
+            "amount": 19112.75
+        },
+        {
+            "id": "project_24",
+            "amount": 23417.56666666473
+        }
+    ]
+}

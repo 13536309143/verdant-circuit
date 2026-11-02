@@ -1,0 +1,9 @@
+{
+  "version": "0.13.2",
+  "patch": "night-only",
+  "publication": "local-only",
+  "sourceFingerprint": "2193067a85d55eeeb6fce2bf933e5e553bd629c5233f75229bc15a73a7de2e01",
+  "uiChecks": 66,
+  "runtimeUiErrors": 0,
+  "scope": "Night-only presentation; previous full-campaign reports retain their original source fingerprint. No economy or progression changes."
+}

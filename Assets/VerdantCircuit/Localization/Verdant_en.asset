@@ -949,7 +949,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662229213405
-    m_Localized: Guide
+    m_Localized: Manual
     m_Metadata:
       m_Items: []
   - m_Id: 662229213406
@@ -2329,7 +2329,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 662229213735
-    m_Localized: Cancel Queue
+    m_Localized: Cancel queue
     m_Metadata:
       m_Items: []
   - m_Id: 662229213736
@@ -2793,7 +2793,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 385250474582061
-    m_Localized: Drones
+    m_Localized: Drone
     m_Metadata:
       m_Items: []
   - m_Id: 385250474582062
@@ -4663,6 +4663,2104 @@ MonoBehaviour:
       Running files cannot be deleted; at least one file is retained.\n\nUse Cmd/Ctrl+Z
       to undo and Cmd/Ctrl+Shift+Z to redo. F9 toggles a breakpoint at the caret
       line. Pause, Step and the variable watch help diagnose a program."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108438481362944
+    m_Localized: 'VERDANT
+
+      CIRCUIT'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108438481362945
+    m_Localized: Cultivate a living algorithm.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108438481362946
+    m_Localized: Skip  /  Esc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108438481362947
+    m_Localized: One plot. One instruction. A world in motion.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108438481362948
+    m_Localized: 01  /  THE FIRST INSTRUCTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108438481362949
+    m_Localized: 02  /  FIND YOUR RHYTHM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108438481362950
+    m_Localized: 03  /  LET IT GROW
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108438481362951
+    m_Localized: 'A quiet field.
+
+      A spark of intent.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108438481362952
+    m_Localized: 'Write a pattern.
+
+      Watch it take root.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108438481362953
+    m_Localized: 'Small instructions.
+
+      Living possibilities.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108438481362954
+    m_Localized: Opening film
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108438481362955
+    m_Localized: Replay the prologue. Your farm and running code wait until it ends.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108438481362956
+    m_Localized: Replay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342026932224
+    m_Localized: Islands
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126528
+    m_Localized: Irrigator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126529
+    m_Localized: Grower
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126530
+    m_Localized: Hauler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126531
+    m_Localized: Engineer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126532
+    m_Localized: Scout
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126533
+    m_Localized: Harvester
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126534
+    m_Localized: Grain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126535
+    m_Localized: Ore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126536
+    m_Localized: Alloy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126537
+    m_Localized: Crystal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126538
+    m_Localized: Medicine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126539
+    m_Localized: Core
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126540
+    m_Localized: Processing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126541
+    m_Localized: Moving
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126542
+    m_Localized: Waiting for a clear lane
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126543
+    m_Localized: Crossing a channel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126544
+    m_Localized: Waiting to land
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126545
+    m_Localized: Waiting for a dock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126546
+    m_Localized: Needs recipe inputs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126547
+    m_Localized: Needs cargo at source
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126548
+    m_Localized: Returning for more cargo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126549
+    m_Localized: Emergency brake / repair fee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126550
+    m_Localized: Command accepted.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126551
+    m_Localized: 'Unavailable: check research, credits, role, footprint or an active
+      flight.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126552
+    m_Localized: ARCHIPELAGO / OPERATIONS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126553
+    m_Localized: Fleet slots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126554
+    m_Localized: Hull tier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126555
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126556
+    m_Localized: Shipments
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126557
+    m_Localized: 'Build a network across six islands. Specialist machines share physical
+      lanes: larger hulls carry more, but need wider routes.
+
+
+      Unlock Carrots
+      and prepare 100 Wood + 100 Carrots to sign the charter. The charter provides
+      100 fleet credits. Slot count, hull size and role types are researched separately.
+      Orders reward credits and open new islands.
+
+
+      This mode has its own local
+      depots and saved job queues. Main farm resources stay on the home farm. No
+      elapsed-time unlock gates.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126558
+    m_Localized: Sign charter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126559
+    m_Localized: Pale = dock / Gold = facility / Hull rectangles occupy actual cells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126560
+    m_Localized: Build
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126561
+    m_Localized: Research slots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126562
+    m_Localized: Research hull
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126563
+    m_Localized: Research type
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126564
+    m_Localized: 'Slots: +1 per level, up to 8. Hull gates: orders 4 / 7 / 12 / 16.
+      Engineer: 6; scout: 9; harvester: 7.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126565
+    m_Localized: Create controller example
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126566
+    m_Localized: 'VERDANT CONCORD COMPLETE
+
+      Six islands. One living algorithm.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126567
+    m_Localized: Deliver all
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126568
+    m_Localized: MACHINES / select a card to assign work
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126569
+    m_Localized: Ship one hold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126570
+    m_Localized: Work 8 batches
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126571
+    m_Localized: Dismantle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126572
+    m_Localized: 'Island order: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126573
+    m_Localized: Hearth Garden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126574
+    m_Localized: Reed Reservoir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126575
+    m_Localized: Ember Foundry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126576
+    m_Localized: Glass Reef
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126577
+    m_Localized: Bloom Conservatory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126578
+    m_Localized: Zenith Archive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126579
+    m_Localized: A working ecosystem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126580
+    m_Localized: Pump water, then grow grain. Both goals must be ready together.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126581
+    m_Localized: Reserve before you spend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126582
+    m_Localized: Balance irrigation and seed production instead of consuming every
+      drop.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126583
+    m_Localized: Across the first channel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126584
+    m_Localized: Ship grain to Reed and return with water.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126585
+    m_Localized: A wider cargo hold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126586
+    m_Localized: "Unlock 2\xD71 hulls; compare capacity against narrow passages."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126587
+    m_Localized: A two-way supply line
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126588
+    m_Localized: Keep two island depots supplied concurrently.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126589
+    m_Localized: The foundry wakes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126590
+    m_Localized: Engineers mine ore; imported grain and water become alloy.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126591
+    m_Localized: Shared lanes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126592
+    m_Localized: Use queued routes and passing bays while production continues.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126593
+    m_Localized: Three depots, one controller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126594
+    m_Localized: Reserve intermediate stock for downstream production.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126595
+    m_Localized: Light through the reef
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126596
+    m_Localized: Scouts refine crystal using alloy and reservoir water.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126597
+    m_Localized: The long route
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126598
+    m_Localized: Route cargo through connected islands; there is no instant teleport.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126599
+    m_Localized: A lattice of supply
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126600
+    m_Localized: Split small, frequent deliveries from bulk shipments.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126601
+    m_Localized: A living remedy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126602
+    m_Localized: Growers in Bloom combine grain, crystal and water into medicine.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126603
+    m_Localized: Distributed harvest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126604
+    m_Localized: Separate irrigation, harvesting and transport roles.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126605
+    m_Localized: Resilience in reserve
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126606
+    m_Localized: Keep all five working islands supplied at the same time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126607
+    m_Localized: The archive opens
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126608
+    m_Localized: Deliver three different intermediates to assemble a core.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126609
+    m_Localized: Heavy lift
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126610
+    m_Localized: "3\xD73 hulls need the broad crossing; small craft can use the shortcut."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126611
+    m_Localized: A network that endures
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126612
+    m_Localized: Maintain reserves across six islands while shipping finished cores.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126613
+    m_Localized: Verdant concord
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126614
+    m_Localized: Complete a synchronized multi-product delivery. Your algorithm runs
+      the archipelago.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126615
+    m_Localized: Create modular example (10 files)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126616
+    m_Localized: 'Hull / programs / flights: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126617
+    m_Localized: Bind + run
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126618
+    m_Localized: Stop code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126619
+    m_Localized: 'island code workers: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126620
+    m_Localized: 17 / Specialist fleets
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126621
+    m_Localized: "Open Islands after discovering Carrots. The charter costs 100 Wood
+      and 100 Carrots, and grants 100 fleet credits once. Island machines are separate
+      from the legacy 1\u201332 crop-script workers. Three independent research tracks
+      govern fleet slots (3\u20138), hull footprint (1\xD71, 2\xD71, 2\xD72, 3\xD72,
+      3\xD73, including rotated variants), and specialisms. A larger hull processes
+      a larger batch and carries more, but moves more slowly and must fit every occupied
+      cell. Irrigators pump water; growers produce grain or medicine; engineers mine
+      and refine ore/alloy or assemble cores; scouts refine crystal; haulers move
+      cargo; harvesters accelerate grain production.\n\nOrders pay fleet credits.
+      Each role and hull has an explicit order gate. Dismantling a landed machine
+      returns its full paid hull cost; cancellation refunds reserved recipe inputs
+      and uncollected cargo. In-flight machines must land before cancellation or
+      dismantling. Automatic routes wait without fees; unsafe manual fleet_step moves
+      trigger an emergency brake and a bounded repair fee. A footprint never overlaps
+      another machine. Avoid blocking ports with manually parked machines."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126622
+    m_Localized: 18 / Islands, recipes & orders
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126623
+    m_Localized: 'Six local depots form a production graph: Hearth grows grain; Reed
+      supplies water; Ember turns ore + grain + water into alloy; Glass needs alloy
+      + water for crystal; Bloom needs grain + crystal + water for medicine; Zenith
+      combines alloy + crystal + medicine into cores. Island opening requires both
+      its order discovery and the corresponding main-farm discovery: Carrots / Pumpkins
+      / Cactus / Mazes / Dinosaurs / Autonomy beacon. Goods are local: num_items(Items.Water)
+      is not fleet_stock(island,"water").
+
+
+      Use fleet_map to inspect each island
+      and its graph. Broad channels form an eastbound/westbound loop; small machines
+      can use narrow shortcuts. Shipments reserve real source stock when accepted,
+      then a physical hauler travels to a dock, loads its hold, crosses each connected
+      channel and waits for a complete landing footprint. Reserved cargo and cargo
+      in flight are not available for another recipe or order.
+
+
+      18 orders
+      require several products and destinations simultaneously. Deliver all consumes
+      the listed local stock once. Later briefs also certify actual hull use, distinct
+      concurrent programs and simultaneous flights; their checklists show current
+      peaks and required values. No elapsed-time certification is used. The six-island
+      campaign follows the farming campaign; editing, debugging and optimal overlapping
+      production can change total completion time.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126624
+    m_Localized: 19 / A controller for every island
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126625
+    m_Localized: "Use the Islands screen to create the 10-file modular example. island_controller
+      imports island_planner; the coordinator allocates physical machines, expands
+      recipe dependencies and sends jobs to individual inboxes. fleet_worker is a
+      shared function library. Each island_water / island_grain / island_foundry
+      / island_crystal / island_medicine / island_archive / island_cargo program
+      imports that library with different allowed recipes.\n\nfleet_run(id,file)
+      binds an independent interpreter to a physical machine. unit_id and the initial
+      island_id are injected; fleet_self() returns the bound machine ID. A worker
+      can import more files, define functions and return results. Inboxes copy message
+      data, and each worker has its own variables and module state. fleet_send sends
+      a job; fleet_receive receives the next message for this worker. fleet_result
+      retrieves a finished result variable. One worker error stops that program and
+      is shown on its card; other workers and physical queues continue. Infinite
+      loops have a bounded instruction budget per simulation tick.\n\nQueued physical
+      jobs, reservations and in-flight cargo are saved. Running Python call stacks,
+      message inboxes and return objects are not saved. After loading, restart the
+      coordinator or explicitly bind the worker program again; check existing jobs
+      before sending duplicates. Stop code ends the interpreter; Cancel queue cancels
+      landed physical jobs. The main farm Run button starts the coordinator, whereas
+      Bind + run on a fleet card starts that machine\u2019s program."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126626
+    m_Localized: 'Sign once: Carrots + 100 Wood + 100 Carrots; grants 100 fleet credits
+      once.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126627
+    m_Localized: Read independent slot/size/role progress, current multi-goal contract
+      and physical agents. Unit snapshots include incoming shipments, pending production,
+      code errors and inbox size.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126628
+    m_Localized: 'Available local stock, excluding accepted shipping reservations.
+      Cargo names are strings: water, grain, ore, alloy, crystal, medicine, core.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126629
+    m_Localized: "Terrain rows from bottom to top, recipes, role requirements, coordinates
+      and island links. Island IDs are 0\u20135."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126630
+    m_Localized: Pays credits and respects independent role, hull, slot and parking-space
+      limits. Rotated hulls are supported.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126631
+    m_Localized: Pay fleet credits after the named order discovery. Buying slots
+      does not enlarge a hull.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126632
+    m_Localized: Queue a role-compatible local recipe. One batch scales inputs and
+      outputs by occupied area; inputs reserve when processing begins.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126633
+    m_Localized: Haulers only. Atomically reserves available source stock, then physically
+      loads, flies and unloads; no instant cargo transfer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126634
+    m_Localized: Queue inter-island travel or a local route. Terrain, lane direction
+      and every occupied hull cell are checked.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126635
+    m_Localized: Inspect a terrain-aware local path. Live reservations can make actual
+      execution wait or reroute.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126636
+    m_Localized: Idle machines only. Failed unsafe steps trigger emergency braking
+      and at most two credits in fees. Rotation must fit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126637
+    m_Localized: Landed machines only. Refund reserved inputs and uncollected manifests;
+      dismantling also refunds the hull cost.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126638
+    m_Localized: Consumes all current contract goals once, after hull/program/flight
+      checklist conditions are met; rewards credits and discovers the next order.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126639
+    m_Localized: Start an independent named-file interpreter or stop code. Stop does
+      not cancel already queued physical work.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126640
+    m_Localized: Bound physical machine ID inside a fleet program; -1 in the main
+      controller.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126641
+    m_Localized: Send a copied value to a bounded 16-message inbox. Receive is nonblocking
+      and returns None when empty; only bound workers receive their own inbox.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126642
+    m_Localized: Read a copied result variable from a finished program; transient
+      and not saved.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126643
+    m_Localized: "Yield the caller while physical queues and other programs advance;
+      range 0\u20133600. Not an unlock timer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126644
+    m_Localized: Open archipelago
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126645
+    m_Localized: Build an island network
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126646
+    m_Localized: Research and all 18 island orders complete.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126647
+    m_Localized: 'Island order '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1121342031126648
+    m_Localized: Sign the charter and connect six local production chains.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1123447513014272
+    m_Localized: 'Requires main-farm discovery: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1134938773512192
+    m_Localized: Code stopped. An active coordinator may restart it; use Stop all
+      for manual control.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1134938777706496
+    m_Localized: Archipelago order record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1134938777706497
+    m_Localized: "Start on one grass plot with no inventory. Grass matures naturally.
+      Run harvest() until you own five hay, then research Loops. Load First harvest
+      from Templates.\n\nNext research Operators, Variables, Sensors and Planting.
+      Research does not happen just because you own enough resources: select a node
+      and pay, or later use unlock(). Free grass and bushes provide recovery if you
+      run out of crop seeds.\n\nThis campaign aims at about three hours of game time
+      to full research with a working automated strategy. 0.12.1 adds the multi-hour
+      six-island logistics campaign after and alongside this research route. Your
+      planning and editing time is additional. Research speed bonuses are part of
+      normal 1\xD7 play; the Settings speed multiplier accelerates the entire world."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1134938777706498
+    m_Localized: "Use the Islands screen to create the 10-file modular example. island_controller
+      imports island_planner; the coordinator allocates physical machines, expands
+      recipe dependencies and sends jobs to individual inboxes. fleet_worker is a
+      shared function library. Each island_water / island_grain / island_foundry
+      / island_crystal / island_medicine / island_archive / island_cargo program
+      imports that library with different allowed recipes.\n\nfleet_run(id,file)
+      binds an independent interpreter to a physical machine. unit_id and the initial
+      island_id are injected; fleet_self() returns the bound machine ID. A worker
+      can import more files, define functions and return results. Inboxes copy message
+      data, and each worker has its own variables and module state. fleet_send sends
+      a job; fleet_receive receives the next message for this worker. fleet_result
+      retrieves a finished result variable. One worker error stops that program and
+      is shown on its card; other workers and physical queues continue. Infinite
+      loops have a bounded instruction budget per simulation tick.\n\nQueued physical
+      jobs, reservations and in-flight cargo are saved. Running Python call stacks,
+      message inboxes and return objects are not saved. After loading, restart the
+      coordinator or explicitly bind the worker program again; check existing jobs
+      before sending duplicates. Stop code ends the interpreter; an active coordinator
+      may restart it, so use Stop all before taking manual control. Cancel queue
+      cancels landed physical jobs. The main farm Run button starts the coordinator,
+      whereas Bind + run on a fleet card starts that machine\u2019s program."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1134938777706499
+    m_Localized: Export 12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1134938777706500
+    m_Localized: "Open Islands after discovering Carrots. The charter costs 100 Wood
+      and 100 Carrots, and grants 100 fleet credits once. Island machines are separate
+      from the legacy 1\u201332 crop-script workers. Three independent research tracks
+      govern fleet slots (3\u20138), hull footprint (1\xD71, 2\xD71, 2\xD72, 3\xD72,
+      3\xD73, including rotated variants), and specialisms. A larger hull processes
+      a larger batch and carries more, but moves more slowly and must fit every occupied
+      cell. Irrigators pump water; growers produce grain or medicine; engineers mine
+      and refine ore/alloy or assemble cores; scouts refine crystal; haulers move
+      cargo; harvesters accelerate grain production.\n\nOrders pay fleet credits.
+      Each role and hull has an explicit order gate. Export surplus depot goods with
+      fleet_sell to recover credits after repair penalties; exports consume real
+      available goods and cannot sell reserved manifests. Dismantling a landed machine
+      returns its full paid hull cost; cancellation refunds reserved recipe inputs
+      and uncollected cargo. In-flight machines must land before cancellation or
+      dismantling. Automatic routes wait without fees; unsafe manual fleet_step moves
+      trigger an emergency brake and a bounded repair fee. A footprint never overlaps
+      another machine. Avoid blocking ports with manually parked machines."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1134938777706501
+    m_Localized: Inspect export prices or sell real available local stock to recover
+      credits. Reserved and in-flight cargo cannot be sold.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976128
+    m_Localized: VERDANT CIRCUIT / WORLDS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976129
+    m_Localized: 01 / EARTH
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976130
+    m_Localized: One home. A growing world.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976131
+    m_Localized: "Begin in your home garden. Cultivation and programming unlock the
+      archipelago in the technology tree. Earth and every island share one economy
+      and one program library.\n\nFloralia \xB7 flowers\nAurelia \xB7 minerals\nPelagia
+      \xB7 fish"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976132
+    m_Localized: Enter Earth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976133
+    m_Localized: "English / \u4E2D\u6587"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976134
+    m_Localized: Your existing garden continues here. Island access is unlocked through
+      research.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976135
+    m_Localized: Earth / farmer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976136
+    m_Localized: Network
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976137
+    m_Localized: ' / manager'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976138
+    m_Localized: 'Cannot bind: unlock the target, check drone capacity and choose
+      an existing program.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976139
+    m_Localized: "CONTROL HIERARCHY / Network \u2192 island \u2192 drone group \u2192
+      drone"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976140
+    m_Localized: Earth farmer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976141
+    m_Localized: Island manager
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976142
+    m_Localized: Drone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976143
+    m_Localized: 'Selected file: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976144
+    m_Localized: Bind only
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976145
+    m_Localized: Stop target
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976146
+    m_Localized: Select drone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976147
+    m_Localized: 'Group '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976148
+    m_Localized: Select group
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976149
+    m_Localized: Create / update drone group
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976150
+    m_Localized: Name and comma-separated drone IDs, for example 1,2,3.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976151
+    m_Localized: Save group
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976152
+    m_Localized: Use comma-separated numeric drone IDs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976153
+    m_Localized: 'Invalid group: check IDs, duplicates and name.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976154
+    m_Localized: Create the unified example
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976155
+    m_Localized: Network, island managers, Earth worker, specialist workers and transport
+      examples.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976156
+    m_Localized: Create files
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976157
+    m_Localized: Connect Earth and island depots. Bind programs to drones, island
+      managers and a network controller.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976158
+    m_Localized: Six flowers, pollination supplies and botanical processing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976159
+    m_Localized: Stone, bronze, silver, gold ore, platinum and diamonds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976160
+    m_Localized: Six fish species and fishmeal for a circular supply network.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976161
+    m_Localized: World
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976162
+    m_Localized: "EARTH / Home garden \u2192 island network"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976163
+    m_Localized: Harvester / fisheries
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976164
+    m_Localized: EARTH / ISLAND NETWORK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976165
+    m_Localized: The next chapter of your Earth garden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976166
+    m_Localized: 'Continue the cultivation route to Parallel Drones, then research
+      Earth & archipelago network. Modules, Dictionaries and Irrigation are required.
+
+
+      Earth
+      inventory becomes your home depot. Harvested crops and power can be shipped
+      to flowers, minerals and fisheries. Drone programs remain independent while
+      island managers and a network program coordinate them.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976167
+    m_Localized: View technology route
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976168
+    m_Localized: 'One world / drones '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976169
+    m_Localized: " \xB7 hull tier "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976170
+    m_Localized: " \xB7 credits "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976171
+    m_Localized: " \xB7 orders "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976172
+    m_Localized: 'Earth farmer: original crop functions. Other specialists: named
+      product functions. Transport moves actual Earth inventory.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976173
+    m_Localized: Programs & bindings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976174
+    m_Localized: Product reference
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976175
+    m_Localized: "Earth \xB7 Home Garden"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976176
+    m_Localized: "Floralia \xB7 Flower Island"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976177
+    m_Localized: "Aurelia \xB7 Mineral Island"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976178
+    m_Localized: "Pelagia \xB7 Fish Island"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976179
+    m_Localized: Floralia collection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976180
+    m_Localized: Supply Earth inputs and collect six botanical products.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976181
+    m_Localized: The mineral ladder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976182
+    m_Localized: Advance from renewable stone to diamond refinement.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976183
+    m_Localized: Pelagia fisheries
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976184
+    m_Localized: Coordinate six fisheries with imported feed and flowers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976185
+    m_Localized: Earth returns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976186
+    m_Localized: Return specialist island products to the original Earth inventory.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976187
+    m_Localized: A circular ocean
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976188
+    m_Localized: Flowers feed fisheries; fishmeal feeds flowers; minerals support
+      both.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976189
+    m_Localized: One Earth, many algorithms
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976190
+    m_Localized: Coordinate Earth and three specialist islands in a single supply
+      network.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976191
+    m_Localized: 'Choose Enter Earth on the world screen. Start with a one-plot garden
+      and no inventory. Harvest free grass, learn loops, planting and sensors, then
+      develop the original crop chain. At Parallel Drones, continue to Earth & archipelago
+      network. Modules, Dictionaries and Irrigation are also required.
+
+
+      This
+      is one campaign. Earth is island 0 and its original inventory is the home depot.
+      Flower, mineral and fish islands are later research branches. Physical shipping
+      connects them; special-island cargo cannot appear instantly at home. Programming
+      and strategy affect duration; no time certification forces you to wait.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976192
+    m_Localized: 'The program center separates files from execution targets. Choose
+      Earth farmer, Network, Island manager, a specific drone or a named group. Edit
+      changes only the file being viewed. Bind only saves a target association and
+      stops its old code; Bind + run starts the selected file on that target. One
+      drone, island or network target has at most one active interpreter. Different
+      targets run concurrently.
+
+
+      Green cards are active, amber borders mark
+      the edited file, and binding labels list target IDs. Files used by a running
+      program or imported library cannot be deleted. At least one file remains. Chinese
+      and numeric names are accepted; imports use the file name without .py.
+
+
+      The
+      studio target strip shows what Run affects. Floating editors also run on this
+      selected target. Stop target leaves other targets running; Stop all stops managers,
+      workers and landed physical work. Undo/redo, independent editor windows and
+      external editing remain available.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976193
+    m_Localized: "Earth farmers run original crop functions against the same Earth
+      field and inventory. Each bound farmer has its own coordinates and variables.
+      Permanent workers are created with fleet_build and bound with program_bind/program_run.
+      Legacy spawn_drone(function,args...) creates a temporary farmer from an Earth
+      worker; completion releases its slot and wait_for returns its value.\n\nFor
+      groups use group_create(name,[ids...]) and group_run(name,file). Members execute
+      independent copies of the file; fleet_self identifies the current member. They
+      do not share mutable variables. Use inbox messages to coordinate. Managers
+      consume no physical drone slot. Farmer bodies are 1\xD71; specialist hulls
+      use the researched rectangular traffic system. Earth crop workers retain the
+      original overflight behavior on the crop grid."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976194
+    m_Localized: 21 / Every product function
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976195
+    m_Localized: "Each named product function queues work on its designated island.
+      It does not create output immediately. Batch input and output multiply by hull
+      area. Use the recipe table below; batch seconds are base 1\xD71 values. Gold
+      ore is gold_ore and is separate from treasure coins (gold). Bronze is a processed
+      alloy, not a raw natural ore. Fish hatchery batches represent managed fisheries
+      rather than instant catches."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976196
+    m_Localized: 22 / Every network function
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976197
+    m_Localized: 'Reference entries specify arguments, results, requirements, failure
+      behavior and examples. Pass the stable drone ID returned by fleet_build, not
+      its list position. Island managers use island_self; workers use fleet_self.
+      Checking a queue and accepting a command are different from completion.
+
+
+      The
+      API uses positional arguments only. Examples mentioning drone_id or hauler
+      require an existing machine ID. Files must already exist in Programs.
+
+
+      Inventory
+      calls return available stock. Unit snapshots expose job counts, cargo, flight
+      status, program state and errors.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976198
+    m_Localized: 24 / Local races & records
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976199
+    m_Localized: Local races remain available from Records. They use preset independent
+      farms with a fixed seed; finish the requested production and terminate the
+      program to record a result. Historical rules are labeled separately. The simulation
+      laboratory, its research and simulate() have been removed. Existing live farms
+      are not reset by a race.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976200
+    m_Localized: Bind
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976201
+    m_Localized: 'TARGET / '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976202
+    m_Localized: " \xB7 change"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976203
+    m_Localized: Earth & archipelago network
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976204
+    m_Localized: Flower island
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976205
+    m_Localized: Mineral island
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976206
+    m_Localized: Fish island
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976207
+    m_Localized: ' / started'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976208
+    m_Localized: ' / bound'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976209
+    m_Localized: Home inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976210
+    m_Localized: 25 / Namespaces & inventory IDs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976211
+    m_Localized: "Entities selects original Earth crops; Items selects inventory
+      resources; Unlocks selects research, never a crop seed. North/East/South/West
+      are directions, Grounds selects terrain, Hats selects appearance or exploration
+      behavior, and Leaderboards selects local race categories.\n\nUse string cargo
+      IDs with fleet_stock, fleet_ship and product_info. Items.Rose is equivalent
+      to 'rose', Items.Gold_Ore to 'gold_ore', while Items.Gold remains treasure
+      currency. Island IDs are stable: Earth 0; logistics outposts 1\u20135; Flowers
+      6, Minerals 7, Fish 8. Drone IDs are allocated separately and are not island
+      IDs.\n\nSave stores physical inventory, jobs, reservations, bindings, groups
+      and unread notices. Call stacks, messages and results are transient. Existing
+      home and island-0 warehouses merge once on upgrade. Back up your farm before
+      comparing old versions."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1262209932976212
+    m_Localized: EARTH INVENTORY / original crops and returned island products
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1263414637748224
+    m_Localized: 17 / Unified drones & traffic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1263414641942528
+    m_Localized: 'All persistent machines appear in one fleet list, including Earth
+      farmers. Slot capacity follows purchased parallel-drone research and fleet
+      slot upgrades. Count, hull area and role research are independent. A bigger
+      machine scales recipe inputs and output by area; duration scales more slowly,
+      but the body needs wider lanes.
+
+
+      Physical jobs are queued, up to 64
+      per drone. Broad passages use a one-way loop, smaller hulls can take narrow
+      shortcuts, and docking/landing reserves the full footprint. Unsafe manual movement
+      may incur repair fees; automatic routes wait or yield rather than overlap.
+      Engineer research opens after order 6 or Mineral Island; harvester after order
+      7 or Fish Island. Ordinary recipe work requires its assigned role.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1263414641942529
+    m_Localized: 19 / Managers, workers & modules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1263414641942530
+    m_Localized: 'Create the unified example from Programs. Bind unified_controller
+      to Network. It starts earth_manager and the unlocked flower/mineral/fish managers,
+      then terminates. The managers and workers continue independently. Each island
+      has at most one manager; every drone keeps its own file binding. Re-running
+      a manager reuses a matching drone and may restart that worker, so inspect existing
+      jobs before adding work.
+
+
+      Specialist workers import production_helpers
+      and enqueue one batch when idle. Arrange real deliveries first: rose needs
+      water and compost, carp needs hay and water. Managers may fail to build if
+      all slots are occupied; free a slot, research more capacity or reassign a machine.
+      The example teaches hierarchy and does not automatically complete every order.
+
+
+      Physical
+      queues, cargo and bindings are saved. Interpreter stacks, inboxes and results
+      are not. After loading, restart the appropriate controller; stopping a parent
+      does not recursively stop children. Worker errors are isolated, shown on its
+      card and program_state. CPU budgets keep a tight loop from freezing other interpreters.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1264237723770880
+    m_Localized: 18 / One Earth supply network
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1264237723770881
+    m_Localized: 'Earth (0) uses the original inventory, not a second warehouse.
+      fleet_stock(0,''wood'') and num_items(Items.Wood) agree. Orders, exports, crop
+      planting and research compete for the same available Earth resources. Transport
+      reserves stock at acceptance, carries limited holds across actual flights,
+      and unloads once. Returning an island product to Earth makes it available in
+      the original home inventory.
+
+
+      The five original logistics outposts remain
+      as stepping stones. Three new research branches open Floralia (6), Aurelia
+      (7) and Pelagia (8) independently. Query world_islands and check unlocked;
+      do not assume all numbers below the unlocked count are open. New six-product
+      contracts follow the original logistics orders, ending with synchronized returns
+      to Earth.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1264237723770882
+    m_Localized: "20 / Earth \u2192 three islands"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1264237723770883
+    m_Localized: '1. Enter Earth; complete the original crop and language discoveries.
+
+      2.
+      Research Parallel Drones, Modules, Dictionaries and Irrigation. Purchase Earth
+      & archipelago network for 500 treasure gold. There is no second charter fee.
+
+      3.
+      Research Flower Island (2000 pumpkin), Mineral Island (5000 cactus), or Fish
+      Island (20000 carrot). The branches are independent.
+
+      4. Build the appropriate
+      specialist and a hauler, respecting slot capacity.
+
+      5. Bind and run programs;
+      transport real inputs before waiting for outputs.
+
+      6. Return products
+      to Earth, complete orders and expand the network.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1264237723770884
+    m_Localized: 23 / Control patterns & recovery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1264237723770885
+    m_Localized: 'Direct: call grow_rose(id,4) from a manager. Bound: program_bind(id,''rose_worker''),
+      then program_run(id). Group: group_create(''team'',[a,b]), then group_run(''team'',''worker'').
+      Module: import production_helpers; each interpreter gets its own module variables.
+      Message: fleet_send(id, payload), then fleet_receive inside that worker. Results:
+      assign result in a finite worker and read fleet_result(id).
+
+
+      For mixed
+      products, bind different files, branch on fleet_self/island_self, or receive
+      a message with the requested recipe. A productive circular chain starts with
+      basic carp and lavender before lotus and koi; gold_ore needs bronze and silver,
+      platinum needs roses, diamonds need orchids.
+
+
+      If production waits: check
+      product_info inputs, local stock, reservations, the correct role and unlocked
+      island. If traffic waits: inspect hull footprint and docking; cancel landed
+      jobs before reassigning. If a manager keeps restarting a worker, stop the manager
+      or Stop all before editing assignments.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139252981760
+    m_Localized: A SMALL UNIVERSE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176064
+    m_Localized: Four worlds. One program library. UFOs carry the connection.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176065
+    m_Localized: READY / enter colony
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176066
+    m_Localized: LOCKED / research required
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176067
+    m_Localized: Enter planet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176068
+    m_Localized: View research
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176069
+    m_Localized: Earth / drone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176070
+    m_Localized: Universe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176071
+    m_Localized: "CONTROL HIERARCHY / Universe \u2192 planet \u2192 swarm \u2192
+      worker"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176072
+    m_Localized: Home drone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176073
+    m_Localized: Planet manager
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176074
+    m_Localized: Universe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176075
+    m_Localized: Colony
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176076
+    m_Localized: Inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176077
+    m_Localized: "SPHERICAL SURFACE / 360\xB0 \xD7 128\xB0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176078
+    m_Localized: Orbit view
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176079
+    m_Localized: Focus worker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176080
+    m_Localized: Surface controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176081
+    m_Localized: Research & progression
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176082
+    m_Localized: TRANSMISSIONS / PROGRAM OUTPUT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176083
+    m_Localized: Research and all 24 island orders complete.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176084
+    m_Localized: Research the network and connect Earth to specialist islands.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176085
+    m_Localized: Bee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176086
+    m_Localized: Fishing boat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176087
+    m_Localized: Mining drone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176088
+    m_Localized: Working
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176089
+    m_Localized: Waiting for materials
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176090
+    m_Localized: Traffic queue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176091
+    m_Localized: Code running
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176092
+    m_Localized: Accepted.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176093
+    m_Localized: Check unlocks, supplies, footprint and capacity.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176094
+    m_Localized: 'COLONY / '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176095
+    m_Localized: Surface and local workers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176096
+    m_Localized: Expand surface
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176097
+    m_Localized: 'Hull tier '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176098
+    m_Localized: "The usable belt is 128\xB0 wide, between latitude \u221264\xB0
+      and +64\xB0. Longitude closes only when 360 columns are unlocked. The poles
+      and locked edges cannot be crossed."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176099
+    m_Localized: Build local worker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176100
+    m_Localized: Hull selection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176101
+    m_Localized: Next size
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176102
+    m_Localized: Worker count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176103
+    m_Localized: Independent per planet. Spend local products; Earth also retains
+      its parallel research.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176104
+    m_Localized: Hull scale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176105
+    m_Localized: "1\xD71 \u2192 2\xD71 \u2192 2\xD72 \u2192 3\xD72 \u2192 3\xD73.
+      Both inputs and outputs scale with area."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176106
+    m_Localized: Bind program
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176107
+    m_Localized: Local production functions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176108
+    m_Localized: Reference
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176109
+    m_Localized: 'UNIVERSE CONTRACT / '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176110
+    m_Localized: Simultaneous delivery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176111
+    m_Localized: UFO / INTERPLANETARY FREIGHT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176112
+    m_Localized: Spaceflight research required
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176113
+    m_Localized: Local workers cannot travel between planets. Research Spaceflight
+      and the target planet first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176114
+    m_Localized: Build UFO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176115
+    m_Localized: 50 credits + 20 wood + 10 solar energy on Earth. UFO slots and payload
+      are researched separately.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176116
+    m_Localized: Payload
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176117
+    m_Localized: ' per trip'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176118
+    m_Localized: Upgrade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176119
+    m_Localized: UFO slots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176120
+    m_Localized: Source planet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176121
+    m_Localized: Destination planet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176122
+    m_Localized: Cargo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176123
+    m_Localized: Send one payload
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176124
+    m_Localized: Stock is reserved immediately; delivery occurs only after the actual
+      flight.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176125
+    m_Localized: Launch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176126
+    m_Localized: Cancel transfer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176127
+    m_Localized: Unused reservations return immediately. Airborne cargo finishes
+      its current leg safely.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176128
+    m_Localized: Earth prepares for orbit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176129
+    m_Localized: Keep original crops available while building transport supplies.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176130
+    m_Localized: First botanical colony
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176131
+    m_Localized: Ship water and compost by UFO; let bees establish flowers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176132
+    m_Localized: The mineral ladder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176133
+    m_Localized: Mine copper and tin ores, then smelt true bronze.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176134
+    m_Localized: Blue-water fleet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176135
+    m_Localized: Send fish feed and coordinate local fishing boats.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176136
+    m_Localized: Pollination network
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176137
+    m_Localized: Use the six-flower chain and collect honey.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176138
+    m_Localized: Precious returns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176139
+    m_Localized: UFOs return processed silver and gold, not unrefined ore.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176140
+    m_Localized: Across four worlds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176141
+    m_Localized: Transfer fisheries inputs to flowers and botanical inputs to refineries.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176142
+    m_Localized: The living universe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176143
+    m_Localized: Complete independent swarms and interplanetary product deliveries.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176144
+    m_Localized: 'native programs: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176145
+    m_Localized: Spaceflight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176146
+    m_Localized: Flower planet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176147
+    m_Localized: Mineral planet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176148
+    m_Localized: Ocean planet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176149
+    m_Localized: 01 / Enter the universe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176150
+    m_Localized: Only Earth is initially unlocked. Enter Earth, run harvest() after
+      the first grass matures, and pay for Loops, Planting and Sensors. The original
+      Earth crop progression is retained; Spaceflight is a later discovery. Other
+      planets begin at one native plot when researched. This version uses a separate
+      Universe0131 save directory so the previous live game is preserved.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176151
+    m_Localized: 02 / Spherical coordinates
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176152
+    m_Localized: "Earth is the original farm on a sphere, not a second garden. Expansion
+      stages are 1\xD71,2\xD72,4\xD74,8\xD78,16\xD716,32\xD732,64\xD764,128\xD7128,256\xD7128,360\xD7128.
+      Each cell spans one degree. Full latitude coverage is the belt -64\xB0 to+64\xB0,
+      excluding both poles. Only a fully unlocked 360-column surface wraps longitude;
+      latitude never wraps. Expansion centers the old patch, keeps plants and shifts
+      local coordinates. Read current coordinates after expanding. Use get_world_width
+      and get_world_height separately."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176153
+    m_Localized: 03 / Research & expansion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176154
+    m_Localized: "Original crop discoveries gate Earth expansion, speed and yield.
+      The last four Earth expansion tiers need Spaceflight, Flower Planet, Mineral
+      Planet and Ocean Planet. Buy Spaceflight after Parallel Drones, Modules, Dictionaries
+      and Irrigation. Flower Planet costs2000 pumpkin; Ocean Planet20000 carrot;
+      Mineral Planet5000 cactus. Exterior surfaces expand using local produce: price20\xD7next
+      stage squared, paid in rose,carp or stone. No elapsed-time certificate forces
+      a wait."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176155
+    m_Localized: 04 / Original Earth crops
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176156
+    m_Localized: 'Keep original crop mechanics: tree spacing, companions, water and
+      infection; giant pumpkin squares, dead replacements; sunflower petal priority;
+      sorted cactus regions; connected mazes; dinosaur tails and bone settlement.
+      Treasure produces coins, while gold is a refined mineral. Crop movement now
+      respects spherical edges. Re-read rectangular extents and reset to the beginning
+      after a sweep. Expanded grids preserve planted crops.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176157
+    m_Localized: 05 / Python-inspired language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176158
+    m_Localized: The game interpreter is a documented subset, not system Python.
+      It supports loops, conditionals, functions, closures, defaults, positional
+      arguments, collections, modules and return values. It has no OS/file/network/stdlib
+      access, exceptions or keyword arguments. New sum/enumerate/zip/sorted/reversed/round/all/any/pow/divmod/type/Unicode
+      helpers and string methods are documented individually. Collection operations
+      return snapshots rather than Python lazy iterators/views. Numbers use a shared
+      numeric representation.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176159
+    m_Localized: 06 / Program targets
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176160
+    m_Localized: Top navigation opens Universe, Colony, Research, Programs, Manual,
+      UFO, Records and Settings. Program center targets and files scroll independently.
+      A worker, a planet manager and the universe controller each have at most one
+      interpreter. Bind only stops and associates; Bind+run starts. Browsing another
+      file never replaces running code. Green means running; an amber border means
+      editing. At least one file remains. Numeric and Chinese file names are supported.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176161
+    m_Localized: 07 / Native craft & hulls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176162
+    m_Localized: "Earth has drones, Floralia bees, Pelagia fishing boats, Aurelia
+      mining drones. They cannot change planets. Each planet has separate slotTier
+      and hullTier variables; both require paid local research. Hulls1\xD71,2\xD71,2\xD72,3\xD72,3\xD73
+      occupy real cells and must fit unlocked space. Worker paths reserve full footprints
+      and queue when blocked. Bees flap wings, drones spin rotors, boats animate
+      propellers and mining drones animate drills."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176163
+    m_Localized: 08 / Floralia botanical colony
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176164
+    m_Localized: "Bees manage rose,tulip,lavender,lily,orchid and lotus batches;
+      honey is collected from rose resources. Rose works on the first plot, tulip/lavender
+      need width2, and lily/orchid/lotus width4. Water and compost arrive by UFO.
+      Orchids need refined silver; lotus needs fishmeal. Inputs and outputs scale
+      with hull area, while batch time uses0.8+0.2\xD7sqrt(area)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176165
+    m_Localized: 09 / Pelagia fisheries
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176166
+    m_Localized: 'Boats catch carp,trout,salmon,cod,tuna and koi using fish feed;
+      koi also require lotus. Shoals are spatial: planet_scan reveals the species
+      and a boat navigates to a matching accessible cell before processing. More
+      species become available as the surface expands. Fishmeal processes caught
+      carp. None of these functions creates free fish without input or time.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176167
+    m_Localized: 10 / Aurelia mining & refining
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176168
+    m_Localized: Mining produces stone, copper_ore,tin_ore,silver_ore,gold_ore,platinum_ore
+      and rough_diamond. Native drones navigate to matching deposits. Smelting produces
+      copper,tin,bronze,silver,gold; platinum is refined and diamond is cut. Bronze
+      consumes3 copper+1 tin+solar energy, not stone. Platinum needs roses and diamond
+      cutting needs orchids. Deposits are renewable batch sources in this edition;
+      energy is consumed for each mining/refining batch.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176169
+    m_Localized: 11 / UFO freight & energy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176170
+    m_Localized: "Only UFOs move items between planets. Build costs50 credits+20wood+10solar
+      energy on Earth and provides120 battery. Launch atomically reserves full stock
+      and battery: ceil(amount/capacity)\xD7(2+planet-ID distance). Each flight leg
+      lasts12+6\xD7planet-ID distance seconds. Capacities24,72,144,288 and1\u20134
+      ships are researched independently using returned bronze/silver/platinum. Refuel
+      at the current dock with local solar energy:5 battery/unit, maximum1000. Cancel
+      refunds unused stock immediately; airborne cargo finishes its current leg and
+      deposits at destination."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176171
+    m_Localized: 12 / Local swarms & messages
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176172
+    m_Localized: swarm_create names unique worker IDs from one planet. Several groups
+      may coexist, and one file can run as independent copies. Variables and module
+      instances are isolated; messages are deep-copied and inboxes hold16 values.
+      fleet_receive is nonblocking and returns None when empty. Use separate planet
+      managers and a universe program to coordinate different swarms.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176173
+    m_Localized: 13 / Controller hierarchy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176174
+    m_Localized: Create the 11-file universe example. Run universe_controller on
+      Universe; it launches managers for unlocked planets. Each manager binds its
+      native starter worker. Parent completion does not stop children. Managers do
+      not consume worker slots. Worker errors stop only that interpreter. Physical
+      work queues may continue after code stops; use worker_cancel or stop_all deliberately.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176175
+    m_Localized: 14 / Saves, compatibility & debugging
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176176
+    m_Localized: 0.13.1 saves are isolated under Automation/Universe0131. Old farm
+      files are retained and not silently converted into a different universe. Save
+      physical cargo, queues, battery, surfaces, swarms and file bindings. Interpreter
+      stacks,inboxes and result objects are transient; restart controllers after
+      loading and inspect existing queues. Original race farms remain separate. Ctrl/Cmd+Z
+      undo, Shift+Ctrl/Cmd+Z redo, F9 breakpoints and external editing remain.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176177
+    m_Localized: 15 / Earth & Python reference
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176178
+    m_Localized: Every retained Earth function and Python-inspired helper has an
+      individual entry below, including defaults, results and examples. Keys are
+      case-sensitive. No keyword arguments. get_world_size is a compatibility width
+      query, not a rectangular height.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176179
+    m_Localized: 16 / Universe, workers & UFO API
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176180
+    m_Localized: Use universe_ for global management, planet_ for a colony, worker_
+      for native craft, swarm_ for local groups and ufo_ exclusively for interplanetary
+      freight. Kept fleet_/island_ names are compatibility spellings and are documented
+      separately. fleet_ship and fleet_rebase are retired, not teleport shortcuts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176181
+    m_Localized: 17 / Every production function
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1280139257176182
+    m_Localized: Each product function maps to exactly one native recipe. It enqueues
+      work, never an immediate free item. The recipe table below is exported from
+      the runtime. Distinguish coins, gold_ore and gold; raw minerals and refined
+      products are separate inventory IDs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1281174193299456
+    m_Localized: Worker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1281174197493760
+    m_Localized: COLONY ONLINE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1281174197493761
+    m_Localized: Open colony
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1281174197493762
+    m_Localized: 'Universe contract '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1281174197493763
+    m_Localized: 'Line '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716881698816
+    m_Localized: 'RESEARCH / '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893120
+    m_Localized: "Green: production \xB7 blue: automation \xB7 amber: ecology \xB7
+      violet: transport. Dark nodes are locked; bright nodes are researched."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893121
+    m_Localized: RESEARCHED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893122
+    m_Localized: Unlock this planet in the Universe research sector first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893123
+    m_Localized: Surface exploration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893124
+    m_Localized: UFO payload
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893125
+    m_Localized: Your orbital mothership connects four worlds. Choose Earth to descend.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893126
+    m_Localized: Earth ecology
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893127
+    m_Localized: Assign a production program to your local worker.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893128
+    m_Localized: Research and all universe projects complete.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893129
+    m_Localized: Mothership
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893130
+    m_Localized: "Every interplanetary route docks at the mothership. Use depot \u22121
+      to store and retrieve goods there."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893131
+    m_Localized: Refuel at current dock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893132
+    m_Localized: Consume 20 local solar energy for 100 battery charge.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893133
+    m_Localized: Refuel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893134
+    m_Localized: The orbital pantry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893135
+    m_Localized: Stock the mothership warehouse using actual UFO arrivals.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893136
+    m_Localized: Six gardens
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893137
+    m_Localized: Maintain six flower supply chains and send the full collection to
+      the mothership.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893138
+    m_Localized: The foundry ring
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893139
+    m_Localized: Deliver smelted metals rather than ores; use larger mining hulls.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893140
+    m_Localized: Open ocean survey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893141
+    m_Localized: Coordinate fishing routes for every common shoal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893142
+    m_Localized: Living soil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893143
+    m_Localized: Flower honey and marine fishmeal support Earth's ecological programme.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893144
+    m_Localized: Precision observatory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893145
+    m_Localized: Combine bullion, platinum and botanical optics in orbit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893146
+    m_Localized: Ocean restoration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893147
+    m_Localized: Produce lotus and koi through both marine and botanical logistics.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893148
+    m_Localized: Renewable infrastructure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893149
+    m_Localized: Supply orbital infrastructure through four-world freight.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893150
+    m_Localized: Crystal telemetry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893151
+    m_Localized: Diamonds require mining, flowers, silver and cutting; run independent
+      swarms.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893152
+    m_Localized: Botanical seed vault
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893153
+    m_Localized: Build a balanced six-species reserve in the mothership.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893154
+    m_Localized: A silver ocean
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893155
+    m_Localized: Deliver fish and refined metals together without starving the colonies.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893156
+    m_Localized: Deep core observatory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893157
+    m_Localized: Sustain rare-ore processing alongside ordinary metal supply.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893158
+    m_Localized: Distributed life support
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893159
+    m_Localized: Balance local and orbital depots across every planet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893160
+    m_Localized: Four-world exhibition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893161
+    m_Localized: Deliver a curated botanical, marine and mineral collection.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893162
+    m_Localized: Orbital research city
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893163
+    m_Localized: Produce and transport an interdependent supply network at industrial
+      scale.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893164
+    m_Localized: A self-sustaining universe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300716885893165
+    m_Localized: Complete the final simultaneous delivery to your mothership.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1301782801145856
+    m_Localized: Grass
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1301782805340160
+    m_Localized: Tree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1301782805340161
+    m_Localized: Bush
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1301782805340162
+    m_Localized: 18 / Mothership, landing & freight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1301782805340163
+    m_Localized: Locked worlds appear grey, each rotating on its own randomized axis.
+      Select an unlocked planet to watch the shuttle descend from the mothership.
+      Native workers stay local. Every interplanetary UFO route passes through the
+      mother; use depot -1 to store and retrieve supplies. Cancellation deposits
+      airborne cargo at its next dock, which may be the mother. Local solar energy
+      is required to refuel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1301782805340164
+    m_Localized: 19 / Native research, growth & effects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1301782805340165
+    m_Localized: Research has Universe, Earth, Flower, Ocean and Mineral sectors.
+      Planet discovery is in Universe. Green is production, blue automation, amber
+      ecology, violet transport. Dark nodes are unresearched; bright nodes have a
+      purchased level. Native research changes real recipe speed/yields; costs double
+      per level, five levels per branch. Growth now changes crop shape continuously.
+      A close-up is selected for small fields; harvest bursts use a bounded shared
+      pool. Full-size surfaces cull distant/back-facing crop chunks and batch the
+      visible instances. There is no fixed campaign timer gate.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1301782805340166
+    m_Localized: 0.13.2 saves are isolated under Automation/Universe0131. Old farm
+      files are retained and not silently converted into a different universe. Save
+      physical cargo, queues, battery, surfaces, swarms and file bindings. Interpreter
+      stacks,inboxes and result objects are transient; restart controllers after
+      loading and inspect existing queues. Original race farms remain separate. Ctrl/Cmd+Z
+      undo, Shift+Ctrl/Cmd+Z redo, F9 breakpoints and external editing remain.
     m_Metadata:
       m_Items: []
   references:

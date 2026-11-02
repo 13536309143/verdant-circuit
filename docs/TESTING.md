@@ -1,4 +1,93 @@
+# 0.13.2 母舰与24项目主线验收
+
+当前操作与代码见[0.13.2指南](UNIVERSE-0.13.2.zh-CN.md)、[完整手册](MANUAL.zh-CN.md)及[验证报告](reports/v0.13.2/README.md)。原0.13.1宇宙进度保留，本版补充母舰仓库和专属科技。
+
+## 自动检查
+
+先关闭此项目的Editor窗口，将以下环境变量替换为本机Unity2022.3编辑器与项目路径。
+
+```bash
+"$UNITY_EDITOR" -batchmode -nographics -quit -projectPath "$PROJECT_PATH" -executeMethod VerdantRelease.Verify -logFile rules.log
+```
+
+运行404项原有规则／函数检查与48项轨道、科研检查。当前全部通过。
+
+完整从零参考流程需要初始化Play环境并在结束时自行退出，不传`-quit`：
+
+```bash
+VERDANT_FRESH_OUTPUT="$PROJECT_PATH/Temp/fresh-universe" "$UNITY_EDITOR" -batchmode -projectPath "$PROJECT_PATH" -executeMethod VerdantFullPlaythrough.RunUniverseFresh -logFile fresh.log
+```
+
+该参考路线从一格、零库存、零科研开局，正常付费生产、科研、运输与交付24个项目；后期测试驱动调用与API相同的规则方法。它是一台2×2载具／星球的参考策略，不是最快通关时间，不代表任意玩家必须耗时24小时。
+
+界面和压力检查需要图形环境，检查结束自行退出：
+
+```bash
+VERDANT_AUTOMATION_QA=1 VERDANT_UNIVERSE_UI_OUTPUT="$PROJECT_PATH/Temp/universe-ui" "$UNITY_EDITOR" -batchmode -projectPath "$PROJECT_PATH" -executeMethod VerdantUniverseUiChecks.Run -logFile ui.log
+```
+
+当前64项界面检查通过，包含连续生长、收获特效、灰色锁定星球、随机自转、母舰降落、专属科技节点由暗变亮；另采集90个不同游戏帧，检查满尺寸球面、32台地球无人机及连续收获特效。单格草地约3秒自然成熟，可用生长百分比和实际库存交叉判断。
+
+## 人工操作重点
+
+1. 在宇宙选择已解锁地球，先播放降落；一格开局默认近景，应能看见草从幼苗长大，收获后干草增加，出现碎光。
+2. 未开放星球和按钮为灰色，分别沿独立随机轴转动。打开宇宙科技购买星球解锁。
+3. 科技按宇宙、地球、花卉、海洋、矿物分区；地球旧科技树保留，点击“地球生态”打开专属科技。购买后节点由暗变亮。
+4. 在UFO面板选择母舰仓库−1，将水存入母舰，检查实际到港后入库，再从母舰发往其他星球。跨星球航线也应先靠母舰。
+5. 取消任务时，未装船的预留退回来源，在途货物完成当前航段并进入到达的仓库；可能位于母舰，不应误判丢失。
+6. 用各星球本地产物支付专属科技，核对加工时间和产出确实变化。
+7. 按主线项目的明确库存目标生产并交付；后一个目标可能消耗前一个目标的原料，交付前应同时核对全部目标。
+
+---
+
+以下为历史版本记录；当前数量、地图和接口以0.13.2文档为准。
+
+# 0.13.1 四星宇宙内部验收
+
+当前版本使用独立的 `Automation/Universe0131` 存档空间。从宇宙首页选择地球，新建农场应为一格、零库存。旧版本存档保留。
+
+- [操作顺序与11个完整程序](UNIVERSE-0.13.1.zh-CN.md)
+- [全部215个函数／方法、31份配方和使用边界](MANUAL.zh-CN.md)
+- [实际验证报告、时间和已知限制](reports/v0.13.1/README.md)
+- [可复制测试程序包](test-kits/universe-0.13.1/README.zh-CN.md)
+
+## 自动验证
+
+关闭此项目的Editor窗口后，用匹配的Unity 2022.3 Editor执行。下方`UNITY_EDITOR`与`PROJECT_PATH`替换为本机路径。
+
+```bash
+"$UNITY_EDITOR" -batchmode -nographics -quit -projectPath "$PROJECT_PATH" -executeMethod VerdantRelease.Verify -logFile verify.log
+```
+
+这会运行401项模型检查与297项连续订单断言，并导出文档元数据。八单集成测试起点已具备科技与地球原料，不代表从零开局的完整耗时。
+
+界面检查需要图形环境，负责启动和退出Play模式，因此不传`-quit`：
+
+```bash
+VERDANT_AUTOMATION_QA=1 VERDANT_UNIVERSE_UI_OUTPUT="$PROJECT_PATH/Temp/universe-ui" "$UNITY_EDITOR" -batchmode -projectPath "$PROJECT_PATH" -executeMethod VerdantUniverseUiChecks.Run -logFile ui.log
+```
+
+界面检查包含双语导航、程序目标、精确函数搜索、载具动画和360×128球面带，当前19项通过。检查结束后恢复原有活动配置和语言。实际独立包还应另行验收启动、渲染与系统兼容性；本版已验收Mac开场及宇宙首页，Windows仍需真机验收。
+
+## 人工重点
+
+1. 地球从一格开始，初始只有地球开放；收获干草后逐步购买科技。
+2. 扩地保留作物和工人，宽高独立；360列以前边缘有界，满360列后经度接缝通行，南北纬边界不绕回。
+3. 每星球只出现本地载具；数量与机体尺寸独立研究，大机体对占地和通行范围生效。
+4. UFO先预留源库存，飞抵才增加目标库存；中途存档、取消和燃料不足不会复制或丢失货物。
+5. 宇宙、星球和单体可绑定不同文件；切换查看文件不停止之前的运行程序，单体不能同时运行两个解释器。
+6. 蜜蜂扇翅、无人机旋翼、船桨和采矿钻头实际运动；各星球使用不同颜色，顶栏可随时打开工具。
+7. 在手册搜索`ufo_transfer`、`planet_expand`、`worker_research`，核对参数、返回值、失败条件与实际调用一致。
+
+---
+
+以下保留旧版测试说明作为历史记录。其中环绕地图、旧价格、旧版本数量等规则仅适用于原版本，当前测试以本页顶部的0.13.1文档为准。
+
 # 0.11.2 全新自动化农场：内部验收
+
+0.12.1 新增流程见[群岛与多程序测试手册](ARCHIPELAGO-0.12.1.zh-CN.md)及[本版验证报告](reports/v0.12.1/README.md)。基础农场代码包继续保留。
+
+需要直接复制运行的完整流程代码，请使用 [0.11.3 完整流程测试手册](FULL-FLOW-TEST-0.11.3.md)：25个程序、逐步开局、全科技自动控制器、七项机制与16类竞速，附实际验证记录。
 
 完整节奏用新农场测试；更新会保留 0.11.1 库存与已购研究，0.10.x 格式不迁移。以下为人工操作顺序和可复制代码；自动化报告位于 `docs/reports/v0.11.2/`。
 

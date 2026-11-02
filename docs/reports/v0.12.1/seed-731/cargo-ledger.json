@@ -1,0 +1,79 @@
+[
+  {
+    "item": "water",
+    "made": 3846.0,
+    "consumed": 3398.0,
+    "submitted": 386.0,
+    "exported": 0,
+    "stock": 62.0,
+    "reserved": 0,
+    "cargo": 0,
+    "balance": 0.0
+  },
+  {
+    "item": "grain",
+    "made": 2196.0,
+    "consumed": 1435.0,
+    "submitted": 759.0,
+    "exported": 0,
+    "stock": 2.0,
+    "reserved": 0,
+    "cargo": 0,
+    "balance": 0.0
+  },
+  {
+    "item": "ore",
+    "made": 1686.0,
+    "consumed": 1634.0,
+    "submitted": 52.0,
+    "exported": 0,
+    "stock": 0.0,
+    "reserved": 0,
+    "cargo": 0,
+    "balance": 0.0
+  },
+  {
+    "item": "alloy",
+    "made": 1634.0,
+    "consumed": 911.0,
+    "submitted": 721.0,
+    "exported": 0,
+    "stock": 2.0,
+    "reserved": 0,
+    "cargo": 0,
+    "balance": 0.0
+  },
+  {
+    "item": "crystal",
+    "made": 1174.0,
+    "consumed": 633.0,
+    "submitted": 530.0,
+    "exported": 0,
+    "stock": 11.0,
+    "reserved": 0,
+    "cargo": 0,
+    "balance": 0.0
+  },
+  {
+    "item": "medicine",
+    "made": 618.0,
+    "consumed": 162.0,
+    "submitted": 448.0,
+    "exported": 0,
+    "stock": 8.0,
+    "reserved": 0,
+    "cargo": 0,
+    "balance": 0.0
+  },
+  {
+    "item": "core",
+    "made": 162.0,
+    "consumed": 0,
+    "submitted": 160.0,
+    "exported": 0,
+    "stock": 2.0,
+    "reserved": 0,
+    "cargo": 0,
+    "balance": 0.0
+  }
+]

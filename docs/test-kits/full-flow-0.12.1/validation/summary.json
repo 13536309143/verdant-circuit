@@ -1,0 +1,36 @@
+{
+  "version": "0.12.1",
+  "status": "passed",
+  "sourceFingerprint": "26f60531486630a4a0c8a525c9cc45623b876b498d51be90a268b4a2dbd0904d",
+  "modelAssertions": 696,
+  "openingChecks": 23,
+  "fleetUiChecks": 13,
+  "legacyUiFrames": 1133,
+  "runtimeErrors": 0,
+  "runs": [
+    {
+      "seed": 731,
+      "campaignSeconds": 25858.0333330412,
+      "researchSeconds": 10546.48333326401,
+      "islandOrderSeconds": 15309.5,
+      "finalSeconds": 26360.316666367224,
+      "wallSeconds": 141.9991605
+    },
+    {
+      "seed": 17,
+      "campaignSeconds": 25984.166666372697,
+      "researchSeconds": 10672.616666595508,
+      "islandOrderSeconds": 15309.5,
+      "finalSeconds": 26498.783333031875,
+      "wallSeconds": 144.9906368
+    },
+    {
+      "seed": 20261102,
+      "campaignSeconds": 26017.633333038877,
+      "researchSeconds": 10706.083333261688,
+      "islandOrderSeconds": 15309.5,
+      "finalSeconds": 26531.349999698068,
+      "wallSeconds": 146.5799035
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "version": "0.13.0",
+  "publication": "local-only",
+  "sourceFingerprint": "8bdee4fd5592f6cedb1e6f3dc207ac709380a43d1733ff52a089b4cd9f44b2eb",
+  "referenceFingerprint": "3857da5012f8f624d6817b8e8b080cf15663541dc78067786994701500f42aad",
+  "classicAssertions": 244,
+  "unifiedAssertions": 679,
+  "totalAssertions": 923,
+  "uiChecks": 14,
+  "uiScreenshots": 10,
+  "uiLocales": 2,
+  "runtimeUiErrors": 0,
+  "chapters": 24,
+  "functions": 127,
+  "recipes": 28,
+  "programFiles": 11,
+  "earthResearchGameSeconds": 10777.549999927314,
+  "earthPhases": 384,
+  "researchNodes": 37,
+  "earthWallSeconds": 79.2191647,
+  "newContractFixtureGameSeconds": 16447.75,
+  "newContractFixture": "Begins after original 18 contracts with all research and seeded original Earth inputs; no specialist product grants. This is an integration fixture, not a zero-inventory full-game timing."
+}

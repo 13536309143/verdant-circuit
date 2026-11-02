@@ -44,6 +44,8 @@ public static class VerdantLocalizationSetup
         font.atlasPopulationMode=AtlasPopulationMode.Dynamic;font.isMultiAtlasTexturesEnabled=true;
         if(font.sourceFontFile==null)throw new Exception("CJK font source is missing.");
         var glyphs=new System.Text.StringBuilder();foreach(var e in data.entries)glyphs.Append(e.zh).Append(e.en);
+        glyphs.Append(File.ReadAllText("Assets/VerdantCircuit/Resources/UnifiedReference.json"));glyphs.Append(File.ReadAllText("Assets/VerdantCircuit/Scripts/Automation/UnifiedExamples.cs"));
+        glyphs.Append(File.ReadAllText("Assets/VerdantCircuit/Scripts/Automation/PlanetResearch.cs"));
         string missing;font.TryAddCharacters(glyphs.ToString(),out missing);
         if(!string.IsNullOrEmpty(missing))Debug.LogWarning("Font characters not prewarmed: "+missing);
         foreach(var atlas in font.atlasTextures)if(atlas!=null&&!AssetDatabase.Contains(atlas))AssetDatabase.AddObjectToAsset(atlas,font);
